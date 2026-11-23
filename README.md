@@ -4,6 +4,28 @@
 
 **从这里开始**：[全球逐年 Top 50](Spotify基础数据集/全球年度趋势Top50_2017-2026.csv) · [选择地区和年份](Spotify基础数据集/地区年份入口.csv) · [歌曲与歌词 Excel 工作簿](Spotify基础数据集/歌曲与歌词/歌曲与歌词.xlsx)
 
+## 小组如何协作
+
+`main` 汇集小组共同使用的数据、分析结果和网页代码。第一版数据快照标记为 `data-v1`。
+
+| 工作分支 | 提交位置 | 分工 |
+|---|---|---|
+| `data-maintenance` | [Spotify基础数据集](Spotify基础数据集/) | 维护共享榜单、歌曲母表与歌词版本，记录来源和覆盖变化。 |
+| `analysis-emotion` | [analysis/emotion](analysis/emotion/) | 保存情绪分析脚本与结果。歌曲得分使用 song_id 和 lyrics_version_id；逐词贡献使用 line_id 和词在行内的位置。 |
+| `analysis-theme` | [analysis/theme](analysis/theme/) | 保存主题分析脚本与结果。用 song_id 和 lyrics_version_id 标识输入；随结果记录所用模型与主题定义。 |
+| `analysis-repetition` | [analysis/repetition](analysis/repetition/) | 保存重复度分析脚本与结果。用 lyrics_version_id 标识输入，保留重复出现的行，并说明指标分母。 |
+| `web-visualization` | [web](web/) | 保存交互可视化代码。用 song_id 连接榜位与分析结果，用 line_id 定位逐词贡献对应的原句。 |
+
+首次加入时克隆一次仓库，进入项目目录，再切换到负责的分支。以情绪组为例：
+
+```bash
+git clone https://github.com/skyexry/spotify-charts-lyrics-data.git
+cd spotify-charts-lyrics-data
+git switch analysis-emotion
+```
+
+完成一项分析后，在对应目录提交改动并推送该分支。在 GitHub 发起 Pull Request，目标分支选择 `main`。合并前可抽查一首歌，确认结果表里的编号能在共享母表或逐行歌词表中找到。开始下一轮时，在任务分支执行 `git fetch origin` 和 `git merge origin/main` 同步小组进度。
+
 ## 榜单怎么选
 
 | 想回答的问题 | 使用的数据 | 统计口径 |
