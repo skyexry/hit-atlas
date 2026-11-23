@@ -1,4 +1,4 @@
-# Spotify 热门歌曲与歌词数据
+# Hit Atlas · 热歌图谱
 
 这套数据用来探索全球和不同市场的热门歌曲在唱什么，以及歌词主题、情绪和重复程度如何随年份变化。榜单决定抽样范围，歌曲母表统一小组分工使用的编号，逐行歌词用于记录每个词或句子对分析结果的贡献。
 
@@ -21,8 +21,8 @@
 首次加入时克隆一次仓库，进入项目目录，再切换到负责的分支。以情绪组为例：
 
 ```bash
-git clone https://github.com/skyexry/spotify-charts-lyrics-data.git
-cd spotify-charts-lyrics-data
+git clone https://github.com/skyexry/hit-atlas.git
+cd hit-atlas
 git switch analysis-emotion
 ```
 

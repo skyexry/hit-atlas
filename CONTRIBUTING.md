@@ -1,4 +1,4 @@
-# 小组成员上手指南
+# Hit Atlas 小组成员上手指南
 
 我们一起探索「热门歌曲在唱什么，以及这些特征如何随年份和市场变化」。大家在同一个私有仓库工作，共用一份歌曲母表和一套歌词行号。接受 GitHub 邀请后，先找到你的任务。
 
@@ -25,8 +25,8 @@
 **在本地写代码**：下面以情绪组为例。其他组把分支名和目录替换为上表对应项。第一次执行：
 
 ```bash
-git clone https://github.com/skyexry/spotify-charts-lyrics-data.git
-cd spotify-charts-lyrics-data
+git clone https://github.com/skyexry/hit-atlas.git
+cd hit-atlas
 git switch analysis-emotion
 ```
 
@@ -50,4 +50,4 @@ git push
 
 然后按上面的网页步骤发起 Pull Request。在说明里写清楚用了哪版数据、交付了哪个文件、如何验证结果。分析组给一个可复查的 song_id 或 line_id，网页组说明从哪个视图可以看到改动。请一位组员检查后合并到 main。合并页面保留任务分支，下一轮可以继续使用。
 
-如果发现曲名、署名、录音或歌词版本有疑问，把 song_id、来源和具体问题发给数据负责人，由数据分支统一修订。初始共享快照是 [data-v1](https://github.com/skyexry/spotify-charts-lyrics-data/tree/data-v1)。
+如果发现曲名、署名、录音或歌词版本有疑问，把 song_id、来源和具体问题发给数据负责人，由数据分支统一修订。初始共享快照是 [data-v1](https://github.com/skyexry/hit-atlas/tree/data-v1)。
