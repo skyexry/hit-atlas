@@ -42,16 +42,19 @@ A chart position in one source. The key is `source_file + year + market + positi
 
 ## Song master
 
-One project song or recording entry, keyed by `song_id`. [CSV](../Spotify基础数据集/歌曲与歌词/歌曲母表.csv)
+One row per project song or recording entry. A song can appear on several charts, and a live version or remix can have its own project row. The master is the place to look up the track and link it to lyrics or audio. [Song master CSV](../Spotify基础数据集/歌曲与歌词/歌曲母表.csv)
 
-| Field | Type | Source or construction |
+| Field | Type | What it means and where it comes from |
 |---|---|---|
-| `song_id` | ID | Stable project ID for the song or recording entry. |
-| `title`, `artist` | Text | Project display title and credit taken from Spotify charts or track metadata, with corroboration from the sources below where available. |
-| `spotify_id` | ID | Spotify recording catalogue ID, taken from chart metadata or the project’s corroborated match. |
-| `duration_s` | Number (s) | Recording duration from the row’s metadata source, including Spotify catalogue, Deezer, MGD+ or cached Spotify catalogue exports. |
-| `metadata_source` | URL | Per-row link to the metadata or corroborating source. A blank value denotes missing source information for that match. |
-| `lyrics_version_id` | ID | Project-selected default LRCLIB transcription, linked to the lyric-version table when available. |
+| `song_id` | ID | Hit Atlas assigns this stable internal key. Use it to join a chart position to the master and to look up its audio features. |
+| `title` | Text | The track title used for display, taken from a chart or Spotify track metadata. It can include a version label such as “Remix.” The original chart title is in `track_title` on the chart-position row. |
+| `artist` | Text | The credited performer or performers used for display, taken from the chart or Spotify catalogue and supplemented where a fuller credit is available. The source chart’s credit is in `artist_credit`. |
+| `spotify_id` | ID | The identifier of the matched entry in Spotify’s track catalogue. It comes from the chart, a Spotify playlist or a corroborated match. Use it to look for the same catalogue entry in an audio-feature archive. It is blank when the project lacks a usable full Spotify ID. |
+| `duration_s` | Number (seconds) | The duration of the matched track in seconds. It comes from sources such as Spotify, Deezer, MGD+, or archived Spotify catalogue data. It helps compare candidate recordings and lyrics. |
+| `metadata_source` | URL | The link recorded when the project retrieved or corroborated metadata for this row. It commonly identifies the source used for duration and sometimes points to a credit or identity check. For the original chart title, credit and ID, consult the corresponding chart-position row and its `source_url` and `id_provenance`. |
+| `lyrics_version_id` | ID | Hit Atlas’s key for the default LRCLIB transcription selected for this song. Join to the lyric-version or lyric-line table with this key. The lyric-match table records the status of that choice. It is blank if the song has no selected lyric text. |
+
+**Example.** Artemas’s “i like the way you kiss me” appears at No. 11 on the 2024 global chart. The archived Spotify list supplies the title, artist and Spotify ID. The song master’s duration of 142 seconds was added from Deezer, so its `metadata_source` points to Deezer. [2024 global list snapshot](https://github.com/mackorone/spotify-playlist-archive/blob/d89a503d061cdd75396fb954b9917c18ae4afad9/playlists/pretty/37i9dQZF1DX18jTM2l2fJY.md) · [Deezer recording](https://www.deezer.com/track/2706736172)
 
 ## Lyric match
 
