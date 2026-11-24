@@ -56,19 +56,49 @@ One row per project song or recording entry. A song can appear on several charts
 
 **Field coverage.** Counts are distinct `song_id` entries. Spotify ID coverage counts full 22-character track IDs.
 
-| Scope | Title | Artist credit | Full Spotify ID |
-|---|---:|---:|---:|
-| Full song master (2,963 distinct song entries) | 2,963/2,963 | 2,918/2,963 | 2,185/2,963 |
-| 2024–2026 global Top 50 (113 distinct song entries) | 113/113 | 113/113 | 113/113 |
-| 2024–2026 regional same-window charts (2,001 distinct song entries) | 2,001/2,001 | 2,001/2,001 | 1,439/2,001 |
+| Scope | Title | Artist credit | Full Spotify ID | Duration |
+|---|---:|---:|---:|---:|
+| All songs | 2,963/2,963 | 2,963/2,963 | 2,963/2,963 | 2,963/2,963 |
+| 2024–2026 global Top 50 | 113/113 | 113/113 | 113/113 | 113/113 |
+| 2024–2026 regional same-window charts | 2,001/2,001 | 2,001/2,001 | 2,001/2,001 | 2,001/2,001 |
 
-The 45 blank artist credits are from 2016 historical chart supplements. All entries in the 2024–2026 global sample have titles, artist credits and full Spotify IDs.
+**Sources and version matching.** Display titles, artist credits and track IDs primarily come from chart rows and the track catalogue. A lookup uses title, performer credit and version labels. When older chart rows lack a track ID, the project can select a documented representative catalogue entry. The original chart fields remain available in the chart table.
 
-**Source and recording checks.** Title, artist credit and Spotify ID primarily carry over from the source chart and Spotify catalogue metadata. The chart-position table retains its own `source_url` and `id_provenance`. Duration is added separately. All 2,439 populated `duration_s` values have a corresponding source URL in `metadata_source`. That column can also carry credit or identity evidence for a row with no duration.
+Duration comes from a separate lookup recorded in `duration_source_url`. The metadata audit distinguishes values tied to a full Spotify ID, direct catalogue lookups, cross-catalogue evidence and lyric-catalogue duration. MusicBrainz, Apple Music and Deezer provide cross-catalogue evidence for matching titles and artist credits. Use the audit status when limiting calculations to durations with stronger recording evidence. [Metadata audit CSV](../Spotify基础数据集/歌曲与歌词/歌曲元数据核验.csv)
 
-The project uses the full Spotify ID to retrieve duration from the same track entry where possible. Cross-catalogue lookups compare the normalized title and credited artist and keep version labels such as “Remix” or “Live.” A title-and-artist match is supporting evidence. A shared recording identifier such as an ISRC, or corroborating release and version evidence, is needed to confirm that the duration refers to the same recording. Treat a duration as provisional when that evidence is missing.
+**Example.** Artemas’s “i like the way you kiss me” appears at No. 11 on the 2024 global chart. The archived Spotify list supplies the title, artist and Spotify ID. The duration and its separate source are in the song master and metadata audit. [2024 global list snapshot](https://github.com/mackorone/spotify-playlist-archive/blob/d89a503d061cdd75396fb954b9917c18ae4afad9/playlists/pretty/37i9dQZF1DX18jTM2l2fJY.md)
 
-**Example.** Artemas’s “i like the way you kiss me” appears at No. 11 on the 2024 global chart. The archived Spotify list supplies the title, artist and Spotify ID. The song master’s duration of 142 seconds was added from Deezer, so its `metadata_source` points to Deezer. [2024 global list snapshot](https://github.com/mackorone/spotify-playlist-archive/blob/d89a503d061cdd75396fb954b9917c18ae4afad9/playlists/pretty/37i9dQZF1DX18jTM2l2fJY.md) · [Deezer recording](https://www.deezer.com/track/2706736172)
+## Song metadata audit
+
+One row per project song, keyed by `song_id`. Added artist credits and Spotify IDs can be traced independently from duration. [CSV](../Spotify基础数据集/歌曲与歌词/歌曲元数据核验.csv)
+
+| Field | Type | Source or construction |
+|---|---|---|
+| `song_id` | ID | Foreign key to the song master. |
+| `artist_source_url` | URL | Corroborating source used for a filled historical credit. |
+| `spotify_id_status` | Category | Existing project ID, catalogue title and full-credit match, representative catalogue selection, or corroborated catalogue entry. |
+| `spotify_id_source_url` | URL | Chart, archived catalogue or Spotify lookup used to fill the ID. |
+| `spotify_id_evidence_url` | URL | Additional corroboration for recorded exceptions. |
+| `spotify_id_candidate_count` | Integer | Number of matching candidate IDs considered before the default selection. |
+| `duration_status` | Category | Recording evidence behind the populated duration. |
+| `duration_source_url` | URL | Source used for the displayed duration. |
+| `duration_evidence_url` | URL | Additional catalogues that returned similar durations, where recorded. |
+| `lyric_duration_conflict_s` | Number (seconds) | Gap above two seconds when a new Spotify-source duration disagrees with a previously metadata-checked lyric transcription. This field supports analysis filters while retaining the selected lyrics. |
+
+The catalogue filled **339** IDs through title and full credits and **432** through representative selection. **7** additional entries were resolved using track and release evidence. The representative label covers releases that share a title and artist as well as later catalogue reissues and matching an expanded catalogue credit to a shorter chart credit. It describes the selected Spotify entry, with the original chart credit retained separately.
+
+| Duration evidence | Songs |
+|---|---:|
+| `existing_source` — Previously sourced duration retained | 1,552 |
+| `spotify_track` — Read directly from the Spotify track identified by the matched ID | 194 |
+| `spotify_id_archive` — Archived duration joined on the full Spotify ID | 307 |
+| `spotify_catalogue_display` — Duration shown by Spotify for the matching track or single | 3 |
+| `cross_catalogue_agreement` — Two or more external catalogues agree within two seconds | 37 |
+| `cross_catalogue_title_credit` — External catalogue match on title and credited artist | 842 |
+| `catalogue_duration_candidates_differ` — Default external duration selected from candidates with differing lengths | 4 |
+| `lrclib_catalogue_only` — Track duration reported by the selected LRCLIB entry | 24 |
+
+LRCLIB-only durations share their source with the lyrics and are suitable for description. Independent recording or catalogue evidence should be used when using duration to validate the lyrics.
 
 ## Lyric match
 
