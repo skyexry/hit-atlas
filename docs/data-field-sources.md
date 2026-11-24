@@ -54,6 +54,20 @@ One row per project song or recording entry. A song can appear on several charts
 | `metadata_source` | URL | The link recorded when the project retrieved or corroborated metadata for this row. It commonly identifies the source used for duration and sometimes points to a credit or identity check. For the original chart title, credit and ID, consult the corresponding chart-position row and its `source_url` and `id_provenance`. |
 | `lyrics_version_id` | ID | Hit Atlas’s key for the default LRCLIB transcription selected for this song. Join to the lyric-version or lyric-line table with this key. The lyric-match table records the status of that choice. It is blank if the song has no selected lyric text. |
 
+**Field coverage.** Counts are distinct `song_id` entries. Spotify ID coverage counts full 22-character track IDs.
+
+| Scope | Title | Artist credit | Full Spotify ID |
+|---|---:|---:|---:|
+| Full song master (2,963 distinct song entries) | 2,963/2,963 | 2,918/2,963 | 2,185/2,963 |
+| 2024–2026 global Top 50 (113 distinct song entries) | 113/113 | 113/113 | 113/113 |
+| 2024–2026 regional same-window charts (2,001 distinct song entries) | 2,001/2,001 | 2,001/2,001 | 1,439/2,001 |
+
+The 45 blank artist credits are from 2016 historical chart supplements. All entries in the 2024–2026 global sample have titles, artist credits and full Spotify IDs.
+
+**Source and recording checks.** Title, artist credit and Spotify ID primarily carry over from the source chart and Spotify catalogue metadata. The chart-position table retains its own `source_url` and `id_provenance`. Duration is added separately. All 2,439 populated `duration_s` values have a corresponding source URL in `metadata_source`. That column can also carry credit or identity evidence for a row with no duration.
+
+The project uses the full Spotify ID to retrieve duration from the same track entry where possible. Cross-catalogue lookups compare the normalized title and credited artist and keep version labels such as “Remix” or “Live.” A title-and-artist match is supporting evidence. A shared recording identifier such as an ISRC, or corroborating release and version evidence, is needed to confirm that the duration refers to the same recording. Treat a duration as provisional when that evidence is missing.
+
 **Example.** Artemas’s “i like the way you kiss me” appears at No. 11 on the 2024 global chart. The archived Spotify list supplies the title, artist and Spotify ID. The song master’s duration of 142 seconds was added from Deezer, so its `metadata_source` points to Deezer. [2024 global list snapshot](https://github.com/mackorone/spotify-playlist-archive/blob/d89a503d061cdd75396fb954b9917c18ae4afad9/playlists/pretty/37i9dQZF1DX18jTM2l2fJY.md) · [Deezer recording](https://www.deezer.com/track/2706736172)
 
 ## Lyric match
