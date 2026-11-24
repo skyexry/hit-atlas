@@ -1,0 +1,3030 @@
+<!doctype html>
+<html lang="en" data-visualize-standalone>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/charts/; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Hit Atlas Views</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+
+</head>
+<body>
+<iframe id="codex-visualization" sandbox="allow-scripts" referrerpolicy="no-referrer" title="Hit Atlas Views" data-srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/charts/; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Hit Atlas Views&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 16px);
+  --blue: light-dark(rgb(51 156 255), rgb(51 156 255));
+  --orange: light-dark(rgb(226 85 7), rgb(251 106 34));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --red: light-dark(rgb(224 46 42), rgb(255 103 100));
+  --purple: light-dark(rgb(146 79 247), rgb(173 123 249));
+  --yellow: light-dark(rgb(255 195 0), rgb(255 210 64));
+  --viz-series-1: light-dark(rgb(51 156 255), rgb(131 195 255));
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans:
+    -apple-system-body, ui-sans-serif, -apple-system, system-ui, &quot;Segoe UI&quot;,
+    Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;,
+    &quot;Segoe UI Symbol&quot;;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --icon-size: 16px;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --corner-shape: round;
+  --radius: var(--border-radius-lg, 8px);
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: calc(var(--radius) * 0.75);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 2);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: var(--visualize-paint-gutter, 0px);
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans) !important;
+  -webkit-font-smoothing: antialiased;
+  font-size: var(--font-size-base);
+  line-height: calc(var(--font-size-base) * 1.625);
+  font-weight: var(--font-weight-normal);
+}
+
+.cursor-interaction {
+  cursor: var(--cursor-interaction, pointer);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: var(--cursor-interaction, pointer);
+  text-decoration: none;
+  text-underline-offset: 2px;
+  font-weight: inherit;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+.table {
+  font-family: var(--font-sans);
+}
+
+h1 {
+  font-size: calc(var(--font-size-base) * 1.5);
+  line-height: 1.3333333333;
+}
+
+h2 {
+  font-size: calc(var(--font-size-base) * 1.25);
+  line-height: 1.4;
+}
+h3 {
+  font-size: calc(var(--font-size-base) * 1.125);
+  line-height: 1.5555555556;
+}
+h4 {
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+}
+h5,
+h6 {
+  font-size: var(--font-size-base);
+  line-height: calc(var(--font-size-base) * 1.625);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+th {
+  font-weight: 600;
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+pre,
+pre code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: calc(var(--font-size-base) * 0.875);
+  line-height: calc(var(--font-size-base) * 1.625);
+  font-family: var(--font-sans);
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 5%, transparent);
+}
+.table :is(th, td):not(:last-child) {
+  padding-inline-end: calc(var(--font-size-base) * 1.5);
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead :is(th, td) {
+  border-bottom-color: var(--border-strong, var(--input));
+  padding-block: calc(var(--font-size-base) / 2);
+  line-height: var(--font-size-base);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+.table tbody :is(th, td) {
+  padding-block: calc(var(--font-size-base) * 0.625);
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 8px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: var(--corner-shape);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+.widget {
+  min-width: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  box-shadow: 0 0 0 0.5px var(--border-strong, var(--border));
+  color: var(--foreground);
+  background: var(--background);
+}
+
+#widget &gt; :not(.card, .widget, .progress) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  border: 1px solid var(--border);
+  corner-shape: var(--corner-shape);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+  font-family: var(--font-sans);
+  padding: 5px 12px;
+  border-color: color-mix(
+    in oklab,
+    light-dark(var(--primary-foreground), var(--foreground)) 5%,
+    transparent
+  );
+  border-radius: var(--radius-2xl);
+  color: light-dark(var(--primary-foreground), var(--foreground));
+  background: light-dark(var(--foreground), var(--popover));
+  box-shadow: 0 8px 18px rgb(15 23 42 / 20%);
+  letter-spacing: -0.15px;
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin-block: 6px;
+  border: 0;
+  background: var(--border);
+}
+
+.nav {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.progress {
+  display: flex;
+  height: 8px;
+  margin-block: calc((var(--line-height-normal, 1.5em) - 8px) / 2);
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+}
+
+.progress-bar:only-child {
+  border-radius: var(--radius-full);
+}
+
+.progress-bar {
+  height: 100%;
+  flex-shrink: 0;
+  border: 0;
+  background: var(--viz-series-1);
+}
+
+.viz-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  color: color-mix(in srgb, var(--foreground) 40%, var(--muted-foreground));
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 1;
+}
+
+small,
+.text-small {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.nav-link,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+/* Match inline alignment without overriding a containing flex or grid layout. */
+.btn,
+.nav-link,
+.form-control,
+.form-select,
+.form-range,
+.form-check {
+  vertical-align: middle;
+}
+
+.btn,
+.nav-link {
+  --btn-size: calc(12px + 2 * var(--control-spacing, 12px));
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  corner-shape: var(--corner-shape);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: inherit;
+  font-family: var(--font-sans);
+  height: fit-content;
+  min-height: var(--btn-size);
+  padding-inline: var(--control-spacing, 12px);
+  border-color: transparent;
+  border-radius: var(--radius-full);
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+}
+
+.btn {
+  border-color: var(--border);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+}
+
+/* Codex Button size=&quot;compact&quot;; appearance stays with the button variant. */
+.btn-sm {
+  --btn-size: 24px;
+  padding-inline: 8px;
+  font-size: calc(var(--font-size-base) * 12 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 12 / 16), 1px);
+  line-height: 16px;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: var(--cursor-interaction, pointer);
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: light-dark(
+    color-mix(in srgb, var(--foreground) 5.5%, transparent),
+    color-mix(in srgb, var(--foreground) 8%, transparent)
+  );
+}
+
+.nav-link:not(:disabled):not([aria-disabled=&quot;true&quot;]):hover {
+  background: color-mix(in srgb, var(--foreground) 10%, transparent);
+}
+
+.btn-primary {
+  border-color: var(--border);
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: border-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: border-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--muted-foreground);
+  background: light-dark(
+    color-mix(in srgb, var(--foreground) 5.5%, transparent),
+    color-mix(in srgb, var(--foreground) 8%, transparent)
+  );
+}
+
+.nav-pills .nav-link {
+  min-width: 0;
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.nav-justified .nav-link {
+  flex: 1 1 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--foreground);
+  background: var(--muted);
+}
+
+/* Shared preview chrome; product styles stay inside each variant. */
+.viz-dotted-background {
+  background-image: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--foreground) 14%, transparent) 0.8px,
+    transparent 0.8px
+  );
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.viz-carousel {
+  position: relative;
+  min-width: 0;
+}
+
+.viz-carousel:has(&gt; .viz-carousel-controls) {
+  min-height: calc(60px + var(--viz-carousel-picker-height, 0px));
+  padding-bottom: 60px;
+}
+
+.viz-carousel &gt; [data-variant][hidden] {
+  display: none !important;
+}
+
+.viz-carousel &gt; [data-variant] {
+  isolation: isolate;
+}
+
+.viz-carousel-controls {
+  --viz-carousel-hover: light-dark(
+    color-mix(in srgb, var(--foreground) 5.4%, transparent),
+    color-mix(in srgb, var(--foreground) 7.8%, transparent)
+  );
+  position: absolute;
+  z-index: 2;
+  bottom: 8px;
+  left: 50%;
+  display: flex;
+  width: max-content;
+  /* Leave room for the host&#x27;s design-controls launcher at the trailing edge. */
+  max-width: calc(100% - 96px);
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  /* Match the settings dropdown chrome independently of the content font size. */
+  font-size: 13px;
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+  transform: translateX(-50%);
+  user-select: none;
+}
+
+/* Keep authored mockup button styles out of the shared carousel chrome. */
+.viz-carousel-controls button,
+.viz-carousel-picker &gt; summary {
+  display: flex !important;
+  height: auto !important;
+  min-height: 30px;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px;
+  padding: 0 6px !important;
+  -webkit-app-region: no-drag;
+  border: 0 !important;
+  border-radius: 14px !important;
+  color: inherit !important;
+  background: transparent !important;
+  font: inherit !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.viz-carousel-controls &gt; button,
+.viz-carousel-picker &gt; summary {
+  position: relative;
+  isolation: isolate;
+}
+
+.viz-carousel-controls &gt; button {
+  --icon-size: 16px;
+  width: 30px !important;
+  padding: 0 !important;
+}
+
+.viz-carousel-picker &gt; summary {
+  padding-inline: 12px !important;
+}
+
+.viz-carousel-controls .viz-carousel-caret {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  margin: 0;
+  color: inherit;
+  transform: rotate(180deg);
+}
+
+.viz-carousel-controls &gt; button &gt; svg,
+.viz-carousel-controls .viz-carousel-caret,
+.viz-carousel-count {
+  opacity: 0.5;
+}
+
+.viz-carousel-controls &gt; button::before,
+.viz-carousel-picker &gt; summary::before {
+  position: absolute;
+  z-index: -1;
+  inset: 3px;
+  border-radius: 12px;
+  content: &quot;&quot;;
+  pointer-events: none;
+}
+
+.viz-carousel-controls &gt; button:hover::before,
+.viz-carousel-picker &gt; summary:hover::before {
+  background: var(--viz-carousel-hover);
+}
+
+.viz-carousel-controls &gt; button,
+.viz-carousel-controls [data-lucide],
+.viz-carousel-controls .lucide {
+  flex-shrink: 0;
+}
+
+.viz-carousel-picker {
+  min-width: 0;
+}
+
+.viz-carousel-picker &gt; summary {
+  min-width: 0;
+  list-style: none;
+}
+
+.viz-carousel-picker &gt; summary::-webkit-details-marker {
+  display: none;
+}
+
+.viz-carousel-count {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.viz-carousel-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.viz-carousel-options {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 4px);
+  left: 0;
+  display: flex;
+  max-height: 240px;
+  flex-direction: column;
+  gap: 2px;
+  overflow: auto;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--background);
+  box-shadow: 0 4px 12px light-dark(rgb(0 0 0 / 6%), rgb(0 0 0 / 25%));
+}
+
+.viz-carousel-options &gt; button {
+  border-radius: max(0px, calc(var(--radius-lg) - 5px)) !important;
+  width: 100% !important;
+  min-height: 28px;
+  justify-content: flex-start !important;
+  padding: 4px 8px !important;
+  font-size: var(--font-size-small) !important;
+  text-align: start;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.viz-carousel-options &gt; [aria-current=&quot;true&quot;],
+.viz-carousel-options &gt; button:hover {
+  background: var(--viz-carousel-hover) !important;
+}
+
+.btn:disabled,
+.nav-link:disabled,
+.nav-link[aria-disabled=&quot;true&quot;] {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  padding-inline: calc(4px + var(--control-spacing, 12px) / 2);
+  border-color: var(--input);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--popover) 96%, transparent);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.4285714286;
+}
+.form-control:is(
+  [type=&quot;file&quot;],
+  [type=&quot;date&quot;],
+  [type=&quot;datetime-local&quot;],
+  [type=&quot;month&quot;],
+  [type=&quot;week&quot;],
+  [type=&quot;color&quot;]
+) {
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  line-height: 18px;
+}
+.form-control:is(
+  [type=&quot;date&quot;],
+  [type=&quot;datetime-local&quot;],
+  [type=&quot;month&quot;],
+  [type=&quot;week&quot;]
+) {
+  padding-inline: var(--control-spacing, 12px);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+  padding: 0;
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+  min-height: calc(10px + 2 * var(--control-spacing, 12px));
+  padding-inline: var(--control-spacing, 12px);
+  margin-inline-end: var(--control-spacing, 12px);
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: var(--corner-shape);
+}
+
+textarea.form-control {
+  height: auto;
+  resize: vertical;
+  min-height: 96px;
+  padding: 8px 10px;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: none;
+}
+.form-control:disabled {
+  color: var(--muted-foreground);
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  opacity: 1;
+}
+.form-control[aria-invalid=&quot;true&quot;] {
+  border-color: var(--red);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--red) 20%, transparent);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: fit-content;
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  margin: 0;
+  /* The secondary icon role is 14px at compact density and 16px at web density. */
+  --icon-size: calc(10px + var(--control-spacing, 12px) / 2);
+  /* Settings dropdowns retain a 12px inset and a 4px text-to-chevron gap. */
+  padding: 0 calc(16px + var(--icon-size)) 0 12px;
+  outline: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(
+      45deg,
+      transparent calc(50% - 0.6px),
+      var(--muted-foreground) calc(50% - 0.6px) calc(50% + 0.6px),
+      transparent calc(50% + 0.6px)
+    ),
+    linear-gradient(
+      135deg,
+      transparent calc(50% - 0.6px),
+      var(--muted-foreground) calc(50% - 0.6px) calc(50% + 0.6px),
+      transparent calc(50% + 0.6px)
+    );
+  background-position:
+    calc(100% - 12px - var(--icon-size) / 2) 50%,
+    calc(100% - 12px - var(--icon-size) * 0.18) 50%;
+  background-repeat: no-repeat;
+  background-size: calc(var(--icon-size) * 0.32) calc(var(--icon-size) * 0.32);
+  cursor: var(--cursor-interaction, default);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+}
+
+.form-select :is(option, optgroup) {
+  color: var(--popover-foreground);
+  background-color: var(--popover);
+}
+
+.form-select :is(option, optgroup):disabled {
+  color: var(--muted-foreground);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: light-dark(
+    color-mix(in srgb, var(--foreground) 5.5%, transparent),
+    color-mix(in srgb, var(--foreground) 8%, transparent)
+  );
+}
+
+.form-select:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+.form-select:disabled {
+  opacity: 0.4;
+}
+
+.form-check {
+  display: flex;
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  corner-shape: round;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  width: calc(10px + var(--control-spacing, 12px) / 2);
+  height: calc(10px + var(--control-spacing, 12px) / 2);
+  border-color: var(--border-strong, var(--input));
+  border-radius: calc(var(--radius-sm) / 2);
+  background-color: transparent;
+  color: var(--foreground);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:is(:checked, :indeterminate) {
+  border-color: var(--border-strong, var(--input));
+  background-color: color-mix(in srgb, var(--popover) 96%, transparent);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+  background-color: var(--foreground);
+}
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:indeterminate::before {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 65%;
+  height: 6.65%;
+  margin: auto;
+  border-radius: var(--radius-full);
+  background: var(--foreground);
+  mask: none;
+  content: &quot;&quot;;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  border-radius: var(--radius-full);
+  width: 16px;
+  height: 16px;
+  border: 0;
+  box-shadow: inset 0 0 0 1px var(--input);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 0;
+  background: radial-gradient(
+    circle,
+    var(--primary-foreground) 0 3px,
+    var(--foreground) 3px
+  );
+  box-shadow: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:focus-visible {
+  border-color: var(--ring);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+.form-check:not(.form-switch) .form-check-input[type=&quot;radio&quot;]:disabled,
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;radio&quot;]:disabled
+  + .form-check-label {
+  opacity: 0.5;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+  border-color: #fff;
+  background: #fff;
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--blue);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+  outline: none;
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  accent-color: var(--primary);
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  outline: none;
+  border-radius: var(--radius-full);
+  color: var(--foreground);
+  background: transparent;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  background: var(--form-range-track, var(--border));
+  height: 2px;
+  border-radius: var(--radius-full);
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  margin-top: -9px;
+  border-color: transparent;
+  background: currentColor;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Outline the native track and thumb, preserving the larger input hit area. */
+.form-range:focus-visible::-webkit-slider-runnable-track {
+  outline: 2px auto Highlight;
+  outline-color: -webkit-focus-ring-color;
+}
+
+.form-range::-moz-range-track {
+  background: var(--form-range-track, var(--border));
+  height: 2px;
+  border-radius: var(--radius-full);
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  border-color: transparent;
+  background: currentColor;
+  box-shadow: var(--shadow-sm);
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  outline: 2px solid Highlight;
+  outline-offset: 2px;
+}
+
+.form-range:disabled {
+  opacity: 1;
+  cursor: default;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+  [aria-pressed=&quot;true&quot;],
+  [aria-selected=&quot;true&quot;],
+  .is-selected
+) {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--blue);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible {
+  outline-offset: 2px;
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.viz-carousel-controls :is(button, summary):focus-visible {
+  outline: 2px solid var(--ring) !important;
+  outline-offset: 2px !important;
+}
+
+/* Web recipes are the default, including on renderers without inline style queries. */
+@supports (border-radius: if(style(--corner-shape: round): 1px; else: 2px)) {
+  /* Match the host&#x27;s proportional text-sm scale at every text preference. */
+  .tooltip,
+  .viz-badge,
+  .btn,
+  .nav-link,
+  .form-control,
+  .form-select {
+    font-size: if(
+      style(--corner-shape: round): round(
+          nearest,
+          calc(var(--font-size-base) * 14 / 16),
+          1px
+        );
+        else: round(nearest, calc(var(--font-size-base) * 13 / 14), 1px)
+    );
+  }
+
+  .btn-sm {
+    font-size: if(
+      style(--corner-shape: round): round(
+          nearest,
+          calc(var(--font-size-base) * 12 / 16),
+          1px
+        );
+        else: round(nearest, calc(var(--font-size-base) * 12 / 14), 1px)
+    );
+  }
+
+  .btn,
+  .nav-link,
+  .form-select {
+    border-radius: if(
+      style(--corner-shape: round): var(--radius-full); else: var(--radius-lg)
+    );
+  }
+
+  .form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+    border-radius: if(
+      style(--corner-shape: round): calc(var(--radius-sm) / 2);
+        else: calc(var(--radius-lg) * 0.4)
+    );
+  }
+
+  .tooltip {
+    font-weight: if(
+      style(--corner-shape: round): 600; else: var(--font-weight-normal)
+    );
+  }
+}
+
+@media (pointer: coarse) {
+  .viz-carousel:has(&gt; .viz-carousel-controls) {
+    min-height: calc(76px + var(--viz-carousel-picker-height, 0px));
+    padding-bottom: 76px;
+  }
+
+  .btn,
+  .nav-link,
+  .viz-carousel-controls button,
+  .viz-carousel-picker &gt; summary,
+  .form-control,
+  .form-select {
+    --btn-size: 44px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Keep small-screen WebKit from zooming when a text field receives focus. */
+  .form-control,
+  .form-select {
+    font-size: max(16px, calc(var(--font-size-base) * 14 / 16));
+    font-size: max(
+      16px,
+      round(nearest, calc(var(--font-size-base) * 14 / 16), 1px)
+    );
+  }
+  .form-control:is(
+    [type=&quot;file&quot;],
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;week&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;color&quot;]
+  ) {
+    height: 44px;
+    min-height: 44px;
+    font-size: max(16px, calc(var(--font-size-base) * 14 / 16));
+    font-size: max(
+      16px,
+      round(nearest, calc(var(--font-size-base) * 14 / 16), 1px)
+    );
+  }
+
+  .form-control[type=&quot;file&quot;]::file-selector-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .form-control-color[type=&quot;color&quot;] {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-control:is(
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;week&quot;]
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    padding-block: 8px;
+  }
+
+  .form-check {
+    min-height: 44px;
+    padding-inline: 15px;
+  }
+
+  .form-check-input {
+    position: relative;
+  }
+
+  .form-check-input::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    content: &quot;&quot;;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-check-label {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .form-range {
+    height: 44px;
+    touch-action: pan-y;
+  }
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=&quot;application/json&quot; id=&quot;codex-visualization-widget-state&quot;&gt;__CODEX_VISUALIZATION_WIDGET_STATE__&lt;/script&gt;
+&lt;script&gt;(() =&gt; {
+  const root = document.documentElement;
+  const mediaQuery = globalThis.matchMedia(&quot;(prefers-color-scheme: dark)&quot;);
+  const apply = Reflect.apply;
+  const isArray = Array.isArray;
+  const hasOwn = Object.hasOwn;
+  const parentWindow = globalThis.parent;
+  const stringify = JSON.stringify;
+  const parse = JSON.parse;
+  const encode = TextEncoder.prototype.encode.bind(new TextEncoder());
+  const initialStateElement = document.getElementById(
+    &quot;codex-visualization-widget-state&quot;,
+  );
+  const initialGlobals = parse(initialStateElement?.textContent ?? &quot;{}&quot;);
+  initialStateElement?.remove();
+  /** @type {Record&lt;string, unknown&gt; | null} */
+  let state = initialGlobals.widgetState ?? null;
+  const statePersistence = initialGlobals.statePersistence ?? &quot;none&quot;;
+  let nextStateRequestId = 0;
+  /** @type {Map&lt;number, { resolve: () =&gt; void; reject: (error: Error) =&gt; void; timeout: ReturnType&lt;typeof globalThis.setTimeout&gt;; serializedState: string }&gt;} */
+  const pendingStateWrites = new Map();
+  const persistenceError = () =&gt;
+    Object.assign(
+      new Error(&quot;The host could not persist the widget state update&quot;),
+      {
+        code: -32000,
+        data: { code: &quot;widget_state_persistence_failed&quot;, retryable: false },
+      },
+    );
+  /**
+   * @param {object} prototype
+   * @param {string} property
+   */
+  const getPrototypeGetter = (prototype, property) =&gt; {
+    // oxlint-disable-next-line typescript/unbound-method -- invoked through captured Reflect.apply
+    const getter = Object.getOwnPropertyDescriptor(prototype, property)?.get;
+    if (getter == null) {
+      throw new Error(`Missing ${property} getter`);
+    }
+    return getter;
+  };
+  const getMessageData = getPrototypeGetter(MessageEvent.prototype, &quot;data&quot;);
+  const getMessagePorts = getPrototypeGetter(MessageEvent.prototype, &quot;ports&quot;);
+  const getMessageSource = getPrototypeGetter(MessageEvent.prototype, &quot;source&quot;);
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const addHostMessageListener = MessagePort.prototype.addEventListener;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const postHostMessage = MessagePort.prototype.postMessage;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const startHostPort = MessagePort.prototype.start;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const stopMessagePropagation = Event.prototype.stopImmediatePropagation;
+  /** @type {MessagePort | null} */
+  let hostPort = null;
+  const postToHost = (type, payload) =&gt; {
+    if (hostPort != null) {
+      apply(postHostMessage, hostPort, [{ type, ...payload }]);
+    }
+  };
+  const openExternal = ({ href }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;open-external&quot;, { href });
+    }
+  };
+  const sendFollowUpMessage = ({ context, prompt, title }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;follow-up&quot;, { context, prompt, title });
+    }
+    return Promise.resolve();
+  };
+  /**
+   * @param {Record&lt;string, unknown&gt; | ((previous: Record&lt;string, unknown&gt; | null) =&gt; Record&lt;string, unknown&gt;)} next
+   * @returns {Promise&lt;void&gt;}
+   */
+  const setWidgetState = async (next) =&gt; {
+    const nextState = typeof next === &quot;function&quot; ? next(state) : next;
+    if (
+      nextState == null ||
+      typeof nextState !== &quot;object&quot; ||
+      isArray(nextState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const inputState = stringify(
+      nextState,
+      (_key, /** @type {unknown} */ value) =&gt; {
+        if (
+          typeof value === &quot;undefined&quot; ||
+          typeof value === &quot;function&quot; ||
+          typeof value === &quot;symbol&quot; ||
+          (typeof value === &quot;number&quot; &amp;&amp; !Number.isFinite(value))
+        ) {
+          throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+        }
+        return value;
+      },
+    );
+    const parsedState = parse(inputState);
+    if (
+      parsedState == null ||
+      typeof parsedState !== &quot;object&quot; ||
+      isArray(parsedState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const storedState = {
+      modelContent: null,
+      privateContent: null,
+      ...parsedState,
+    };
+    const serializedState = stringify(storedState);
+    if (encode(serializedState).length &gt; 16 * 1024) {
+      throw new TypeError(
+        &quot;Widget state must be a JSON object of at most 16 KiB&quot;,
+      );
+    }
+    if (
+      hasOwn(storedState, &quot;imageIds&quot;) &amp;&amp;
+      (!isArray(storedState.imageIds) ||
+        storedState.imageIds.some(
+          (/** @type {unknown} */ id) =&gt; typeof id !== &quot;string&quot;,
+        ))
+    ) {
+      throw new TypeError(&quot;Widget state imageIds must be an array of strings&quot;);
+    }
+    if (storedState.imageIds?.length &gt; 0) {
+      throw Object.assign(
+        new TypeError(&quot;Visualization state does not support image attachments&quot;),
+        { code: -32602, data: { code: &quot;images_unsupported&quot; } },
+      );
+    }
+    state = storedState;
+    globalThis.openai.widgetState = state;
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: { widgetState: state } },
+      }),
+    );
+    if (statePersistence === &quot;none&quot;) {
+      throw persistenceError();
+    }
+    const id = ++nextStateRequestId;
+    return new Promise((resolve, reject) =&gt; {
+      const timeout = globalThis.setTimeout(() =&gt; {
+        pendingStateWrites.delete(id);
+        reject(persistenceError());
+      }, 30_000);
+      pendingStateWrites.set(id, { resolve, reject, timeout, serializedState });
+      postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+    });
+  };
+  const bindingElement = document.getElementById(&quot;codex-visualization-bindings&quot;);
+  const mockElement = document.getElementById(&quot;codex-connector-mocks&quot;);
+  const fileElement = document.getElementById(&quot;codex-preview-files&quot;);
+  const connectorGlobals = {};
+  if (bindingElement != null || mockElement != null || fileElement != null) {
+    const bindings = parse(bindingElement?.textContent ?? &quot;{}&quot;);
+    bindingElement?.remove();
+    const values = new Map();
+    for (const [name, binding] of Object.entries(bindings)) {
+      if (binding.type === &quot;json&quot;) values.set(name, structuredClone(binding.value));
+    }
+    const pending = [bindings];
+    while (pending.length) {
+      const object = pending.pop();
+      Object.freeze(object);
+      for (const child of Object.values(object)) {
+        if (child !== null &amp;&amp; typeof child === &quot;object&quot;) pending.push(child);
+      }
+    }
+    const updates = [];
+    if (mockElement != null) {
+      const mocks = Object.entries(parse(mockElement.textContent));
+      mockElement.remove();
+      for (const [name, value] of mocks) {
+        values.set(name, value);
+        updates.push({ name, revision: 1, state: &quot;ready&quot;, value: { type: &quot;json&quot;, value } });
+      }
+    }
+    if (fileElement != null) {
+      const files = parse(fileElement.textContent);
+      fileElement.remove();
+      const blobs = new Map();
+      const urls = [];
+      for (const [name, binding] of Object.entries(bindings)) {
+        if (binding.type !== &quot;file&quot; || !hasOwn(files, binding.path)) continue;
+        const file = files[binding.path];
+        let blob = blobs.get(binding.path);
+        if (blob == null) {
+          const bytes = Uint8Array.fromBase64?.(file.base64) ??
+            Uint8Array.from(atob(file.base64), (char) =&gt; char.charCodeAt(0));
+          blob = new Blob([bytes], { type: file.mimeType });
+          blobs.set(binding.path, blob);
+        }
+        const url = URL.createObjectURL(blob);
+        urls.push(url);
+        values.set(name, { name: file.name, blob, url });
+        updates.push({ name, revision: 1, state: &quot;ready&quot;, value: { type: &quot;file&quot;, ...file } });
+      }
+      globalThis.addEventListener(&quot;pagehide&quot;, (event) =&gt; {
+        // A persisted pagehide can restore this same document and its subscriptions.
+        if (event.persisted) return;
+        for (const url of urls) URL.revokeObjectURL(url);
+        urls.length = 0;
+      });
+    }
+    if (mockElement != null || fileElement != null) connectorGlobals.visualizationData = { updates };
+    connectorGlobals.visualization = {
+      get bindings() {
+        return bindings;
+      },
+      /** @param {string} name @param {(value: unknown) =&gt; void} callback */
+      onData(name, callback) {
+        if (typeof callback !== &quot;function&quot;) {
+          throw new TypeError(&quot;onData requires a callback&quot;);
+        }
+        try {
+          callback(values.get(name));
+        } catch (error) {
+          // oxlint-disable-next-line no-console -- Keep authored callback failures local.
+          console.error(&quot;Live visualization data callback failed&quot;, error);
+        }
+        // A static preview delivers the current value once per subscription.
+        return () =&gt; {};
+      },
+    };
+  }
+  const syncTheme = () =&gt; {
+    const theme = mediaQuery.matches ? &quot;dark&quot; : &quot;light&quot;;
+    root.dataset.theme = theme;
+    globalThis.openai = {
+      ...globalThis.openai,
+      ...connectorGlobals,
+      openExternal,
+      sendFollowUpMessage,
+      setWidgetState,
+      theme,
+      visualizationStyleVariables: {},
+      visualizationTheme: theme,
+      widgetState: state,
+      statePersistence,
+      stateModelContext: &quot;none&quot;,
+    };
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: globalThis.openai },
+      }),
+    );
+  };
+  const sendHeight = () =&gt; {
+    postToHost(&quot;height&quot;, {
+      height: Math.ceil(
+        Math.max(
+          document.body.scrollHeight,
+          document.body.getBoundingClientRect().height,
+        ),
+      ),
+    });
+  };
+
+  globalThis.addEventListener(
+    &quot;message&quot;,
+    (event) =&gt; {
+      const data = apply(getMessageData, event, []);
+      const ports = apply(getMessagePorts, event, []);
+      const source = apply(getMessageSource, event, []);
+      if (
+        hostPort != null ||
+        source !== parentWindow ||
+        typeof data !== &quot;object&quot; ||
+        data?.type !== &quot;codex-visualization-initialize&quot; ||
+        !isArray(ports) ||
+        ports.length !== 1
+      ) {
+        return;
+      }
+      apply(stopMessagePropagation, event, []);
+      const nextHostPort = ports[0];
+      try {
+        apply(addHostMessageListener, nextHostPort, [
+          &quot;message&quot;,
+          (event) =&gt; {
+            const data = apply(getMessageData, event, []);
+            if (typeof data === &quot;object&quot; &amp;&amp; data?.type === &quot;measure&quot;) {
+              sendHeight();
+            } else if (
+              typeof data === &quot;object&quot; &amp;&amp;
+              data?.type === &quot;widget-state-result&quot;
+            ) {
+              /** @type {unknown} */
+              const id = data.id;
+              if (typeof id !== &quot;number&quot;) {
+                return;
+              }
+              const pending = pendingStateWrites.get(id);
+              if (pending != null) {
+                pendingStateWrites.delete(id);
+                globalThis.clearTimeout(pending.timeout);
+                if (data.ok === true) {
+                  pending.resolve();
+                } else {
+                  pending.reject(persistenceError());
+                }
+              }
+            }
+          },
+        ]);
+        apply(startHostPort, nextHostPort, []);
+      } catch {
+        return;
+      }
+      hostPort = nextHostPort;
+      for (const [id, { serializedState }] of pendingStateWrites) {
+        postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+      }
+      sendHeight();
+    },
+    { capture: true },
+  );
+  document.currentScript?.remove();
+  mediaQuery.addEventListener(&quot;change&quot;, syncTheme);
+  globalThis.addEventListener(&quot;click&quot;, (event) =&gt; {
+    if (event.defaultPrevented) {
+      return;
+    }
+    let element = null;
+    if (event.target instanceof globalThis.Element) {
+      element = event.target;
+    } else if (event.target instanceof globalThis.Node) {
+      element = event.target.parentElement;
+    }
+    const link = element?.closest(&quot;a[href]&quot;);
+    const href = link?.getAttribute(&quot;href&quot;);
+    if (href == null) {
+      return;
+    }
+    if (href.startsWith(&quot;#&quot;)) {
+      let id;
+      try {
+        id = decodeURIComponent(href.slice(1));
+      } catch {
+        return;
+      }
+      const target = id.length === 0 ? root : document.getElementById(id);
+      if (
+        target == null ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      event.preventDefault();
+      postToHost(&quot;scroll-to&quot;, {
+        top: target.getBoundingClientRect().top + globalThis.scrollY,
+      });
+      return;
+    }
+    event.preventDefault();
+    openExternal({ href });
+  });
+  new ResizeObserver(sendHeight).observe(document.body);
+  syncTheme();
+})();
+&lt;/script&gt;
+&lt;section id=&quot;hit-atlas-views&quot; aria-label=&quot;Hit Atlas 热歌图谱交互预览&quot;&gt;
+  &lt;header class=&quot;ha-banner&quot;&gt;
+    &lt;div class=&quot;ha-mast&quot;&gt;&lt;span class=&quot;ha-record&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;HIT ATLAS&lt;/span&gt;&lt;span class=&quot;ha-demo&quot;&gt;小样本预览&lt;/span&gt;&lt;/div&gt;
+    &lt;h1&gt;热门歌曲，听见什么？&lt;/h1&gt;
+    &lt;p&gt;从全球榜、地区与歌手，走进一首歌的声音和歌词。&lt;/p&gt;
+    &lt;div class=&quot;ha-source&quot;&gt;Spotify Top 50 &lt;span&gt;2017—2026&lt;/span&gt;&lt;/div&gt;
+  &lt;/header&gt;
+  &lt;nav class=&quot;ha-nav&quot; aria-label=&quot;探索视角&quot;&gt;
+    &lt;button type=&quot;button&quot; data-view=&quot;global&quot; aria-pressed=&quot;true&quot;&gt;全球趋势&lt;/button&gt;
+    &lt;button type=&quot;button&quot; data-view=&quot;market&quot; aria-pressed=&quot;false&quot;&gt;地区分布&lt;/button&gt;
+    &lt;button type=&quot;button&quot; data-view=&quot;artist&quot; aria-pressed=&quot;false&quot;&gt;歌手探索&lt;/button&gt;
+    &lt;button type=&quot;button&quot; data-view=&quot;track&quot; aria-pressed=&quot;false&quot;&gt;单曲详情&lt;/button&gt;
+  &lt;/nav&gt;
+  &lt;div class=&quot;ha-screen&quot; data-screen&gt;&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;style&gt;
+#hit-atlas-views {
+  color-scheme: light dark;
+  --ha-paper: light-dark(#f8f6ef, #181e1d); --ha-panel: light-dark(#fffdf7, #222a28);
+  --ha-ink: light-dark(#252d27, #f2f1e8); --ha-muted: light-dark(#5b665e, #b7c0b8);
+  --ha-line: light-dark(#d9ddd1, #3c4a42); --ha-key: light-dark(#356751, #ace1b7);
+  --ha-active: light-dark(#e4eedb, #354c3b); --ha-highlight: light-dark(#e4efac, #46552f);
+  background:var(--ha-paper); color:var(--ha-ink); border-radius:14px; overflow:hidden;
+  font: 400 14px/1.55 &quot;Inter&quot;, -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, sans-serif;
+}
+#hit-atlas-views *, #hit-atlas-views *::before, #hit-atlas-views *::after {box-sizing:border-box}
+#hit-atlas-views button, #hit-atlas-views select {font:inherit; color:inherit; background:var(--ha-panel)}
+#hit-atlas-views button {cursor:pointer}
+#hit-atlas-views button:focus-visible, #hit-atlas-views select:focus-visible, #hit-atlas-views a:focus-visible {outline:2px solid var(--ha-key);outline-offset:2px}
+#hit-atlas-views h1, #hit-atlas-views h2, #hit-atlas-views h3, #hit-atlas-views p {margin:0}
+#hit-atlas-views .ha-banner {position:relative; isolation:isolate; overflow:hidden; background:#172e26; color:#f5f4df; padding:24px 28px 26px}
+#hit-atlas-views .ha-banner::after {content:&quot;&quot;; position:absolute; z-index:-1; width:430px; height:430px; top:-165px; right:-76px; border-radius:50%; background:repeating-radial-gradient(circle, transparent 0 15px,#bceaa52a 16px 17px,transparent 18px 22px); mask-image:linear-gradient(100deg,transparent,#000 60%)}
+#hit-atlas-views .ha-mast {display:flex; align-items:center; gap:10px; font-size:12px; font-weight:700; letter-spacing:.17em; margin-bottom:15px}
+#hit-atlas-views .ha-record {width:21px; height:21px; border-radius:50%; border:1px solid #d5efab; background:radial-gradient(circle,#d5efab 0 2px,transparent 3px 4px,#d5efab 5px 5.8px,transparent 6.8px)}
+#hit-atlas-views .ha-demo {font-weight:450; margin-left:6px; color:#d0e0ce; letter-spacing:.07em; border-left:1px solid #a7c3aa; padding-left:11px}
+#hit-atlas-views h1 {font-family:&quot;Songti SC&quot;, &quot;Noto Serif CJK SC&quot;, Georgia, serif; font-size:clamp(28px,5.4vw,53px); line-height:1.16; letter-spacing:-.032em; font-weight:650}
+#hit-atlas-views .ha-banner p {margin-top:9px; color:#cfdfcf}
+#hit-atlas-views .ha-source {display:flex; gap:10px; margin-top:16px; color:#daefb6; font-size:12px; letter-spacing:.04em}
+#hit-atlas-views .ha-source span {color:#d6ded1}
+#hit-atlas-views .ha-nav {display:grid; grid-template-columns:repeat(4,1fr); border-bottom:1px solid var(--ha-line); padding:0 23px; gap:12px}
+#hit-atlas-views .ha-nav button {background:transparent;border:0;border-bottom:3px solid transparent;padding:12px 3px 9px;text-align:center;white-space:nowrap;color:var(--ha-muted)}
+#hit-atlas-views .ha-nav button[aria-pressed=true] {border-bottom-color:var(--ha-key); color:var(--ha-ink); font-weight:650}
+#hit-atlas-views .ha-screen {padding:22px 23px 25px;min-width:0}
+#hit-atlas-views .ha-grid {display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:15px;align-items:start}
+#hit-atlas-views .ha-card {min-width:0;border:1px solid var(--ha-line);border-radius:12px;background:var(--ha-panel);padding:16px}
+#hit-atlas-views .ha-top {display:flex;justify-content:space-between;align-items:start;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+#hit-atlas-views h2 {font-size:19px;line-height:1.28;font-weight:650;overflow-wrap:anywhere}
+#hit-atlas-views h3 {font-size:15px;font-weight:650}
+#hit-atlas-views .ha-muted {color:var(--ha-muted);font-size:12px}
+#hit-atlas-views .ha-kpi {display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin:6px 0 0}
+#hit-atlas-views .ha-kpi strong {font-size:37px;line-height:1.12;letter-spacing:-.055em}
+#hit-atlas-views label {display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:12px;color:var(--ha-muted)}
+#hit-atlas-views select {max-width:100%;border:1px solid var(--ha-line);padding:4px 7px;border-radius:6px;min-height:32px}
+#hit-atlas-views .ha-controls {display:flex;gap:7px 11px;flex-wrap:wrap;margin:10px 0}
+#hit-atlas-views .ha-chart {margin-top:6px;width:100%;display:block;overflow:visible}
+#hit-atlas-views .ha-chart .ha-gridline {stroke:var(--ha-line);stroke-width:1;vector-effect:non-scaling-stroke}
+#hit-atlas-views .ha-chart .ha-trace {stroke:var(--ha-key);stroke-width:2.6;fill:none;vector-effect:non-scaling-stroke}
+#hit-atlas-views .ha-chart .ha-point {fill:var(--ha-panel);stroke:var(--ha-key);stroke-width:1.7;vector-effect:non-scaling-stroke}
+#hit-atlas-views .ha-chart .ha-point.current {fill:var(--ha-key);stroke-width:2}
+#hit-atlas-views .ha-years {display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:2px;margin:2px 0 8px}
+#hit-atlas-views .ha-years button {font-size:11px;border:0;border-radius:5px;background:transparent;padding:5px 0;color:var(--ha-muted);min-width:0}
+#hit-atlas-views .ha-years button[aria-pressed=true] {background:var(--ha-active);color:var(--ha-ink);font-weight:700}
+#hit-atlas-views .ha-rank {padding:0;margin:9px 0 2px;list-style:none}
+#hit-atlas-views .ha-rank li {border-top:1px solid var(--ha-line)}
+#hit-atlas-views .ha-rank button {display:grid;grid-template-columns:26px minmax(0,1fr) 12px;gap:4px;align-items:center;text-align:left;border:0;width:100%;padding:7px 1px;min-height:45px}
+#hit-atlas-views .ha-rank button:hover {background:var(--ha-active)}
+#hit-atlas-views .ha-rank b, #hit-atlas-views .ha-rank small {display:block;overflow-wrap:anywhere}
+#hit-atlas-views .ha-rank b {font-weight:600;line-height:1.24}
+#hit-atlas-views .ha-rank small {color:var(--ha-muted);font-size:11px}
+#hit-atlas-views .ha-num {font-variant-numeric:tabular-nums;color:var(--ha-key);font-size:12px}
+#hit-atlas-views .ha-note {margin-top:8px;color:var(--ha-muted);font-size:12px}
+#hit-atlas-views .ha-markets {display:grid;gap:9px;margin:15px 0 6px}
+#hit-atlas-views .ha-market {display:grid;grid-template-columns:62px minmax(0,1fr) 88px;align-items:center;gap:9px;background:transparent;border:0;padding:5px 0;text-align:left;width:100%;min-height:40px}
+#hit-atlas-views .ha-market[aria-pressed=true] {color:var(--ha-key);font-weight:650}
+#hit-atlas-views .ha-bar {height:13px;background:var(--ha-active);border-radius:3px;overflow:hidden}
+#hit-atlas-views .ha-bar &gt; span {display:block;background:var(--ha-key);height:100%;opacity:.55}
+#hit-atlas-views .ha-market[aria-pressed=true] .ha-bar &gt; span {opacity:1}
+#hit-atlas-views .ha-barvalue {text-align:right;font-size:12px;color:var(--ha-muted);font-variant-numeric:tabular-nums}
+#hit-atlas-views .ha-columns {display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:5px;height:155px;margin:14px 0 4px;align-items:end}
+#hit-atlas-views .ha-column {display:grid;grid-template-rows:18px 1fr 18px;align-items:end;text-align:center;height:100%;gap:4px;font-size:11px;color:var(--ha-muted)}
+#hit-atlas-views .ha-column &gt; span {display:block;width:70%;justify-self:center;background:var(--ha-key);border-radius:4px 4px 0 0}
+#hit-atlas-views .ha-track-head {display:flex;align-items:start;justify-content:space-between;gap:8px;margin-bottom:13px;flex-wrap:wrap}
+#hit-atlas-views .ha-track-head h2 {font-size:24px}
+#hit-atlas-views .ha-track-head select {max-width:176px}
+#hit-atlas-views .ha-track-body {grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
+#hit-atlas-views .ha-radar {display:block;width:min(100%,300px);margin:2px auto 4px;overflow:visible}
+#hit-atlas-views .ha-radar .ha-gridline {stroke:var(--ha-line);fill:none}
+#hit-atlas-views .ha-radar .ha-fill {stroke:var(--ha-key);fill:var(--ha-key);fill-opacity:.21;stroke-width:2}
+#hit-atlas-views .ha-radar text {font-size:12px;fill:var(--ha-muted)}
+#hit-atlas-views .ha-radar text.current {fill:var(--ha-key);font-weight:700}
+#hit-atlas-views .ha-emotions {display:flex;flex-wrap:wrap;gap:5px}
+#hit-atlas-views .ha-emotions button {border:1px solid var(--ha-line);border-radius:5px;padding:3px 7px;font-size:12px;min-height:30px}
+#hit-atlas-views .ha-emotions button[aria-pressed=true] {background:var(--ha-active);color:var(--ha-key);border-color:var(--ha-key);font-weight:650}
+#hit-atlas-views .ha-evidence {border-top:1px solid var(--ha-line);margin-top:10px;padding-top:10px}
+#hit-atlas-views .ha-line {display:grid;grid-template-columns:49px minmax(0,1fr);gap:5px;margin:7px 0;align-items:baseline;font-size:15px;overflow-wrap:anywhere}
+#hit-atlas-views .ha-line small {font-size:11px;color:var(--ha-muted);white-space:nowrap}
+#hit-atlas-views .ha-line mark {background:var(--ha-highlight);border-radius:3px;color:var(--ha-ink);padding:0 2px}
+#hit-atlas-views .ha-line mark.ha-cue {text-decoration:underline dashed;text-underline-offset:3px}
+#hit-atlas-views .ha-scores {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-top:12px}
+#hit-atlas-views .ha-scores &gt; div {border-top:1px solid var(--ha-line);padding-top:7px;overflow-wrap:anywhere}
+#hit-atlas-views .ha-scores strong {display:block;font-size:18px;letter-spacing:-.025em}
+#hit-atlas-views .ha-songlink {color:var(--ha-key);font-size:12px}
+#hit-atlas-views .ha-jump {border:1px solid var(--ha-line);border-radius:5px;padding:4px 7px;font-size:12px;margin-top:7px}
+@media(max-width:660px) {
+ #hit-atlas-views .ha-grid {grid-template-columns:1fr}
+ #hit-atlas-views .ha-screen, #hit-atlas-views .ha-banner {padding:16px 13px}
+ #hit-atlas-views .ha-nav {padding:0 6px;gap:3px}
+ #hit-atlas-views .ha-nav button {font-size:13px;min-height:44px}
+ #hit-atlas-views .ha-card {padding:12px}
+}
+@media(pointer:coarse) {#hit-atlas-views .ha-emotions button,#hit-atlas-views .ha-jump {min-height:44px}}
+&lt;/style&gt;
+
+&lt;script type=&quot;application/json&quot; id=&quot;hit-atlas-views-data&quot;&gt;{&quot;markets&quot;:{&quot;Hong Kong&quot;:&quot;中国香港&quot;,&quot;Japan&quot;:&quot;日本&quot;,&quot;Brazil&quot;:&quot;巴西&quot;,&quot;Taiwan&quot;:&quot;中国台湾&quot;},&quot;scopes&quot;:{&quot;Brazil&quot;:{&quot;2024&quot;:{&quot;values&quot;:[[56.89,50],[121.67,46],[72.32,46],[66.03,46]],&quot;songs&quot;:[[1,&quot;S_5ba4464db7b0b720&quot;],[2,&quot;S_5730c37868045e02&quot;],[3,&quot;S_703f24fc5f5c6315&quot;],[4,&quot;S_b1830b9cf63fd955&quot;],[5,&quot;S_749529baa6de9db4&quot;],[6,&quot;S_47cb0c9f5024e130&quot;]]},&quot;2025&quot;:{&quot;values&quot;:[[59.96,50],[134.06,37],[73.15,37],[65.59,37]],&quot;songs&quot;:[[1,&quot;S_d42e64e0e1b8dfe0&quot;],[2,&quot;S_24c10541056be46c&quot;],[3,&quot;S_aa2b35c4865f65b3&quot;],[4,&quot;S_0f924c33faa0277f&quot;],[5,&quot;S_53674de1cb8bd606&quot;],[6,&quot;S_438096706a0d4138&quot;]]},&quot;2026&quot;:{&quot;values&quot;:[[55.24,50],[138.01,20],[69.19,20],[66.74,20]],&quot;songs&quot;:[[1,&quot;S_3dcaca435846d4a0&quot;],[2,&quot;S_6c6a18c2ff01bce4&quot;],[3,&quot;S_a0a258e03f595f46&quot;],[4,&quot;S_b5733efce767dd8b&quot;],[5,&quot;S_f95f349d4f5ee474&quot;],[6,&quot;S_3473179b5e7a8812&quot;]]}},&quot;Global&quot;:{&quot;2017&quot;:{&quot;values&quot;:[[54.18,50],[108.88,32],[67.09,32],[69.8,32]],&quot;songs&quot;:[[1,&quot;S_91ba624ccb73828f&quot;],[2,&quot;S_363733c2d93819d2&quot;],[3,&quot;S_2cd4c546c9f25378&quot;],[4,&quot;S_819b698a3be13f6d&quot;],[5,&quot;S_a5c5e4d09bf8d9a2&quot;],[6,&quot;S_b43a40b65fea0975&quot;]]},&quot;2018&quot;:{&quot;values&quot;:[[56.41,50],[115.04,44],[67.66,44],[71.79,44]],&quot;songs&quot;:[[1,&quot;S_2d41bc3bcbdfa5bf&quot;],[2,&quot;S_7c8777b606d05fbf&quot;],[3,&quot;S_1b0d909d0a29161b&quot;],[4,&quot;S_be685942bd3d5f65&quot;],[5,&quot;S_813fdf679c0ce905&quot;],[6,&quot;S_4e96184e16c6669e&quot;]]},&quot;2019&quot;:{&quot;values&quot;:[[53.99,50],[121.03,43],[59.84,43],[72.07,43]],&quot;songs&quot;:[[1,&quot;S_47b7ef7a7b40bd01&quot;],[2,&quot;S_4af66c4a0d050a26&quot;],[3,&quot;S_17819b30d86f0bea&quot;],[4,&quot;S_1524533a12f8807a&quot;],[5,&quot;S_abbcea919a71883c&quot;],[6,&quot;S_dc90506caf76b125&quot;]]},&quot;2020&quot;:{&quot;values&quot;:[[54.96,50],[122.0,43],[61.41,43],[70.73,43]],&quot;songs&quot;:[[1,&quot;S_44f1abb28daf302f&quot;],[2,&quot;S_3b2bdb740c0e33c3&quot;],[3,&quot;S_0897f6a1fb9b1b4c&quot;],[4,&quot;S_8add7c8cd000b70b&quot;],[5,&quot;S_0492e33905024123&quot;],[6,&quot;S_8fb702a417ac8617&quot;]]},&quot;2021&quot;:{&quot;values&quot;:[[51.84,50],[120.64,41],[65.91,41],[68.13,41]],&quot;songs&quot;:[[1,&quot;S_e6b2e7103759aa34&quot;],[2,&quot;S_e211c9f4b81b5d5a&quot;],[3,&quot;S_2baa32b9044902c8&quot;],[4,&quot;S_8fd7cd6137aedbff&quot;],[5,&quot;S_69e42d57b6338aa6&quot;],[6,&quot;S_3b82b767d414b80b&quot;]]},&quot;2022&quot;:{&quot;values&quot;:[[51.37,50],[120.37,47],[67.83,47],[68.91,47]],&quot;songs&quot;:[[1,&quot;S_26f9d271901edc4e&quot;],[2,&quot;S_55a9c8dd7ef33b5c&quot;],[3,&quot;S_8f218bb109bbcea6&quot;],[4,&quot;S_458a97c6458994a4&quot;],[5,&quot;S_7786d71e50b43c58&quot;],[6,&quot;S_0e0153a9ac91965b&quot;]]},&quot;2023&quot;:{&quot;values&quot;:[[46.6,50],[121.21,46],[66.52,46],[65.93,46]],&quot;songs&quot;:[[1,&quot;S_cedb53e14c2dc2f5&quot;],[2,&quot;S_1b29502cf5993251&quot;],[3,&quot;S_26f9d271901edc4e&quot;],[4,&quot;S_d7ec1ce6ccbf9117&quot;],[5,&quot;S_e7052c0b8098892b&quot;],[6,&quot;S_c30dae348236c15c&quot;]]},&quot;2024&quot;:{&quot;values&quot;:[[51.81,50],[126.36,47],[65.62,47],[64.95,47]],&quot;songs&quot;:[[1,&quot;S_9a8a9f47da278f32&quot;],[2,&quot;S_c8335976a9325231&quot;],[3,&quot;S_fc0db9848f9fd295&quot;],[4,&quot;S_623d6901c07d41e4&quot;],[5,&quot;S_6fc8d503159b8fe9&quot;],[6,&quot;S_7278b2a8354402ed&quot;]]},&quot;2025&quot;:{&quot;values&quot;:[[50.15,50],[117.0,46],[59.22,46],[60.23,46]],&quot;songs&quot;:[[1,&quot;S_24be92d7469476af&quot;],[2,&quot;S_fc0db9848f9fd295&quot;],[3,&quot;S_aba97bd09600c8ed&quot;],[4,&quot;S_b895cf2b23a7218a&quot;],[5,&quot;S_24d8e0e6d0c23b8a&quot;],[6,&quot;S_d6a1c426cc63586e&quot;]]},&quot;2026&quot;:{&quot;values&quot;:[[52.09,50],[122.24,43],[57.78,43],[57.95,43]],&quot;songs&quot;:[[1,&quot;S_7278b2a8354402ed&quot;],[2,&quot;S_fde2f3b11005f043&quot;],[3,&quot;S_d6a1c426cc63586e&quot;],[4,&quot;S_2132387028f4190e&quot;],[5,&quot;S_787209a25be878f2&quot;],[6,&quot;S_899be85250a5d328&quot;]]}},&quot;Hong Kong&quot;:{&quot;2024&quot;:{&quot;values&quot;:[[35.67,50],[134.8,48],[60.39,48],[60.77,48]],&quot;songs&quot;:[[1,&quot;S_dd74b893ce146ae7&quot;],[2,&quot;S_5a848b4000553af5&quot;],[3,&quot;S_deed2c0462d62abf&quot;],[4,&quot;S_5e22ed8cdac9dca7&quot;],[5,&quot;S_d25507b7216769fd&quot;],[6,&quot;S_bd7572c649f704a3&quot;]]},&quot;2025&quot;:{&quot;values&quot;:[[37.39,50],[133.83,42],[60.48,42],[60.37,42]],&quot;songs&quot;:[[1,&quot;S_e6c33a3257c3e643&quot;],[2,&quot;S_a05df3f1fe023688&quot;],[3,&quot;S_ba083e0682e09cc9&quot;],[4,&quot;S_d25507b7216769fd&quot;],[5,&quot;S_82e2092d4d124d38&quot;],[6,&quot;S_2829845a6a0cb4c6&quot;]]},&quot;2026&quot;:{&quot;values&quot;:[[39.03,48],[131.13,33],[58.62,33],[60.33,33]],&quot;songs&quot;:[[1,&quot;S_e6c33a3257c3e643&quot;],[2,&quot;S_0855aa828d6942e4&quot;],[3,&quot;S_e0ead34d65f115c1&quot;],[4,&quot;S_13df173a2d4d0466&quot;],[5,&quot;S_c170284bc4351ad3&quot;],[6,&quot;S_efbe0ae796e439b6&quot;]]}},&quot;Japan&quot;:{&quot;2024&quot;:{&quot;values&quot;:[[43.04,50],[129.16,43],[76.11,43],[60.77,43]],&quot;songs&quot;:[[1,&quot;S_9a27a39800e5e7ad&quot;],[2,&quot;S_f756cbbbaaec2f70&quot;],[3,&quot;S_6da4a2b003767608&quot;],[4,&quot;S_743efcd806fa8269&quot;],[5,&quot;S_eac174677ae9d480&quot;],[6,&quot;S_efd89a693488015b&quot;]]},&quot;2025&quot;:{&quot;values&quot;:[[43.19,50],[132.68,42],[75.65,42],[61.24,42]],&quot;songs&quot;:[[1,&quot;S_f756cbbbaaec2f70&quot;],[2,&quot;S_743efcd806fa8269&quot;],[3,&quot;S_120301145335fe11&quot;],[4,&quot;S_1df43ae1220035e0&quot;],[5,&quot;S_ae7d139a79da518b&quot;],[6,&quot;S_e6c33a3257c3e643&quot;]]},&quot;2026&quot;:{&quot;values&quot;:[[43.3,50],[129.74,35],[74.8,35],[51.94,35]],&quot;songs&quot;:[[1,&quot;S_acd53ff5c3649404&quot;],[2,&quot;S_068436593da94e24&quot;],[3,&quot;S_07d24abbb1ef7053&quot;],[4,&quot;S_c61aaf5da264a009&quot;],[5,&quot;S_f756cbbbaaec2f70&quot;],[6,&quot;S_8b2a9175aba31721&quot;]]}},&quot;Taiwan&quot;:{&quot;2024&quot;:{&quot;values&quot;:[[51.97,50],[123.79,48],[61.26,48],[64.23,48]],&quot;songs&quot;:[[1,&quot;S_bd7572c649f704a3&quot;],[2,&quot;S_c8c0d775d7d57a93&quot;],[3,&quot;S_1bd6c50b0dcbd10d&quot;],[4,&quot;S_7fe5841b3372747e&quot;],[5,&quot;S_ef805a5c72d4c191&quot;],[6,&quot;S_95743287fc292c6c&quot;]]},&quot;2025&quot;:{&quot;values&quot;:[[49.86,49],[129.89,42],[61.77,42],[59.32,42]],&quot;songs&quot;:[[1,&quot;S_82e2092d4d124d38&quot;],[2,&quot;S_1df43ae1220035e0&quot;],[3,&quot;S_e6c33a3257c3e643&quot;],[4,&quot;S_ef4ac717b1b1a234&quot;],[5,&quot;S_aba97bd09600c8ed&quot;],[6,&quot;S_83732bf9f0c8f6cc&quot;]]},&quot;2026&quot;:{&quot;values&quot;:[[46.97,50],[127.08,37],[52.2,37],[54.54,37]],&quot;songs&quot;:[[1,&quot;S_82e2092d4d124d38&quot;],[2,&quot;S_86dca814cdc6c250&quot;],[3,&quot;S_e6c33a3257c3e643&quot;],[4,&quot;S_1df43ae1220035e0&quot;],[5,&quot;S_ef00234174133933&quot;],[6,&quot;S_7cc3dd522fa1d01d&quot;]]}}},&quot;songs&quot;:{&quot;S_0492e33905024123&quot;:{&quot;id&quot;:&quot;S_0492e33905024123&quot;,&quot;title&quot;:&quot;Don&#x27;t Start Now&quot;,&quot;artist&quot;:&quot;Dua Lipa&quot;,&quot;spotify&quot;:&quot;3PfIrDoz19wz7qK7tYeu62&quot;,&quot;repeat&quot;:60.5,&quot;score&quot;:[0.66,1.98,0.99,0.0,0.66,3.3,3.3,0.66],&quot;hits&quot;:[2,6,3,0,2,10,10,2],&quot;words&quot;:303,&quot;lex&quot;:15.2,&quot;verified&quot;:true,&quot;audio&quot;:[123.95,0.793,0.793],&quot;clips&quot;:[]},&quot;S_068436593da94e24&quot;:{&quot;id&quot;:&quot;S_068436593da94e24&quot;,&quot;title&quot;:&quot;Sukisugite METSU!&quot;,&quot;artist&quot;:&quot;M!LK&quot;,&quot;spotify&quot;:&quot;0vDqNzQqEhl7boeRS3Joli&quot;,&quot;repeat&quot;:35.4,&quot;score&quot;:[3.049,0.305,2.744,0.0,1.524,0.915,1.22,2.439],&quot;hits&quot;:[10,1,9,0,5,3,4,8],&quot;words&quot;:328,&quot;lex&quot;:17.4,&quot;verified&quot;:false,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_07d24abbb1ef7053&quot;:{&quot;id&quot;:&quot;S_07d24abbb1ef7053&quot;,&quot;title&quot;:&quot;花束&quot;,&quot;artist&quot;:&quot;back number&quot;,&quot;spotify&quot;:&quot;3QIAwtEEDOrv0g5NKCGrXZ&quot;,&quot;repeat&quot;:46.7,&quot;score&quot;:[2.477,0.929,2.786,0.31,0.619,0.929,0.619,1.238],&quot;hits&quot;:[8,3,9,1,2,3,2,4],&quot;words&quot;:323,&quot;lex&quot;:14.6,&quot;verified&quot;:true,&quot;audio&quot;:[159.963,0.713,0.519],&quot;clips&quot;:[]},&quot;S_0855aa828d6942e4&quot;:{&quot;id&quot;:&quot;S_0855aa828d6942e4&quot;,&quot;title&quot;:&quot;寂寞圓舞&quot;,&quot;artist&quot;:&quot;Keung To&quot;,&quot;spotify&quot;:&quot;7yi7r8GxBX82iwVet5VBG5&quot;,&quot;repeat&quot;:27.0,&quot;score&quot;:[4.511,1.88,4.887,1.504,1.504,1.128,1.88,1.504],&quot;hits&quot;:[12,5,13,4,4,3,5,4],&quot;words&quot;:266,&quot;lex&quot;:27.4,&quot;verified&quot;:true,&quot;audio&quot;:[144.02,0.536,0.509],&quot;clips&quot;:[]},&quot;S_0897f6a1fb9b1b4c&quot;:{&quot;id&quot;:&quot;S_0897f6a1fb9b1b4c&quot;,&quot;title&quot;:&quot;The Box&quot;,&quot;artist&quot;:&quot;Roddy Ricch&quot;,&quot;spotify&quot;:&quot;0nbXyq5TXYPCO7pr3N8S4I&quot;,&quot;repeat&quot;:46.5,&quot;score&quot;:[0.734,2.385,1.101,2.385,0.55,1.651,0.55,0.734],&quot;hits&quot;:[4,13,6,13,3,9,3,4],&quot;words&quot;:545,&quot;lex&quot;:19.6,&quot;verified&quot;:false,&quot;audio&quot;:[116.971,0.586,0.896],&quot;clips&quot;:[]},&quot;S_0dc1db038e116e72&quot;:{&quot;id&quot;:&quot;S_0dc1db038e116e72&quot;,&quot;title&quot;:&quot;That&#x27;s What I Like&quot;,&quot;artist&quot;:&quot;Bruno Mars&quot;,&quot;spotify&quot;:&quot;0KKkJNfGyhkQ5aFogxQAPU&quot;,&quot;repeat&quot;:55.0,&quot;score&quot;:[0.182,0.73,0.547,0.0,3.832,3.102,2.555,7.117],&quot;hits&quot;:[1,4,3,0,21,17,14,39],&quot;words&quot;:548,&quot;lex&quot;:18.6,&quot;verified&quot;:true,&quot;audio&quot;:[134.066,0.56,0.853],&quot;clips&quot;:[]},&quot;S_0e0153a9ac91965b&quot;:{&quot;id&quot;:&quot;S_0e0153a9ac91965b&quot;,&quot;title&quot;:&quot;Cold Heart - PNAU Remix&quot;,&quot;artist&quot;:&quot;Elton John,Dua Lipa,PNAU&quot;,&quot;spotify&quot;:&quot;6zSpb8dQRaw0M1dK8PBwQz&quot;,&quot;repeat&quot;:64.4,&quot;score&quot;:[0.0,0.0,0.0,0.0,0.0,0.0,4.633,1.158],&quot;hits&quot;:[0,0,0,0,0,0,12,3],&quot;words&quot;:259,&quot;lex&quot;:17.0,&quot;verified&quot;:false,&quot;audio&quot;:[116.032,0.798,0.796],&quot;clips&quot;:[]},&quot;S_0f924c33faa0277f&quot;:{&quot;id&quot;:&quot;S_0f924c33faa0277f&quot;,&quot;title&quot;:&quot;Apaga Apaga Apaga - Ao Vivo&quot;,&quot;artist&quot;:&quot;Danilo e Davi&quot;,&quot;spotify&quot;:&quot;17tg01y3RhlfRKMnd333yL&quot;,&quot;repeat&quot;:64.5,&quot;score&quot;:[0.0,0.0,0.403,0.0,0.403,1.613,1.613,3.226],&quot;hits&quot;:[0,0,1,0,1,4,4,8],&quot;words&quot;:248,&quot;lex&quot;:32.3,&quot;verified&quot;:true,&quot;audio&quot;:[187.984,0.716,0.491],&quot;clips&quot;:[]},&quot;S_120301145335fe11&quot;:{&quot;id&quot;:&quot;S_120301145335fe11&quot;,&quot;title&quot;:&quot;青と夏&quot;,&quot;artist&quot;:&quot;Mrs. GREEN APPLE&quot;,&quot;spotify&quot;:&quot;5BC6kr6etk2Y9J62AyI4i3&quot;,&quot;repeat&quot;:35.5,&quot;score&quot;:[4.152,0.346,3.46,0.346,0.346,1.384,2.076,2.076],&quot;hits&quot;:[12,1,10,1,1,4,6,6],&quot;words&quot;:289,&quot;lex&quot;:22.5,&quot;verified&quot;:true,&quot;audio&quot;:[184.886,0.891,0.31],&quot;clips&quot;:[]},&quot;S_13df173a2d4d0466&quot;:{&quot;id&quot;:&quot;S_13df173a2d4d0466&quot;,&quot;title&quot;:&quot;Boulder&quot;,&quot;artist&quot;:&quot;Keung To&quot;,&quot;spotify&quot;:&quot;2ziD1w2ZBLPHMmkhSHkayG&quot;,&quot;repeat&quot;:50.7,&quot;score&quot;:null,&quot;hits&quot;:null,&quot;words&quot;:300,&quot;lex&quot;:16.3,&quot;verified&quot;:false,&quot;audio&quot;:[119.003,0.836,0.622],&quot;clips&quot;:[]},&quot;S_13fef306885e03fb&quot;:{&quot;id&quot;:&quot;S_13fef306885e03fb&quot;,&quot;title&quot;:&quot;lovely (with Khalid)&quot;,&quot;artist&quot;:&quot;Billie Eilish | Khalid&quot;,&quot;spotify&quot;:&quot;0u2P5u6lvoDfwTYjAADbn4&quot;,&quot;repeat&quot;:45.3,&quot;score&quot;:[1.075,3.226,3.226,0.0,2.151,4.301,3.763,4.301],&quot;hits&quot;:[2,6,6,0,4,8,7,8],&quot;words&quot;:186,&quot;lex&quot;:27.4,&quot;verified&quot;:false,&quot;audio&quot;:[115.284,0.296,0.351],&quot;clips&quot;:[]},&quot;S_1524533a12f8807a&quot;:{&quot;id&quot;:&quot;S_1524533a12f8807a&quot;,&quot;title&quot;:&quot;7 rings&quot;,&quot;artist&quot;:&quot;Ariana Grande&quot;,&quot;spotify&quot;:&quot;6ocbgoVGwYJhOv1GgI9NsF&quot;,&quot;repeat&quot;:39.1,&quot;score&quot;:[0.617,2.058,1.029,0.823,1.029,2.263,2.263,2.263],&quot;hits&quot;:[3,10,5,4,5,11,11,11],&quot;words&quot;:486,&quot;lex&quot;:16.3,&quot;verified&quot;:true,&quot;audio&quot;:[139.848,0.317,0.777],&quot;clips&quot;:[]},&quot;S_17819b30d86f0bea&quot;:{&quot;id&quot;:&quot;S_17819b30d86f0bea&quot;,&quot;title&quot;:&quot;Sunflower - Spider-Man: Into the Spider-Verse&quot;,&quot;artist&quot;:&quot;Post Malone | Swae Lee&quot;,&quot;spotify&quot;:&quot;0RiRZpuVRbi7oqRdSMwhQY&quot;,&quot;repeat&quot;:41.9,&quot;score&quot;:null,&quot;hits&quot;:null,&quot;words&quot;:301,&quot;lex&quot;:21.9,&quot;verified&quot;:false,&quot;audio&quot;:[89.96,0.522,0.755],&quot;clips&quot;:[]},&quot;S_1b0d909d0a29161b&quot;:{&quot;id&quot;:&quot;S_1b0d909d0a29161b&quot;,&quot;title&quot;:&quot;rockstar (feat. 21 Savage)&quot;,&quot;artist&quot;:&quot;Post Malone | 21 Savage&quot;,&quot;spotify&quot;:&quot;0e7ipj03S05BNilyu5bRzt&quot;,&quot;repeat&quot;:45.8,&quot;score&quot;:[0.802,3.206,1.403,0.802,0.802,3.006,1.403,2.204],&quot;hits&quot;:[4,16,7,4,4,15,7,11],&quot;words&quot;:499,&quot;lex&quot;:18.6,&quot;verified&quot;:false,&quot;audio&quot;:[159.798,0.52,0.585],&quot;clips&quot;:[]},&quot;S_1b29502cf5993251&quot;:{&quot;id&quot;:&quot;S_1b29502cf5993251&quot;,&quot;title&quot;:&quot;Kill Bill&quot;,&quot;artist&quot;:&quot;SZA&quot;,&quot;spotify&quot;:&quot;3OHfY25tqY28d16oZczHc8&quot;,&quot;repeat&quot;:47.2,&quot;score&quot;:[3.099,1.408,2.817,1.127,0.0,1.408,1.408,3.38],&quot;hits&quot;:[11,5,10,4,0,5,5,12],&quot;words&quot;:355,&quot;lex&quot;:12.7,&quot;verified&quot;:false,&quot;audio&quot;:[88.993,0.728,0.644],&quot;clips&quot;:[]},&quot;S_1bd6c50b0dcbd10d&quot;:{&quot;id&quot;:&quot;S_1bd6c50b0dcbd10d&quot;,&quot;title&quot;:&quot;Magnetic&quot;,&quot;artist&quot;:&quot;ILLIT&quot;,&quot;spotify&quot;:&quot;1aKvZDoLGkNMxoRYgkckZG&quot;,&quot;repeat&quot;:54.9,&quot;score&quot;:[0.0,0.0,0.291,0.0,0.0,0.291,1.163,1.453],&quot;hits&quot;:[0,0,1,0,0,1,4,5],&quot;words&quot;:344,&quot;lex&quot;:12.2,&quot;verified&quot;:false,&quot;audio&quot;:[131.067,0.668,0.797],&quot;clips&quot;:[]},&quot;S_1df43ae1220035e0&quot;:{&quot;id&quot;:&quot;S_1df43ae1220035e0&quot;,&quot;title&quot;:&quot;Who&quot;,&quot;artist&quot;:&quot;Jimin&quot;,&quot;spotify&quot;:&quot;7tI8dRuH2Yc6RuoTjxo4dU&quot;,&quot;repeat&quot;:68.9,&quot;score&quot;:[0.0,0.0,0.0,0.0,0.0,1.475,0.0,1.18],&quot;hits&quot;:[0,0,0,0,0,5,0,4],&quot;words&quot;:339,&quot;lex&quot;:16.5,&quot;verified&quot;:true,&quot;audio&quot;:[116.034,0.756,0.66],&quot;clips&quot;:[]},&quot;S_2132387028f4190e&quot;:{&quot;id&quot;:&quot;S_2132387028f4190e&quot;,&quot;title&quot;:&quot;SWIM&quot;,&quot;artist&quot;:&quot;BTS&quot;,&quot;spotify&quot;:&quot;68lbSrXDORS51pmyjZv712&quot;,&quot;repeat&quot;:48.8,&quot;score&quot;:[3.064,1.95,12.256,1.671,0.557,0.279,11.142,11.421],&quot;hits&quot;:[11,7,44,6,2,1,40,41],&quot;words&quot;:359,&quot;lex&quot;:34.3,&quot;verified&quot;:false,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_24be92d7469476af&quot;:{&quot;id&quot;:&quot;S_24be92d7469476af&quot;,&quot;title&quot;:&quot;Die With A Smile&quot;,&quot;artist&quot;:&quot;Lady Gaga | Bruno Mars&quot;,&quot;spotify&quot;:&quot;7so0lgd0zP2Sbgs2d7a1SZ&quot;,&quot;repeat&quot;:60.1,&quot;score&quot;:[1.695,1.017,1.356,0.339,1.356,1.017,1.695,1.695],&quot;hits&quot;:[5,3,4,1,4,3,5,5],&quot;words&quot;:295,&quot;lex&quot;:18.0,&quot;verified&quot;:true,&quot;audio&quot;:[157.964,0.601,0.519],&quot;clips&quot;:[]},&quot;S_24c10541056be46c&quot;:{&quot;id&quot;:&quot;S_24c10541056be46c&quot;,&quot;title&quot;:&quot;P do Pecado - Ao Vivo&quot;,&quot;artist&quot;:&quot;Grupo Menos É Mais | Simone Mendes&quot;,&quot;spotify&quot;:&quot;38Ps9Kui6qJjpVqdBOfN5M&quot;,&quot;repeat&quot;:63.1,&quot;score&quot;:[6.388,4.177,2.948,3.931,0.491,0.246,0.737,1.474],&quot;hits&quot;:[26,17,12,16,2,1,3,6],&quot;words&quot;:407,&quot;lex&quot;:31.0,&quot;verified&quot;:true,&quot;audio&quot;:[166.97,0.817,0.631],&quot;clips&quot;:[]},&quot;S_24d8e0e6d0c23b8a&quot;:{&quot;id&quot;:&quot;S_24d8e0e6d0c23b8a&quot;,&quot;title&quot;:&quot;DtMF&quot;,&quot;artist&quot;:&quot;Bad Bunny&quot;,&quot;spotify&quot;:&quot;3sK8wGT43QFpWrvNQsrQya&quot;,&quot;repeat&quot;:33.1,&quot;score&quot;:[0.0,0.413,0.413,0.413,1.24,2.066,1.653,2.066],&quot;hits&quot;:[0,2,2,2,6,10,8,10],&quot;words&quot;:484,&quot;lex&quot;:15.9,&quot;verified&quot;:true,&quot;audio&quot;:[136.02,0.131,0.625],&quot;clips&quot;:[]},&quot;S_26f9d271901edc4e&quot;:{&quot;id&quot;:&quot;S_26f9d271901edc4e&quot;,&quot;title&quot;:&quot;As It Was&quot;,&quot;artist&quot;:&quot;Harry Styles&quot;,&quot;spotify&quot;:&quot;4Dvkj6JhhA12EX05fT7y2e&quot;,&quot;repeat&quot;:42.5,&quot;score&quot;:[1.653,0.826,0.0,0.0,1.653,1.24,1.24,1.24],&quot;hits&quot;:[4,2,0,0,4,3,3,3],&quot;words&quot;:242,&quot;lex&quot;:13.6,&quot;verified&quot;:false,&quot;audio&quot;:[173.93,0.731,0.52],&quot;clips&quot;:[]},&quot;S_2829845a6a0cb4c6&quot;:{&quot;id&quot;:&quot;S_2829845a6a0cb4c6&quot;,&quot;title&quot;:&quot;Heartbreaker&quot;,&quot;artist&quot;:&quot;Anson Lo 盧瀚霆&quot;,&quot;spotify&quot;:&quot;4oIwqUDqcKyF8M5bmFY8Ax&quot;,&quot;repeat&quot;:35.9,&quot;score&quot;:null,&quot;hits&quot;:null,&quot;words&quot;:465,&quot;lex&quot;:12.0,&quot;verified&quot;:true,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_2baa32b9044902c8&quot;:{&quot;id&quot;:&quot;S_2baa32b9044902c8&quot;,&quot;title&quot;:&quot;STAY (with Justin Bieber)&quot;,&quot;artist&quot;:&quot;The Kid LAROI&quot;,&quot;spotify&quot;:&quot;5PjdY0CKGZdEuoNab3yDmX&quot;,&quot;repeat&quot;:68.1,&quot;score&quot;:[0.242,0.483,1.691,0.483,1.449,1.449,1.449,1.691],&quot;hits&quot;:[1,2,7,2,6,6,6,7],&quot;words&quot;:414,&quot;lex&quot;:12.6,&quot;verified&quot;:true,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_2cd4c546c9f25378&quot;:{&quot;id&quot;:&quot;S_2cd4c546c9f25378&quot;,&quot;title&quot;:&quot;Despacito (Featuring Daddy Yankee)&quot;,&quot;artist&quot;:&quot;Luis Fonsi | Daddy Yankee&quot;,&quot;spotify&quot;:&quot;4aWmUDTfIPGksMNLV2rQP2&quot;,&quot;repeat&quot;:45.9,&quot;score&quot;:[0.0,0.0,0.44,0.0,1.758,0.22,1.538,1.319],&quot;hits&quot;:[0,0,2,0,8,1,7,6],&quot;words&quot;:455,&quot;lex&quot;:15.2,&quot;verified&quot;:true,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_2d41bc3bcbdfa5bf&quot;:{&quot;id&quot;:&quot;S_2d41bc3bcbdfa5bf&quot;,&quot;title&quot;:&quot;God&#x27;s Plan&quot;,&quot;artist&quot;:&quot;Drake&quot;,&quot;spotify&quot;:&quot;6DCZcSspjsKoFjzjrWoCdn&quot;,&quot;repeat&quot;:44.9,&quot;score&quot;:[2.857,3.143,2.857,2.857,0.857,1.143,3.429,1.714],&quot;hits&quot;:[10,11,10,10,3,4,12,6],&quot;words&quot;:350,&quot;lex&quot;:20.9,&quot;verified&quot;:false,&quot;audio&quot;:[77.169,0.449,0.754],&quot;clips&quot;:[]},&quot;S_2f06eb572f39163f&quot;:{&quot;id&quot;:&quot;S_2f06eb572f39163f&quot;,&quot;title&quot;:&quot;I Feel It Coming&quot;,&quot;artist&quot;:&quot;The Weeknd | Daft Punk&quot;,&quot;spotify&quot;:&quot;5GXAXm5YOmYT0kL5jHvYBt&quot;,&quot;repeat&quot;:72.6,&quot;score&quot;:[0.195,0.391,0.391,0.195,0.0,0.195,9.375,1.758],&quot;hits&quot;:[1,2,2,1,0,1,48,9],&quot;words&quot;:512,&quot;lex&quot;:27.5,&quot;verified&quot;:false,&quot;audio&quot;:[92.99,0.819,0.773],&quot;clips&quot;:[]},&quot;S_3473179b5e7a8812&quot;:{&quot;id&quot;:&quot;S_3473179b5e7a8812&quot;,&quot;title&quot;:&quot;Peão Todo Tatuado&quot;,&quot;artist&quot;:&quot;Jeninho|Mariana Fagundes&quot;,&quot;spotify&quot;:&quot;1wrA9K1P177mkPNt9BB2OZ&quot;,&quot;repeat&quot;:66.1,&quot;score&quot;:[0.926,3.704,0.0,0.0,1.852,0.926,2.778,2.778],&quot;hits&quot;:[2,8,0,0,4,2,6,6],&quot;words&quot;:216,&quot;lex&quot;:20.4,&quot;verified&quot;:false,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_363733c2d93819d2&quot;:{&quot;id&quot;:&quot;S_363733c2d93819d2&quot;,&quot;title&quot;:&quot;Despacito - Remix&quot;,&quot;artist&quot;:&quot;Luis Fonsi | Daddy Yankee | Justin Bieber&quot;,&quot;spotify&quot;:&quot;5CtI0qwDJkDQGwXD1H1cLb&quot;,&quot;repeat&quot;:42.9,&quot;score&quot;:[0.385,0.578,0.385,0.578,0.0,0.385,0.578,1.541],&quot;hits&quot;:[2,3,2,3,0,2,3,8],&quot;words&quot;:519,&quot;lex&quot;:7.5,&quot;verified&quot;:false,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_3b2bdb740c0e33c3&quot;:{&quot;id&quot;:&quot;S_3b2bdb740c0e33c3&quot;,&quot;title&quot;:&quot;Dance Monkey&quot;,&quot;artist&quot;:&quot;Tones And I&quot;,&quot;spotify&quot;:&quot;1rgnBhdG2JDFTbYkYRZAku&quot;,&quot;repeat&quot;:71.9,&quot;score&quot;:[1.274,0.0,0.425,0.0,0.0,4.459,1.699,4.459],&quot;hits&quot;:[6,0,2,0,0,21,8,21],&quot;words&quot;:471,&quot;lex&quot;:15.7,&quot;verified&quot;:true,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_3b82b767d414b80b&quot;:{&quot;id&quot;:&quot;S_3b82b767d414b80b&quot;,&quot;title&quot;:&quot;Peaches (feat. Daniel Caesar &amp; Giveon)&quot;,&quot;artist&quot;:&quot;Justin Bieber&quot;,&quot;spotify&quot;:&quot;4iJyoBOLtHqaGxP12qzhQI&quot;,&quot;repeat&quot;:61.2,&quot;score&quot;:[2.263,5.144,2.058,4.938,0.412,0.412,1.029,0.617],&quot;hits&quot;:[11,25,10,24,2,2,5,3],&quot;words&quot;:486,&quot;lex&quot;:15.6,&quot;verified&quot;:false,&quot;audio&quot;:[90.03,0.696,0.677],&quot;clips&quot;:[]},&quot;S_3dcaca435846d4a0&quot;:{&quot;id&quot;:&quot;S_3dcaca435846d4a0&quot;,&quot;title&quot;:&quot;Eu Te Seguro - Ao Vivo&quot;,&quot;artist&quot;:&quot;Panda|MJ Records&quot;,&quot;spotify&quot;:&quot;4V2rUOmaevK0C1bKAkeFf5&quot;,&quot;repeat&quot;:52.1,&quot;score&quot;:[3.209,0.0,0.535,0.0,0.0,0.0,0.0,2.139],&quot;hits&quot;:[6,0,1,0,0,0,0,4],&quot;words&quot;:187,&quot;lex&quot;:26.2,&quot;verified&quot;:true,&quot;audio&quot;:[173.658,0.457,0.459],&quot;clips&quot;:[]},&quot;S_4052eafe2d2465cd&quot;:{&quot;id&quot;:&quot;S_4052eafe2d2465cd&quot;,&quot;title&quot;:&quot;One Of The Girls (with JENNIE, Lily Rose Depp)&quot;,&quot;artist&quot;:&quot;The Weeknd | JENNIE | Lily-Rose Depp&quot;,&quot;spotify&quot;:&quot;7CyPwkp0oE8Ro9Dd5CUDjW&quot;,&quot;repeat&quot;:55.0,&quot;score&quot;:[2.145,1.34,1.609,0.268,1.34,1.609,0.536,4.29],&quot;hits&quot;:[8,5,6,1,5,6,2,16],&quot;words&quot;:373,&quot;lex&quot;:16.6,&quot;verified&quot;:false,&quot;audio&quot;:[84.828,0.64,0.264],&quot;clips&quot;:[]},&quot;S_438096706a0d4138&quot;:{&quot;id&quot;:&quot;S_438096706a0d4138&quot;,&quot;title&quot;:&quot;Fui Mlk&quot;,&quot;artist&quot;:&quot;Nilo | Mc Paiva ZS | DJ Di Marques | Tropa da W&amp;S | FamousKyo&quot;,&quot;spotify&quot;:&quot;4pOGEJRVOuaa9oyy7qTGf6&quot;,&quot;repeat&quot;:38.0,&quot;score&quot;:[0.748,0.249,0.748,0.249,0.499,1.247,1.496,1.496],&quot;hits&quot;:[3,1,3,1,2,5,6,6],&quot;words&quot;:401,&quot;lex&quot;:20.7,&quot;verified&quot;:true,&quot;audio&quot;:[128.528,0.636,0.635],&quot;clips&quot;:[]},&quot;S_44b1e61622012364&quot;:{&quot;id&quot;:&quot;S_44b1e61622012364&quot;,&quot;title&quot;:&quot;I Don’t Wanna Live Forever (Fifty Shades Darker)&quot;,&quot;artist&quot;:&quot;ZAYN | Taylor Swift&quot;,&quot;spotify&quot;:&quot;3NdDpSvN911VPGivFlV5d0&quot;,&quot;repeat&quot;:66.3,&quot;score&quot;:[1.323,1.058,1.058,0.265,0.0,0.0,0.0,1.852],&quot;hits&quot;:[5,4,4,1,0,0,0,7],&quot;words&quot;:378,&quot;lex&quot;:19.6,&quot;verified&quot;:false,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_44f1abb28daf302f&quot;:{&quot;id&quot;:&quot;S_44f1abb28daf302f&quot;,&quot;title&quot;:&quot;Blinding Lights&quot;,&quot;artist&quot;:&quot;The Weeknd&quot;,&quot;spotify&quot;:&quot;0VjIjW4GlUZAMYd2vXMi3b&quot;,&quot;repeat&quot;:47.6,&quot;score&quot;:[0.386,0.772,0.386,0.386,0.386,1.544,1.544,1.544],&quot;hits&quot;:[1,2,1,1,1,4,4,4],&quot;words&quot;:259,&quot;lex&quot;:17.4,&quot;verified&quot;:true,&quot;audio&quot;:[171.001,0.73,0.513],&quot;clips&quot;:[]},&quot;S_458a97c6458994a4&quot;:{&quot;id&quot;:&quot;S_458a97c6458994a4&quot;,&quot;title&quot;:&quot;Me Porto Bonito&quot;,&quot;artist&quot;:&quot;Bad Bunny,Chencho Corleone&quot;,&quot;spotify&quot;:&quot;6Sq7ltF9Qa7SNFBsV5Cogx&quot;,&quot;repeat&quot;:31.2,&quot;score&quot;:[0.0,1.081,0.0,0.0,0.0,0.811,0.811,0.541],&quot;hits&quot;:[0,4,0,0,0,3,3,2],&quot;words&quot;:370,&quot;lex&quot;:11.6,&quot;verified&quot;:true,&quot;audio&quot;:[92.005,0.712,0.911],&quot;clips&quot;:[]},&quot;S_47b7ef7a7b40bd01&quot;:{&quot;id&quot;:&quot;S_47b7ef7a7b40bd01&quot;,&quot;title&quot;:&quot;Señorita&quot;,&quot;artist&quot;:&quot;Shawn Mendes | Camila Cabello&quot;,&quot;spotify&quot;:&quot;6v3KW9xbzN5yKLt9YKDYA2&quot;,&quot;repeat&quot;:54.5,&quot;score&quot;:[1.039,1.039,0.779,0.779,1.039,1.558,3.636,3.377],&quot;hits&quot;:[4,4,3,3,4,6,14,13],&quot;words&quot;:385,&quot;lex&quot;:17.4,&quot;verified&quot;:false,&quot;audio&quot;:[116.963,0.548,0.759],&quot;clips&quot;:[]},&quot;S_47cb0c9f5024e130&quot;:{&quot;id&quot;:&quot;S_47cb0c9f5024e130&quot;,&quot;title&quot;:&quot;Haverá Sinais - Ao Vivo&quot;,&quot;artist&quot;:&quot;Jorge &amp; Mateus|Lauana Prado&quot;,&quot;spotify&quot;:&quot;6X6jKoyw1OjogRghMEQAZV&quot;,&quot;repeat&quot;:68.6,&quot;score&quot;:[2.326,0.0,0.0,0.0,1.938,0.0,0.0,0.0],&quot;hits&quot;:[6,0,0,0,5,0,0,0],&quot;words&quot;:258,&quot;lex&quot;:30.2,&quot;verified&quot;:true,&quot;audio&quot;:[110.0,0.8,0.747],&quot;clips&quot;:[]},&quot;S_4af66c4a0d050a26&quot;:{&quot;id&quot;:&quot;S_4af66c4a0d050a26&quot;,&quot;title&quot;:&quot;bad guy&quot;,&quot;artist&quot;:&quot;Billie Eilish&quot;,&quot;spotify&quot;:&quot;2Fxmhks0bxGSBdJ92vM42m&quot;,&quot;repeat&quot;:36.9,&quot;score&quot;:[8.949,7.004,7.004,7.393,0.778,1.556,1.946,1.946],&quot;hits&quot;:[23,18,18,19,2,4,5,5],&quot;words&quot;:257,&quot;lex&quot;:27.6,&quot;verified&quot;:true,&quot;audio&quot;:[135.128,0.425,0.701],&quot;clips&quot;:[]},&quot;S_4db40fd08421f0ce&quot;:{&quot;id&quot;:&quot;S_4db40fd08421f0ce&quot;,&quot;title&quot;:&quot;Starboy&quot;,&quot;artist&quot;:&quot;The Weeknd | Daft Punk&quot;,&quot;spotify&quot;:&quot;5aAx2yezTd8zXrkmtKl66Z&quot;,&quot;repeat&quot;:53.6,&quot;score&quot;:[3.118,2.45,3.563,0.445,1.114,3.341,3.118,4.677],&quot;hits&quot;:[14,11,16,2,5,15,14,21],&quot;words&quot;:449,&quot;lex&quot;:28.5,&quot;verified&quot;:false,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_4e96184e16c6669e&quot;:{&quot;id&quot;:&quot;S_4e96184e16c6669e&quot;,&quot;title&quot;:&quot;Better Now&quot;,&quot;artist&quot;:&quot;Post Malone&quot;,&quot;spotify&quot;:&quot;7dt6x5M1jzdTEt8oCbisTK&quot;,&quot;repeat&quot;:64.5,&quot;score&quot;:[0.193,0.387,0.193,0.193,0.0,0.58,0.193,0.774],&quot;hits&quot;:[1,2,1,1,0,3,1,4],&quot;words&quot;:517,&quot;lex&quot;:5.2,&quot;verified&quot;:true,&quot;audio&quot;:[145.07,0.578,0.674],&quot;clips&quot;:[]},&quot;S_50f08eb40281ae1e&quot;:{&quot;id&quot;:&quot;S_50f08eb40281ae1e&quot;,&quot;title&quot;:&quot;Cupid - Twin Ver.&quot;,&quot;artist&quot;:&quot;FIFTY FIFTY&quot;,&quot;spotify&quot;:&quot;739WUU1tPFLO4x4HJq561K&quot;,&quot;repeat&quot;:56.8,&quot;score&quot;:[4.521,2.926,3.723,5.053,3.723,4.787,3.723,6.383],&quot;hits&quot;:[17,11,14,19,14,18,14,24],&quot;words&quot;:376,&quot;lex&quot;:22.3,&quot;verified&quot;:false,&quot;audio&quot;:null,&quot;clips&quot;:[{&quot;id&quot;:&quot;L_8043647_457396ffe288_0007&quot;,&quot;no&quot;:7,&quot;text&quot;:&quot;I&#x27;m feeling lonely &quot;,&quot;before&quot;:false,&quot;after&quot;:true,&quot;tokens&quot;:[[4,11,[&quot;anger&quot;,&quot;anticipation&quot;,&quot;disgust&quot;,&quot;fear&quot;,&quot;joy&quot;,&quot;sadness&quot;,&quot;surprise&quot;,&quot;trust&quot;],false],[12,18,[&quot;anger&quot;,&quot;disgust&quot;,&quot;fear&quot;,&quot;sadness&quot;],false]]},{&quot;id&quot;:&quot;L_8043647_457396ffe288_0033&quot;,&quot;no&quot;:33,&quot;text&quot;:&quot;Hopeless girl is&quot;,&quot;before&quot;:false,&quot;after&quot;:true,&quot;tokens&quot;:[[0,8,[&quot;fear&quot;,&quot;sadness&quot;],false]]}]},&quot;S_53674de1cb8bd606&quot;:{&quot;id&quot;:&quot;S_53674de1cb8bd606&quot;,&quot;title&quot;:&quot;Última Saudade - Ao Vivo&quot;,&quot;artist&quot;:&quot;Henrique &amp; Juliano&quot;,&quot;spotify&quot;:&quot;4y93vvzu2h8MITw7YyUTcI&quot;,&quot;repeat&quot;:49.8,&quot;score&quot;:[0.0,0.0,0.0,0.0,0.0,0.84,0.84,2.941],&quot;hits&quot;:[0,0,0,0,0,2,2,7],&quot;words&quot;:238,&quot;lex&quot;:32.8,&quot;verified&quot;:false,&quot;audio&quot;:[153.383,0.7,0.443],&quot;clips&quot;:[]},&quot;S_540f2ad4315cacc6&quot;:{&quot;id&quot;:&quot;S_540f2ad4315cacc6&quot;,&quot;title&quot;:&quot;Timeless (feat Playboi Carti)&quot;,&quot;artist&quot;:&quot;The Weeknd | Playboi Carti&quot;,&quot;spotify&quot;:&quot;0FIDCNYYjNvPVimz5icugS&quot;,&quot;repeat&quot;:40.6,&quot;score&quot;:[2.768,3.69,3.137,2.583,0.923,1.661,0.923,1.292],&quot;hits&quot;:[15,20,17,14,5,9,5,7],&quot;words&quot;:542,&quot;lex&quot;:21.4,&quot;verified&quot;:false,&quot;audio&quot;:[119.999,0.775,0.768],&quot;clips&quot;:[]},&quot;S_55a9c8dd7ef33b5c&quot;:{&quot;id&quot;:&quot;S_55a9c8dd7ef33b5c&quot;,&quot;title&quot;:&quot;Heat Waves&quot;,&quot;artist&quot;:&quot;Glass Animals&quot;,&quot;spotify&quot;:&quot;3USxtqRwSYz57Ewm6wWRMp&quot;,&quot;repeat&quot;:60.3,&quot;score&quot;:[2.638,0.719,0.719,0.24,0.48,0.48,0.959,0.719],&quot;hits&quot;:[11,3,3,1,2,2,4,3],&quot;words&quot;:417,&quot;lex&quot;:22.1,&quot;verified&quot;:true,&quot;audio&quot;:[80.87,0.525,0.761],&quot;clips&quot;:[]},&quot;S_5730c37868045e02&quot;:{&quot;id&quot;:&quot;S_5730c37868045e02&quot;,&quot;title&quot;:&quot;Barulho Do Foguete - Ao Vivo&quot;,&quot;artist&quot;:&quot;Zé Neto &amp; Cristiano&quot;,&quot;spotify&quot;:&quot;42JNab8NPeCADJ9D3Cl5wS&quot;,&quot;repeat&quot;:63.8,&quot;score&quot;:[2.488,2.985,0.0,0.0,0.0,0.995,0.0,0.0],&quot;hits&quot;:[5,6,0,0,0,2,0,0],&quot;words&quot;:201,&quot;lex&quot;:19.9,&quot;verified&quot;:true,&quot;audio&quot;:[79.994,0.871,0.646],&quot;clips&quot;:[]},&quot;S_5a848b4000553af5&quot;:{&quot;id&quot;:&quot;S_5a848b4000553af5&quot;,&quot;title&quot;:&quot;黑月&quot;,&quot;artist&quot;:&quot;Keung To&quot;,&quot;spotify&quot;:&quot;60DcGRqdHMk9H3sat9bcHW&quot;,&quot;repeat&quot;:39.2,&quot;score&quot;:[2.273,1.299,2.597,0.325,0.649,0.325,0.974,0.649],&quot;hits&quot;:[7,4,8,1,2,1,3,2],&quot;words&quot;:308,&quot;lex&quot;:26.6,&quot;verified&quot;:true,&quot;audio&quot;:[123.983,0.704,0.641],&quot;clips&quot;:[]},&quot;S_5ba4464db7b0b720&quot;:{&quot;id&quot;:&quot;S_5ba4464db7b0b720&quot;,&quot;title&quot;:&quot;THE BOX MEDLEY FUNK 2&quot;,&quot;artist&quot;:&quot;THE BOX|Mc Brinquedo|MC Cebezinho|MC Tuto|Mc Laranjinha|DJ Oreia&quot;,&quot;spotify&quot;:&quot;7IFsTX5H1sWcEl8joV0IdD&quot;,&quot;repeat&quot;:30.7,&quot;score&quot;:[0.307,0.307,0.46,0.153,0.613,1.227,2.914,1.687],&quot;hits&quot;:[2,2,3,1,4,8,19,11],&quot;words&quot;:652,&quot;lex&quot;:20.9,&quot;verified&quot;:false,&quot;audio&quot;:[117.008,0.687,0.778],&quot;clips&quot;:[]},&quot;S_5e22ed8cdac9dca7&quot;:{&quot;id&quot;:&quot;S_5e22ed8cdac9dca7&quot;,&quot;title&quot;:&quot;Dummy&quot;,&quot;artist&quot;:&quot;Keung To&quot;,&quot;spotify&quot;:&quot;2CwGJLH5jTBlVQhMfjCc6e&quot;,&quot;repeat&quot;:23.3,&quot;score&quot;:[1.06,1.06,2.12,0.707,0.353,1.06,0.707,0.707],&quot;hits&quot;:[3,3,6,2,1,3,2,2],&quot;words&quot;:283,&quot;lex&quot;:22.6,&quot;verified&quot;:true,&quot;audio&quot;:[172.716,0.865,0.631],&quot;clips&quot;:[]},&quot;S_623d6901c07d41e4&quot;:{&quot;id&quot;:&quot;S_623d6901c07d41e4&quot;,&quot;title&quot;:&quot;Gata Only&quot;,&quot;artist&quot;:&quot;FloyyMenor | Cris MJ&quot;,&quot;spotify&quot;:&quot;2esZG2XFtuoWWA9AfDvSxy&quot;,&quot;repeat&quot;:41.4,&quot;score&quot;:[1.06,1.06,1.06,0.0,0.707,0.707,0.0,0.0],&quot;hits&quot;:[3,3,3,0,2,2,0,0],&quot;words&quot;:283,&quot;lex&quot;:11.7,&quot;verified&quot;:false,&quot;audio&quot;:[99.985,0.5,0.794],&quot;clips&quot;:[]},&quot;S_69e42d57b6338aa6&quot;:{&quot;id&quot;:&quot;S_69e42d57b6338aa6&quot;,&quot;title&quot;:&quot;Levitating (feat. DaBaby)&quot;,&quot;artist&quot;:&quot;Dua Lipa&quot;,&quot;spotify&quot;:&quot;5nujrmhLynf4yMoMtj8AQF&quot;,&quot;repeat&quot;:55.5,&quot;score&quot;:[1.56,1.248,1.404,0.936,2.028,2.964,1.716,5.772],&quot;hits&quot;:[10,8,9,6,13,19,11,37],&quot;words&quot;:641,&quot;lex&quot;:20.0,&quot;verified&quot;:false,&quot;audio&quot;:[102.977,0.825,0.702],&quot;clips&quot;:[]},&quot;S_6c6a18c2ff01bce4&quot;:{&quot;id&quot;:&quot;S_6c6a18c2ff01bce4&quot;,&quot;title&quot;:&quot;Posso Até Não Te Dar Flores&quot;,&quot;artist&quot;:&quot;DJ Japa NK | MC Meno K | MC Ryan SP | Mc Jacaré | DJ DAVI DOGDOG&quot;,&quot;spotify&quot;:&quot;4G7bbgD2DHORU4frrWoCXp&quot;,&quot;repeat&quot;:36.9,&quot;score&quot;:[0.29,1.159,0.0,0.0,1.449,0.0,0.87,3.478],&quot;hits&quot;:[1,4,0,0,5,0,3,12],&quot;words&quot;:345,&quot;lex&quot;:23.2,&quot;verified&quot;:false,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_6da4a2b003767608&quot;:{&quot;id&quot;:&quot;S_6da4a2b003767608&quot;,&quot;title&quot;:&quot;幾億光年&quot;,&quot;artist&quot;:&quot;Omoinotake&quot;,&quot;spotify&quot;:&quot;5Ak1F5nGzM4KRhE0H1Q3CP&quot;,&quot;repeat&quot;:39.2,&quot;score&quot;:[1.804,0.773,2.062,0.0,0.258,0.515,0.773,1.031],&quot;hits&quot;:[7,3,8,0,1,2,3,4],&quot;words&quot;:388,&quot;lex&quot;:14.9,&quot;verified&quot;:true,&quot;audio&quot;:[95.586,0.793,0.565],&quot;clips&quot;:[]},&quot;S_6fc8d503159b8fe9&quot;:{&quot;id&quot;:&quot;S_6fc8d503159b8fe9&quot;,&quot;title&quot;:&quot;Lose Control&quot;,&quot;artist&quot;:&quot;Teddy Swims&quot;,&quot;spotify&quot;:&quot;17phhZDn6oGtzMe56NuWvj&quot;,&quot;repeat&quot;:42.2,&quot;score&quot;:[4.626,3.203,3.915,4.27,2.847,1.068,0.356,1.779],&quot;hits&quot;:[13,9,11,12,8,3,1,5],&quot;words&quot;:281,&quot;lex&quot;:19.2,&quot;verified&quot;:true,&quot;audio&quot;:[159.92,0.604,0.561],&quot;clips&quot;:[]},&quot;S_703f24fc5f5c6315&quot;:{&quot;id&quot;:&quot;S_703f24fc5f5c6315&quot;,&quot;title&quot;:&quot;Mtg Quero Te Encontrar&quot;,&quot;artist&quot;:&quot;DJ JZ|Humberto &amp; Ronaldo|Mc Mininin|DJ LG PROD|Silvanno Salles&quot;,&quot;spotify&quot;:&quot;5GV7OpSEb8MPTryL0Q5i6c&quot;,&quot;repeat&quot;:58.4,&quot;score&quot;:[0.783,0.261,1.305,0.0,0.522,0.522,1.305,5.744],&quot;hits&quot;:[3,1,5,0,2,2,5,22],&quot;words&quot;:383,&quot;lex&quot;:33.4,&quot;verified&quot;:false,&quot;audio&quot;:[79.573,0.394,0.697],&quot;clips&quot;:[]},&quot;S_7278b2a8354402ed&quot;:{&quot;id&quot;:&quot;S_7278b2a8354402ed&quot;,&quot;title&quot;:&quot;End of Beginning&quot;,&quot;artist&quot;:&quot;Djo&quot;,&quot;spotify&quot;:&quot;3qhlB30KknSejmIvZZLjOD&quot;,&quot;repeat&quot;:48.0,&quot;score&quot;:[0.521,0.0,0.0,0.0,0.521,1.042,0.521,1.042],&quot;hits&quot;:[1,0,0,0,1,2,1,2],&quot;words&quot;:192,&quot;lex&quot;:25.0,&quot;verified&quot;:false,&quot;audio&quot;:[159.982,0.454,0.689],&quot;clips&quot;:[]},&quot;S_72d4234d9fe8e010&quot;:{&quot;id&quot;:&quot;S_72d4234d9fe8e010&quot;,&quot;title&quot;:&quot;Leave The Door Open&quot;,&quot;artist&quot;:&quot;Bruno Mars&quot;,&quot;spotify&quot;:&quot;7MAibcTli4IisCtbHKrGMh&quot;,&quot;repeat&quot;:54.0,&quot;score&quot;:[2.534,0.0,0.39,0.0,3.314,1.949,2.924,3.899],&quot;hits&quot;:[13,0,2,0,17,10,15,20],&quot;words&quot;:513,&quot;lex&quot;:26.9,&quot;verified&quot;:true,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_743efcd806fa8269&quot;:{&quot;id&quot;:&quot;S_743efcd806fa8269&quot;,&quot;title&quot;:&quot;ケセラセラ&quot;,&quot;artist&quot;:&quot;Mrs. GREEN APPLE&quot;,&quot;spotify&quot;:&quot;0teqQ0PYqVDyyXJuPOyMhu&quot;,&quot;repeat&quot;:44.0,&quot;score&quot;:[4.167,0.321,3.205,0.0,1.282,0.962,1.923,2.244],&quot;hits&quot;:[13,1,10,0,4,3,6,7],&quot;words&quot;:312,&quot;lex&quot;:18.6,&quot;verified&quot;:true,&quot;audio&quot;:[115.004,0.578,0.756],&quot;clips&quot;:[]},&quot;S_749529baa6de9db4&quot;:{&quot;id&quot;:&quot;S_749529baa6de9db4&quot;,&quot;title&quot;:&quot;Let&#x27;s Go 4&quot;,&quot;artist&quot;:&quot;Dj GBR|Mc IG|MC Ryan SP|MC PH|Mc Davi|Mc Luki|Mc Don Juan|Mc Kadu|TrapLaudo|MC GP|MC GH do 7&quot;,&quot;spotify&quot;:&quot;2InS5VWKJQbsFBKOsf1cJB&quot;,&quot;repeat&quot;:37.6,&quot;score&quot;:[0.877,0.439,0.689,0.376,0.564,0.627,0.815,0.689],&quot;hits&quot;:[14,7,11,6,9,10,13,11],&quot;words&quot;:1596,&quot;lex&quot;:21.9,&quot;verified&quot;:true,&quot;audio&quot;:[113.427,0.631,0.782],&quot;clips&quot;:[]},&quot;S_7786d71e50b43c58&quot;:{&quot;id&quot;:&quot;S_7786d71e50b43c58&quot;,&quot;title&quot;:&quot;Tití Me Preguntó&quot;,&quot;artist&quot;:&quot;Bad Bunny&quot;,&quot;spotify&quot;:&quot;1IHWl5LamUGEuP4ozKQSXZ&quot;,&quot;repeat&quot;:52.7,&quot;score&quot;:[0.565,0.0,0.377,0.188,0.377,0.753,0.942,0.753],&quot;hits&quot;:[3,0,2,1,2,4,5,4],&quot;words&quot;:531,&quot;lex&quot;:12.4,&quot;verified&quot;:false,&quot;audio&quot;:[106.672,0.715,0.65],&quot;clips&quot;:[]},&quot;S_787209a25be878f2&quot;:{&quot;id&quot;:&quot;S_787209a25be878f2&quot;,&quot;title&quot;:&quot;Man I Need&quot;,&quot;artist&quot;:&quot;Olivia Dean&quot;,&quot;spotify&quot;:&quot;1qbmS6ep2hbBRaEZFpn7BX&quot;,&quot;repeat&quot;:58.1,&quot;score&quot;:[0.787,0.0,0.262,0.0,1.05,0.787,0.787,2.1],&quot;hits&quot;:[3,0,1,0,4,3,3,8],&quot;words&quot;:381,&quot;lex&quot;:15.7,&quot;verified&quot;:true,&quot;audio&quot;:[119.008,0.593,0.808],&quot;clips&quot;:[{&quot;id&quot;:&quot;L_29396818_e642785a0eeb_0011&quot;,&quot;no&quot;:11,&quot;text&quot;:&quot;ow I can&#x27;t leave it alon&quot;,&quot;before&quot;:true,&quot;after&quot;:true,&quot;tokens&quot;:[[11,16,[&quot;sadness&quot;,&quot;surprise&quot;],true]]},{&quot;id&quot;:&quot;L_29396818_e642785a0eeb_0025&quot;,&quot;no&quot;:25,&quot;text&quot;:&quot; need, baby&quot;,&quot;before&quot;:true,&quot;after&quot;:false,&quot;tokens&quot;:[[7,11,[&quot;joy&quot;],false]]}]},&quot;S_787fa8675fa4d3df&quot;:{&quot;id&quot;:&quot;S_787fa8675fa4d3df&quot;,&quot;title&quot;:&quot;bury a friend&quot;,&quot;artist&quot;:&quot;Billie Eilish&quot;,&quot;spotify&quot;:&quot;4SSnFejRGlZikf02HLewEF&quot;,&quot;repeat&quot;:49.1,&quot;score&quot;:[3.807,0.254,1.015,1.015,0.254,1.523,1.269,1.777],&quot;hits&quot;:[15,1,4,4,1,6,5,7],&quot;words&quot;:394,&quot;lex&quot;:18.8,&quot;verified&quot;:false,&quot;audio&quot;:[120.046,0.389,0.905],&quot;clips&quot;:[]},&quot;S_7c8777b606d05fbf&quot;:{&quot;id&quot;:&quot;S_7c8777b606d05fbf&quot;,&quot;title&quot;:&quot;SAD!&quot;,&quot;artist&quot;:&quot;XXXTENTACION&quot;,&quot;spotify&quot;:&quot;3ee8Jmje8o58CHK66QrVC2&quot;,&quot;repeat&quot;:73.7,&quot;score&quot;:[4.626,3.559,6.05,1.423,0.356,0.356,0.356,1.068],&quot;hits&quot;:[13,10,17,4,1,1,1,3],&quot;words&quot;:281,&quot;lex&quot;:9.3,&quot;verified&quot;:true,&quot;audio&quot;:[75.023,0.613,0.74],&quot;clips&quot;:[]},&quot;S_7cc3dd522fa1d01d&quot;:{&quot;id&quot;:&quot;S_7cc3dd522fa1d01d&quot;,&quot;title&quot;:&quot;離開我的依賴&quot;,&quot;artist&quot;:&quot;Evangeline Wong&quot;,&quot;spotify&quot;:&quot;28VBdtYc5Cpmey4Cpvcrby&quot;,&quot;repeat&quot;:46.6,&quot;score&quot;:[1.747,0.437,2.183,0.437,0.873,0.0,0.873,3.93],&quot;hits&quot;:[4,1,5,1,2,0,2,9],&quot;words&quot;:229,&quot;lex&quot;:25.8,&quot;verified&quot;:true,&quot;audio&quot;:[126.012,0.69,0.604],&quot;clips&quot;:[]},&quot;S_7fe5841b3372747e&quot;:{&quot;id&quot;:&quot;S_7fe5841b3372747e&quot;,&quot;title&quot;:&quot;FRI(END)S&quot;,&quot;artist&quot;:&quot;V&quot;,&quot;spotify&quot;:&quot;0PBTlQ84CBJF0tBnKGmQa6&quot;,&quot;repeat&quot;:54.0,&quot;score&quot;:[1.684,3.704,1.684,1.01,0.337,0.337,0.673,1.01],&quot;hits&quot;:[5,11,5,3,1,1,2,3],&quot;words&quot;:297,&quot;lex&quot;:16.5,&quot;verified&quot;:false,&quot;audio&quot;:[53.376,0.601,0.466],&quot;clips&quot;:[]},&quot;S_813fdf679c0ce905&quot;:{&quot;id&quot;:&quot;S_813fdf679c0ce905&quot;,&quot;title&quot;:&quot;In My Feelings&quot;,&quot;artist&quot;:&quot;Drake&quot;,&quot;spotify&quot;:&quot;2G7V7zsVDxg1yRsu7Ew9RJ&quot;,&quot;repeat&quot;:54.2,&quot;score&quot;:[1.466,1.303,0.489,0.814,1.466,2.117,0.489,2.769],&quot;hits&quot;:[9,8,3,5,9,13,3,17],&quot;words&quot;:614,&quot;lex&quot;:19.1,&quot;verified&quot;:false,&quot;audio&quot;:[91.03,0.626,0.835],&quot;clips&quot;:[]},&quot;S_819b698a3be13f6d&quot;:{&quot;id&quot;:&quot;S_819b698a3be13f6d&quot;,&quot;title&quot;:&quot;Something Just Like This&quot;,&quot;artist&quot;:&quot;The Chainsmokers | Coldplay&quot;,&quot;spotify&quot;:&quot;6RUKPb4LETWmmr3iAEQktW&quot;,&quot;repeat&quot;:67.0,&quot;score&quot;:[0.0,0.301,1.205,0.301,0.602,0.602,1.506,2.108],&quot;hits&quot;:[0,1,4,1,2,2,5,7],&quot;words&quot;:332,&quot;lex&quot;:10.8,&quot;verified&quot;:false,&quot;audio&quot;:[103.019,0.635,0.617],&quot;clips&quot;:[]},&quot;S_82e2092d4d124d38&quot;:{&quot;id&quot;:&quot;S_82e2092d4d124d38&quot;,&quot;title&quot;:&quot;Winter Ahead (with PARK HYO SHIN)&quot;,&quot;artist&quot;:&quot;V | Park Hyo Shin&quot;,&quot;spotify&quot;:&quot;7G7mSV4BebkoHWwKTDvXu9&quot;,&quot;repeat&quot;:42.6,&quot;score&quot;:[1.07,1.07,2.674,1.07,0.0,1.604,0.0,1.07],&quot;hits&quot;:[2,2,5,2,0,3,0,2],&quot;words&quot;:187,&quot;lex&quot;:20.9,&quot;verified&quot;:true,&quot;audio&quot;:[76.844,0.316,0.36],&quot;clips&quot;:[]},&quot;S_82edfcfc0ef833a1&quot;:{&quot;id&quot;:&quot;S_82edfcfc0ef833a1&quot;,&quot;title&quot;:&quot;I Just Might&quot;,&quot;artist&quot;:&quot;Bruno Mars&quot;,&quot;spotify&quot;:&quot;6f68Ac5tt5BQOpwr0BV9oN&quot;,&quot;repeat&quot;:63.7,&quot;score&quot;:null,&quot;hits&quot;:null,&quot;words&quot;:496,&quot;lex&quot;:17.1,&quot;verified&quot;:true,&quot;audio&quot;:[102.997,0.713,0.786],&quot;clips&quot;:[]},&quot;S_83732bf9f0c8f6cc&quot;:{&quot;id&quot;:&quot;S_83732bf9f0c8f6cc&quot;,&quot;title&quot;:&quot;Golden&quot;,&quot;artist&quot;:&quot;HUNTR/X | EJAE | AUDREY NUNA | REI AMI | KPop Demon Hunters Cast&quot;,&quot;spotify&quot;:&quot;1CPZ5BxNNd0n0nF4Orb9JS&quot;,&quot;repeat&quot;:42.6,&quot;score&quot;:[0.334,0.334,1.338,0.334,1.003,0.669,2.676,1.338],&quot;hits&quot;:[1,1,4,1,3,2,8,4],&quot;words&quot;:299,&quot;lex&quot;:11.0,&quot;verified&quot;:false,&quot;audio&quot;:[122.715,0.686,0.651],&quot;clips&quot;:[]},&quot;S_84c01d6dd4f36420&quot;:{&quot;id&quot;:&quot;S_84c01d6dd4f36420&quot;,&quot;title&quot;:&quot;Die For You&quot;,&quot;artist&quot;:&quot;The Weeknd&quot;,&quot;spotify&quot;:&quot;2LBqCSwhJGcFQeTHMVGwy3&quot;,&quot;repeat&quot;:57.4,&quot;score&quot;:[6.422,2.064,6.193,2.064,0.229,1.835,1.606,4.358],&quot;hits&quot;:[28,9,27,9,1,8,7,19],&quot;words&quot;:436,&quot;lex&quot;:20.0,&quot;verified&quot;:true,&quot;audio&quot;:[133.629,0.525,0.586],&quot;clips&quot;:[]},&quot;S_86dca814cdc6c250&quot;:{&quot;id&quot;:&quot;S_86dca814cdc6c250&quot;,&quot;title&quot;:&quot;太陽與地球&quot;,&quot;artist&quot;:&quot;Crowd Lu&quot;,&quot;spotify&quot;:&quot;0bQSWXtpau3VkNI1ZcXTQA&quot;,&quot;repeat&quot;:27.1,&quot;score&quot;:[2.51,0.837,0.837,0.418,1.674,2.51,3.347,3.766],&quot;hits&quot;:[6,2,2,1,4,6,8,9],&quot;words&quot;:239,&quot;lex&quot;:30.5,&quot;verified&quot;:false,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_87183ad7ac378e68&quot;:{&quot;id&quot;:&quot;S_87183ad7ac378e68&quot;,&quot;title&quot;:&quot;when the party&#x27;s over&quot;,&quot;artist&quot;:&quot;Billie Eilish&quot;,&quot;spotify&quot;:&quot;43zdsphuZLzwA9k4DJhU0I&quot;,&quot;repeat&quot;:50.3,&quot;score&quot;:[6.25,4.167,1.562,4.167,1.042,1.042,2.083,1.042],&quot;hits&quot;:[12,8,3,8,2,2,4,2],&quot;words&quot;:192,&quot;lex&quot;:13.0,&quot;verified&quot;:true,&quot;audio&quot;:[82.642,0.111,0.367],&quot;clips&quot;:[]},&quot;S_899be85250a5d328&quot;:{&quot;id&quot;:&quot;S_899be85250a5d328&quot;,&quot;title&quot;:&quot;The Fate of Ophelia&quot;,&quot;artist&quot;:&quot;Taylor Swift&quot;,&quot;spotify&quot;:&quot;53iuhJlwXhSER5J2IYYv1W&quot;,&quot;repeat&quot;:56.7,&quot;score&quot;:[2.179,1.961,2.179,1.089,0.0,2.832,2.832,1.525],&quot;hits&quot;:[10,9,10,5,0,13,13,7],&quot;words&quot;:459,&quot;lex&quot;:23.3,&quot;verified&quot;:true,&quot;audio&quot;:[123.921,0.598,0.726],&quot;clips&quot;:[]},&quot;S_8add7c8cd000b70b&quot;:{&quot;id&quot;:&quot;S_8add7c8cd000b70b&quot;,&quot;title&quot;:&quot;Roses - Imanbek Remix&quot;,&quot;artist&quot;:&quot;SAINt JHN | Imanbek&quot;,&quot;spotify&quot;:&quot;2Wo6QQD1KMDWeFkkjLqwx5&quot;,&quot;repeat&quot;:70.7,&quot;score&quot;:[0.0,1.255,0.837,0.837,0.418,0.837,0.837,2.092],&quot;hits&quot;:[0,6,4,4,2,4,4,10],&quot;words&quot;:478,&quot;lex&quot;:16.1,&quot;verified&quot;:false,&quot;audio&quot;:[121.962,0.721,0.785],&quot;clips&quot;:[]},&quot;S_8b2a9175aba31721&quot;:{&quot;id&quot;:&quot;S_8b2a9175aba31721&quot;,&quot;title&quot;:&quot;ブルーアンバー&quot;,&quot;artist&quot;:&quot;back number&quot;,&quot;spotify&quot;:&quot;35MeePbBnryubkVG0v8GbI&quot;,&quot;repeat&quot;:37.0,&quot;score&quot;:[3.93,0.0,2.62,0.0,0.0,0.873,0.437,0.437],&quot;hits&quot;:[9,0,6,0,0,2,1,1],&quot;words&quot;:229,&quot;lex&quot;:20.5,&quot;verified&quot;:false,&quot;audio&quot;:[76.91,0.594,0.483],&quot;clips&quot;:[]},&quot;S_8f218bb109bbcea6&quot;:{&quot;id&quot;:&quot;S_8f218bb109bbcea6&quot;,&quot;title&quot;:&quot;STAY (with Justin Bieber)&quot;,&quot;artist&quot;:&quot;The Kid LAROI,Justin Bieber&quot;,&quot;spotify&quot;:&quot;5HCyWlXZPP0y6Gqq8TgA20&quot;,&quot;repeat&quot;:66.8,&quot;score&quot;:[0.253,0.506,0.506,0.506,1.519,1.519,1.519,1.772],&quot;hits&quot;:[1,2,2,2,6,6,6,7],&quot;words&quot;:395,&quot;lex&quot;:13.2,&quot;verified&quot;:false,&quot;audio&quot;:[169.928,0.764,0.591],&quot;clips&quot;:[]},&quot;S_8fb702a417ac8617&quot;:{&quot;id&quot;:&quot;S_8fb702a417ac8617&quot;,&quot;title&quot;:&quot;ROCKSTAR (feat. Roddy Ricch)&quot;,&quot;artist&quot;:&quot;DaBaby | Roddy Ricch&quot;,&quot;spotify&quot;:&quot;7ytR5pFWmSjzHJIeQkgog4&quot;,&quot;repeat&quot;:43.1,&quot;score&quot;:[1.38,1.534,2.761,0.92,0.46,2.607,1.227,1.687],&quot;hits&quot;:[9,10,18,6,3,17,8,11],&quot;words&quot;:652,&quot;lex&quot;:20.2,&quot;verified&quot;:false,&quot;audio&quot;:[89.977,0.69,0.746],&quot;clips&quot;:[]},&quot;S_8fd7cd6137aedbff&quot;:{&quot;id&quot;:&quot;S_8fd7cd6137aedbff&quot;,&quot;title&quot;:&quot;good 4 u&quot;,&quot;artist&quot;:&quot;Olivia Rodrigo&quot;,&quot;spotify&quot;:&quot;4ZtFanR9U6ndgddUvNcjcG&quot;,&quot;repeat&quot;:56.0,&quot;score&quot;:[1.675,0.957,1.435,0.239,5.263,5.263,4.785,6.22],&quot;hits&quot;:[7,4,6,1,22,22,20,26],&quot;words&quot;:418,&quot;lex&quot;:17.7,&quot;verified&quot;:true,&quot;audio&quot;:[166.928,0.664,0.563],&quot;clips&quot;:[]},&quot;S_91ba624ccb73828f&quot;:{&quot;id&quot;:&quot;S_91ba624ccb73828f&quot;,&quot;title&quot;:&quot;Shape of You&quot;,&quot;artist&quot;:&quot;Ed Sheeran&quot;,&quot;spotify&quot;:&quot;7qiZfU4dY1lWllzX7mPBI3&quot;,&quot;repeat&quot;:66.5,&quot;score&quot;:[0.852,0.994,0.284,0.568,0.568,1.278,0.71,6.108],&quot;hits&quot;:[6,7,2,4,4,9,5,43],&quot;words&quot;:704,&quot;lex&quot;:22.6,&quot;verified&quot;:true,&quot;audio&quot;:[95.977,0.652,0.825],&quot;clips&quot;:[]},&quot;S_95743287fc292c6c&quot;:{&quot;id&quot;:&quot;S_95743287fc292c6c&quot;,&quot;title&quot;:&quot;在加納共和國離婚&quot;,&quot;artist&quot;:&quot;Firdhaus | DIOR 大穎&quot;,&quot;spotify&quot;:&quot;6GyUt7yJ0sOktc5HjvVnFh&quot;,&quot;repeat&quot;:56.0,&quot;score&quot;:[1.333,0.667,0.0,0.0,0.0,0.333,1.0,4.0],&quot;hits&quot;:[4,2,0,0,0,1,3,12],&quot;words&quot;:300,&quot;lex&quot;:16.0,&quot;verified&quot;:true,&quot;audio&quot;:[116.053,0.381,0.415],&quot;clips&quot;:[]},&quot;S_9a27a39800e5e7ad&quot;:{&quot;id&quot;:&quot;S_9a27a39800e5e7ad&quot;,&quot;title&quot;:&quot;Bling-Bang-Bang-Born&quot;,&quot;artist&quot;:&quot;Creepy Nuts&quot;,&quot;spotify&quot;:&quot;4LhDEsC2tzaVuZbWAaCLrP&quot;,&quot;repeat&quot;:47.5,&quot;score&quot;:[10.985,10.985,10.985,10.985,10.795,0.947,0.568,0.947],&quot;hits&quot;:[58,58,58,58,57,5,3,5],&quot;words&quot;:528,&quot;lex&quot;:14.6,&quot;verified&quot;:false,&quot;audio&quot;:[157.06,0.795,0.855],&quot;clips&quot;:[]},&quot;S_9a8a9f47da278f32&quot;:{&quot;id&quot;:&quot;S_9a8a9f47da278f32&quot;,&quot;title&quot;:&quot;Espresso&quot;,&quot;artist&quot;:&quot;Sabrina Carpenter&quot;,&quot;spotify&quot;:&quot;2HRqTpkrJO5ggZyyK6NPWz&quot;,&quot;repeat&quot;:65.3,&quot;score&quot;:[0.789,2.105,0.789,0.789,3.421,1.579,2.368,4.211],&quot;hits&quot;:[3,8,3,3,13,6,9,16],&quot;words&quot;:380,&quot;lex&quot;:22.1,&quot;verified&quot;:false,&quot;audio&quot;:[103.963,0.776,0.699],&quot;clips&quot;:[]},&quot;S_a05df3f1fe023688&quot;:{&quot;id&quot;:&quot;S_a05df3f1fe023688&quot;,&quot;title&quot;:&quot;白果&quot;,&quot;artist&quot;:&quot;Keung To&quot;,&quot;spotify&quot;:&quot;3RSo9nydGrGTIRz4WKhE66&quot;,&quot;repeat&quot;:43.6,&quot;score&quot;:null,&quot;hits&quot;:null,&quot;words&quot;:384,&quot;lex&quot;:0.8,&quot;verified&quot;:true,&quot;audio&quot;:[98.105,0.776,0.816],&quot;clips&quot;:[]},&quot;S_a0a258e03f595f46&quot;:{&quot;id&quot;:&quot;S_a0a258e03f595f46&quot;,&quot;title&quot;:&quot;Diário de um Cafajeste&quot;,&quot;artist&quot;:&quot;DJ Oreia|Mc Lele JP|MC Meno K|MC Ryan SP|MC Tuto|Mc Negão Original&quot;,&quot;spotify&quot;:&quot;6kaWah1Acn1dtNjAy6sm1p&quot;,&quot;repeat&quot;:42.2,&quot;score&quot;:[0.768,1.536,1.024,0.896,0.384,2.561,1.408,3.713],&quot;hits&quot;:[6,12,8,7,3,20,11,29],&quot;words&quot;:781,&quot;lex&quot;:26.0,&quot;verified&quot;:true,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_a5c5e4d09bf8d9a2&quot;:{&quot;id&quot;:&quot;S_a5c5e4d09bf8d9a2&quot;,&quot;title&quot;:&quot;I&#x27;m the One (feat. Justin Bieber, Quavo, Chance the Rapper &amp; Lil Wayne)&quot;,&quot;artist&quot;:&quot;DJ Khaled | Justin Bieber | Quavo | Chance the Rapper | Lil Wayne&quot;,&quot;spotify&quot;:&quot;3DXncPQOG4VBw3QHh3S817&quot;,&quot;repeat&quot;:59.5,&quot;score&quot;:[1.606,2.141,1.499,1.285,1.178,2.463,1.82,1.82],&quot;hits&quot;:[15,20,14,12,11,23,17,17],&quot;words&quot;:934,&quot;lex&quot;:13.4,&quot;verified&quot;:false,&quot;audio&quot;:[80.924,0.668,0.609],&quot;clips&quot;:[]},&quot;S_aa2b35c4865f65b3&quot;:{&quot;id&quot;:&quot;S_aa2b35c4865f65b3&quot;,&quot;title&quot;:&quot;Coração Partido (Corazón Partío) - Ao Vivo&quot;,&quot;artist&quot;:&quot;Grupo Menos É Mais&quot;,&quot;spotify&quot;:&quot;6Kyl2nFgU0J8WBlbBvDv6g&quot;,&quot;repeat&quot;:68.5,&quot;score&quot;:[4.37,1.542,2.314,0.514,0.514,0.0,0.0,0.0],&quot;hits&quot;:[17,6,9,2,2,0,0,0],&quot;words&quot;:389,&quot;lex&quot;:26.5,&quot;verified&quot;:false,&quot;audio&quot;:[160.03,0.756,0.651],&quot;clips&quot;:[]},&quot;S_aba97bd09600c8ed&quot;:{&quot;id&quot;:&quot;S_aba97bd09600c8ed&quot;,&quot;title&quot;:&quot;APT.&quot;,&quot;artist&quot;:&quot;ROSÉ | Bruno Mars&quot;,&quot;spotify&quot;:&quot;4wJ5Qq0jBN4ajy7ouZIV1c&quot;,&quot;repeat&quot;:68.4,&quot;score&quot;:null,&quot;hits&quot;:null,&quot;words&quot;:365,&quot;lex&quot;:0.0,&quot;verified&quot;:false,&quot;audio&quot;:[149.027,0.783,0.777],&quot;clips&quot;:[]},&quot;S_abb2d896c92887de&quot;:{&quot;id&quot;:&quot;S_abb2d896c92887de&quot;,&quot;title&quot;:&quot;Save Your Tears&quot;,&quot;artist&quot;:&quot;The Weeknd&quot;,&quot;spotify&quot;:&quot;5QO79kh1waicV47BqGRL3g&quot;,&quot;repeat&quot;:48.4,&quot;score&quot;:[3.346,0.372,1.115,0.0,0.372,4.461,1.115,4.833],&quot;hits&quot;:[9,1,3,0,1,12,3,13],&quot;words&quot;:269,&quot;lex&quot;:19.3,&quot;verified&quot;:true,&quot;audio&quot;:[118.049,0.825,0.679],&quot;clips&quot;:[]},&quot;S_abbcea919a71883c&quot;:{&quot;id&quot;:&quot;S_abbcea919a71883c&quot;,&quot;title&quot;:&quot;Old Town Road (feat. Billy Ray Cyrus) - Remix&quot;,&quot;artist&quot;:&quot;Lil Nas X | Billy Ray Cyrus&quot;,&quot;spotify&quot;:&quot;2YpeDb67231RjR0MgVLzsG&quot;,&quot;repeat&quot;:49.5,&quot;score&quot;:[0.322,1.286,0.322,0.0,0.322,2.894,0.322,0.965],&quot;hits&quot;:[1,4,1,0,1,9,1,3],&quot;words&quot;:311,&quot;lex&quot;:22.2,&quot;verified&quot;:false,&quot;audio&quot;:[136.041,0.619,0.878],&quot;clips&quot;:[]},&quot;S_acd53ff5c3649404&quot;:{&quot;id&quot;:&quot;S_acd53ff5c3649404&quot;,&quot;title&quot;:&quot;IRIS OUT&quot;,&quot;artist&quot;:&quot;Kenshi Yonezu&quot;,&quot;spotify&quot;:&quot;59hVbgr8rfYkDbHfr8RcGI&quot;,&quot;repeat&quot;:47.8,&quot;score&quot;:[3.175,0.397,3.175,0.397,0.397,8.73,0.0,7.54],&quot;hits&quot;:[8,1,8,1,1,22,0,19],&quot;words&quot;:252,&quot;lex&quot;:21.0,&quot;verified&quot;:false,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_ae7d139a79da518b&quot;:{&quot;id&quot;:&quot;S_ae7d139a79da518b&quot;,&quot;title&quot;:&quot;Soranji&quot;,&quot;artist&quot;:&quot;Mrs. GREEN APPLE&quot;,&quot;spotify&quot;:&quot;3YML5IHoqWbw9c9vJJvrvM&quot;,&quot;repeat&quot;:39.7,&quot;score&quot;:[6.234,0.779,4.675,0.26,0.0,0.26,1.299,0.779],&quot;hits&quot;:[24,3,18,1,0,1,5,3],&quot;words&quot;:385,&quot;lex&quot;:18.7,&quot;verified&quot;:false,&quot;audio&quot;:[155.89,0.669,0.48],&quot;clips&quot;:[]},&quot;S_b1830b9cf63fd955&quot;:{&quot;id&quot;:&quot;S_b1830b9cf63fd955&quot;,&quot;title&quot;:&quot;Gosta De Rua - Ao Vivo&quot;,&quot;artist&quot;:&quot;Felipe e Rodrigo&quot;,&quot;spotify&quot;:&quot;4VNRWHoiKHZJIoQHPbmJIv&quot;,&quot;repeat&quot;:68.6,&quot;score&quot;:[1.12,1.681,0.0,1.681,1.12,0.0,0.0,0.56],&quot;hits&quot;:[4,6,0,6,4,0,0,2],&quot;words&quot;:357,&quot;lex&quot;:29.4,&quot;verified&quot;:true,&quot;audio&quot;:[106.064,0.893,0.675],&quot;clips&quot;:[]},&quot;S_b23ecda9b388b9d0&quot;:{&quot;id&quot;:&quot;S_b23ecda9b388b9d0&quot;,&quot;title&quot;:&quot;Blank Space&quot;,&quot;artist&quot;:&quot;Taylor Swift&quot;,&quot;spotify&quot;:&quot;1u8c2t2Cy7UBoG4ArRcF5g&quot;,&quot;repeat&quot;:50.9,&quot;score&quot;:[4.633,5.792,6.757,2.896,1.737,2.124,3.668,3.861],&quot;hits&quot;:[24,30,35,15,9,11,19,20],&quot;words&quot;:518,&quot;lex&quot;:23.7,&quot;verified&quot;:true,&quot;audio&quot;:[95.997,0.703,0.76],&quot;clips&quot;:[]},&quot;S_b43a40b65fea0975&quot;:{&quot;id&quot;:&quot;S_b43a40b65fea0975&quot;,&quot;title&quot;:&quot;HUMBLE.&quot;,&quot;artist&quot;:&quot;Kendrick Lamar&quot;,&quot;spotify&quot;:&quot;7KXjTSCq5nL1LoYtL7XAwS&quot;,&quot;repeat&quot;:52.3,&quot;score&quot;:[9.833,6.167,6.5,8.5,0.667,1.167,0.5,0.5],&quot;hits&quot;:[59,37,39,51,4,7,3,3],&quot;words&quot;:600,&quot;lex&quot;:19.3,&quot;verified&quot;:false,&quot;audio&quot;:[150.011,0.621,0.908],&quot;clips&quot;:[]},&quot;S_b5733efce767dd8b&quot;:{&quot;id&quot;:&quot;S_b5733efce767dd8b&quot;,&quot;title&quot;:&quot;Reliquia do 2T&quot;,&quot;artist&quot;:&quot;DJ Gu|MC Vine7|MC Tuto|MC Joãozinho VT|Mc Dkziin|MC Fr da Norte&quot;,&quot;spotify&quot;:&quot;6n9JMoXkXu4lDOu1k6MRpy&quot;,&quot;repeat&quot;:39.7,&quot;score&quot;:[2.159,0.27,0.81,0.54,0.405,1.754,3.779,3.104],&quot;hits&quot;:[16,2,6,4,3,13,28,23],&quot;words&quot;:741,&quot;lex&quot;:29.3,&quot;verified&quot;:true,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_b6b1329c33d38ccc&quot;:{&quot;id&quot;:&quot;S_b6b1329c33d38ccc&quot;,&quot;title&quot;:&quot;Locked out of Heaven&quot;,&quot;artist&quot;:&quot;Bruno Mars&quot;,&quot;spotify&quot;:&quot;5g7sDjBhZ4I3gcFIpkrLuI&quot;,&quot;repeat&quot;:65.2,&quot;score&quot;:[0.305,0.305,0.61,0.305,0.0,1.524,5.793,1.829],&quot;hits&quot;:[1,1,2,1,0,5,19,6],&quot;words&quot;:328,&quot;lex&quot;:16.5,&quot;verified&quot;:false,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_b895cf2b23a7218a&quot;:{&quot;id&quot;:&quot;S_b895cf2b23a7218a&quot;,&quot;title&quot;:&quot;Ordinary&quot;,&quot;artist&quot;:&quot;Alex Warren&quot;,&quot;spotify&quot;:&quot;2RkZ5LkEzeHGRsmDqKwmaJ&quot;,&quot;repeat&quot;:54.5,&quot;score&quot;:[2.557,2.557,2.557,2.557,1.136,6.534,3.125,4.83],&quot;hits&quot;:[9,9,9,9,4,23,11,17],&quot;words&quot;:352,&quot;lex&quot;:23.6,&quot;verified&quot;:true,&quot;audio&quot;:[168.115,0.694,0.368],&quot;clips&quot;:[]},&quot;S_b9dea268aada633c&quot;:{&quot;id&quot;:&quot;S_b9dea268aada633c&quot;,&quot;title&quot;:&quot;Die With A Smile&quot;,&quot;artist&quot;:&quot;Lady Gaga | Bruno Mars&quot;,&quot;spotify&quot;:&quot;2plbrEY59IikOBgBGLjaoe&quot;,&quot;repeat&quot;:60.1,&quot;score&quot;:[1.695,1.017,1.356,0.339,1.356,1.017,1.695,1.695],&quot;hits&quot;:[5,3,4,1,4,3,5,5],&quot;words&quot;:295,&quot;lex&quot;:18.0,&quot;verified&quot;:true,&quot;audio&quot;:[157.969,0.592,0.521],&quot;clips&quot;:[]},&quot;S_ba083e0682e09cc9&quot;:{&quot;id&quot;:&quot;S_ba083e0682e09cc9&quot;,&quot;title&quot;:&quot;I Need You In My Li(f)e (ViuTV劇集 「無用的謊言」主題曲)&quot;,&quot;artist&quot;:&quot;Keung To&quot;,&quot;spotify&quot;:&quot;31DFL3AiVPjGUAnSlEHTyK&quot;,&quot;repeat&quot;:45.7,&quot;score&quot;:[3.548,0.968,1.613,0.645,0.0,1.613,0.645,1.29],&quot;hits&quot;:[11,3,5,2,0,5,2,4],&quot;words&quot;:310,&quot;lex&quot;:20.6,&quot;verified&quot;:true,&quot;audio&quot;:[89.988,0.764,0.635],&quot;clips&quot;:[]},&quot;S_bc0e299e99cfb161&quot;:{&quot;id&quot;:&quot;S_bc0e299e99cfb161&quot;,&quot;title&quot;:&quot;LUNCH&quot;,&quot;artist&quot;:&quot;Billie Eilish&quot;,&quot;spotify&quot;:&quot;629DixmZGHc7ILtEntuiWE&quot;,&quot;repeat&quot;:38.9,&quot;score&quot;:[0.318,0.0,0.637,0.318,0.637,1.274,1.592,1.592],&quot;hits&quot;:[1,0,2,1,2,4,5,5],&quot;words&quot;:314,&quot;lex&quot;:15.0,&quot;verified&quot;:false,&quot;audio&quot;:[124.987,0.4,0.893],&quot;clips&quot;:[]},&quot;S_bd7572c649f704a3&quot;:{&quot;id&quot;:&quot;S_bd7572c649f704a3&quot;,&quot;title&quot;:&quot;Love Me Again&quot;,&quot;artist&quot;:&quot;V&quot;,&quot;spotify&quot;:&quot;2N0SPREDYqILVEFSsWF5N5&quot;,&quot;repeat&quot;:54.5,&quot;score&quot;:null,&quot;hits&quot;:null,&quot;words&quot;:239,&quot;lex&quot;:2.1,&quot;verified&quot;:true,&quot;audio&quot;:[74.029,0.607,0.633],&quot;clips&quot;:[]},&quot;S_be685942bd3d5f65&quot;:{&quot;id&quot;:&quot;S_be685942bd3d5f65&quot;,&quot;title&quot;:&quot;Psycho (feat. Ty Dolla $ign)&quot;,&quot;artist&quot;:&quot;Post Malone | Ty Dolla $ign&quot;,&quot;spotify&quot;:&quot;3swc6WTsr7rl9DqQKQA55C&quot;,&quot;repeat&quot;:50.5,&quot;score&quot;:[1.498,3.184,1.498,2.622,0.375,4.494,1.124,1.498],&quot;hits&quot;:[8,17,8,14,2,24,6,8],&quot;words&quot;:534,&quot;lex&quot;:18.4,&quot;verified&quot;:false,&quot;audio&quot;:[140.06,0.56,0.75],&quot;clips&quot;:[]},&quot;S_c170284bc4351ad3&quot;:{&quot;id&quot;:&quot;S_c170284bc4351ad3&quot;,&quot;title&quot;:&quot;Better Man&quot;,&quot;artist&quot;:&quot;Keung To&quot;,&quot;spotify&quot;:&quot;687XL0vOW03rpY24lpAoTT&quot;,&quot;repeat&quot;:null,&quot;score&quot;:null,&quot;hits&quot;:null,&quot;words&quot;:0,&quot;lex&quot;:0.0,&quot;verified&quot;:false,&quot;audio&quot;:[125.971,0.849,0.755],&quot;clips&quot;:[]},&quot;S_c30dae348236c15c&quot;:{&quot;id&quot;:&quot;S_c30dae348236c15c&quot;,&quot;title&quot;:&quot;Cruel Summer&quot;,&quot;artist&quot;:&quot;Taylor Swift&quot;,&quot;spotify&quot;:&quot;1BxfuPKGuaTgP7aM0Bbdwr&quot;,&quot;repeat&quot;:54.1,&quot;score&quot;:[4.535,3.341,3.819,3.103,0.716,2.625,2.148,2.864],&quot;hits&quot;:[19,14,16,13,3,11,9,12],&quot;words&quot;:419,&quot;lex&quot;:22.2,&quot;verified&quot;:false,&quot;audio&quot;:[169.994,0.702,0.552],&quot;clips&quot;:[]},&quot;S_c61aaf5da264a009&quot;:{&quot;id&quot;:&quot;S_c61aaf5da264a009&quot;,&quot;title&quot;:&quot;lulu.&quot;,&quot;artist&quot;:&quot;Mrs. GREEN APPLE&quot;,&quot;spotify&quot;:&quot;0vE1WglBbhmd5wDO49lcih&quot;,&quot;repeat&quot;:42.1,&quot;score&quot;:[3.089,0.772,2.703,0.0,0.0,0.772,0.0,0.772],&quot;hits&quot;:[8,2,7,0,0,2,0,2],&quot;words&quot;:259,&quot;lex&quot;:14.7,&quot;verified&quot;:false,&quot;audio&quot;:[87.545,0.771,0.497],&quot;clips&quot;:[]},&quot;S_c8335976a9325231&quot;:{&quot;id&quot;:&quot;S_c8335976a9325231&quot;,&quot;title&quot;:&quot;Beautiful Things&quot;,&quot;artist&quot;:&quot;Benson Boone&quot;,&quot;spotify&quot;:&quot;3xkHsmpQCBMytMJNiDf3Ii&quot;,&quot;repeat&quot;:38.3,&quot;score&quot;:[1.569,1.569,3.529,1.569,2.353,4.706,4.314,7.059],&quot;hits&quot;:[4,4,9,4,6,12,11,18],&quot;words&quot;:255,&quot;lex&quot;:17.3,&quot;verified&quot;:false,&quot;audio&quot;:[105.029,0.471,0.472],&quot;clips&quot;:[]},&quot;S_c8c0d775d7d57a93&quot;:{&quot;id&quot;:&quot;S_c8c0d775d7d57a93&quot;,&quot;title&quot;:&quot;離開的一路上&quot;,&quot;artist&quot;:&quot;Bestards&quot;,&quot;spotify&quot;:&quot;1NoDTQhJsrd5rnpb6PQthK&quot;,&quot;repeat&quot;:49.6,&quot;score&quot;:[3.488,0.0,0.0,0.0,0.0,0.388,0.388,5.814],&quot;hits&quot;:[9,0,0,0,0,1,1,15],&quot;words&quot;:258,&quot;lex&quot;:32.2,&quot;verified&quot;:true,&quot;audio&quot;:[126.026,0.506,0.597],&quot;clips&quot;:[]},&quot;S_cd256a5cee09bc5b&quot;:{&quot;id&quot;:&quot;S_cd256a5cee09bc5b&quot;,&quot;title&quot;:&quot;Die For You (with Ariana Grande) - Remix&quot;,&quot;artist&quot;:&quot;The Weeknd&quot;,&quot;spotify&quot;:&quot;4W4fNrZYkobj539TOWsLO2&quot;,&quot;repeat&quot;:57.4,&quot;score&quot;:[6.422,2.064,6.193,2.064,0.229,1.835,1.606,4.358],&quot;hits&quot;:[28,9,27,9,1,8,7,19],&quot;words&quot;:436,&quot;lex&quot;:20.0,&quot;verified&quot;:true,&quot;audio&quot;:[66.961,0.485,0.568],&quot;clips&quot;:[]},&quot;S_cedb53e14c2dc2f5&quot;:{&quot;id&quot;:&quot;S_cedb53e14c2dc2f5&quot;,&quot;title&quot;:&quot;Flowers&quot;,&quot;artist&quot;:&quot;Miley Cyrus&quot;,&quot;spotify&quot;:&quot;7DSAEUvxU8FajXtRloy8M0&quot;,&quot;repeat&quot;:64.9,&quot;score&quot;:[2.695,0.898,0.599,0.299,1.198,0.599,0.299,9.581],&quot;hits&quot;:[9,3,2,1,4,2,1,32],&quot;words&quot;:334,&quot;lex&quot;:23.1,&quot;verified&quot;:false,&quot;audio&quot;:[118.048,0.691,0.706],&quot;clips&quot;:[]},&quot;S_cf49af8c1d644b43&quot;:{&quot;id&quot;:&quot;S_cf49af8c1d644b43&quot;,&quot;title&quot;:&quot;WILDFLOWER&quot;,&quot;artist&quot;:&quot;Billie Eilish&quot;,&quot;spotify&quot;:&quot;3QaPy1KgI7nu9FJEQUgn6h&quot;,&quot;repeat&quot;:42.8,&quot;score&quot;:[1.887,1.258,2.201,0.0,0.629,2.516,4.088,3.774],&quot;hits&quot;:[6,4,7,0,2,8,13,12],&quot;words&quot;:318,&quot;lex&quot;:20.4,&quot;verified&quot;:false,&quot;audio&quot;:[148.101,0.247,0.467],&quot;clips&quot;:[]},&quot;S_d25507b7216769fd&quot;:{&quot;id&quot;:&quot;S_d25507b7216769fd&quot;,&quot;title&quot;:&quot;好得太過份&quot;,&quot;artist&quot;:&quot;Keung To&quot;,&quot;spotify&quot;:&quot;1jQE96DjtfpWGjSqK6Gfnr&quot;,&quot;repeat&quot;:5.8,&quot;score&quot;:[2.646,1.058,1.587,0.529,0.529,1.058,0.529,2.646],&quot;hits&quot;:[5,2,3,1,1,2,1,5],&quot;words&quot;:189,&quot;lex&quot;:26.5,&quot;verified&quot;:true,&quot;audio&quot;:[129.598,0.451,0.659],&quot;clips&quot;:[]},&quot;S_d42e64e0e1b8dfe0&quot;:{&quot;id&quot;:&quot;S_d42e64e0e1b8dfe0&quot;,&quot;title&quot;:&quot;Tubarões - Ao Vivo&quot;,&quot;artist&quot;:&quot;Diego &amp; Victor Hugo&quot;,&quot;spotify&quot;:&quot;6tUdNbB9aYbX0sUDXOzX1u&quot;,&quot;repeat&quot;:52.1,&quot;score&quot;:[0.0,0.851,0.851,0.0,0.0,0.0,0.0,3.404],&quot;hits&quot;:[0,2,2,0,0,0,0,8],&quot;words&quot;:235,&quot;lex&quot;:22.6,&quot;verified&quot;:true,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_d5fc640db4a024c6&quot;:{&quot;id&quot;:&quot;S_d5fc640db4a024c6&quot;,&quot;title&quot;:&quot;Risk It All&quot;,&quot;artist&quot;:&quot;Bruno Mars&quot;,&quot;spotify&quot;:&quot;5y2ijHECwFYWqcAHKTZgzD&quot;,&quot;repeat&quot;:47.9,&quot;score&quot;:[1.914,1.914,5.742,0.0,0.478,2.392,4.785,2.392],&quot;hits&quot;:[4,4,12,0,1,5,10,5],&quot;words&quot;:209,&quot;lex&quot;:23.4,&quot;verified&quot;:true,&quot;audio&quot;:[171.804,0.347,0.401],&quot;clips&quot;:[]},&quot;S_d6a1c426cc63586e&quot;:{&quot;id&quot;:&quot;S_d6a1c426cc63586e&quot;,&quot;title&quot;:&quot;back to friends&quot;,&quot;artist&quot;:&quot;sombr&quot;,&quot;spotify&quot;:&quot;7qjZnBKE73H4Oxkopwulqe&quot;,&quot;repeat&quot;:50.7,&quot;score&quot;:[1.047,2.094,1.047,1.047,0.524,1.047,1.047,1.047],&quot;hits&quot;:[2,4,2,2,1,2,2,2],&quot;words&quot;:191,&quot;lex&quot;:14.1,&quot;verified&quot;:true,&quot;audio&quot;:[92.855,0.723,0.436],&quot;clips&quot;:[]},&quot;S_d7ec1ce6ccbf9117&quot;:{&quot;id&quot;:&quot;S_d7ec1ce6ccbf9117&quot;,&quot;title&quot;:&quot;Seven (feat. Latto) (Explicit Ver.)&quot;,&quot;artist&quot;:&quot;Jung Kook&quot;,&quot;spotify&quot;:&quot;7x9aauaA9cu6tyfpHnqDLo&quot;,&quot;repeat&quot;:60.0,&quot;score&quot;:[0.581,0.581,0.388,0.194,1.357,0.969,0.969,1.55],&quot;hits&quot;:[3,3,2,1,7,5,5,8],&quot;words&quot;:516,&quot;lex&quot;:19.6,&quot;verified&quot;:false,&quot;audio&quot;:[124.986,0.841,0.788],&quot;clips&quot;:[]},&quot;S_dc90506caf76b125&quot;:{&quot;id&quot;:&quot;S_dc90506caf76b125&quot;,&quot;title&quot;:&quot;I Don&#x27;t Care (with Justin Bieber)&quot;,&quot;artist&quot;:&quot;Ed Sheeran &amp; Justin Bieber | Justin Bieber&quot;,&quot;spotify&quot;:&quot;0hVXuCcriWRGvwMV1r5Yn9&quot;,&quot;repeat&quot;:58.6,&quot;score&quot;:[2.814,2.814,3.565,2.251,1.501,1.501,2.064,3.752],&quot;hits&quot;:[15,15,19,12,8,8,11,20],&quot;words&quot;:533,&quot;lex&quot;:15.6,&quot;verified&quot;:true,&quot;audio&quot;:[101.956,0.676,0.798],&quot;clips&quot;:[]},&quot;S_dd74b893ce146ae7&quot;:{&quot;id&quot;:&quot;S_dd74b893ce146ae7&quot;,&quot;title&quot;:&quot;岩巉&quot;,&quot;artist&quot;:&quot;Keung To&quot;,&quot;spotify&quot;:&quot;4ja627NyIBCz7wO2dYr83g&quot;,&quot;repeat&quot;:23.6,&quot;score&quot;:[1.13,0.0,0.565,0.0,0.565,2.825,2.26,2.825],&quot;hits&quot;:[2,0,1,0,1,5,4,5],&quot;words&quot;:177,&quot;lex&quot;:24.9,&quot;verified&quot;:true,&quot;audio&quot;:[141.313,0.306,0.52],&quot;clips&quot;:[]},&quot;S_deed2c0462d62abf&quot;:{&quot;id&quot;:&quot;S_deed2c0462d62abf&quot;,&quot;title&quot;:&quot;濤&quot;,&quot;artist&quot;:&quot;Keung To&quot;,&quot;spotify&quot;:&quot;1xRMtDxiU8xxAlaDscHIoT&quot;,&quot;repeat&quot;:46.1,&quot;score&quot;:[0.0,0.0,1.299,0.0,0.0,1.299,0.0,0.0],&quot;hits&quot;:[0,0,4,0,0,4,0,0],&quot;words&quot;:308,&quot;lex&quot;:28.2,&quot;verified&quot;:true,&quot;audio&quot;:[173.901,0.803,0.493],&quot;clips&quot;:[]},&quot;S_e0ead34d65f115c1&quot;:{&quot;id&quot;:&quot;S_e0ead34d65f115c1&quot;,&quot;title&quot;:&quot;你要倔強&quot;,&quot;artist&quot;:&quot;Keung To&quot;,&quot;spotify&quot;:&quot;4vGg44GdCw3X8i8r01XJH0&quot;,&quot;repeat&quot;:24.3,&quot;score&quot;:[1.754,2.105,4.211,2.105,0.702,1.404,1.404,2.105],&quot;hits&quot;:[5,6,12,6,2,4,4,6],&quot;words&quot;:285,&quot;lex&quot;:24.6,&quot;verified&quot;:false,&quot;audio&quot;:[179.026,0.61,0.408],&quot;clips&quot;:[]},&quot;S_e20d0d429a48b3ff&quot;:{&quot;id&quot;:&quot;S_e20d0d429a48b3ff&quot;,&quot;title&quot;:&quot;everything i wanted&quot;,&quot;artist&quot;:&quot;Billie Eilish&quot;,&quot;spotify&quot;:&quot;3ZCTVFBt2Brf31RLEnCkWJ&quot;,&quot;repeat&quot;:46.8,&quot;score&quot;:[1.592,2.548,2.548,1.274,0.318,0.955,1.911,0.637],&quot;hits&quot;:[5,8,8,4,1,3,6,2],&quot;words&quot;:314,&quot;lex&quot;:13.1,&quot;verified&quot;:true,&quot;audio&quot;:[120.006,0.225,0.704],&quot;clips&quot;:[]},&quot;S_e211c9f4b81b5d5a&quot;:{&quot;id&quot;:&quot;S_e211c9f4b81b5d5a&quot;,&quot;title&quot;:&quot;MONTERO (Call Me By Your Name)&quot;,&quot;artist&quot;:&quot;Lil Nas X&quot;,&quot;spotify&quot;:&quot;1SC5rEoYDGUK4NfG82494W&quot;,&quot;repeat&quot;:41.4,&quot;score&quot;:[2.362,1.837,1.837,1.312,1.05,1.312,2.1,2.625],&quot;hits&quot;:[9,7,7,5,4,5,8,10],&quot;words&quot;:381,&quot;lex&quot;:19.4,&quot;verified&quot;:true,&quot;audio&quot;:[178.781,0.503,0.593],&quot;clips&quot;:[]},&quot;S_e619b50b875ef287&quot;:{&quot;id&quot;:&quot;S_e619b50b875ef287&quot;,&quot;title&quot;:&quot;流浪星球&quot;,&quot;artist&quot;:&quot;Keung To&quot;,&quot;spotify&quot;:&quot;488VGW7rB8QDomlqoMlpbo&quot;,&quot;repeat&quot;:37.0,&quot;score&quot;:[1.976,1.976,2.767,2.767,0.0,0.791,0.791,0.0],&quot;hits&quot;:[5,5,7,7,0,2,2,0],&quot;words&quot;:253,&quot;lex&quot;:21.7,&quot;verified&quot;:true,&quot;audio&quot;:[124.113,0.377,0.459],&quot;clips&quot;:[{&quot;id&quot;:&quot;L_34068544_dc13ea6d3ac0_0033&quot;,&quot;no&quot;:33,&quot;text&quot;:&quot;流浪孤獨星球&quot;,&quot;before&quot;:false,&quot;after&quot;:false,&quot;tokens&quot;:[[2,4,[&quot;sadness&quot;],false]]}]},&quot;S_e6b2e7103759aa34&quot;:{&quot;id&quot;:&quot;S_e6b2e7103759aa34&quot;,&quot;title&quot;:&quot;drivers license&quot;,&quot;artist&quot;:&quot;Olivia Rodrigo&quot;,&quot;spotify&quot;:&quot;5wANPM4fQCJwkGd4rN57mH&quot;,&quot;repeat&quot;:48.5,&quot;score&quot;:[1.087,0.272,1.087,0.272,1.359,1.902,1.63,2.717],&quot;hits&quot;:[4,1,4,1,5,7,6,10],&quot;words&quot;:368,&quot;lex&quot;:16.3,&quot;verified&quot;:true,&quot;audio&quot;:[143.875,0.431,0.561],&quot;clips&quot;:[]},&quot;S_e6c33a3257c3e643&quot;:{&quot;id&quot;:&quot;S_e6c33a3257c3e643&quot;,&quot;title&quot;:&quot;Don’t Say You Love Me&quot;,&quot;artist&quot;:&quot;Jin&quot;,&quot;spotify&quot;:&quot;27xkOIER6uDLKALIelHylZ&quot;,&quot;repeat&quot;:54.1,&quot;score&quot;:[4.844,2.076,3.46,1.038,1.038,1.384,2.076,2.768],&quot;hits&quot;:[14,6,10,3,3,4,6,8],&quot;words&quot;:289,&quot;lex&quot;:13.5,&quot;verified&quot;:true,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_e7052c0b8098892b&quot;:{&quot;id&quot;:&quot;S_e7052c0b8098892b&quot;,&quot;title&quot;:&quot;Ella Baila Sola&quot;,&quot;artist&quot;:&quot;Eslabon Armado&quot;,&quot;spotify&quot;:&quot;3dnP0JxCgygwQH9Gm7q7nb&quot;,&quot;repeat&quot;:10.4,&quot;score&quot;:[0.0,0.654,1.307,0.0,0.0,1.307,0.654,0.654],&quot;hits&quot;:[0,1,2,0,0,2,1,1],&quot;words&quot;:153,&quot;lex&quot;:14.4,&quot;verified&quot;:false,&quot;audio&quot;:[147.989,0.758,0.668],&quot;clips&quot;:[]},&quot;S_eac174677ae9d480&quot;:{&quot;id&quot;:&quot;S_eac174677ae9d480&quot;,&quot;title&quot;:&quot;晩餐歌 - Bansanka&quot;,&quot;artist&quot;:&quot;tuki.&quot;,&quot;spotify&quot;:&quot;075HUD50Nuea3rNaABIsNZ&quot;,&quot;repeat&quot;:61.5,&quot;score&quot;:[2.273,0.0,2.273,0.0,0.0,0.284,0.0,0.852],&quot;hits&quot;:[8,0,8,0,0,1,0,3],&quot;words&quot;:352,&quot;lex&quot;:13.9,&quot;verified&quot;:false,&quot;audio&quot;:[103.008,0.625,0.636],&quot;clips&quot;:[]},&quot;S_ef00234174133933&quot;:{&quot;id&quot;:&quot;S_ef00234174133933&quot;,&quot;title&quot;:&quot;特別的人&quot;,&quot;artist&quot;:&quot;Khalil Fong&quot;,&quot;spotify&quot;:&quot;0VTzUEuHYD8s7CgQ15cDPo&quot;,&quot;repeat&quot;:50.6,&quot;score&quot;:[1.075,0.0,0.358,0.358,1.075,0.358,1.075,3.584],&quot;hits&quot;:[3,0,1,1,3,1,3,10],&quot;words&quot;:279,&quot;lex&quot;:30.1,&quot;verified&quot;:true,&quot;audio&quot;:[139.987,0.488,0.563],&quot;clips&quot;:[]},&quot;S_ef4ac717b1b1a234&quot;:{&quot;id&quot;:&quot;S_ef4ac717b1b1a234&quot;,&quot;title&quot;:&quot;Jumping Machine (跳楼机)&quot;,&quot;artist&quot;:&quot;LBI利比&quot;,&quot;spotify&quot;:&quot;1XZE0InCx3SdCnLpVsPpZl&quot;,&quot;repeat&quot;:38.6,&quot;score&quot;:[0.567,0.567,0.567,0.0,1.133,0.283,0.0,2.55],&quot;hits&quot;:[2,2,2,0,4,1,0,9],&quot;words&quot;:353,&quot;lex&quot;:22.4,&quot;verified&quot;:true,&quot;audio&quot;:[127.939,0.53,0.605],&quot;clips&quot;:[]},&quot;S_ef805a5c72d4c191&quot;:{&quot;id&quot;:&quot;S_ef805a5c72d4c191&quot;,&quot;title&quot;:&quot;Seven (feat. Latto) (Explicit Ver.)&quot;,&quot;artist&quot;:&quot;Jung Kook | Latto&quot;,&quot;spotify&quot;:&quot;2HRgqmZQC0MC7GeNuDIXHN&quot;,&quot;repeat&quot;:60.8,&quot;score&quot;:[0.626,0.418,0.418,0.209,1.461,1.044,1.044,1.67],&quot;hits&quot;:[3,2,2,1,7,5,5,8],&quot;words&quot;:479,&quot;lex&quot;:20.9,&quot;verified&quot;:false,&quot;audio&quot;:[124.987,0.831,0.79],&quot;clips&quot;:[]},&quot;S_efbe0ae796e439b6&quot;:{&quot;id&quot;:&quot;S_efbe0ae796e439b6&quot;,&quot;title&quot;:&quot;用背脊唱情歌&quot;,&quot;artist&quot;:&quot;Gareth.T&quot;,&quot;spotify&quot;:&quot;1jQp4mCBDmXr8NMqsMpH8E&quot;,&quot;repeat&quot;:22.9,&quot;score&quot;:[2.679,2.232,1.786,0.893,0.0,1.786,0.893,1.339],&quot;hits&quot;:[6,5,4,2,0,4,2,3],&quot;words&quot;:224,&quot;lex&quot;:14.7,&quot;verified&quot;:true,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_efd89a693488015b&quot;:{&quot;id&quot;:&quot;S_efd89a693488015b&quot;,&quot;title&quot;:&quot;ダンスホール&quot;,&quot;artist&quot;:&quot;Mrs. GREEN APPLE&quot;,&quot;spotify&quot;:&quot;4QIKSlDV5YIjr0kqT1Ad32&quot;,&quot;repeat&quot;:39.6,&quot;score&quot;:[0.722,0.0,0.722,0.0,0.722,4.332,0.361,6.137],&quot;hits&quot;:[2,0,2,0,2,12,1,17],&quot;words&quot;:277,&quot;lex&quot;:21.3,&quot;verified&quot;:true,&quot;audio&quot;:[109.974,0.726,0.735],&quot;clips&quot;:[]},&quot;S_f756cbbbaaec2f70&quot;:{&quot;id&quot;:&quot;S_f756cbbbaaec2f70&quot;,&quot;title&quot;:&quot;ライラック&quot;,&quot;artist&quot;:&quot;Mrs. GREEN APPLE&quot;,&quot;spotify&quot;:&quot;21VsLvoE7elUmJZLSawaMh&quot;,&quot;repeat&quot;:30.6,&quot;score&quot;:[4.038,2.138,4.038,1.663,0.0,1.188,0.713,1.425],&quot;hits&quot;:[17,9,17,7,0,5,3,6],&quot;words&quot;:421,&quot;lex&quot;:17.6,&quot;verified&quot;:false,&quot;audio&quot;:[149.966,0.787,0.534],&quot;clips&quot;:[]},&quot;S_f95f349d4f5ee474&quot;:{&quot;id&quot;:&quot;S_f95f349d4f5ee474&quot;,&quot;title&quot;:&quot;Carnívoro&quot;,&quot;artist&quot;:&quot;Mc Jacaré|Mc Lele JP|Mc Negão Original|DJ Japa NK&quot;,&quot;spotify&quot;:&quot;65aH3l8LEmRp3HuH5XpKoH&quot;,&quot;repeat&quot;:45.0,&quot;score&quot;:[1.071,0.214,1.285,0.0,1.713,0.0,0.428,4.069],&quot;hits&quot;:[5,1,6,0,8,0,2,19],&quot;words&quot;:467,&quot;lex&quot;:31.0,&quot;verified&quot;:true,&quot;audio&quot;:null,&quot;clips&quot;:[]},&quot;S_fc0db9848f9fd295&quot;:{&quot;id&quot;:&quot;S_fc0db9848f9fd295&quot;,&quot;title&quot;:&quot;BIRDS OF A FEATHER&quot;,&quot;artist&quot;:&quot;Billie Eilish&quot;,&quot;spotify&quot;:&quot;6dOtVTDdiauQNBQEDOtlAB&quot;,&quot;repeat&quot;:41.7,&quot;score&quot;:[3.754,0.683,4.096,1.024,0.683,0.341,0.683,2.73],&quot;hits&quot;:[11,2,12,3,2,1,2,8],&quot;words&quot;:293,&quot;lex&quot;:16.7,&quot;verified&quot;:false,&quot;audio&quot;:[104.978,0.507,0.747],&quot;clips&quot;:[]},&quot;S_fde2f3b11005f043&quot;:{&quot;id&quot;:&quot;S_fde2f3b11005f043&quot;,&quot;title&quot;:&quot;Babydoll&quot;,&quot;artist&quot;:&quot;Dominic Fike&quot;,&quot;spotify&quot;:&quot;7yNf9YjeO5JXUE3JEBgnYc&quot;,&quot;repeat&quot;:32.2,&quot;score&quot;:[0.629,0.629,0.0,0.629,1.258,1.887,1.887,0.629],&quot;hits&quot;:[1,1,0,1,2,3,3,1],&quot;words&quot;:159,&quot;lex&quot;:17.6,&quot;verified&quot;:false,&quot;audio&quot;:[168.007,0.604,0.762],&quot;clips&quot;:[]},&quot;S_ff64e5e2502f3660&quot;:{&quot;id&quot;:&quot;S_ff64e5e2502f3660&quot;,&quot;title&quot;:&quot;Anti-Hero&quot;,&quot;artist&quot;:&quot;Taylor Swift&quot;,&quot;spotify&quot;:&quot;0V3wPSX9ygBnCm8psDIegu&quot;,&quot;repeat&quot;:44.0,&quot;score&quot;:[2.976,1.488,4.167,1.19,2.381,3.274,3.869,3.571],&quot;hits&quot;:[10,5,14,4,8,11,13,12],&quot;words&quot;:336,&quot;lex&quot;:22.3,&quot;verified&quot;:true,&quot;audio&quot;:[96.888,0.648,0.633],&quot;clips&quot;:[]}},&quot;clips&quot;:[&quot;S_787209a25be878f2&quot;,&quot;S_e619b50b875ef287&quot;,&quot;S_50f08eb40281ae1e&quot;],&quot;artists&quot;:{&quot;The Weeknd&quot;:{&quot;counts&quot;:[2,1,0,1,2,1,4,2,2,1],&quot;songs&quot;:[[1,&quot;S_44f1abb28daf302f&quot;,&quot;2020&quot;,5],[8,&quot;S_4052eafe2d2465cd&quot;,&quot;2024&quot;,3],[15,&quot;S_540f2ad4315cacc6&quot;,&quot;2025&quot;,1],[15,&quot;S_84c01d6dd4f36420&quot;,&quot;2023&quot;,1],[15,&quot;S_abb2d896c92887de&quot;,&quot;2021&quot;,1],[22,&quot;S_4db40fd08421f0ce&quot;,&quot;2023&quot;,2],[25,&quot;S_cd256a5cee09bc5b&quot;,&quot;2023&quot;,1],[31,&quot;S_2f06eb572f39163f&quot;,&quot;2017&quot;,1]]},&quot;Taylor Swift&quot;:{&quot;counts&quot;:[1,0,0,0,0,0,3,1,0,1],&quot;songs&quot;:[[6,&quot;S_899be85250a5d328&quot;,&quot;2026&quot;,1],[6,&quot;S_c30dae348236c15c&quot;,&quot;2023&quot;,2],[10,&quot;S_ff64e5e2502f3660&quot;,&quot;2023&quot;,1],[10,&quot;S_44b1e61622012364&quot;,&quot;2017&quot;,1],[38,&quot;S_b23ecda9b388b9d0&quot;,&quot;2023&quot;,1]]},&quot;Billie Eilish&quot;:{&quot;counts&quot;:[0,0,4,3,0,0,0,2,2,2],&quot;songs&quot;:[[2,&quot;S_fc0db9848f9fd295&quot;,&quot;2025&quot;,3],[2,&quot;S_4af66c4a0d050a26&quot;,&quot;2019&quot;,2],[10,&quot;S_cf49af8c1d644b43&quot;,&quot;2025&quot;,2],[18,&quot;S_787fa8675fa4d3df&quot;,&quot;2019&quot;,1],[21,&quot;S_87183ad7ac378e68&quot;,&quot;2019&quot;,1],[25,&quot;S_e20d0d429a48b3ff&quot;,&quot;2020&quot;,1],[30,&quot;S_13fef306885e03fb&quot;,&quot;2019&quot;,2],[46,&quot;S_bc0e299e99cfb161&quot;,&quot;2024&quot;,1]]},&quot;Bruno Mars&quot;:{&quot;counts&quot;:[1,1,0,0,1,0,0,1,2,4],&quot;songs&quot;:[[1,&quot;S_24be92d7469476af&quot;,&quot;2025&quot;,2],[3,&quot;S_aba97bd09600c8ed&quot;,&quot;2025&quot;,1],[9,&quot;S_0dc1db038e116e72&quot;,&quot;2017&quot;,1],[10,&quot;S_b9dea268aada633c&quot;,&quot;2024&quot;,1],[17,&quot;S_72d4234d9fe8e010&quot;,&quot;2021&quot;,1],[26,&quot;S_d5fc640db4a024c6&quot;,&quot;2026&quot;,1],[31,&quot;S_b6b1329c33d38ccc&quot;,&quot;2026&quot;,1],[38,&quot;S_82edfcfc0ef833a1&quot;,&quot;2026&quot;,1]]}}}&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const root = document.getElementById(&#x27;hit-atlas-views&#x27;);
+  const screen = root.querySelector(&#x27;[data-screen]&#x27;);
+  const d = JSON.parse(document.getElementById(&#x27;hit-atlas-views-data&#x27;).textContent);
+  const years = Object.keys(d.scopes.Global);
+  const labels = [&#x27;悲伤&#x27;,&#x27;愤怒&#x27;,&#x27;恐惧&#x27;,&#x27;厌恶&#x27;,&#x27;惊讶&#x27;,&#x27;信任&#x27;,&#x27;期待&#x27;,&#x27;快乐&#x27;];
+  const keys = [&#x27;sadness&#x27;,&#x27;anger&#x27;,&#x27;fear&#x27;,&#x27;disgust&#x27;,&#x27;surprise&#x27;,&#x27;trust&#x27;,&#x27;anticipation&#x27;,&#x27;joy&#x27;];
+  const metrics = [{label:&#x27;歌词重复度&#x27;,unit:&#x27;%&#x27;,max:100},{label:&#x27;节拍速度&#x27;,unit:&#x27; BPM&#x27;,max:200},{label:&#x27;能量&#x27;,unit:&#x27; / 100&#x27;,max:100},{label:&#x27;可舞性&#x27;,unit:&#x27; / 100&#x27;,max:100}];
+  const trackSamples = d.clips.map(id =&gt; [id, d.songs[id].title]);
+  const radarLimit = Math.max(5, Math.ceil(Math.max(...Object.values(d.songs).flatMap(song =&gt; song.score || []))/5)*5);
+  const state = {view:&#x27;global&#x27;, year:&#x27;2026&#x27;, regionYear:&#x27;2026&#x27;, market:&#x27;Hong Kong&#x27;, artist:&#x27;The Weeknd&#x27;, metric:0, track:d.clips[0], emotion:0};
+  const escape = value =&gt; String(value ?? &#x27;&#x27;).replace(/[&amp;&lt;&gt;&quot;&#x27;]/g, word =&gt; ({&#x27;&amp;&#x27;:&#x27;&amp;amp;&#x27;,&#x27;&lt;&#x27;:&#x27;&amp;lt;&#x27;,&#x27;&gt;&#x27;:&#x27;&amp;gt;&#x27;,&#x27;&quot;&#x27;:&#x27;&amp;quot;&#x27;,&quot;&#x27;&quot;:&#x27;&amp;#39;&#x27;})[word]);
+  const fmt = (value, digits=1) =&gt; value == null ? &#x27;—&#x27; : Number(value).toFixed(digits).replace(/\.0+$/,&#x27;&#x27;);
+  const metricText = (value, meta) =&gt; value == null ? &#x27;—&#x27; : `${fmt(value)}${meta.unit}`;
+  const select = (label, action, pairs, active) =&gt; `&lt;label&gt;${escape(label)}&lt;select data-action=&quot;${action}&quot;&gt;${pairs.map(([key,value]) =&gt; `&lt;option value=&quot;${escape(key)}&quot;${String(key) === String(active) ? &#x27; selected&#x27; : &#x27;&#x27;}&gt;${escape(value)}&lt;/option&gt;`).join(&#x27;&#x27;)}&lt;/select&gt;&lt;/label&gt;`;
+  function list(entries, title, description, artist=false) {
+    return `&lt;section class=&quot;ha-card&quot; aria-label=&quot;${escape(title)}&quot;&gt;&lt;h2&gt;${escape(title)}&lt;/h2&gt;&lt;p class=&quot;ha-muted&quot;&gt;${escape(description)}&lt;/p&gt;&lt;ol class=&quot;ha-rank&quot;&gt;${entries.map(([rank,id,year,count]) =&gt; {
+      const item = d.songs[id];
+      const sub = artist ? `最佳名次 · ${year} · ${count} 次上榜` : item.artist;
+      return `&lt;li&gt;&lt;button type=&quot;button&quot; data-song=&quot;${id}&quot; aria-label=&quot;查看 ${escape(item.title)}&quot;&gt;&lt;span class=&quot;ha-num&quot;&gt;${String(rank).padStart(2,&#x27;0&#x27;)}&lt;/span&gt;&lt;span&gt;&lt;b&gt;${escape(item.title)}&lt;/b&gt;&lt;small&gt;${escape(sub)}&lt;/small&gt;&lt;/span&gt;&lt;span aria-hidden=&quot;true&quot;&gt;↗&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;`;
+    }).join(&#x27;&#x27;)}&lt;/ol&gt;&lt;/section&gt;`;
+  }
+
+  function globalView() {
+    const meta = metrics[state.metric];
+    const current = d.scopes.Global[state.year];
+    const [value,count] = current.values[state.metric];
+    const plot = years.map((year,i) =&gt; [i * 53 + 15, 128 - (d.scopes.Global[year].values[state.metric][0] / meta.max) * 112]);
+    const line = plot.map(x =&gt; x.join(&#x27;,&#x27;)).join(&#x27; &#x27;);
+    return `&lt;div class=&quot;ha-grid&quot;&gt;&lt;section class=&quot;ha-card&quot; aria-label=&quot;全球趋势&quot;&gt;&lt;div class=&quot;ha-top&quot;&gt;&lt;div&gt;&lt;h2&gt;全球年度 Top 50&lt;/h2&gt;&lt;p class=&quot;ha-muted&quot;&gt;按榜位等权平均 · 2026 年截至 11 月 12 日&lt;/p&gt;&lt;/div&gt;${select(&#x27;指标&#x27;,&#x27;metric&#x27;,metrics.map((m,i)=&gt;[i,m.label]),state.metric)}&lt;/div&gt;
+      &lt;div class=&quot;ha-kpi&quot; aria-live=&quot;polite&quot;&gt;&lt;strong&gt;${escape(metricText(value,meta))}&lt;/strong&gt;&lt;span class=&quot;ha-muted&quot;&gt;${state.year} · ${meta.label} · ${count}/50 个榜位&lt;/span&gt;&lt;/div&gt;
+      &lt;svg class=&quot;ha-chart&quot; viewBox=&quot;0 0 507 138&quot; role=&quot;img&quot; aria-label=&quot;${meta.label}在 2017 至 2026 年的平均值折线图&quot;&gt;${[16,44,72,100,128].map(x=&gt;`&lt;line class=&quot;ha-gridline&quot; x1=&quot;15&quot; y1=&quot;${x}&quot; x2=&quot;492&quot; y2=&quot;${x}&quot;/&gt;`).join(&#x27;&#x27;)}&lt;polyline class=&quot;ha-trace&quot; fill=&quot;none&quot; points=&quot;${line}&quot;/&gt;${plot.map(([x,y],i) =&gt; `&lt;circle class=&quot;ha-point ${years[i]===state.year?&#x27;current&#x27;:&#x27;&#x27;}&quot; cx=&quot;${x}&quot; cy=&quot;${y}&quot; r=&quot;${years[i]===state.year?5:3.4}&quot; data-tooltip=&quot;${years[i]} · ${escape(metricText(d.scopes.Global[years[i]].values[state.metric][0],meta))}&quot;&gt;&lt;title&gt;${years[i]} ${escape(metricText(d.scopes.Global[years[i]].values[state.metric][0],meta))}&lt;/title&gt;&lt;/circle&gt;`).join(&#x27;&#x27;)}&lt;/svg&gt;
+      &lt;div class=&quot;ha-years&quot; aria-label=&quot;选择年份&quot;&gt;${years.map(y=&gt;`&lt;button type=&quot;button&quot; data-year=&quot;${y}&quot; aria-pressed=&quot;${y===state.year}&quot;&gt;${y}&lt;/button&gt;`).join(&#x27;&#x27;)}&lt;/div&gt;
+      &lt;p class=&quot;ha-note&quot;&gt;刻度 0—${meta.max}${escape(meta.unit)} · ${state.metric===0?&#x27;The Pudding 重复度&#x27;:&#x27;ReccoBeats 同口径&#x27;}&lt;/p&gt;&lt;/section&gt;
+      ${list(current.songs, `${state.year} 全球榜`, &#x27;Top 50 中的前 6 首&#x27;)}&lt;/div&gt;`;
+  }
+
+  function marketView() {
+    const meta = metrics[state.metric];
+    const active = d.scopes[state.market][state.regionYear];
+    return `&lt;div class=&quot;ha-grid&quot;&gt;&lt;section class=&quot;ha-card&quot;&gt;&lt;h2&gt;同一年，各地热门歌曲&lt;/h2&gt;&lt;p class=&quot;ha-muted&quot;&gt;4 个地区示例 · 每年 1 月 1 日至 11 月 12 日的同期榜&lt;/p&gt;
+      &lt;div class=&quot;ha-controls&quot;&gt;${select(&#x27;年份&#x27;,&#x27;regionYear&#x27;,Object.keys(d.scopes[state.market]).map(y=&gt;[y,y]),state.regionYear)}${select(&#x27;指标&#x27;,&#x27;metric&#x27;,metrics.map((m,i)=&gt;[i,m.label]),state.metric)}&lt;/div&gt;
+      &lt;div class=&quot;ha-markets&quot; aria-label=&quot;选择地区&quot;&gt;${Object.entries(d.markets).map(([market,name])=&gt;{const [v,n]=d.scopes[market][state.regionYear].values[state.metric]; return `&lt;button class=&quot;ha-market&quot; type=&quot;button&quot; data-market=&quot;${market}&quot; aria-pressed=&quot;${market===state.market}&quot;&gt;&lt;span&gt;${name}&lt;/span&gt;&lt;span class=&quot;ha-bar&quot; aria-hidden=&quot;true&quot;&gt;&lt;span style=&quot;width:${Math.max(0,v||0)/meta.max*100}%&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;ha-barvalue&quot;&gt;${escape(metricText(v,meta))} · ${n}/50&lt;/span&gt;&lt;/button&gt;`;}).join(&#x27;&#x27;)}&lt;/div&gt;&lt;p class=&quot;ha-note&quot;&gt;${meta.label}平均值 · 有值榜位 / 50&lt;/p&gt;&lt;/section&gt;
+      ${list(active.songs, `${d.markets[state.market]} · ${state.regionYear}`, &#x27;同期榜前 6 首&#x27;)}&lt;/div&gt;`;
+  }
+
+  function artistView() {
+    const {counts,songs} = d.artists[state.artist];
+    const max = Math.max(1,...counts);
+    return `&lt;div class=&quot;ha-grid&quot;&gt;&lt;section class=&quot;ha-card&quot;&gt;&lt;div class=&quot;ha-top&quot;&gt;&lt;div&gt;&lt;h2&gt;${escape(state.artist)}&lt;/h2&gt;&lt;p class=&quot;ha-muted&quot;&gt;全球年度 Top 50 的上榜分布&lt;/p&gt;&lt;/div&gt;${select(&#x27;歌手&#x27;,&#x27;artist&#x27;,Object.keys(d.artists).map(v=&gt;[v,v]),state.artist)}&lt;/div&gt;
+      &lt;div class=&quot;ha-kpi&quot;&gt;&lt;strong&gt;${counts.reduce((a,b)=&gt;a+b,0)}&lt;/strong&gt;&lt;span class=&quot;ha-muted&quot;&gt;个全球榜位 · 2017—2026&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;ha-columns&quot; role=&quot;img&quot; aria-label=&quot;逐年上榜次数：${years.map((y,i)=&gt;`${y} 年 ${counts[i]} 次`).join(&#x27;，&#x27;)}&quot;&gt;${counts.map((count,i)=&gt;`&lt;div class=&quot;ha-column&quot; data-tooltip=&quot;${years[i]} 年 · ${count} 次&quot;&gt;${count}&lt;span aria-hidden=&quot;true&quot; style=&quot;height:${count/max*100}%&quot;&gt;&lt;/span&gt;&lt;small&gt;${years[i].slice(2)}&lt;/small&gt;&lt;/div&gt;`).join(&#x27;&#x27;)}&lt;/div&gt;&lt;p class=&quot;ha-note&quot;&gt;按榜位计数 · 同一首歌可以多次上榜&lt;/p&gt;&lt;/section&gt;
+      ${list(songs, &#x27;代表上榜歌曲&#x27;, &#x27;按最佳名次排序 · 最多 8 首&#x27;,true)}&lt;/div&gt;`;
+  }
+
+  function radar(song) {
+    const point = (i,len) =&gt; [147 + Math.sin(i*Math.PI/4)*len, 109 - Math.cos(i*Math.PI/4)*len];
+    const points = vals =&gt; vals.map((x,i)=&gt;point(i,x).join(&#x27;,&#x27;)).join(&#x27; &#x27;);
+    const limit = radarLimit;
+    return `&lt;svg class=&quot;ha-radar&quot; viewBox=&quot;0 0 294 218&quot; role=&quot;img&quot; aria-label=&quot;八类情绪词次率雷达图，每百词，统一 0 到 ${limit} 刻度&quot;&gt;&lt;title&gt;${labels.map((label,i)=&gt;`${label} ${fmt(song.score[i],2)}`).join(&#x27;、&#x27;)}&lt;/title&gt;
+      ${[16,32,48,64,80].map(r=&gt;`&lt;polygon class=&quot;ha-gridline&quot; points=&quot;${points(keys.map(()=&gt;r))}&quot; fill=&quot;none&quot;/&gt;`).join(&#x27;&#x27;)}
+      ${keys.map((_,i)=&gt;{const [x,y]=point(i,80);return `&lt;line class=&quot;ha-gridline&quot; x1=&quot;147&quot; y1=&quot;109&quot; x2=&quot;${x}&quot; y2=&quot;${y}&quot;/&gt;`;}).join(&#x27;&#x27;)}
+      &lt;polygon class=&quot;ha-fill&quot; points=&quot;${points(song.score.map(s=&gt;s/limit*80))}&quot;/&gt;
+      ${labels.map((label,i)=&gt;{const [x,y]=point(i,96);return `&lt;text class=&quot;${i===state.emotion?&#x27;current&#x27;:&#x27;&#x27;}&quot; x=&quot;${x}&quot; y=&quot;${y+4}&quot; text-anchor=&quot;middle&quot;&gt;${label}&lt;/text&gt;`;}).join(&#x27;&#x27;)}&lt;/svg&gt;`;
+  }
+
+  function lyric(song) {
+    const label = labels[state.emotion], key = keys[state.emotion];
+    const lines = song.clips.map(line =&gt; {
+      const text = Array.from(line.text); const relevant = line.tokens.filter(x=&gt;x[2].includes(key)); let cursor=0;
+      let body = line.before ? &#x27;…&#x27; : &#x27;&#x27;;
+      for (const [from,to,,cue] of relevant) {
+        const tooltip = cue ? &#x27;附近有否定字样 · 原始词频计入&#x27; : `第 ${line.no} 行 · 贡献 ${fmt(100/song.words,2)} / 每百词`;
+        body += escape(text.slice(cursor,from).join(&#x27;&#x27;)) + `&lt;mark class=&quot;${cue?&#x27;ha-cue&#x27;:&#x27;&#x27;}&quot; data-tooltip=&quot;${tooltip}&quot; title=&quot;${tooltip}&quot;&gt;${escape(text.slice(from,to).join(&#x27;&#x27;))}&lt;/mark&gt;`;
+        cursor=to;
+      }
+      body += escape(text.slice(cursor).join(&#x27;&#x27;))+(line.after?&#x27;…&#x27;:&#x27;&#x27;);
+      return `&lt;div class=&quot;ha-line&quot; data-line=&quot;${line.id}&quot;&gt;&lt;small&gt;第 ${line.no} 行&lt;/small&gt;&lt;span&gt;${body}&lt;/span&gt;&lt;/div&gt;`;
+    }).join(&#x27;&#x27;);
+    const displayed = song.clips.flatMap(line=&gt;line.tokens).filter(x=&gt;x[2].includes(key)).length;
+    const hasCue = song.clips.flatMap(line=&gt;line.tokens).some(x=&gt;x[2].includes(key) &amp;&amp; x[3]);
+    return `&lt;section class=&quot;ha-card&quot;&gt;&lt;h3&gt;原文证据 · ${label}&lt;/h3&gt;${song.score ? `&lt;p class=&quot;ha-muted&quot; aria-live=&quot;polite&quot;&gt;全歌 ${song.hits[state.emotion]} 次命中 / ${song.words} 词 · 每次贡献 ${fmt(100/song.words,2)}&lt;/p&gt;` : &#x27;&lt;p class=&quot;ha-muted&quot;&gt;当前歌词没有可用分数&lt;/p&gt;&#x27;}
+      &lt;div class=&quot;ha-evidence&quot;&gt;${lines || &#x27;&lt;p class=&quot;ha-muted&quot;&gt;本曲在预览中仅展示整首分数。可切换到收录片段的示例歌曲。&lt;/p&gt;&#x27;}${song.clips.length ? `&lt;p class=&quot;ha-note&quot;&gt;示例片段显示 ${displayed} 处命中 · 省略号表示片段截取&lt;/p&gt;` : &#x27;&#x27;}${hasCue ? &#x27;&lt;p class=&quot;ha-note&quot;&gt;虚线下划线 · 附近有否定字样，提示核对语境&lt;/p&gt;&#x27; : &#x27;&#x27;}&lt;/div&gt;
+      &lt;p class=&quot;ha-note&quot;&gt;词典匹配可回查词位置 · 得分为每百词命中次数&lt;/p&gt;&lt;/section&gt;`;
+  }
+
+  function trackView() {
+    const song = d.songs[state.track];
+    const choices = d.clips.includes(song.id) ? trackSamples : [[song.id,song.title],...trackSamples];
+    const unit = song.audio ? [fmt(song.audio[0]),fmt(song.audio[1]*100),fmt(song.audio[2]*100)] : [&#x27;—&#x27;,&#x27;—&#x27;,&#x27;—&#x27;];
+    return `&lt;div class=&quot;ha-track-head&quot;&gt;&lt;div&gt;&lt;h2&gt;${escape(song.title)}&lt;/h2&gt;&lt;p class=&quot;ha-muted&quot;&gt;${escape(song.artist)} · ${song.verified?&#x27;歌词元数据已核对&#x27;:&#x27;默认歌词版本&#x27;}&lt;/p&gt;&lt;/div&gt;${select(&#x27;示例歌曲&#x27;,&#x27;track&#x27;,choices,song.id)}&lt;/div&gt;
+      &lt;div class=&quot;ha-grid ha-track-body&quot;&gt;&lt;section class=&quot;ha-card&quot;&gt;&lt;div class=&quot;ha-top&quot;&gt;&lt;div&gt;&lt;h3&gt;整首歌词情绪&lt;/h3&gt;&lt;p class=&quot;ha-muted&quot;&gt;每百词命中次数 · 词典覆盖 ${fmt(song.lex)}%&lt;/p&gt;&lt;/div&gt;${song.score ? `&lt;span class=&quot;ha-num&quot;&gt;${labels[state.emotion]} ${fmt(song.score[state.emotion],2)}&lt;/span&gt;`:&#x27;&#x27;}&lt;/div&gt;
+      ${song.score ? `${radar(song)}&lt;div class=&quot;ha-emotions&quot; aria-label=&quot;选择情绪&quot;&gt;${labels.map((label,i)=&gt;`&lt;button type=&quot;button&quot; data-emotion=&quot;${i}&quot; aria-pressed=&quot;${i===state.emotion}&quot;&gt;${label}&lt;/button&gt;`).join(&#x27;&#x27;)}&lt;/div&gt;&lt;p class=&quot;ha-note&quot;&gt;雷达刻度 0—${radarLimit} / 每百词&lt;/p&gt;`:&#x27;&lt;p class=&quot;ha-muted&quot;&gt;当前歌词没有可用情绪分数。&lt;/p&gt;&#x27;}&lt;/section&gt;
+      ${lyric(song)}&lt;/div&gt;
+      &lt;div class=&quot;ha-scores&quot; aria-label=&quot;单曲数值&quot;&gt;&lt;div&gt;&lt;span class=&quot;ha-muted&quot;&gt;歌词重复度&lt;/span&gt;&lt;strong&gt;${song.repeat==null?&#x27;—&#x27;:fmt(song.repeat)+&#x27;%&#x27;}&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;span class=&quot;ha-muted&quot;&gt;BPM&lt;/span&gt;&lt;strong&gt;${unit[0]}&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;span class=&quot;ha-muted&quot;&gt;能量 / 100&lt;/span&gt;&lt;strong&gt;${unit[1]}&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;span class=&quot;ha-muted&quot;&gt;可舞性 / 100&lt;/span&gt;&lt;strong&gt;${unit[2]}&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;p class=&quot;ha-note&quot;&gt;声音指标统一来自 ReccoBeats · &lt;a class=&quot;ha-songlink&quot; href=&quot;https://open.spotify.com/track/${escape(song.spotify)}&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;查看 Spotify 条目 ↗&lt;/a&gt;&lt;/p&gt;`;
+  }
+
+  const renderers = {global:globalView,market:marketView,artist:artistView,track:trackView};
+  function render(focusSelector) {
+    for (const button of root.querySelectorAll(&#x27;[data-view]&#x27;)) button.setAttribute(&#x27;aria-pressed&#x27;, button.dataset.view===state.view);
+    screen.innerHTML = renderers[state.view]();
+    if(focusSelector) (root.querySelector(focusSelector) || root.querySelector(`[data-view=&quot;${state.view}&quot;]`))?.focus({preventScroll:true});
+  }
+  root.addEventListener(&#x27;click&#x27;, event =&gt; {
+    const t=event.target.closest(&#x27;button&#x27;); if(!t)return;
+    const props=t.dataset;
+    if(props.view){state.view=props.view;render();return;}
+    if(props.song){state.track=props.song;state.emotion=0;state.view=&#x27;track&#x27;;render(&#x27;[data-view=&quot;track&quot;]&#x27;);return;}
+    for(const key of [&#x27;year&#x27;,&#x27;market&#x27;,&#x27;emotion&#x27;]) if(props[key]!==undefined){state[key]=key===&#x27;emotion&#x27;?+props[key]:props[key];render(`[data-${key}=&quot;${props[key]}&quot;]`);return;}
+  });
+  root.addEventListener(&#x27;change&#x27;, event =&gt; {
+    const {action}=event.target.dataset; if(!action)return;
+    state[action]=action===&#x27;metric&#x27;?Number(event.target.value):event.target.value;
+    if(action===&#x27;track&#x27;)state.emotion=0;
+    render(`[data-action=&quot;${action}&quot;]`);
+  });
+  render();
+})();
+&lt;/script&gt;
+
+&lt;script&gt;
+(() =&gt; {
+  let positioningReady = window.FloatingUIDOM
+    ? Promise.resolve(window.FloatingUIDOM)
+    : null;
+  const loadScript = (src) =&gt; new Promise((resolve, reject) =&gt; {
+    const script = document.createElement(&quot;script&quot;);
+    script.src = src;
+    script.onload = resolve;
+    script.onerror = () =&gt; {
+      script.remove();
+      reject(new Error(&quot;Could not load tooltip positioning&quot;));
+    };
+    document.head.appendChild(script);
+  });
+  const loadPositioning = async () =&gt; {
+    const domUrl = &quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;;
+    const preload = document.createElement(&quot;link&quot;);
+    preload.rel = &quot;preload&quot;;
+    preload.as = &quot;script&quot;;
+    preload.href = domUrl;
+    document.head.appendChild(preload);
+    try {
+      if (window.FloatingUICore == null) {
+        await loadScript(&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;);
+      }
+      await loadScript(domUrl);
+      return window.FloatingUIDOM;
+    } finally {
+      preload.remove();
+    }
+  };
+  const getPositioning = () =&gt; positioningReady ??= loadPositioning().catch((error) =&gt; {
+    positioningReady = null;
+    throw error;
+  });
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+  let lastPointerWasTouch = false;
+  let pinnedByTouch = false;
+
+  const getTrigger = (event) =&gt; {
+    for (const target of event.composedPath()) {
+      if (target?.nodeType === Node.ELEMENT_NODE) {
+        const trigger = target.closest(&quot;[data-tooltip]&quot;);
+        if (trigger) return trigger;
+      }
+    }
+    return null;
+  };
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    pinnedByTouch = false;
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating, { computePosition, flip, offset, shift, size }) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    const request = positionRequest;
+    void getPositioning().then((positioning) =&gt; {
+      if (request !== positionRequest || !trigger.isConnected) return;
+      autoUpdateCleanup = positioning.autoUpdate(trigger, floating, () =&gt; {
+        updatePosition(trigger, floating, positioning);
+      });
+    }).catch(() =&gt; {
+      if (request === positionRequest) closeTooltip(false);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handlePointer = (event) =&gt; {
+    lastPointerWasTouch =
+      event.type === &quot;pointerdown&quot; &amp;&amp; event.pointerType === &quot;touch&quot;;
+  };
+  const handleTouchClick = (event) =&gt; {
+    const isTouch = event.pointerType === &quot;touch&quot; || lastPointerWasTouch;
+    lastPointerWasTouch = false;
+    if (!isTouch || event.detail === 0) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (
+      trigger == null ||
+      !trigger.isConnected ||
+      getContent(trigger).length === 0 ||
+      (pinnedByTouch &amp;&amp; activeTrigger === trigger)
+    ) {
+      if (pinnedByTouch) {
+        closeTooltip();
+      }
+      return;
+    }
+    openTooltip(trigger);
+    pinnedByTouch = activeTrigger === trigger;
+    window.setTimeout(() =&gt; {
+      if (activeTrigger === trigger &amp;&amp; !trigger.isConnected) {
+        closeTooltip(false);
+      }
+    }, 0);
+  };
+  const handleLeave = (event) =&gt; {
+    if (pinnedByTouch) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    lastPointerWasTouch = false;
+    const trigger = getTrigger(event);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handlers = {
+    pointerover: handlePointerOpen,
+    pointerdown: handlePointer,
+    pointercancel: handlePointer,
+    click: handleTouchClick,
+    pointerout: handleLeave,
+    focusin: handleFocusIn,
+    focusout: handleLeave,
+    keydown: handleKeyDown,
+    contextmenu: handleContextMenu,
+  };
+  const roots = new Map();
+  const handledEvents = new WeakSet();
+  const handleEvent = (event) =&gt; {
+    if (handledEvents.has(event)) return;
+    handledEvents.add(event);
+    handlers[event.type](event);
+  };
+  const discoverRoots = (node) =&gt; {
+    if (node.shadowRoot) listen(node.shadowRoot);
+    for (const element of node.querySelectorAll(&quot;*&quot;)) {
+      if (element.shadowRoot) listen(element.shadowRoot);
+    }
+  };
+  const listen = (root) =&gt; {
+    if (roots.has(root)) return;
+    for (const type of Object.keys(handlers)) root.addEventListener(type, handleEvent);
+    const observer = new window.MutationObserver((records) =&gt; {
+      for (const { addedNodes } of records) {
+        for (const node of addedNodes) {
+          if (node.nodeType === Node.ELEMENT_NODE) discoverRoots(node);
+        }
+      }
+      for (const [root, cleanup] of roots) {
+        if (root.host &amp;&amp; !root.host.isConnected) {
+          cleanup();
+          roots.delete(root);
+        }
+      }
+      if (activeTrigger &amp;&amp; !activeTrigger.isConnected) closeTooltip(false);
+    });
+    observer.observe(root, { childList: true, subtree: true });
+    roots.set(root, () =&gt; {
+      observer.disconnect();
+      for (const type of Object.keys(handlers)) root.removeEventListener(type, handleEvent);
+    });
+    discoverRoots(root);
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    lastPointerWasTouch = false;
+    for (const cleanup of roots.values()) cleanup();
+    roots.clear();
+    tooltip = null;
+  };
+
+  // Events between children of one shadow root never reach the document.
+  listen(document);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-tabs&quot;&gt;
+(() =&gt; {
+  const selector = &#x27;.nav[role=&quot;tablist&quot;] [role=&quot;tab&quot;]&#x27;;
+  const disabled = &#x27;:disabled,[aria-disabled=&quot;true&quot;]&#x27;;
+  const selectTab = (selected) =&gt; {
+    const panelId = selected.getAttribute(&quot;aria-controls&quot;);
+    for (const tab of selected.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;)) {
+      const active = tab === selected;
+      tab.classList.toggle(&quot;active&quot;, active);
+      tab.setAttribute(&quot;aria-selected&quot;, String(active));
+      const id = tab.getAttribute(&quot;aria-controls&quot;);
+      const panel = id &amp;&amp; document.getElementById(id);
+      if (panel != null) {
+        panel.hidden = id !== panelId;
+        if (!panel.hidden &amp;&amp; selected.id) {
+          panel.setAttribute(&quot;aria-labelledby&quot;, selected.id);
+        }
+      }
+    }
+  };
+  const interact = (event) =&gt; {
+    const tab = event.target?.closest?.(selector);
+    if (event.defaultPrevented || tab == null || tab.matches(disabled)) {
+      return;
+    }
+    if (event.type === &quot;click&quot;) {
+      selectTab(tab);
+      return;
+    }
+    const tabs = Array.from(
+      tab.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;),
+    ).filter((candidate) =&gt; !candidate.matches(disabled));
+    const current = tabs.indexOf(tab);
+    let next;
+    if (event.key === &quot;ArrowRight&quot; || event.key === &quot;ArrowDown&quot;) {
+      next = (current + 1) % tabs.length;
+    } else if (event.key === &quot;ArrowLeft&quot; || event.key === &quot;ArrowUp&quot;) {
+      next = (current + tabs.length - 1) % tabs.length;
+    } else if (event.key === &quot;Home&quot;) {
+      next = 0;
+    } else if (event.key === &quot;End&quot;) {
+      next = tabs.length - 1;
+    } else {
+      return;
+    }
+    event.preventDefault();
+    tabs[next].focus();
+    selectTab(tabs[next]);
+  };
+
+  for (const list of document.querySelectorAll(&#x27;.nav[role=&quot;tablist&quot;]&#x27;)) {
+    const selected =
+      list.querySelector(&#x27;[role=&quot;tab&quot;][aria-selected=&quot;true&quot;]&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;].active&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;]&#x27;);
+    if (selected != null) {
+      selectTab(selected);
+    }
+  }
+  document.addEventListener(&quot;click&quot;, interact);
+  document.addEventListener(&quot;keydown&quot;, interact);
+  window.addEventListener(&quot;pagehide&quot;, () =&gt; {
+    document.removeEventListener(&quot;click&quot;, interact);
+    document.removeEventListener(&quot;keydown&quot;, interact);
+  }, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-carousel&quot;&gt;
+  (() =&gt; {
+    for (const root of document.querySelectorAll(&quot;.viz-carousel&quot;)) {
+      const panels = Array.from(
+        root.querySelectorAll(&quot;:scope &gt; [data-variant]&quot;),
+      );
+      if (panels.length === 0) {
+        continue;
+      }
+      root.setAttribute(&quot;role&quot;, &quot;group&quot;);
+      panels.forEach((panel, index) =&gt; {
+        panel.hidden = index !== 0;
+        panel.setAttribute(&quot;role&quot;, &quot;group&quot;);
+        if (!panel.hasAttribute(&quot;aria-label&quot;)) {
+          panel.setAttribute(&quot;aria-label&quot;, panel.dataset.variant);
+        }
+      });
+      root.dataset.activeVariant = panels[0].dataset.variant;
+      if (panels.length === 1) {
+        continue;
+      }
+
+      const controls = document.createElement(&quot;div&quot;);
+      controls.className = &quot;viz-carousel-controls&quot;;
+      // Portable copy of the settings dropdown&#x27;s legacy glyph; no 14px icon-package preset matches it.
+      // https://github.com/openai/openai/blob/master/codex/codex-apps/webview/src/icons/chevron.svg
+      controls.innerHTML = `
+      &lt;button type=&quot;button&quot; class=&quot;viz-carousel-previous cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+      &lt;details class=&quot;viz-carousel-picker&quot;&gt;
+        &lt;summary class=&quot;cursor-interaction&quot;&gt;
+          &lt;span class=&quot;viz-carousel-count tabular-nums&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;viz-carousel-name&quot;&gt;&lt;/span&gt;
+          &lt;svg class=&quot;viz-carousel-caret&quot; width=&quot;14&quot; height=&quot;14&quot; viewBox=&quot;0 0 20 21&quot; fill=&quot;none&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
+            &lt;path d=&quot;M15.2793 7.71101C15.539 7.45131 15.961 7.45131 16.2207 7.71101C16.4804 7.97071 16.4804 8.39272 16.2207 8.65242L10.4707 14.4024C10.211 14.6621 9.78902 14.6621 9.52932 14.4024L3.77932 8.65242L3.69436 8.54792C3.52385 8.28979 3.55205 7.93828 3.77932 7.71101C4.00659 7.48374 4.3581 7.45554 4.61623 7.62605L4.72073 7.71101L10 12.9903L15.2793 7.71101Z&quot; fill=&quot;currentColor&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;0.6&quot; /&gt;
+          &lt;/svg&gt;
+        &lt;/summary&gt;
+        &lt;div class=&quot;viz-carousel-options&quot;&gt;&lt;/div&gt;
+      &lt;/details&gt;
+      &lt;button type=&quot;button&quot; class=&quot;viz-carousel-next cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;chevron-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;`;
+      const previous = controls.querySelector(&quot;.viz-carousel-previous&quot;);
+      const next = controls.querySelector(&quot;.viz-carousel-next&quot;);
+      const picker = controls.querySelector(&quot;.viz-carousel-picker&quot;);
+      const summary = picker.querySelector(&quot;summary&quot;);
+      const count = controls.querySelector(&quot;.viz-carousel-count&quot;);
+      const name = controls.querySelector(&quot;.viz-carousel-name&quot;);
+      const options = controls.querySelector(&quot;.viz-carousel-options&quot;);
+      const status = document.createElement(&quot;span&quot;);
+      status.className = &quot;sr-only&quot;;
+      status.setAttribute(&quot;role&quot;, &quot;status&quot;);
+      status.setAttribute(&quot;aria-live&quot;, &quot;polite&quot;);
+      status.setAttribute(&quot;aria-atomic&quot;, &quot;true&quot;);
+      previous.setAttribute(
+        &quot;aria-label&quot;,
+        root.dataset.previousLabel ?? &quot;Previous variant&quot;,
+      );
+      next.setAttribute(&quot;aria-label&quot;, root.dataset.nextLabel ?? &quot;Next variant&quot;);
+
+      let active = 0;
+      let mousePointerId = null;
+      let summaryPointerHandled = false;
+      summary.addEventListener(&quot;pointerdown&quot;, (event) =&gt; {
+        summaryPointerHandled =
+          event.pointerType === &quot;mouse&quot; &amp;&amp; event.button === 0 &amp;&amp; !event.ctrlKey;
+        if (!summaryPointerHandled) {
+          return;
+        }
+        event.preventDefault();
+        summary.focus({ preventScroll: true });
+        picker.open = !picker.open;
+        mousePointerId = picker.open ? event.pointerId : null;
+      });
+      summary.addEventListener(&quot;click&quot;, (event) =&gt; {
+        if (summaryPointerHandled &amp;&amp; event.detail &gt; 0) {
+          event.preventDefault();
+        }
+      });
+      const choices = panels.map((panel, index) =&gt; {
+        const choice = document.createElement(&quot;button&quot;);
+        choice.type = &quot;button&quot;;
+        choice.className = &quot;cursor-interaction&quot;;
+        choice.textContent = panel.dataset.variant;
+        choice.addEventListener(&quot;click&quot;, () =&gt; {
+          select(index);
+          summary.focus();
+        });
+        choice.addEventListener(&quot;pointerup&quot;, (event) =&gt; {
+          if (
+            picker.open &amp;&amp;
+            event.pointerType === &quot;mouse&quot; &amp;&amp;
+            event.button === 0 &amp;&amp;
+            event.pointerId === mousePointerId
+          ) {
+            choice.click();
+          }
+        });
+        options.appendChild(choice);
+        return choice;
+      });
+      const select = (index) =&gt; {
+        const changed = active !== index;
+        active = index;
+        panels.forEach((panel, position) =&gt; {
+          panel.hidden = position !== active;
+          choices[position].setAttribute(
+            &quot;aria-current&quot;,
+            String(position === active),
+          );
+        });
+        root.dataset.activeVariant = panels[active].dataset.variant;
+        count.textContent = `${active + 1} / ${panels.length}`;
+        name.textContent = panels[active].dataset.variant;
+        picker.open = false;
+        mousePointerId = null;
+        if (changed) {
+          status.textContent = `${count.textContent}: ${name.textContent}`;
+        }
+      };
+      previous.addEventListener(&quot;click&quot;, () =&gt;
+        select((active + panels.length - 1) % panels.length),
+      );
+      next.addEventListener(&quot;click&quot;, () =&gt;
+        select((active + 1) % panels.length),
+      );
+      picker.addEventListener(&quot;keydown&quot;, (event) =&gt; {
+        if (event.key === &quot;Escape&quot; &amp;&amp; picker.open) {
+          event.preventDefault();
+          picker.open = false;
+          mousePointerId = null;
+          summary.focus();
+          return;
+        }
+        if (event.altKey || event.ctrlKey || event.metaKey) {
+          return;
+        }
+        const index = choices.indexOf(document.activeElement);
+        let nextIndex;
+        if (event.key === &quot;ArrowDown&quot;) {
+          nextIndex = index &lt; 0 ? active : (index + 1) % choices.length;
+        } else if (event.key === &quot;ArrowUp&quot;) {
+          nextIndex = index &lt; 0 ? active : (index + choices.length - 1) % choices.length;
+        } else if (picker.open &amp;&amp; event.key === &quot;Home&quot;) {
+          nextIndex = 0;
+        } else if (picker.open &amp;&amp; event.key === &quot;End&quot;) {
+          nextIndex = choices.length - 1;
+        } else {
+          return;
+        }
+        event.preventDefault();
+        picker.open = true;
+        choices[nextIndex].focus();
+      });
+      picker.addEventListener(&quot;focusout&quot;, (event) =&gt; {
+        if (!picker.contains(event.relatedTarget)) {
+          picker.open = false;
+          mousePointerId = null;
+        }
+      });
+      const dismiss = (event) =&gt; {
+        if (!summary.contains(event.target)) {
+          mousePointerId = null;
+        }
+        if (!picker.contains(event.target)) {
+          picker.open = false;
+        }
+      };
+      const endPointerSelection = () =&gt; {
+        mousePointerId = null;
+      };
+      const sizePicker = () =&gt; {
+        root.style.setProperty(
+          &quot;--viz-carousel-picker-height&quot;,
+          `${picker.open ? options.offsetHeight : 0}px`,
+        );
+      };
+      picker.addEventListener(&quot;toggle&quot;, sizePicker);
+      window.addEventListener(&quot;resize&quot;, sizePicker);
+      document.addEventListener(&quot;pointerdown&quot;, dismiss);
+      document.addEventListener(&quot;pointerup&quot;, endPointerSelection);
+      document.addEventListener(&quot;pointercancel&quot;, endPointerSelection);
+      window.addEventListener(&quot;blur&quot;, endPointerSelection);
+      window.addEventListener(
+        &quot;pagehide&quot;,
+        () =&gt; {
+          document.removeEventListener(&quot;pointerdown&quot;, dismiss);
+          document.removeEventListener(&quot;pointerup&quot;, endPointerSelection);
+          document.removeEventListener(&quot;pointercancel&quot;, endPointerSelection);
+          window.removeEventListener(&quot;blur&quot;, endPointerSelection);
+          window.removeEventListener(&quot;resize&quot;, sizePicker);
+        },
+        { once: true },
+      );
+      root.append(controls, status);
+      select(0);
+    }
+  })();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+
+<script>(() => {
+  const frame = document.getElementById("codex-visualization");
+  if (!(frame instanceof HTMLIFrameElement)) {
+    return;
+  }
+  const isShare = document.documentElement.classList.contains(
+    "visualization-share-root",
+  );
+  let viewportHeight = globalThis.innerHeight;
+  let sizeFingerprint = null;
+  let sizeWriteTimeout;
+  let lastSize = null;
+  let pendingSize = null;
+  const storageKey = `codex:visualization-widget-state-v2:${JSON.stringify([
+    globalThis.location.pathname,
+    globalThis.location.search,
+  ])}`;
+  const sizeStorageKey = `${storageKey}:share-size-v1`;
+  const parseState = (serializedState) => {
+    if (
+      typeof serializedState !== "string" ||
+      new TextEncoder().encode(serializedState).length > 16 * 1024
+    ) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    /** @type {unknown} */
+    const state = JSON.parse(serializedState);
+    if (
+      state == null ||
+      typeof state !== "object" ||
+      Array.isArray(state) ||
+      ("imageIds" in state &&
+        (!Array.isArray(state.imageIds) || state.imageIds.length > 0))
+    ) {
+      throw new TypeError("Widget state must be a JSON object");
+    }
+    const storedState = { modelContent: null, privateContent: null, ...state };
+    const canonicalState = JSON.stringify(
+      storedState,
+      (_key, /** @type {unknown} */ value) => {
+        if (typeof value === "number" && !Number.isFinite(value)) {
+          throw new TypeError("Widget state must contain finite numbers");
+        }
+        return value;
+      },
+    );
+    if (new TextEncoder().encode(canonicalState).length > 16 * 1024) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    return storedState;
+  };
+  let storage = null;
+  let state = null;
+  try {
+    const localStorage = globalThis.localStorage;
+    const probeKey = `${storageKey}:probe`;
+    localStorage.setItem(probeKey, "1");
+    localStorage.removeItem(probeKey);
+    storage = localStorage;
+    const savedState = storage.getItem(storageKey);
+    if (savedState != null) {
+      try {
+        state = parseState(savedState);
+      } catch {
+        // Invalid saved state does not disable future writes.
+      }
+    }
+  } catch {
+    storage = null;
+  }
+  const persistSize = () => {
+    globalThis.clearTimeout(sizeWriteTimeout);
+    if (pendingSize == null) {
+      return;
+    }
+    try {
+      storage?.setItem(sizeStorageKey, pendingSize);
+    } catch {
+      // A denied or full cache must not affect the visualization.
+    }
+    pendingSize = null;
+  };
+  if (isShare) {
+    globalThis.addEventListener("pagehide", persistSize);
+  }
+  const initialGlobals = {
+    widgetState: state,
+    statePersistence: storage == null ? "none" : "local",
+  };
+
+  const channel = new MessageChannel();
+  channel.port1.addEventListener("message", (event) => {
+    const data = event.data;
+    if (typeof data !== "object" || data == null) {
+      return;
+    }
+    if (data.type === "widget-state-write") {
+      if (!Number.isSafeInteger(data.id) || data.id <= 0) {
+        return;
+      }
+      let ok = false;
+      try {
+        if (storage != null) {
+          const state = parseState(data.state);
+          storage.setItem(storageKey, JSON.stringify(state));
+          ok = true;
+        }
+      } catch {
+        // Storage denial, quota limits, and invalid state return a failed receipt.
+      }
+      channel.port1.postMessage({
+        type: "widget-state-result",
+        id: data.id,
+        ok,
+      });
+      return;
+    }
+    if (data.type === "height") {
+      const height = data.height;
+      if (
+        typeof height !== "number" ||
+        !Number.isFinite(height) ||
+        height < 0
+      ) {
+        return;
+      }
+      if (height <= 10_000) {
+        const width = isShare && storage != null ? frame.clientWidth : null;
+        frame.style.height = Math.ceil(height) + "px";
+        if (isShare && storage != null) {
+          const size = JSON.stringify({
+            fingerprint: sizeFingerprint,
+            width,
+            viewportHeight: globalThis.innerHeight,
+            dark: globalThis.matchMedia("(prefers-color-scheme: dark)").matches,
+            scale: globalThis.devicePixelRatio,
+            height: Math.ceil(height),
+          });
+          if (size !== lastSize) {
+            lastSize = size;
+            pendingSize = size;
+            globalThis.clearTimeout(sizeWriteTimeout);
+            sizeWriteTimeout = globalThis.setTimeout(persistSize, 100);
+          }
+        }
+      }
+      if (isShare) {
+        // Keep unusually tall content accessible without accepting an unbounded height.
+        if (height > 10_000 && Number.parseFloat(frame.style.height) === 0) {
+          frame.style.removeProperty("height");
+        }
+        frame.scrolling = height > 10_000 ? "auto" : "no";
+        document.documentElement.classList.add("visualization-share-ready");
+      }
+      return;
+    }
+    if (data.type === "scroll-to") {
+      const top = data.top;
+      if (
+        typeof top === "number" &&
+        Number.isFinite(top) &&
+        top >= 0 &&
+        globalThis.navigator.userActivation?.isActive === true
+      ) {
+        globalThis.scrollTo({
+          top: Math.ceil(
+            globalThis.scrollY + frame.getBoundingClientRect().top + top,
+          ),
+        });
+      }
+      return;
+    }
+    if (data.type === "open-external") {
+      const rawHref = data.href;
+      if (typeof rawHref !== "string") {
+        return;
+      }
+      let href;
+      try {
+        const url = new URL(rawHref, document.baseURI);
+        if (url.protocol !== "https:") {
+          return;
+        }
+        href = url.href;
+      } catch {
+        return;
+      }
+      if (globalThis.navigator.userActivation?.isActive === true) {
+        const anchor = document.createElement("a");
+        anchor.href = href;
+        anchor.rel = "noopener noreferrer";
+        anchor.target = "_blank";
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+      }
+      return;
+    }
+    if (data.type === "follow-up") {
+      const prompt = data.prompt;
+      if (
+        typeof prompt !== "string" ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      const title = data.title;
+      globalThis.prompt(typeof title === "string" ? title : prompt, prompt);
+    }
+  });
+  channel.port1.start();
+  const srcdoc = frame.dataset.srcdoc;
+  if (srcdoc == null) {
+    return;
+  }
+  globalThis.addEventListener("resize", () => {
+    const height = Number.parseFloat(frame.style.height);
+    if (!isShare && (!Number.isFinite(height) || height <= viewportHeight)) {
+      frame.style.removeProperty("height");
+    }
+    viewportHeight = globalThis.innerHeight;
+    channel.port1.postMessage({ type: "measure" });
+  });
+  frame.addEventListener(
+    "load",
+    () => {
+      frame.contentWindow?.postMessage(
+        { type: "codex-visualization-initialize" },
+        "*",
+        [channel.port2],
+      );
+    },
+    { once: true },
+  );
+  // Match the trusted bootstrap element, not the same text in an authored title.
+  const frameHtml = srcdoc.replace(
+    '<script type="application/json" id="codex-visualization-widget-state">__CODEX_VISUALIZATION_WIDGET_STATE__<\/script>',
+    () =>
+      '<script type="application/json" id="codex-visualization-widget-state">' +
+      JSON.stringify(initialGlobals).replaceAll("<", "\\u003c") +
+      "<\/script>",
+  );
+  if (isShare && storage != null) {
+    // Fingerprint the rendered document, including restored widget state, without
+    // storing its content. This is a layout cache, not a security identity.
+    let hash = 5381;
+    for (let index = 0; index < frameHtml.length; index += 1) {
+      hash = (hash * 33 + frameHtml.charCodeAt(index)) % 4_294_967_296;
+    }
+    sizeFingerprint = hash.toString(36);
+    try {
+      const size = JSON.parse(storage.getItem(sizeStorageKey) ?? "null");
+      if (
+        size?.fingerprint === sizeFingerprint &&
+        size.width === frame.clientWidth &&
+        size.viewportHeight === globalThis.innerHeight &&
+        size.dark ===
+          globalThis.matchMedia("(prefers-color-scheme: dark)").matches &&
+        size.scale === globalThis.devicePixelRatio &&
+        typeof size.height === "number" &&
+        Number.isFinite(size.height) &&
+        size.height >= 0 &&
+        size.height <= 10_000
+      ) {
+        frame.style.height = size.height + "px";
+      }
+    } catch {
+      // Ignore missing or invalid cache entries and measure the live frame.
+    }
+  }
+  frame.srcdoc = frameHtml;
+  delete frame.dataset.srcdoc;
+})();
+</script>
+</body>
+</html>

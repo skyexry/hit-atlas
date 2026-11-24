@@ -1,0 +1,17 @@
+lyrics_version_id,theme_answer_a,theme_answer_b,evidence_line_id,evidence_verdict,confidence_tier,method_version,model_revision
+L_24977707_aed9545bd9d5,romance,heartbreak,,,disagreement,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_3565274_3905e653f499,romance,romance,L_3565274_3905e653f499_0061,support,evidence_supported,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_5517958_3727f1b67bc4,heartbreak,heartbreak,L_5517958_3727f1b67bc4_0005,support,evidence_supported,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_969503_8f2aa66912f2,romance,heartbreak,,,disagreement,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_4695126_115597f2073e,heartbreak,heartbreak,L_4695126_115597f2073e_0012,support,evidence_supported,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_4423689_0431043ba1bd,heartbreak,romance,,,disagreement,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_25682678_e77c7cd445ce,romance,struggle,,,disagreement,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_7589132_db125bf3ce25,romance,struggle,,,disagreement,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_3458423_97fc14f9c543,romance,heartbreak,,,disagreement,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_4241183_5c6f11deaf6f,romance,romance,L_4241183_5c6f11deaf6f_0052,support,evidence_supported,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_230723_fa12ef94e30b,romance,romance,L_230723_fa12ef94e30b_0087,support,evidence_supported,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_29189069_73f099c747a2,romance,romance,L_29189069_73f099c747a2_0062,support,evidence_supported,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_13546963_4866686d620b,romance,romance,L_13546963_4866686d620b_0003,support,evidence_supported,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_35780886_9cb41acb1453,romance,romance,L_35780886_9cb41acb1453_0054,support,evidence_supported,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_30272676_5358d7e6c4a3,romance,romance,L_30272676_5358d7e6c4a3_0005,support,evidence_supported,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
+L_2268321_083b2f193ae6,romance,heartbreak,,,disagreement,theme-order-evidence-v1,mlx-community/Qwen2.5-1.5B-Instruct-4bit@8b403126fc14f14cfc99bb4cfa72ecbc129ea677
