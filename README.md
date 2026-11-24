@@ -6,6 +6,8 @@
 
 ## 小组如何协作
 
+课程提案的第 4.4 节在第 2 页留给 Jiayi 补写。[Word 协作稿](docs/Hit-Atlas-Proposal.docx) · [三页 PDF 草稿](docs/Hit-Atlas-Proposal-draft.pdf)
+
 首次加入请阅读[小组成员上手指南](CONTRIBUTING.md)，里面有按角色选分支、读取数据和提交 Pull Request 的步骤。
 
 `main` 汇集小组共同使用的数据、分析结果和网页代码。第一版数据快照标记为 `data-v1`。
