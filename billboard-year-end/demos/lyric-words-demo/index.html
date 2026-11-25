@@ -242,5 +242,7 @@ function bubbleView(){
   node.querySelector('text').setAttribute('font-size',fontSize);
  }
  let side=$('bubbleCard');side.replaceChildren();let w=state.bubbleWord;if(!w){side.append(el('h3','Select a word'),el('p','Select a bubble to see its frequency and how many songs used it.','sub'));return}let rr=rows('',y),hits=rr.filter(s=>s.words[w]);side.append(el('span',y,'sub'),el('div',w,'bigWord'),el('p',fmt(avg(rr,w))+' uses per 1,000 words'),el('p',hits.length+' / '+rr.length+' songs using the word','sub'),button('View trend →',()=>openTrend(w,'',y),'action'))}
+const initialGenre=new URLSearchParams(location.search).get('genre');
+if(songs.some(song=>song.genres.includes(initialGenre)))state.genre=initialGenre;
 setTab(['#bubble','#genre'].includes(location.hash)?location.hash.slice(1):'trend');
 </script></html>

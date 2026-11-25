@@ -278,5 +278,11 @@ $('genre').onchange=drawScatter;
 drawScatter();
 
 draw();
+if(location.hash==='#trendPanel')openTrend(0);
+if(location.hash==='#hexbin'){
+ $('corrMode').value='hexbin';
+ drawScatter();
+ $('corrTitle').scrollIntoView();
+}
 </script>
 </html>

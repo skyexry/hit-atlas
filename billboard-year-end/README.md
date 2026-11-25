@@ -35,16 +35,22 @@
 | [coverage.csv](coverage.csv) | 一年一行，包括榜位、有效歌词、曲风、不同艺人及其来源覆盖。地图窗口的艺人会重新去重，不能把五个年度的艺人数相加。 |
 | [source_review.csv](source_review.csv) | 保存歌词或曲风匹配异常记录，包括被排除的原始歌词地址。补配后的最终状态以对应的歌词和曲风表为准。 |
 
-## 三、交互草稿与样本范围
+## 三、三个 Task 的全部视图
 
-下载本目录后，在浏览器中打开对应 HTML。
+下载本目录后，在浏览器中打开链接对应的 HTML。[历史总览](explorer.html)也包含早期的地图和歌词视图。
 
-| 视图 | 样本与交互 | 静态预览 |
+| Task | View | 样本与交互 |
 |---|---|---|
-| [历史总览](explorer.html) | 1959–2023 全榜，包含曲风、艺人来源和歌词用词 | |
-| [艺人来源地图](demos/artist-origin-sketch/map-to-artists.html) | 1959–2023，选择年份和地理来源，从艺人矩形查看对应榜单歌曲 | [地图](demos/artist-origin-sketch/map-to-artists.png) |
-| [歌词词频](demos/lyric-words-demo/index.html) | 2014–2023 年每年前 15 名，150 个榜位中有 149 个纳入英语歌词样本。可输入关键词、按曲风探索，以及查看每年的词语气泡 | [关键词趋势](demos/lyric-words-demo/preview.png) · [气泡分布](demos/lyric-words-demo/bubble-axis.png) · [紧凑气泡图](demos/lyric-words-demo/bubble-packed.png) |
-| [声音特征](demos/sound-demo/2023.html) | 2023 年曲风雷达和特征相关图。点击雷达轴展开 2021–2023 年趋势，相关图支持散点与 Hexbin 切换 | [Hexbin](demos/sound-demo/hexbin-2023.png) |
+| 1 · Genres and artist origins | [1. Genres Over Time](explorer.html) | 1959–2023 年曲风堆叠面积图。选择年份更新右侧饼图，选择曲风可跳转到歌词探索页。 |
+| 1 · Genres and artist origins | [2. Where Artists Came From](demos/artist-origin-sketch/map-to-artists.html) | 1959–2023 年来源地图、艺人 treemap 和上榜歌曲。[静态预览](demos/artist-origin-sketch/map-to-artists.png) |
+| 2 · Lyrics | [1. Keyword Trends](demos/lyric-words-demo/index.html#trend) | 输入多个词，在同一张折线图比较年际变化。[静态预览](demos/lyric-words-demo/preview.png) |
+| 2 · Lyrics | [2. Explore Keywords by Genre](demos/lyric-words-demo/index.html#genre) | 选择曲风和时间范围，查看常见词和代表词。 |
+| 2 · Lyrics | [3. Discover Words by Year](demos/lyric-words-demo/index.html#bubble) | 拖动或播放年份，查看年度热门词气泡。[按歌曲覆盖排列](demos/lyric-words-demo/bubble-axis.png) · [紧凑布局](demos/lyric-words-demo/bubble-packed.png) |
+| 3 · Audio features | [1. Compare Sound Profiles](demos/sound-demo/2023.html) | 同一张雷达图叠加多个曲风，展示 2023 年的特征中位数。 |
+| 3 · Audio features | [2. Explore Features Over Time](demos/sound-demo/2023.html#trendPanel) | 点击雷达轴，查看该特征在 2021–2023 年的曲风折线和样本数。 |
+| 3 · Audio features | [3. Explore Feature Correlations](demos/sound-demo/2023.html#corrTitle) | 2023 年全榜或按曲风比较两项特征，支持散点图和 [Hexbin](demos/sound-demo/2023.html#hexbin)。[Hexbin 静态预览](demos/sound-demo/hexbin-2023.png) |
+
+歌词草稿使用 2014–2023 年每年前 15 名，150 个榜位中有 149 个纳入英语歌词样本。
 
 声音特征从 Billboard 榜位出发，通过 ReccoBeats 核对曲名、艺人和录音版本。三年分别匹配 **96/100、99/100、99/100** 个榜位。[ReccoBeats 查询接口](https://reccobeats.com/docs/apis/search-tracks) · [三年逐首数据](demos/sound-demo/reccobeats-2021-2023.csv) · [2023 年逐首数据](demos/sound-demo/reccobeats-2023.csv)
 

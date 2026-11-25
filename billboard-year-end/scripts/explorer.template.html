@@ -1,11 +1,12 @@
 <!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>美国年终热歌 · 1959–2023</title><style>
 *{box-sizing:border-box}body{margin:0;background:#f7f5ee;color:#222c28;font:16px/1.55 "DM Sans","PingFang SC",system-ui,sans-serif}main{max-width:1240px;margin:auto;padding:clamp(16px,3vw,46px)}header{border-bottom:1px solid #aaa99c;padding-bottom:15px}.brand{font:small-caps 15px Georgia,serif;letter-spacing:.13em;color:#566d62}h1{font:600 clamp(30px,4.2vw,58px)/1.17 Georgia,"Songti SC",serif;margin:.24em 0}h2{font-size:clamp(22px,2.7vw,34px);margin:18px 0 4px}h3{font-size:18px;margin:12px 0 3px}.quiet,small{color:#505d55}p{margin:4px 0 12px}button,select,input{font:inherit;color:inherit}button,select,input[type=text]{padding:5px 10px;background:#fffdf7;border:1px solid #c4c7bb;border-radius:5px}button{cursor:pointer}button[aria-pressed=true]{background:#214c40;color:white;border-color:#214c40}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #be773a;outline-offset:2px}nav,.tools,.timeline,.legend{display:flex;gap:8px;align-items:center;flex-wrap:wrap}nav{margin:18px 0}.timeline{padding:9px 12px;background:#ebece3}.timeline input{flex:1;min-width:100px;accent-color:#286450}.timeline label{font-size:14px}.tools{margin:10px 0}.legend button{padding:3px 7px;font-size:13px}.sw{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}.figure{width:100%;display:block;height:auto}.figure text{font:12px sans-serif;fill:#4b5a51}.maps{display:grid;grid-template-columns:1fr 1fr;gap:14px}.mapCard{background:#fcfbf5;border:1px solid #d1d3c9;padding:10px;min-width:0}.mapCard svg{display:block;width:100%;background:#edf2ef}.mapCard path,.mapCard circle{cursor:pointer}.note{font-size:14px;color:#58645b}.details{border-top:1px solid #acae9f;margin-top:18px;padding-top:4px}.rows{max-height:285px;overflow:auto}.row{padding:6px 0;border-bottom:1px solid #dddfd4;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:12px}.row span{overflow-wrap:anywhere}.row span:nth-child(2){color:#5f695f}.row a,a{color:#265c4b}.legend{margin-top:8px}label{display:inline-flex;align-items:center;gap:5px}#words{width:210px;max-width:65vw}.timeline select{font-weight:700}footer{font-size:14px;margin-top:24px;color:#556157}footer a{margin-right:12px}[hidden]{display:none!important}@media(max-width:720px){.maps{grid-template-columns:1fr}.row{font-size:14px;gap:5px}.tools{gap:5px}}
+.genreCharts{display:grid;grid-template-columns:minmax(0,1fr) minmax(175px,24%);gap:16px;align-items:center}.genreCharts.single{grid-template-columns:minmax(0,1fr)}#genreSummary{text-align:center}#genrePie{display:block;width:min(100%,190px);margin:auto}#genrePie [role=button]{cursor:pointer}#genreSummary h3,#genreSummary p{margin:4px 0}@media(max-width:600px){.genreCharts{grid-template-columns:minmax(0,1fr)}}
 </style><main><header><div class="brand">Billboard · Year-End Hot 100</div><h1>美国年终热歌，1959–2023</h1><p id="summary" class="quiet">正在读取本地数据…</p></header><nav aria-label="视图"><button data-tab="genre">歌曲曲风</button><button data-tab="map">艺人来源</button><button data-tab="words">歌词用词</button></nav>
 <div class="timeline"><label for="year">上榜年</label><select id="year"></select><input id="slider" aria-label="年度滑条" type="range" min="1959" max="2023" value="2023"></div>
 <h2 id="heading"></h2><p class="quiet" id="desc"></p><div class="tools" id="wordTools" hidden><form id="wordForm"><label>查词 <input id="words" type="text" value="love, hope, hate" aria-label="查询词，用逗号分开"></label> <button>查询</button></form><label>指标 <select id="measure"><option value="share">唱到该词的歌曲占比</option><option value="rate">每千词出现次数</option></select></label><label><input id="smooth" type="checkbox">近五年移动平均</label></div>
 <section id="mapTools" hidden><label>来源地 <select id="country"></select></label><div class="maps" id="maps"></div><p class="note">圆面积表示该地艺人占已知来源艺人的比例。两图使用相同刻度，浅色陆地为地理底图。点国家或圆点可看艺人。</p><h3>每年有多少个已知来源地？</h3></section>
-<svg id="chart" class="figure" role="img" aria-label="年度趋势图"></svg><div id="legend" class="legend"></div>
+<div id="genreCharts" class="genreCharts"><svg id="chart" class="figure" role="img" aria-label="年度趋势图"></svg><aside id="genreSummary"><h3 id="pieTitle"></h3><svg id="genrePie" viewBox="0 0 200 200" role="group" aria-labelledby="pieTitle"></svg><p id="pieShare" aria-live="polite"></p><a id="genreExplore">按曲风探索歌词</a></aside></div><div id="legend" class="legend"></div>
 <section class="details"><h3 id="detail"></h3><p class="note" id="counts" aria-live="polite"></p><div class="rows" id="rows"></div></section><footer><a href="coverage.csv">逐年覆盖表</a><a href="chart_entries.csv">完整榜位</a><a href="README.md">数据与计算口径</a></footer></main>
 <script id="packed" type="application/octet-stream">DATA_PAYLOAD</script>
 <script>
@@ -46,13 +47,50 @@ function graph(){
  if(tab==='genre'){let lo=years.map(()=>0);for(const [g,color] of Object.entries(colors)){const hi=years.map((y,i)=>lo[i]+100*(genreStats[y][g]||0)/D.years[y].length);const a=add('polygon',{points:[...pts(hi),...pts(lo).reverse()].join(' '),fill:color,opacity:genre&&genre!==g?.22:1,'data-genre':g});a.append(elt('title',{},g));lo=hi}}
  if(tab==='map')line(years.map(y=>mapStats[y].by.size),'#336950');
  if(tab==='words')terms.forEach((t,i)=>line(years.map(y=>val(t,y)),ink[i]));
- add('line',{x1:x(year),x2:x(year),y1:T,y2:h-B,stroke:'#292d27','stroke-dasharray':'4 3','pointer-events':'none'});
+ if(tab!=='genre')add('line',{x1:x(year),x2:x(year),y1:T,y2:h-B,stroke:'#292d27','stroke-dasharray':'4 3','pointer-events':'none'});
  svg.onclick=e=>{const box=svg.getBoundingClientRect(),px=(e.clientX-box.left)*w/box.width;if(px<L-2||px>w-R+2)return;if(e.target.dataset.genre)genre=e.target.dataset.genre;setYear(Math.round(1959+(px-L)*64/(w-L-R)))};
 }
 function detail(title,caption,rows){$('detail').textContent=title;$('counts').textContent=caption;const el=$('rows');el.replaceChildren();const frag=document.createDocumentFragment();for(const row of rows){const d=document.createElement('div');d.className='row';for(let i=0;i<3;i++){const s=document.createElement('span');if(i===0&&row[3]){const a=document.createElement('a');a.href=row[3];a.target='_blank';a.rel='noreferrer';a.textContent=row[i];s.append(a)}else s.textContent=row[i];d.append(s)}frag.append(d)}el.append(frag);el.scrollTop=0}
+
+function drawGenrePie(rows){
+ const svg=$('genrePie');
+ svg.replaceChildren();
+ $('pieTitle').textContent=year+' 年曲风占比';
+ let start=-Math.PI/2;
+ const weights=genreStats[year];
+ for(const [label,color] of Object.entries(colors)){
+  const fraction=(weights[label]||0)/rows.length;
+  if(!fraction)continue;
+  const end=start+fraction*Math.PI*2;
+  const point=angle=>[100+90*Math.cos(angle),100+90*Math.sin(angle)].join(',');
+  const slice=fraction>=1
+   ? elt('circle',{cx:100,cy:100,r:90,fill:color})
+   : elt('path',{d:'M100,100 L'+point(start)+' A90,90 0 '+(fraction>.5?1:0)+' 1 '+point(end)+' Z',fill:color});
+  const description=label+' · '+(fraction*100).toFixed(1)+'%';
+  slice.setAttribute('aria-label',description);
+  slice.setAttribute('role','button');
+  slice.setAttribute('tabindex','0');
+  slice.setAttribute('aria-pressed',genre===label);
+  slice.setAttribute('opacity',genre&&genre!==label?.35:1);
+  slice.append(elt('title',{},description));
+  const select=()=>{genre=genre===label?'':label;render()};
+  slice.onclick=select;
+  slice.onkeydown=event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();select();svg.querySelectorAll('[role=button]')[index].focus()}};
+  const index=svg.children.length;
+  svg.append(slice);
+  start=end;
+ }
+ $('pieShare').textContent=genre?genre+' · '+(100*(weights[genre]||0)/rows.length).toFixed(1)+'%':rows.length+' 个年终榜位';
+ const query=genre&&genre!=='未标注'?'?genre='+encodeURIComponent(genre):'';
+ $('genreExplore').href='demos/lyric-words-demo/index.html'+query+'#genre';
+}
+
 function render(){
  if(!ready)return;const leg=$('legend');leg.replaceChildren();const rows=D.years[year],cov=D.coverage[year-1959];
+ $('genreSummary').hidden=tab!=='genre';
+ $('genreCharts').classList.toggle('single',tab!=='genre');
  if(tab==='genre'){
+ drawGenrePie(rows);
  for(const g of ['',...Object.keys(colors)])leg.append(button(g||'全部',genre===g,()=>{genre=g;render()},colors[g]));
  const shown=rows.filter(r=>!genre||(r[2].length?r[2]:['未标注']).includes(genre));const share=100*(genreStats[year][genre]||0)/rows.length;
  detail(year+' · '+(genre||'全部曲风'),cov.genre_known+'/'+rows.length+' 个榜位有曲风。'+(genre?'该类涉及 '+shown.length+' 个榜位，均分权重后占 '+share.toFixed(1)+'%。':'按年终排名排列。'),shown.map(([rank,id,g])=>['#'+rank+'  '+D.songs[id][0],D.songs[id][1],g.join(' / ')||'未标注',D.songs[id][6]||'https://en.wikipedia.org/wiki/Billboard_Year-End_Hot_100_singles_of_'+year]));
