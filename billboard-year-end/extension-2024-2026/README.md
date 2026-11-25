@@ -2,6 +2,8 @@
 
 The extension adds 300 entries and links them to 273 distinct song records, 255 of which are new to Hit Atlas. The 2024 and 2025 rows transcribe the published US Billboard Year-End Hot 100. The 2026 rows are a project estimate from the calendar year's published weekly ranks, through the chart dated **November 28, 2026**. [2024 year-end source](https://www.billboard.com/charts/year-end/2024/hot-100-songs/) · [2025 year-end source](https://www.billboard.com/charts/year-end/2025/hot-100-songs/) · [2024 transcription](https://en.wikipedia.org/wiki/Billboard_Year-End_Hot_100_singles_of_2024) · [2025 transcription](https://en.wikipedia.org/wiki/Billboard_Year-End_Hot_100_singles_of_2025) · [Weekly chart archive](https://github.com/mhollingshead/billboard-hot-100)
 
+The [main README](../../README.md) links all eight demos. The original demos retain the samples documented in the [historical release](../README.md#visualization-views).
+
 ## 2026 ranking
 
 The input contains 48 consecutive weekly charts, dated January 3 through November 28, and 4,800 weekly entries. A song earns **101 minus its weekly rank** whenever it appears. Songs are grouped by normalized title and full artist credit. Ties in total points are broken by more chart weeks, then best weekly rank, then normalized title and credit. The estimate weights chart positions and can differ from Billboard's published year-end method and eligibility window. [Weekly snapshot](weekly-2026.csv) · [Top 100 scores and tie-break fields](scores-2026.csv)

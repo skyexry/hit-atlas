@@ -1,6 +1,8 @@
-# Hit Atlas field sources
+# Archived Spotify Field Sources
 
-![Entity-relationship diagram](hit-atlas-erd.png)
+For the current U.S. Billboard schema, see the [chart and data tables](../billboard-year-end/README.md#data-tables).
+
+![Spotify entity-relationship diagram](hit-atlas-erd.png)
 
 The diagram shows the current song-level joins. A chart position joins to a song via `song_id`. The song can link to one default lyric version and one archived audio record. Multiple songs can share a lyric version. Lyric scores will join by `lyrics_version_id` and word evidence by `line_id`.
 
@@ -17,7 +19,7 @@ On November 24, 2026, a rebuild from the retained source downloads and the origi
 
 The lyric audit matched 2,318 of 2,890 version checksums to retained source responses. The other 572 versions carry source URLs and were outside this cache comparison. The lyric-version URL identifies the transcription. The lyric-match status describes the separate check that links it to the song.
 
-Emotion-word rates and Lempel–Ziv repetition are planned derived fields. The team will compute them from the selected lyrics using its documented tokenizer, NRC dictionary and scoring rules. The first-pass theme method applies a fixed codebook to original-language lyrics using an LLM and checks the labels against the cited lines with an independent model call. Multilingual embeddings support semantic navigation. The feature inputs, output keys and calculations are documented in the [lyrics analysis notes](lyrics-analysis-notes.md).
+The archived analysis includes emotion-word rates and Lempel–Ziv repetition derived from the selected lyric versions. The first-pass theme method applies a fixed codebook to original-language lyrics using an LLM and checks the labels against the cited lines with an independent model call. Multilingual embeddings support semantic navigation. The feature inputs, output keys and calculations are documented in the [lyrics analysis notes](lyrics-analysis-notes.md).
 
 ## Chart positions
 
@@ -149,7 +151,7 @@ One matched recording per song, keyed by `song_id`. [CSV](../Spotify基础数据
 | `matched_spotify_id` | ID | Full Spotify ID used for the exact catalogue join. |
 | `tempo_bpm`, `loudness_db` | Number (BPM), number (dB) | Estimate from the Spotify archive or the ReccoBeats fallback. |
 | `energy`, `danceability`, `acousticness`, `audio_valence`, `instrumentalness`, `speechiness`, `liveness` | Number (0–1) | Estimate from the Spotify archive or the ReccoBeats fallback. Audio valence describes how positive the recording sounds. |
-| `key`, `mode`, `time_signature` | Integer | Spotify archive tonal and meter estimates. ReccoBeats can fill key and mode. The project treats meter values in Spotify’s documented 3–7 range as usable. See [audio feature coverage](../Spotify基础数据集/音乐特征/README.md#实际覆盖). |
+| `key`, `mode`, `time_signature` | Integer | Spotify archive tonal and meter estimates. ReccoBeats can fill key and mode. The project treats meter values in Spotify’s documented 3–7 range as usable. See [audio feature coverage](../Spotify基础数据集/音乐特征/README.md#coverage). |
 | `feature_method` | Text | Method for the preferred row. Field-level ReccoBeats fills take precedence over this label when tracing a specific value. |
 | `audio_source`, `audio_source_url`, `audio_source_record` | Text, URL, text | Provenance of the preferred archived row or the ReccoBeats row, including the source URL and record locator. |
 | `reccobeats_fields`, `reccobeats_source_url` | Text, URL | Names of metrics filled by ReccoBeats and their source endpoint. |
