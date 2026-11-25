@@ -1,91 +1,15 @@
-# Hit Atlas · 热歌图谱
+# Hit Atlas
 
-## 项目状态
+Hit Atlas explores how the genres, artists, lyrics, and sound of US Billboard Year-End Hot 100 hits changed over time. The historical dataset covers **1959–2023**. The audio-feature pilot covers **2021–2023**.
 
-当前项目研究 **美国 Billboard 年终 Hot 100**。历史数据覆盖 **1959–2023**，包括榜位、歌曲、艺人署名与来源、曲风和歌词。声音特征草稿使用 **2021–2023** 年直接从 ReccoBeats 查询的录音。
+[Billboard data, methods, and all eight views](billboard-year-end/README.md#visualization-views)
 
-[数据、方法和全部 8 个视图](billboard-year-end/README.md#三三个-task-的全部视图)
+Download or clone the repository and open the linked HTML files in a browser to use the interactive views offline.
 
-互动页面可从 GitHub 下载后用浏览器打开。旧版的全球和地区榜单、歌曲母表、歌词和分析见下方 Spotify 原型及其[交互预览](web/hit-atlas-demo.html)。
+## Spotify prototype
 
-## Spotify 原型
+The earlier Spotify prototype includes global and regional charts, a song catalog, lyrics, and exploratory analyses. The prototype and its methodology are available at the archived snapshot.
 
-以下保留旧版的数据入口、口径和协作说明，便于查阅和复现。
-
-这套数据用来探索全球和不同市场的热门歌曲在唱什么，以及歌词主题、情绪和重复程度如何随年份变化。榜单决定抽样范围，歌曲母表统一小组分工使用的编号，逐行歌词用于记录每个词或句子对分析结果的贡献。
-
-**从这里开始**：[全球逐年 Top 50](Spotify基础数据集/全球年度趋势Top50_2017-2026.csv) · [选择地区和年份](Spotify基础数据集/地区年份入口.csv) · [歌曲与歌词 Excel 工作簿](Spotify基础数据集/歌曲与歌词/歌曲与歌词.xlsx)
-
-[可视化数据与覆盖](docs/visualization-data.md)列出网页用到的字段、来源表、逐年逐市场覆盖和复跑方法。
-
-## 小组如何协作
-
-课程提案的第 4.4 节在第 2 页留给 Jiayi 补写。[Word 协作稿](docs/Hit-Atlas-Proposal.docx) · [三页 PDF 草稿](docs/Hit-Atlas-Proposal-draft.pdf)
-
-首次加入请阅读[小组成员上手指南](CONTRIBUTING.md)，里面有按角色选分支、读取数据和提交 Pull Request 的步骤。
-
-`main` 汇集小组共同使用的数据、分析结果和网页代码。第一版数据快照标记为 `data-v1`。
-
-| 工作分支 | 提交位置 | 分工 |
-|---|---|---|
-| `data-maintenance` | [Spotify基础数据集](Spotify基础数据集/) | 维护共享榜单、歌曲母表与歌词版本，记录来源和覆盖变化。 |
-| `analysis-emotion` | [analysis/emotion](analysis/emotion/) | 保存情绪分析脚本与结果。歌曲得分使用 song_id 和 lyrics_version_id；逐词贡献使用 line_id 和词在行内的位置。 |
-| `analysis-theme` | [analysis/theme](analysis/theme/) | 保存主题分析脚本与结果。用 song_id 和 lyrics_version_id 标识输入；随结果记录所用模型与主题定义。 |
-| `analysis-repetition` | [analysis/repetition](analysis/repetition/) | 保存重复度分析脚本与结果。用 lyrics_version_id 标识输入，保留重复出现的行，并说明指标分母。 |
-| `web-visualization` | [web](web/) | 保存交互可视化代码。用 song_id 连接榜位与分析结果，用 line_id 定位逐词贡献对应的原句。 |
-
-首次加入时克隆一次仓库，进入项目目录，再切换到负责的分支。以情绪组为例：
-
-```bash
-git clone https://github.com/skyexry/hit-atlas.git
-cd hit-atlas
-git switch analysis-emotion
-```
-
-完成一项分析后，在对应目录提交改动并推送该分支。在 GitHub 发起 Pull Request，目标分支选择 `main`。合并前可抽查一首歌，确认结果表里的编号能在共享母表或逐行歌词表中找到。开始下一轮时，在任务分支执行 `git fetch origin` 和 `git merge origin/main` 同步小组进度。
-
-## 榜单怎么选
-
-| 想回答的问题 | 使用的数据 | 统计口径 |
-|---|---|---|
-| 全球热门歌曲逐年有什么变化？ | [全球年度趋势表](Spotify基础数据集/全球年度趋势Top50_2017-2026.csv) | 2017–2026 年，每年 50 首。2026 是累计至 11 月 12 日的年内周榜估计。 |
-| 同一时期，不同市场流行什么？ | [地区同期 Top 50](Spotify基础数据集/地区同期Top50_2024-2026.csv) | 2024、2025、2026 年分别有 20、25、24 个市场，每张 50 首。三年固定市场比较可筛选 in_three_year_panel，共 19 个市场。依据日榜记录累计播放量排序。 |
-| 某个市场某年有哪些榜可看？ | [地区年份入口](Spotify基础数据集/地区年份入口.csv)及[年度榜单明细](Spotify基础数据集/榜单明细.csv) | 入口覆盖 27 个地区。年度明细还收录 2016 年起的历史短榜和原榜扩展，analysis_set 标记样本类型。2025 年同一市场可同时有年度歌单和同期累计榜。 |
-
-年度明细共 2,801 条，地区同期榜共 3,450 条。两者组成 6,251 条榜位记录。全球趋势表是年度明细的子集，汇总时只读取一次。歌单中的位置按来源曲序记录。地区榜的 chart_entries 统计上榜记录条数，同一歌曲名称可能在同一天对应两个目录条目。[榜单来源](Spotify基础数据集/榜单来源.csv) · [覆盖核验](Spotify基础数据集/地区日榜覆盖核验.csv) · [榜单审计](Spotify基础数据集/榜单审计/审计结果.md)
-
-### 2026 全球榜与地区同期榜怎么算
-
-- **2026 全球年内 Top 50。** 取 1 月 2 日至 11 月 12 日的 45 个完整周榜。用规范化曲名和首位艺人合并周榜记录，累计每周进入全球 Top 200 时记录的播放量，按累计值取前 50。同组有多个 Spotify ID 时，采用组内累计播放量最高的 ID 展示录音信息。 [全球候选榜和累计值](Spotify年度榜单核验/第三方补充/全球2026年度Top50候选_截至11月12日.csv)
-- **地区同期 Top 50。** 每个市场各用当年 1 月 1 日至 11 月 12 日的日榜。先核对观察期内日期及每天的名次有没有缺口，再按原榜曲名和完整署名累计上榜记录中的播放量，按累计值取前 50。同名同署名的目录版本可以汇入同一结果。播放量反映进入日榜期间的记录。 [地区日榜覆盖核验](Spotify基础数据集/地区日榜覆盖核验.csv)
-
-## 歌曲、歌词和音乐怎么连
-
-| 表 | 每行代表什么 | 用来连接的字段 |
-|---|---|---|
-| [榜位对应](Spotify基础数据集/歌曲与歌词/榜位对应.csv) | 一个来源榜位，保留原始排名、市场、标题和署名 | song_id 指向母表；recording_link_status 说明关联依据 |
-| [歌曲母表](Spotify基础数据集/歌曲与歌词/歌曲母表.csv) | 一个项目歌曲条目，共 2,963 条，保存基础元数据和连接键 | song_id 是小组共用编号；有匹配歌词时填写 lyrics_version_id |
-| [歌词匹配](Spotify基础数据集/歌曲与歌词/歌词匹配.csv) | 一个歌曲条目的默认歌词匹配或缺失状态 | song_id 连母表，lyrics_status 供筛选 |
-| [歌词版本](Spotify基础数据集/歌曲与歌词/歌词版本.csv) | 一份冻结的转录，共 2,890 份，记录来源链接、录音时长和文本摘要 | lyrics_version_id |
-| [逐行歌词](Spotify基础数据集/歌曲与歌词/逐行歌词.csv) | 歌词中一次实际出现的文本行，共 154,053 行 | lyrics_version_id 关联版本；line_id 唯一定位一行，line_no 表示顺序 |
-| [音频特征](Spotify基础数据集/音乐特征/song_audio_features.csv) | 一条已对接的录音，共 2,397 条，含 BPM、调性、响度、能量等 | song_id 连母表，matched_spotify_id 记录实际命中的录音 |
-
-**歌词特征统一从逐行歌词表提取。** 歌词匹配表用于筛选版本，歌词版本表用于查来源。[歌词分析分工说明](docs/lyrics-analysis-notes.md)
-
-例如，分析地区热门歌的悲伤词时，先选一个市场和一张榜，按 song_id 找到歌曲，再按 lyrics_version_id 取原文。组员可以把词、词在行内的位置和情绪贡献值存到自己的分析表，用 line_id 连回原句。副歌重复唱三次就保留三组行号；同一首歌进入多个市场可以共用一份歌词分析。
-
-歌曲元数据已补齐歌名、艺人和 Spotify ID，2,963 条也有带出处的时长。[覆盖率与匹配说明](docs/data-field-sources.md#song-master) · [逐曲元数据核验](Spotify基础数据集/歌曲与歌词/歌曲元数据核验.csv)
-
-### 歌词核验与覆盖
-
-歌词主要来自 LRCLIB，缺项通过艺人、发行方和其他歌词目录补查。母表中 **2,950 / 2,963（99.6%）** 的歌曲条目有逐行歌词，含 1,707 条已核对和 1,243 条待复核候选。其余 12 条有候选来源可查，1 条雨声音轨标为无歌词。 [匹配规则与全球逐年覆盖](Spotify基础数据集/歌曲与歌词/使用说明.md) · [12 首的候选来源](歌词核验依据/歌词缺项来源.csv)
-
-500 个全球年度 Top 50 榜位都有逐行歌词，其中 202 个已核对。年度主样本的已核对覆盖为 990 / 1,850 个榜位。地区同期榜有 3,439 / 3,450 个榜位可连接逐行歌词，其中 1,877 个已核对。统计单位为榜位，同一首歌跨年或跨市场可占多个榜位。
-
-音频字段、匹配口径和各来源见[音乐性特征说明](Spotify基础数据集/音乐特征/README.md)。
-
-## 其他项目数据
-
-- [年度榜单核验档案](Spotify年度榜单核验/)保存历史榜单、来源清单、第三方补充和 2026 年候选榜。
-- [2020 年三市场 Top 100 样表](Top100_2020_三市场可视化样表.csv)保留早期试验样本，主分析使用上面的榜位对应表。
-- [歌词核验依据](歌词核验依据/)保存重新核对版本时使用的候选清单、初始快照 data-v1 的录音匹配元数据，以及按查询条目编号归档的 771 份 LRCLIB 成功响应。
+- [Spotify prototype documentation](https://github.com/skyexry/hit-atlas/blob/7ab8053bdad4b21ddef28280db66e944adfb7bc4/README.md)
+- [Interactive Spotify prototype](web/hit-atlas-demo.html)
+- [Data and coverage notes](docs/visualization-data.md)
