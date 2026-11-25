@@ -8,7 +8,9 @@ The [main README](../../README.md) links all eight demos. The original demos ret
 
 The input contains 48 consecutive weekly charts, dated January 3 through November 28, and 4,800 weekly entries. A song earns **101 minus its weekly rank** whenever it appears. Songs are grouped by normalized title and full artist credit. Ties in total points are broken by more chart weeks, then best weekly rank, then normalized title and credit. The estimate weights chart positions and can differ from Billboard's published year-end method and eligibility window. [Weekly snapshot](weekly-2026.csv) · [Top 100 scores and tie-break fields](scores-2026.csv)
 
-## Coverage
+## Coverage in this source snapshot
+
+See [HitAtlas dataset coverage](../data/README.md#coverage-by-year) for the current merged release, including later genre, origin, lyric, and audio annotations.
 
 | Chart | Usable lyrics | ReccoBeats audio | Artists with known origins |
 |---|---:|---:|---:|
@@ -33,6 +35,6 @@ The three charts add 82 artist records, 80 with confirmed origins. Among the 255
 | [reccobeats-2024-2026.csv](reccobeats-2024-2026.csv) | Same columns and units as the 2021–2023 pilot. One row per chart entry, joined by year and rank. Includes matched recording metadata, source URLs, and nine numeric features when available. Where useful, Spotify catalog IDs from public playlist metadata were checked against ReccoBeats title, artist credits, and recording identifiers. `unresolved` includes search misses and unconfirmed variants. [ReccoBeats track lookup](https://reccobeats.com/docs/apis/get-tracks) · [Audio features](https://reccobeats.com/docs/apis/get-audio-features) |
 | [coverage.csv](coverage.csv) | Annual chart type, lyrics and audio coverage by entry, and origin coverage by distinct credited artist. |
 
-The extension follows the historical table formats. Its separate chart type keeps the 2026 estimate distinct from published year-end charts. Artist and song names retain source spelling where possible. Genre labels for newly added songs are pending.
+The extension follows the historical table formats. Its separate chart type keeps the 2026 estimate distinct from published year-end charts. Artist and song names retain source spelling where possible. The unified release adds the later song-genre annotations.
 
 Run `python3 verify.py` from this directory to validate the annual ranks, reproduce the 2026 estimate, check table joins, and recount coverage.

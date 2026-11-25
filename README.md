@@ -6,7 +6,7 @@ Hit Atlas explores how the genres, credited artists, lyrics, and recorded sound 
 
 ## Data
 
-The [HitAtlas dataset](billboard-year-end/data/README.md) provides all nine CSVs, original source links, field types, coverage, and a public Gist sample.
+The [HitAtlas dataset](billboard-year-end/data/README.md) provides all nine CSVs, original source links, field types, and a public Gist sample. See [coverage and percentages by year](billboard-year-end/data/README.md#coverage-by-year).
 
 ## Interactive views
 
