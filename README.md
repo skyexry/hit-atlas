@@ -10,13 +10,17 @@ The [HitAtlas dataset](billboard-year-end/data/README.md) provides all nine CSVs
 
 ## Interactive views
 
-The public D3 site reads the unified CSVs for genre shares, artist origins, and the linked artist treemap and chart history. The independent demos below retain their documented samples. To run the public site locally, serve the repository root with `python3 -m http.server` and open http://localhost:8000.
-
-| Task | Views | Demo sample |
+| Task | Views | Data used |
 | --- | --- | --- |
-| Chart composition | [Genres Over Time](billboard-year-end/explorer.html), [Where Artists Came From](billboard-year-end/demos/artist-origin-sketch/map-to-artists.html) | Historical 1959–2023 data |
-| Lyrical trends | [Keyword Trends](billboard-year-end/demos/lyric-words-demo/index.html#trend), [Keywords by Genre](billboard-year-end/demos/lyric-words-demo/index.html#genre), [Discover Words by Year](billboard-year-end/demos/lyric-words-demo/index.html#bubble) | 149 usable lyrics from the annual top 15, 2014–2023 |
-| Musical characteristics | [Compare Sound Profiles](billboard-year-end/demos/sound-demo/2023.html), [Feature Trends](billboard-year-end/demos/sound-demo/2023.html#trendPanel), [Feature Correlations](billboard-year-end/demos/sound-demo/2023.html#corrTitle) | 2023 profiles and correlations, 2021–2023 trends |
+| Chart composition | [Genres Over Time](https://skyexry.github.io/hit-atlas/#genres) and [Artist Origins](https://skyexry.github.io/hit-atlas/#origins), with a linked artist treemap and song list | 1959–2025 year-end charts and the 2026 year-to-date estimate |
+| Lyrical trends | [Keyword Trends](https://skyexry.github.io/hit-atlas/billboard-year-end/demos/lyric-words-demo/index.html#trend), [Keywords by Genre](https://skyexry.github.io/hit-atlas/billboard-year-end/demos/lyric-words-demo/index.html#genre), and [Discover Words by Year](https://skyexry.github.io/hit-atlas/billboard-year-end/demos/lyric-words-demo/index.html#bubble) | Standalone demo with 149 usable lyrics from the annual top 15, 2014–2023 |
+| Musical characteristics | [Compare Sound Profiles](https://skyexry.github.io/hit-atlas/billboard-year-end/demos/sound-demo/2023.html), [Feature Trends](https://skyexry.github.io/hit-atlas/billboard-year-end/demos/sound-demo/2023.html#trendPanel), and [Feature Correlations](https://skyexry.github.io/hit-atlas/billboard-year-end/demos/sound-demo/2023.html#corrTitle) | Standalone demo with 2023 profiles and correlations, and 2021–2023 trends |
+
+To run the D3 site locally, run `python3 -m http.server` from the repository root and open `http://localhost:8000`.
+
+### Earlier Billboard demos
+
+The earlier [genre explorer](billboard-year-end/explorer.html) and [artist-origin sketch](billboard-year-end/demos/artist-origin-sketch/map-to-artists.html) use the 1959–2023 release.
 
 ## Archived Spotify prototype
 
