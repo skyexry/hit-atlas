@@ -6,9 +6,7 @@ Hit Atlas explores how the genres, credited artists, lyrics, and recorded sound 
 
 ## Data
 
-- [1959–2023 historical data and methods](billboard-year-end/README.md). The public tables contain 6,501 chart entries and provide song, genre, lyric, and artist-origin data with source links and coverage counts.
-- [2024–2026 extension and CSV downloads](billboard-year-end/extension-2024-2026/README.md). Includes the published 2024 and 2025 year-end charts and a 2026 project estimate based on 48 weekly charts through the issue dated November 28. Each appearance earns 101 minus its weekly rank.
-- [Unified analysis CSVs and data dictionary](billboard-year-end/data/README.md). The current release has **6,801 chart entries, 6,451 song records, and 2,838 credited artist or group records**. It includes supplemental genre, lyrics, artist, and audio matches. [Download annual coverage CSV](https://raw.githubusercontent.com/skyexry/hit-atlas/main/billboard-year-end/data/coverage.csv).
+[Open the unified Billboard dataset](billboard-year-end/data/README.md) for all nine CSVs, original source links, field types, coverage, and a public Gist sample.
 
 ## Interactive views
 
