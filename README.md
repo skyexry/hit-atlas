@@ -18,10 +18,6 @@ The [HitAtlas dataset](billboard-year-end/data/README.md) provides all nine CSVs
 
 To run the D3 site locally, run `python3 -m http.server` from the repository root and open `http://localhost:8000`.
 
-### Earlier Billboard demos
-
-The earlier [genre explorer](billboard-year-end/explorer.html) and [artist-origin sketch](billboard-year-end/demos/artist-origin-sketch/map-to-artists.html) use the 1959–2023 release.
-
 ## License
 
 The [MIT License](LICENSE) covers the Hit Atlas team's original D3 visualization and Python data-processing code, including original D3 code embedded in HTML. Third-party code, datasets, lyrics, and other source material are outside this grant. See the [data sources](billboard-year-end/data/README.md#sources-and-what-we-did) for provenance and the [bundled D3 license](billboard-year-end/site/D3-LICENSE.txt) for D3's terms.
