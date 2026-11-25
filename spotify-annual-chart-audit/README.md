@@ -1,7 +1,0 @@
-# Archived Spotify Year-End Chart Source Index
-
-This page documents the archived Spotify prototype. The current project uses the U.S. Billboard Year-End Hot 100. [Current project](https://github.com/skyexry/hit-atlas#hit-atlas)
-
-The November 23, 2026 reference covers Spotify listening markets. The source index used 237 places listed by Spotify plus its global chart. Historical availability varies by year. The archive contains 2,296 track rows over 110 market–year combinations. Of those rows, 291 have no track ID in the selected source. The source register identifies the evidence used for each chart. [Supplemental verification](third-party-sources/README.md)
-
-[Original technical notes and source audit](https://github.com/skyexry/hit-atlas/blob/f9d4887460e2e6fe39439b58d3ab0591d8fe0c25/Spotify%E5%B9%B4%E5%BA%A6%E6%A6%9C%E5%8D%95%E6%A0%B8%E9%AA%8C/%E9%98%85%E8%AF%BB%E8%AF%B4%E6%98%8E.md)

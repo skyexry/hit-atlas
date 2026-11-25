@@ -6,5 +6,3 @@ The current project uses the U.S. Billboard Year-End Hot 100. Start with the [pr
 - For lyric and audio changes, record coverage by year and the denominator used in the view. Keep unresolved matches visible in the status fields.
 - For a visualization change, check the corresponding demo and verify the filters, links, and empty states. Run the relevant verification script from the historical release or extension directory.
 - Keep project documentation and user-facing text in English. Preserve the original spelling of artist and song names and retain source filenames and identifiers.
-
-[Archived Spotify contributor guide](https://github.com/skyexry/hit-atlas/blob/f9d4887460e2e6fe39439b58d3ab0591d8fe0c25/CONTRIBUTING.md)

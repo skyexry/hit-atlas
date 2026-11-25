@@ -1,7 +1,0 @@
-# Archived Spotify Chart Fields and Song Metrics
-
-This page documents the archived Spotify prototype. The current project uses the U.S. Billboard Year-End Hot 100. [Current project](https://github.com/skyexry/hit-atlas#hit-atlas)
-
-A chart detail row is one position in a market and year, with a rank, title, credited artist, source ID and URL, and the observed window where available. The Global Top 50 table is a filtered chart view. Use the [song and lyric tables](songs-and-lyrics/README.md) for recording-level joins and the [field reference](../docs/data-field-sources.md) for provenance.
-
-[Original technical notes and source audit](https://github.com/skyexry/hit-atlas/blob/f9d4887460e2e6fe39439b58d3ab0591d8fe0c25/Spotify%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E9%9B%86/%E5%AD%97%E6%AE%B5%E4%B8%8E%E6%AD%8C%E6%9B%B2%E6%8C%87%E6%A0%87%E8%AF%B4%E6%98%8E.md)

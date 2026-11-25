@@ -2,10 +2,10 @@ MIT License
 
 Copyright (c) 2026 Skye Xi and Jiayi Chen
 
-In this license, "Software" refers to the original D3 visualization and Python
+The grant below applies only to the original D3 visualization and Python
 data-processing code authored for Hit Atlas, including original D3 code embedded
 in HTML. Third-party code, datasets, lyrics, and other source material are
-outside the scope of this license.
+governed by their respective terms.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
