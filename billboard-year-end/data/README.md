@@ -132,10 +132,7 @@ Genre, lyric, and audio percentages use chart entries as the denominator. Origin
 
 ## Known limitations and potential bias
 
-- **Chart selection.** The sample represents charting U.S. hits. It reflects Billboard's metrics and eligibility rules, which vary over time. The 2026 estimate uses weekly rank points and a partial-year window.
-- **Genre and origin.** Source genre taxonomies and release-level labels can shift genre shares. Origin records use solo performers' birthplaces and groups' formation places or documented origins. Location coverage and imperfect credits can affect the number of origins represented.
-- **Lyrics.** Transcription quality and missing matches vary. English-dominant analyses and the top-15 lyric demo underrepresent multilingual and lower-ranked songs.
-- **Audio.** Early charts lack stable recording identifiers, and matching can confuse original releases with later versions. Only 76 of 6,201 pre-2021 entries have matched features. In the 2026 estimate, 8 of the top 10 matched, versus 25 of ranks 51–100. Audio summaries may overrepresent high-ranking recent songs.
+The charts represent U.S. hits under Billboard’s changing rules, and the 2026 estimate uses partial-year weekly rankings. Genre labels vary by source, and missing artist origins can affect country counts. The English-dominant, top-15 lyric pilot underrepresents multilingual and lower-ranked songs. Our original ReccoBeats extract targeted 2021–2026, and missing recording IDs make older charted versions harder to verify. In the 2026 estimate, we matched audio for 8 of the top 10 entries and 25 of ranks 51–100, so audio comparisons may overrepresent higher-ranked songs.
 
 [Historical source notes](../README.md#sources-and-preparation) and the [2024–2026 source audit](../extension-2024-2026/README.md) document the inputs. The interactive site uses [D3 7.9.0] and [Natural Earth boundaries].
 
