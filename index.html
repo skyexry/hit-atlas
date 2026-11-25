@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>Hit Atlas | U.S. Billboard Year-End Hits</title>
+  <link rel="stylesheet" href="billboard-year-end/site/style.css">
+  <script defer src="billboard-year-end/site/d3.min.js"></script>
+  <script defer src="billboard-year-end/site/app.js"></script>
+</head>
+<body>
+<main>
+  <header>
+    <nav aria-label="Project links">
+      <a href="#genres">Genres</a>
+      <a href="#origins">Artist origins</a>
+      <a href="#more">Lyrics and sound</a>
+      <a href="https://github.com/skyexry/hit-atlas/tree/main/billboard-year-end/data">Data and sources</a>
+    </nav>
+    <h1>Hit Atlas</h1>
+    <p>How U.S. Billboard Year-End Hits Have Changed</p>
+  </header>
+  <p id="loading" role="status">Loading chart data…</p>
+  <section id="genres" aria-labelledby="genres-heading">
+    <div class="section-head">
+      <div><h2 id="genres-heading">Genres over time</h2>
+      <p>Each chart entry contributes one unit split across its genre tags.</p></div>
+      <label>Breakdown year <select id="genre-year"></select></label>
+    </div>
+    <div class="layout genre-layout">
+      <div>
+        <svg id="genre-trend" viewBox="0 0 760 350" role="img" aria-label="Stacked area chart of genre shares by year"></svg>
+        <div id="genre-legend" class="legend" aria-label="Genre legend"></div>
+      </div>
+      <div>
+        <h3 id="pie-heading">Selected year</h3>
+        <svg id="genre-pie" viewBox="0 0 260 230" role="img" aria-labelledby="pie-heading"></svg>
+        <ul id="genre-shares" class="shares"></ul>
+      </div>
+    </div>
+  </section>
+  <section id="origins" aria-labelledby="origins-heading">
+    <div class="section-head">
+      <div><h2 id="origins-heading">Where charting artists came from</h2>
+      <p>Map shade shows distinct artists. Choose an origin to see who charted.</p></div>
+      <div class="controls">
+        <label>From <select id="year-from"></select></label>
+        <label>To <select id="year-to"></select></label>
+        <label>Origin <select id="origin-country"></select></label>
+      </div>
+    </div>
+    <p id="origin-summary" class="muted" aria-live="polite"></p>
+    <div class="layout origin-layout">
+      <div><svg id="origin-map" viewBox="0 0 760 405" role="group" aria-label="Map of charting artist origins"></svg>
+      <div id="map-legend" class="legend" aria-label="Map scale"></div></div>
+      <div><h3 id="tree-title">Artists in the selected origin</h3>
+        <p class="muted">Tile area shows share of credited chart appearances. Color shows a documented artist genre.</p>
+        <svg id="artist-treemap" viewBox="0 0 560 355" role="group" aria-labelledby="tree-title"></svg>
+        <label>Artist <select id="origin-artist"></select></label>
+        <div id="artist-songs" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+  <section id="more" aria-labelledby="more-heading">
+    <h2 id="more-heading">Lyrics and sound demos</h2>
+    <div class="layout">
+      <div><h3>Lyrics</h3><p>Top-15 pilot, 2014–2023</p>
+        <ul>
+          <li><a href="billboard-year-end/demos/lyric-words-demo/index.html#trend">Keyword trends</a></li>
+          <li><a href="billboard-year-end/demos/lyric-words-demo/index.html#genre">Explore keywords by genre</a></li>
+          <li><a href="billboard-year-end/demos/lyric-words-demo/index.html#bubble">Discover words by year</a></li>
+        </ul>
+      </div>
+      <div><h3>Sound</h3><p>2021–2023 pilot. Profile and correlation defaults use 2023.</p>
+        <ul>
+          <li><a href="billboard-year-end/demos/sound-demo/2023.html">Compare sound profiles</a></li>
+          <li><a href="billboard-year-end/demos/sound-demo/2023.html#trendPanel">Feature trends</a></li>
+          <li><a href="billboard-year-end/demos/sound-demo/2023.html#corrTitle">Feature correlations</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <a href="billboard-year-end/data/coverage.csv">Download annual coverage CSV</a>
+    <a href="https://github.com/skyexry/hit-atlas/tree/main/billboard-year-end/data">Data dictionary and sources</a>
+  </footer>
+</main>
+</body>
+</html>

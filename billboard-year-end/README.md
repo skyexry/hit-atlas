@@ -1,8 +1,8 @@
 # US Billboard Year-End Hot 100, 1959–2023
 
-[Historical explorer](explorer.html) · [Annual coverage](coverage.csv) · [Chart entries](chart_entries.csv)
+[Unified dataset, 1959–2026](data/README.md) · [Historical explorer](explorer.html) · [Annual coverage](coverage.csv) · [Chart entries](chart_entries.csv)
 
-For the full project, start with the [main README](../README.md). The [2024–2026 chart extension](extension-2024-2026/README.md) adds the 2024 and 2025 year-end charts and a 2026 weekly-rank estimate, with matching lyrics, audio, artist origins, and coverage. Together, the two public releases contain 6,801 chart entries. The statistics and demos below describe the historical release or the specific pilot sample listed for each view.
+[2024–2026 chart extension](extension-2024-2026/README.md) adds the 2024 and 2025 year-end charts and a 2026 weekly-rank estimate, with matching lyrics, audio, artist origins, and coverage. These historical counts describe the original snapshot. The [unified release](data/README.md) adds sourced annotations and supports the [public D3 site](https://skyexry.github.io/hit-atlas/).
 
 The dataset contains **6,501 entries across 65 year-end charts**. The 1969 chart contains 101 entries because Paul Revere & the Raiders' “Let Me” and The Box Tops' “Sweet Cream Ladies” share rank 100. All other years contain 100 entries.
 
@@ -11,7 +11,7 @@ The dataset contains **6,501 entries across 65 year-end charts**. The 1969 chart
 | Distinct song or combined-single records | 6,196 |
 | Credited artists or groups | 2,756 |
 | Entries with usable lyrics | 6,337 / 6,501 |
-| Entries with genre tags | 6,486 / 6,501 |
+| Entries with genre tags | 6,500 / 6,501 |
 | Artists with a known country or territory of origin | 2,612 / 2,756 |
 | Entries with usable, predominantly English lyrics | 6,261 / 6,501 |
 
@@ -22,6 +22,17 @@ The dataset contains **6,501 entries across 65 year-end charts**. The 1969 chart
 - **Genres.** The Perot dataset supplies entry-level genre labels. The original labels are retained alongside standardized display labels. For genre shares, each entry contributes a total weight of one, split evenly across its tags. Untagged entries form an explicit category, and annual denominators include them. [Harvard Dataverse](https://doi.org/10.7910/DVN/KRQMKU)
 - **Artist origins.** Artist identities come from chart credits and are reconciled with Wikidata aliases and redirects. Origin is the birth location for an individual and the formation place or documented origin for a group. The 2,612 known origins consist of 1,628 birthplaces, 806 formation places, and 178 documented origins. Map counts describe credited performers and their geographic origins. [Wikidata birthplace](https://www.wikidata.org/wiki/Property:P19) · [Wikidata formation place](https://www.wikidata.org/wiki/Property:P740) · [Natural Earth map](https://github.com/nvkelso/natural-earth-vector)
 - **Audio.** ReccoBeats queries start from Billboard chart entries and match title, artist, and recording version. Feature coverage is **96/100 in 2021, 99/100 in 2022, and 99/100 in 2023**. Tempo uses BPM, loudness uses dB, and the radar features use their original 0–1 scales. Missing audio values are blank. Genre medians include each entry once per applicable genre. Small genre groups can produce unstable medians or correlations. [ReccoBeats track search](https://reccobeats.com/docs/apis/search-tracks) · [2021–2023 audio table](demos/sound-demo/reccobeats-2021-2023.csv) · [2023 audio table](demos/sound-demo/reccobeats-2023.csv)
+
+## Gaps in the historical snapshot
+
+| Area | Open items |
+|---|---|
+| Genre | One unmatched entry, The Isley Brothers’ “Pop That Thang” at No. 100 in 1972. |
+| Artist origins | 144 artist records have no confirmed country or territory. |
+| Lyrics | 38 missing and 55 pending match review, counted by distinct song record. An additional 44 instrumental recordings and 24 combined entries have separate statuses. |
+| Audio pilot | Six entries have no confirmed audio match across 2021–2023. |
+
+The genre review recovered 14 matches from the Perot workbook. The source fields retain the original cells and rankings, including numeric or Boolean values where the workbook interpreted titles as spreadsheet data. The build records the reviewed rank crosswalk. For example, the Bobby Bare recording was released under Bill Parsons’ name, and Robert Mersey recorded as Spencer Ross. [Bobby Bare credit](https://www.opry.com/artists/bobby-bare) · [Robert Mersey credit](https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1960/CB-1960-04-02.pdf)
 
 ## Data tables
 

@@ -1,0 +1,39 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #17263a; background: #edf1f5; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { width: min(1220px, 94vw); margin: auto; }
+header { padding: 1.6rem 0 1.2rem; }
+nav, footer, .legend, .controls { display: flex; gap: .7rem 1.2rem; flex-wrap: wrap; }
+a { color: #174a86; text-underline-offset: .18em; }
+h1 { font-size: clamp(2.7rem, 7vw, 5.1rem); line-height: 1; letter-spacing: -.055em; margin: 1.65rem 0 .55rem; }
+h2 { font-size: clamp(1.4rem, 3vw, 2rem); margin: 0; }
+h3 { margin: .3rem 0 .55rem; }
+p { margin: .45rem 0; line-height: 1.45; }
+header p { font-size: 1.18rem; }
+section { background: white; border: 1px solid #d4dee9; border-radius: .85rem; margin: .9rem 0; padding: clamp(1rem, 2.5vw, 1.8rem); }
+.section-head { display: flex; gap: 1rem; justify-content: space-between; flex-wrap: wrap; align-items: start; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: .9rem; }
+.genre-layout { grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr); }
+.origin-layout { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); }
+svg { display: block; width: 100%; overflow: hidden; }
+label { display: inline-flex; align-items: center; gap: .4rem; font-weight: 600; }
+select { background: #f7fafc; color: inherit; border: 1px solid #a8b9cc; border-radius: .3rem; padding: .35rem; font: inherit; max-width: 100%; }
+.controls { gap: .5rem .8rem; }
+.muted { color: #536577; font-size: .93rem; }
+.legend { font-size: .83rem; gap: .35rem .8rem; margin-top: .5rem; }
+.legend span { display: inline-flex; align-items: center; gap: .3rem; }
+.swatch { width: .75rem; height: .75rem; border-radius: .1rem; display: inline-block; }
+.shares { list-style: none; padding: 0; margin: .25rem 0; font-size: .85rem; display: grid; grid-template-columns: 1fr 1fr; gap: .2rem .75rem; }
+.chart-axis { color: #47576b; font-size: 12px; }
+.mark { cursor: pointer; }
+.mark:focus { outline: none; stroke: #111; stroke-width: 3; }
+#artist-songs { max-height: 13rem; overflow: auto; margin-top: .6rem; }
+#artist-songs li { margin-bottom: .3rem; }
+footer { padding: 1.1rem 0 2rem; }
+@media (max-width: 740px) {
+  .layout { grid-template-columns: 1fr; }
+  .genre-layout > div:last-child { max-width: 25rem; }
+}
+.layout > div, .section-head > div, .controls { min-width: 0; }
+.controls label, label:has(> #origin-artist) { max-width: 100%; }
+label > select { min-width: 0; }

@@ -1,0 +1,302 @@
+entry_id,song_id,source_rank,source_title,source_artist,source_genres,genres,source_url
+1972-100-S_6c0503e4bcb2ccbc,S_6c0503e4bcb2ccbc,,Pop That Thang,The Isley Brothers,Funk,Funk,https://en.wikipedia.org/wiki/Pop_That_Thang
+2024-001-S_9c1de86b030a2027,S_9c1de86b030a2027,,Lose Control,Teddy Swims,Soul,Soul,https://en.wikipedia.org/wiki/Lose_Control_(Teddy_Swims_song)
+2024-002-S_e29e5002c691b3f5,S_e29e5002c691b3f5,,A Bar Song (Tipsy),Shaboozey,Country pop|country rap,Country|Pop|Hip Hop/Rap,https://en.wikipedia.org/wiki/A_Bar_Song_(Tipsy)
+2024-003-S_27841ce26c183d67,S_27841ce26c183d67,,Beautiful Things,Benson Boone,Pop rock|folk rock,Rock|Pop|Folk,https://en.wikipedia.org/wiki/Beautiful_Things_(Benson_Boone_song)
+2024-004-S_31984464009588f6,S_31984464009588f6,,I Had Some Help,Post Malone featuring Morgan Wallen,Country pop|country rock,Country|Pop|Rock,https://en.wikipedia.org/wiki/I_Had_Some_Help
+2024-005-S_d527a60305d60d9c,S_d527a60305d60d9c,,Lovin on Me,Jack Harlow,Pop rap,Hip Hop/Rap|Pop,https://en.wikipedia.org/wiki/Lovin_on_Me
+2024-006-S_6d7528f29f49f0f5,S_6d7528f29f49f0f5,,Not Like Us,Kendrick Lamar,West Coast hip-hop,Hip Hop/Rap,https://en.wikipedia.org/wiki/Not_Like_Us
+2024-007-S_a7e707549cd8bb13,S_a7e707549cd8bb13,,Espresso,Sabrina Carpenter,Bubblegum|dance|electropop|funk|nu-disco|post-disco|synth-pop,Dance/Electronic|Funk|Pop,https://en.wikipedia.org/wiki/Espresso_(song)
+2024-008-S_425ecd704b6617c4,S_425ecd704b6617c4,,Million Dollar Baby,Tommy Richman,R&B|electro-funk|hip-hop,R&B|Dance/Electronic|Funk|Hip Hop/Rap,https://en.wikipedia.org/wiki/Million_Dollar_Baby_(Tommy_Richman_song)
+2024-009-S_910dde69188d465f,S_910dde69188d465f,74,I Remember Everything,Zach Bryan Featuring Kacey Musgraves,"Country,Pop",Country|Pop,https://doi.org/10.7910/DVN/KRQMKU
+2024-010-S_ca2cb36d24f2cdb7,S_ca2cb36d24f2cdb7,,Too Sweet,Hozier,Retro-soul|pop rock|funk rock,Soul|Rock|Pop|Funk,https://en.wikipedia.org/wiki/Too_Sweet
+2024-011-S_e553da5f28c03e60,S_e553da5f28c03e60,,Stick Season,Noah Kahan,Folk,Folk,https://en.wikipedia.org/wiki/Stick_Season_(song)
+2024-012-S_e08f56931365e5cf,S_e08f56931365e5cf,18,Cruel Summer,Taylor Swift,Pop,Pop,https://doi.org/10.7910/DVN/KRQMKU
+2024-013-S_3d7cb4275290549c,S_3d7cb4275290549c,,Greedy,Tate McRae,Dance-pop|R&B,Dance/Electronic|Pop|R&B,https://en.wikipedia.org/wiki/Greedy_(Tate_McRae_song)
+2024-014-S_80a8a0c4dbae5526,S_80a8a0c4dbae5526,,Like That,"Future , Metro Boomin and Kendrick Lamar",Trap|hardcore hip-hop,Hip Hop/Rap,https://en.wikipedia.org/wiki/Like_That_(Future%2C_Metro_Boomin_and_Kendrick_Lamar_song)
+2024-015-S_30c7d44cb47d6a2e,S_30c7d44cb47d6a2e,,Birds of a Feather,Billie Eilish,Baroque pop|indie pop|new wave|synth-pop,Pop|Dance/Electronic,https://en.wikipedia.org/wiki/Birds_of_a_Feather_(Billie_Eilish_song)
+2024-016-S_337432372f6484f7,S_337432372f6484f7,,Please Please Please,Sabrina Carpenter,Country pop|disco-pop|synth-pop|yacht rock,Country|Pop|Dance/Electronic|Rock,https://en.wikipedia.org/wiki/Please_Please_Please_(Sabrina_Carpenter_song)
+2024-017-S_e9a43b1756d08674,S_e9a43b1756d08674,,Agora Hills,Doja Cat,Hip-hop|pop|R&B,Hip Hop/Rap|Pop|R&B,https://en.wikipedia.org/wiki/Agora_Hills
+2024-018-S_0261307a82f23dc2,S_0261307a82f23dc2,,"Good Luck, Babe!",Chappell Roan,Synth-pop|new wave|dance,Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Good_Luck%2C_Babe%21
+2024-019-S_deec73d25feb24c5,S_deec73d25feb24c5,,Saturn,SZA,R&B,R&B,https://en.wikipedia.org/wiki/Saturn_(SZA_song)
+2024-020-S_3da1e89844c995e8,S_3da1e89844c995e8,9,Snooze,SZA,"Rap,Pop,R&B",Hip Hop/Rap|Pop|R&B,https://doi.org/10.7910/DVN/KRQMKU
+2024-021-S_4a7833f8954149f9,S_4a7833f8954149f9,52,Paint The Town Red,Doja Cat,Pop,Pop,https://doi.org/10.7910/DVN/KRQMKU
+2024-022-S_e96cbcb81b737552,S_e96cbcb81b737552,,Fortnight,Taylor Swift featuring Post Malone,Synth-pop|downtempo|electropop|adult contemporary|new wave,Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Fortnight_(song)
+2024-023-S_22c197cea08185b9,S_22c197cea08185b9,8,Fast Car,Luke Combs,Country,Country,https://doi.org/10.7910/DVN/KRQMKU
+2024-024-S_e5ac08177838e8c9,S_e5ac08177838e8c9,,Water,Tyla,Amapiano|R&B|pop,R&B|Pop,https://en.wikipedia.org/wiki/Water_(Tyla_song)
+2024-025-S_aaa73d2f1e3c83a4,S_aaa73d2f1e3c83a4,,Feather,Sabrina Carpenter,Bubblegum|dance|dance-pop|disco-pop|neo-disco,Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Feather_(song)
+2024-026-S_6bc99cad4da8f8ee,S_6bc99cad4da8f8ee,,We Can't Be Friends (Wait for Your Love),Ariana Grande,Europop|power pop|synth-pop|synthwave,Pop|Dance/Electronic,https://en.wikipedia.org/wiki/We_Can%27t_Be_Friends_(Wait_for_Your_Love)
+2024-027-S_9347b67ab2b323cf,S_9347b67ab2b323cf,,Austin,Dasha,Country pop,Country|Pop,https://en.wikipedia.org/wiki/Austin_(Dasha_song)
+2024-028-S_df3cddb4f552cd94,S_df3cddb4f552cd94,1,Last Night,Morgan Wallen,Country,Country,https://doi.org/10.7910/DVN/KRQMKU
+2024-029-S_502cbbf4a3a4058a,S_502cbbf4a3a4058a,,Cowgirls,Morgan Wallen featuring Ernest,Country pop|hick-hop|pop,Country|Pop,https://en.wikipedia.org/wiki/Cowgirls_(song)
+2024-030-S_aa2724e9578e90ae,S_aa2724e9578e90ae,,Pink Skies,Zach Bryan,Country,Country,https://en.wikipedia.org/wiki/Pink_Skies
+2024-031-S_c4179475f5f06499,S_c4179475f5f06499,19,Thinkin Bout Me,Morgan Wallen,Country,Country,https://doi.org/10.7910/DVN/KRQMKU
+2024-032-S_612b75748bbd215d,S_612b75748bbd215d,,Texas Hold 'Em,Beyoncé,Country pop|western|soul,Country|Pop|Soul,https://en.wikipedia.org/wiki/Texas_Hold_%27Em_(song)
+2024-033-S_12e0da2351a854de,S_12e0da2351a854de,,Is It Over Now?,Taylor Swift,Electropop|power ballad|synth-pop,Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Is_It_Over_Now%3F
+2024-034-S_dc5e8a9c59dd57d0,S_dc5e8a9c59dd57d0,,Miles on It,Marshmello and Kane Brown,Country pop|bro-country,Country|Pop,https://en.wikipedia.org/wiki/Miles_on_It
+2024-035-S_abcd6e8fe2f0d2bf,S_abcd6e8fe2f0d2bf,,I Can Do It with a Broken Heart,Taylor Swift,Electropop|dance-pop|new wave|synth-disco,Dance/Electronic|Pop,https://en.wikipedia.org/wiki/I_Can_Do_It_with_a_Broken_Heart
+2024-036-S_b32e1ae8e8130210,S_b32e1ae8e8130210,,Wild Ones,Jessie Murph and Jelly Roll,Country|country pop|country rap,Country|Pop|Hip Hop/Rap,https://en.wikipedia.org/wiki/Wild_Ones_(Jessie_Murph_and_Jelly_Roll_song)
+2024-037-S_02c4392b0d14163b,S_02c4392b0d14163b,,Ain't No Love in Oklahoma,Luke Combs,Country rock,Country|Rock,https://en.wikipedia.org/wiki/Ain%27t_No_Love_in_Oklahoma
+2024-038-S_2626061b3bb1db6f,S_2626061b3bb1db6f,,Carnival,¥$ ( Kanye West and Ty Dolla Sign ) featuring Rich the Kid and Playboi Carti,Hip Hop/Rap,Hip Hop/Rap,https://en.wikipedia.org/wiki/Carnival_%28%C2%A5%24_song%29
+2024-039-S_28f3e5bd81b2e8d3,S_28f3e5bd81b2e8d3,,Houdini,Eminem,Hip-hop,Hip Hop/Rap,https://en.wikipedia.org/wiki/Houdini_(Eminem_song)
+2024-040-S_aa5cb50fc1e6952d,S_aa5cb50fc1e6952d,,Wanna Be,GloRilla and Megan Thee Stallion,Hip hop,Hip Hop/Rap,https://en.wikipedia.org/wiki/Wanna_Be_(GloRilla_and_Megan_Thee_Stallion_song)
+2024-041-S_256c2ce33f4d5170,S_256c2ce33f4d5170,,Slow It Down,Benson Boone,Pop rock,Rock|Pop,https://en.wikipedia.org/wiki/Slow_It_Down_(Benson_Boone_song)
+2024-042-S_4622224cf566320d,S_4622224cf566320d,,Redrum,21 Savage,Trap,Hip Hop/Rap,https://en.wikipedia.org/wiki/Redrum_(21_Savage_song)
+2024-043-S_f8a8bb52a12609f5,S_f8a8bb52a12609f5,,Houdini,Dua Lipa,Nu-disco|post-disco|psychedelic pop,Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Houdini_(Dua_Lipa_song)
+2024-044-S_5221cc566275d708,S_5221cc566275d708,,Yeah Glo!,GloRilla,Memphis rap|crunk,Hip Hop/Rap,https://en.wikipedia.org/wiki/Yeah_Glo%21
+2024-045-S_0e21f2add0ccd6ad,S_0e21f2add0ccd6ad,,Rich Baby Daddy,Drake featuring Sexyy Red and SZA,Miami bass,Hip Hop/Rap,https://en.wikipedia.org/wiki/Rich_Baby_Daddy
+2024-046-S_4144441ec7655c61,S_4144441ec7655c61,81,What Was I Made For?,Billie Eilish,Pop,Pop,https://doi.org/10.7910/DVN/KRQMKU
+2024-047-S_55974fb6b60574c5,S_55974fb6b60574c5,,End of Beginning,Djo,Synth-pop|baroque rock|Indie pop,Dance/Electronic|Pop|Rock,https://en.wikipedia.org/wiki/End_of_Beginning
+2024-048-S_e6fee48012c51627,S_e6fee48012c51627,,Lunch,Billie Eilish,Electro|post-punk|synth-pop|synth-rock,Dance/Electronic|Rock|Pop,https://en.wikipedia.org/wiki/Lunch_(song)
+2024-049-S_c6858bf45fdf045a,S_c6858bf45fdf045a,,Never Lose Me,Flo Milli,Hip hop,Hip Hop/Rap,https://en.wikipedia.org/wiki/Never_Lose_Me
+2024-050-S_c7b159fbb3d07e10,S_c7b159fbb3d07e10,,Lies Lies Lies,Morgan Wallen,Country,Country,https://en.wikipedia.org/wiki/Lies_Lies_Lies
+2024-051-S_8efdd93bcf64b216,S_8efdd93bcf64b216,,Type Shit,"Future , Metro Boomin , Travis Scott , and Playboi Carti",Hip hop|trap,Hip Hop/Rap,https://en.wikipedia.org/wiki/Type_Shit
+2024-052-S_a3547273d2336b16,S_a3547273d2336b16,,Gata Only,FloyyMenor and Cris MJ,Reggaeton,Latin,https://en.wikipedia.org/wiki/Gata_Only
+2024-053-S_ebae01fd89167405,S_ebae01fd89167405,,Hot to Go!,Chappell Roan,Synth-pop|electropop|indie pop|dance-pop|dance,Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Hot_to_Go%21
+2024-054-S_8134f5e6f4ad38e0,S_8134f5e6f4ad38e0,,All I Want for Christmas Is You,Mariah Carey,Christmas|pop|pop soul|R&B,Pop|Soul|R&B,https://en.wikipedia.org/wiki/All_I_Want_for_Christmas_Is_You
+2024-055-S_3d5dca05f5d0730c,S_3d5dca05f5d0730c,,Get It Sexyy,Sexyy Red,Crunk|snap,Hip Hop/Rap,https://en.wikipedia.org/wiki/Get_It_Sexyy
+2024-056-S_0b8a54019f773eac,S_0b8a54019f773eac,,Made for Me,Muni Long,R&B,R&B,https://en.wikipedia.org/wiki/Made_for_Me
+2024-057-S_ec7d4be116dcb5e6,S_ec7d4be116dcb5e6,30,Vampire,Olivia Rodrigo,Pop,Pop,https://doi.org/10.7910/DVN/KRQMKU
+2024-058-S_4e4666fe5f7feb02,S_4e4666fe5f7feb02,,Whatever She Wants,Bryson Tiller,Hip-hop|trap|R&B,Hip Hop/Rap|R&B,https://en.wikipedia.org/wiki/Whatever_She_Wants_(Bryson_Tiller_song)
+2024-059-S_d3b0d7f8d1d4d1e4,S_d3b0d7f8d1d4d1e4,,Rockin' Around the Christmas Tree,Brenda Lee,Rockabilly|Christmas,Rock,https://en.wikipedia.org/wiki/Rockin%27_Around_the_Christmas_Tree
+2024-060-S_f2864dee5e4746b4,S_f2864dee5e4746b4,,Pretty Little Poison,Warren Zeiders,Country,Country,https://en.wikipedia.org/wiki/Pretty_Little_Poison
+2024-061-S_1bfd410bf7862bc2,S_1bfd410bf7862bc2,,First Person Shooter,Drake featuring J. Cole,Hip hop|trap,Hip Hop/Rap,https://en.wikipedia.org/wiki/First_Person_Shooter_(song)
+2024-062-S_28796117dab9a23d,S_28796117dab9a23d,,Die with a Smile,Lady Gaga and Bruno Mars,Pop|pop-soul|soft rock,Pop|Soul|Rock,https://en.wikipedia.org/wiki/Die_with_a_Smile
+2024-063-S_efcc3e06b12bbb2f,S_efcc3e06b12bbb2f,,I Like the Way You Kiss Me,Artemas,Alternative pop|dark wave,Pop,https://en.wikipedia.org/wiki/I_Like_the_Way_You_Kiss_Me
+2024-064-S_7e886324b9041094,S_7e886324b9041094,34,Need A Favor,Jelly Roll,"Rap,Hip Hop,Country",Hip Hop/Rap|Country,https://doi.org/10.7910/DVN/KRQMKU
+2024-065-S_a290027942bd11e3,S_a290027942bd11e3,,Save Me,Jelly Roll featuring Lainey Wilson,Country,Country,https://en.wikipedia.org/wiki/Save_Me_(Jelly_Roll_song)
+2024-066-S_2c76cf81a2de4a7b,S_2c76cf81a2de4a7b,,Euphoria,Kendrick Lamar,Trap,Hip Hop/Rap,https://en.wikipedia.org/wiki/Euphoria_(Kendrick_Lamar_song)
+2024-067-S_1e3f5c3b229b871d,S_1e3f5c3b229b871d,,Truck Bed,Hardy,Country rock|country pop,Country|Rock|Pop,https://en.wikipedia.org/wiki/Truck_Bed_(song)
+2024-068-S_73c6e1326a9f4033,S_73c6e1326a9f4033,68,Jingle Bell Rock,Bobby Helms,Jazz/Swing,Jazz/Swing,https://doi.org/10.7910/DVN/KRQMKU
+2024-069-S_77b3cbb5b4dc38e3,S_77b3cbb5b4dc38e3,2,Flowers,Miley Cyrus,Pop,Pop,https://doi.org/10.7910/DVN/KRQMKU
+2024-070-S_1f587909ec1a4e98,S_1f587909ec1a4e98,,Where the Wild Things Are,Luke Combs,Country,Country,https://en.wikipedia.org/wiki/Where_the_Wild_Things_Are_(song)
+2024-071-S_11cce36904eaeec6,S_11cce36904eaeec6,,Everybody,Nicki Minaj featuring Lil Uzi Vert,Jersey club|hip hop,Dance/Electronic|Hip Hop/Rap,https://en.wikipedia.org/wiki/Everybody_(Nicki_Minaj_song)
+2024-072-S_3d0dd7535ae29f3b,S_3d0dd7535ae29f3b,,La Diabla,Xavi,Regional Mexican|urban sierreño|ranchera,Latin,https://en.wikipedia.org/wiki/La_Diabla_(Xavi_song)
+2024-073-S_a024b206684e581c,S_a024b206684e581c,,Stargazing,Myles Smith,Folk-pop,Pop|Folk,https://en.wikipedia.org/wiki/Stargazing_(Myles_Smith_song)
+2024-074-S_ada74d559d01dd80,S_ada74d559d01dd80,84,Last Christmas,Wham!,"Pop,Rock",Pop|Rock,https://doi.org/10.7910/DVN/KRQMKU
+2024-075-S_53a58c994bb0df70,S_53a58c994bb0df70,,I Am Not Okay,Jelly Roll,Country,Country,https://en.wikipedia.org/wiki/I_Am_Not_Okay
+2024-076-S_ee8582dbfe8943a2,S_ee8582dbfe8943a2,,Pour Me a Drink,Post Malone featuring Blake Shelton,Country pop,Country|Pop,https://en.wikipedia.org/wiki/Pour_Me_a_Drink
+2024-077-S_f485dae693fe6a14,S_f485dae693fe6a14,,White Horse,Chris Stapleton,Country rock|blues rock|hard rock,Country|Rock|Blues,https://en.wikipedia.org/wiki/White_Horse_(Chris_Stapleton_song)
+2024-078-S_961bd3fb8c5735ca,S_961bd3fb8c5735ca,,Lil Boo Thang,Paul Russell,Nu-disco|pop rap,Dance/Electronic|Hip Hop/Rap|Pop,https://en.wikipedia.org/wiki/Lil_Boo_Thang
+2024-079-S_eddc5d1f27d5fd82,S_eddc5d1f27d5fd82,,Good Good,"Usher , Summer Walker and 21 Savage",R&B,R&B,https://en.wikipedia.org/wiki/Good_Good_(Usher%2C_Summer_Walker_and_21_Savage_song)
+2024-080-S_9953a2f69ae6a45e,S_9953a2f69ae6a45e,,Act II: Date @ 8,4Batz and Drake,R&B,R&B,https://www.beatport.com/track/act-ii-date-8-feat-drake/22877019
+2024-081-S_b5c2d9cb11e11950,S_b5c2d9cb11e11950,,High Road,Koe Wetzel featuring Jessie Murph,Country rock,Country|Rock,https://en.wikipedia.org/wiki/High_Road_(Koe_Wetzel_and_Jessie_Murph_song)
+2024-082-S_42ef35ee1ff7d6de,S_42ef35ee1ff7d6de,,Monaco,Bad Bunny,Latin trap,Hip Hop/Rap|Latin,https://en.wikipedia.org/wiki/Monaco_(song)
+2024-083-S_9c0a7de307a000f2,S_9c0a7de307a000f2,,IDGAF,Drake featuring Yeat,Trap|rage,Hip Hop/Rap,https://en.wikipedia.org/wiki/IDGAF_(Drake_song)
+2024-084-S_a9cd756b673c7a9c,S_a9cd756b673c7a9c,,Burn It Down,Parker McCollum,Country,Country,https://en.wikipedia.org/wiki/Burn_It_Down_(Parker_McCollum_song)
+2024-085-S_f36e6242c300185f,S_f36e6242c300185f,31,Fukumean,Gunna,"Rap,Hip Hop",Hip Hop/Rap,https://doi.org/10.7910/DVN/KRQMKU
+2024-086-S_2fec90c17344a63f,S_2fec90c17344a63f,,Taste,Sabrina Carpenter,Glam-pop|country pop|indie rock|pop rock|slacker rock,Pop|Country|Rock,https://en.wikipedia.org/wiki/Taste_(Sabrina_Carpenter_song)
+2024-087-S_9616918424ed7820,S_9616918424ed7820,,Where It Ends,Bailey Zimmerman,Country|country rock,Country|Rock,https://en.wikipedia.org/wiki/Where_It_Ends
+2024-088-S_f0a524c42068491d,S_f0a524c42068491d,,FTCU,Nicki Minaj,Trap,Hip Hop/Rap,https://en.wikipedia.org/wiki/FTCU_(song)
+2024-089-S_3ed541a9bb6daf11,S_3ed541a9bb6daf11,,Wildflower,Billie Eilish,Folk-pop,Pop|Folk,https://en.wikipedia.org/wiki/Wildflower_(Billie_Eilish_song)
+2024-090-S_009d78484efab891,S_009d78484efab891,,World on Fire,Nate Smith,Country|country rock,Country|Rock,https://en.wikipedia.org/wiki/World_on_Fire_(Nate_Smith_song)
+2024-091-S_3e358c6963e697b5,S_3e358c6963e697b5,,On My Mama,Victoria Monét,R&B|dance,R&B|Dance/Electronic,https://en.wikipedia.org/wiki/On_My_Mama
+2024-092-S_edbf8d28023b8d5f,S_edbf8d28023b8d5f,,"Yes, And?",Ariana Grande,House|pop|dance,Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Yes%2C_And%3F
+2024-093-S_2e9ec4628544e542,S_2e9ec4628544e542,,Exes,Tate McRae,Pop|R&B|trap,Pop|R&B|Hip Hop/Rap,https://en.wikipedia.org/wiki/Exes_(song)
+2024-094-S_5665f90fc9602fad,S_5665f90fc9602fad,71,A Holly Jolly Christmas,Burl Ives,Folk,Folk,https://doi.org/10.7910/DVN/KRQMKU
+2024-095-S_4063a1bd21bd61b6,S_4063a1bd21bd61b6,,Wind Up Missin' You,Tucker Wetmore,Country,Country,https://en.wikipedia.org/wiki/Wind_Up_Missin%27_You
+2024-096-S_2091d2686f1e0614,S_2091d2686f1e0614,,Bulletproof,Nate Smith,Country rock,Country|Rock,https://en.wikipedia.org/wiki/Bulletproof_(Nate_Smith_song)
+2024-097-S_e121b4528e64c900,S_e121b4528e64c900,,Fe!n,Travis Scott featuring Playboi Carti,Rage,Hip Hop/Rap,https://en.wikipedia.org/wiki/Fe%21n
+2024-098-S_30a4c24d58ec0ddd,S_30a4c24d58ec0ddd,,The Painter,Cody Johnson,Country,Country,https://en.wikipedia.org/wiki/The_Painter_(song)
+2024-099-S_70fc0ba70daf6cd2,S_70fc0ba70daf6cd2,,Down Bad,Taylor Swift,Synth-pop,Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Down_Bad_(Taylor_Swift_song)
+2024-100-S_0bf6721f2e3fbf40,S_0bf6721f2e3fbf40,35,Dance The Night,Dua Lipa,Pop,Pop,https://doi.org/10.7910/DVN/KRQMKU
+2025-001-S_28796117dab9a23d,S_28796117dab9a23d,,Die with a Smile,Lady Gaga and Bruno Mars,Pop|pop-soul|soft rock,Pop|Soul|Rock,https://en.wikipedia.org/wiki/Die_with_a_Smile
+2025-002-S_cd065018d3f8ff11,S_cd065018d3f8ff11,,Luther,Kendrick Lamar and SZA,R&B|hip-hop,R&B|Hip Hop/Rap,https://en.wikipedia.org/wiki/Luther_(song)
+2025-003-S_e29e5002c691b3f5,S_e29e5002c691b3f5,,A Bar Song (Tipsy),Shaboozey,Country pop|country rap,Country|Pop|Hip Hop/Rap,https://en.wikipedia.org/wiki/A_Bar_Song_(Tipsy)
+2025-004-S_9c1de86b030a2027,S_9c1de86b030a2027,,Lose Control,Teddy Swims,Soul,Soul,https://en.wikipedia.org/wiki/Lose_Control_(Teddy_Swims_song)
+2025-005-S_30c7d44cb47d6a2e,S_30c7d44cb47d6a2e,,Birds of a Feather,Billie Eilish,Baroque pop|indie pop|new wave|synth-pop,Pop|Dance/Electronic,https://en.wikipedia.org/wiki/Birds_of_a_Feather_(Billie_Eilish_song)
+2025-006-S_27841ce26c183d67,S_27841ce26c183d67,,Beautiful Things,Benson Boone,Pop rock|folk rock,Rock|Pop|Folk,https://en.wikipedia.org/wiki/Beautiful_Things_(Benson_Boone_song)
+2025-007-S_002ce0f5b4a2b693,S_002ce0f5b4a2b693,,Ordinary,Alex Warren,Chamber pop,Pop,https://en.wikipedia.org/wiki/Ordinary_(Alex_Warren_song)
+2025-008-S_31984464009588f6,S_31984464009588f6,,I Had Some Help,Post Malone featuring Morgan Wallen,Country pop|country rock,Country|Pop|Rock,https://en.wikipedia.org/wiki/I_Had_Some_Help
+2025-009-S_7f11dc4053c0f46c,S_7f11dc4053c0f46c,,APT.,Rosé and Bruno Mars,Pop|pop rock|pop-punk|new wave,Pop|Rock,https://en.wikipedia.org/wiki/APT._(song)
+2025-010-S_25f3caf79c5c15ca,S_25f3caf79c5c15ca,,Pink Pony Club,Chappell Roan,Pop|synth-pop|dance-pop|power pop|disco-pop|disco,Pop|Dance/Electronic,https://en.wikipedia.org/wiki/Pink_Pony_Club
+2025-011-S_2ef280779fd24e47,S_2ef280779fd24e47,,Love Somebody,Morgan Wallen,Country|soft rock|dance-pop|synth-pop,Country|Rock|Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Love_Somebody_(Morgan_Wallen_song)
+2025-012-S_a7e707549cd8bb13,S_a7e707549cd8bb13,,Espresso,Sabrina Carpenter,Bubblegum|dance|electropop|funk|nu-disco|post-disco|synth-pop,Dance/Electronic|Funk|Pop,https://en.wikipedia.org/wiki/Espresso_(song)
+2025-013-S_4c176b881b18213d,S_4c176b881b18213d,,I'm the Problem,Morgan Wallen,Country,Country,https://en.wikipedia.org/wiki/I%27m_the_Problem_(song)
+2025-014-S_87fdb267d3a9e1a0,S_87fdb267d3a9e1a0,,That's So True,Gracie Abrams,Folk-pop,Pop|Folk,https://en.wikipedia.org/wiki/That%27s_So_True
+2025-015-S_e1f5a2d40fb23405,S_e1f5a2d40fb23405,,TV Off,Kendrick Lamar featuring Lefty Gunplay,West Coast hip-hop|trap|G-funk,Hip Hop/Rap|Funk,https://en.wikipedia.org/wiki/TV_Off
+2025-016-S_39727a2941a3077a,S_39727a2941a3077a,,Timeless,The Weeknd and Playboi Carti,Trap,Hip Hop/Rap,https://en.wikipedia.org/wiki/Timeless_(The_Weeknd_and_Playboi_Carti_song)
+2025-017-S_6d7528f29f49f0f5,S_6d7528f29f49f0f5,,Not Like Us,Kendrick Lamar,West Coast hip-hop,Hip Hop/Rap,https://en.wikipedia.org/wiki/Not_Like_Us
+2025-018-S_034a4f784378b6d8,S_034a4f784378b6d8,,Just in Case,Morgan Wallen,Country pop,Country|Pop,https://en.wikipedia.org/wiki/Just_in_Case_(Morgan_Wallen_song)
+2025-019-S_2fec90c17344a63f,S_2fec90c17344a63f,,Taste,Sabrina Carpenter,Glam-pop|country pop|indie rock|pop rock|slacker rock,Pop|Country|Rock,https://en.wikipedia.org/wiki/Taste_(Sabrina_Carpenter_song)
+2025-020-S_48185988e2921bb8,S_48185988e2921bb8,,Squabble Up,Kendrick Lamar,G-funk|hyphy,Funk,https://en.wikipedia.org/wiki/Squabble_Up
+2025-021-S_d7dbe5d4c28eaffb,S_d7dbe5d4c28eaffb,,30 for 30,SZA and Kendrick Lamar,Hip-hop|trap|R&B,Hip Hop/Rap|R&B,https://en.wikipedia.org/wiki/30_for_30_(song)
+2025-022-S_8c957780f868b86f,S_8c957780f868b86f,,Mutt,Leon Thomas,R&B|soul,R&B|Soul,https://en.wikipedia.org/wiki/Mutt_(Leon_Thomas_song)
+2025-023-S_20e34c4a358bf9b2,S_20e34c4a358bf9b2,,Good News,Shaboozey,Country,Country,https://en.wikipedia.org/wiki/Good_News_(Shaboozey_song)
+2025-024-S_4f28ea7f098418dc,S_4f28ea7f098418dc,,Nokia,Drake,Hip-hop|pop rap,Hip Hop/Rap|Pop,https://en.wikipedia.org/wiki/Nokia_(song)
+2025-025-S_56c613d46f1c8488,S_56c613d46f1c8488,,Golden,"Huntrix : Ejae , Audrey Nuna and Rei Ami",K-pop|electropop,Pop|Dance/Electronic,https://en.wikipedia.org/wiki/Golden_(Huntrix_song)
+2025-026-S_3ed541a9bb6daf11,S_3ed541a9bb6daf11,,Wildflower,Billie Eilish,Folk-pop,Pop|Folk,https://en.wikipedia.org/wiki/Wildflower_(Billie_Eilish_song)
+2025-027-S_cb1614048a68158b,S_cb1614048a68158b,,What I Want,Morgan Wallen featuring Tate McRae,Pop|country|trap,Pop|Country|Hip Hop/Rap,https://en.wikipedia.org/wiki/What_I_Want_(Morgan_Wallen_song)
+2025-028-S_1bbca51576967ae4,S_1bbca51576967ae4,,Messy,Lola Young,Indie pop|pop rock|pop soul,Pop|Rock|Soul,https://en.wikipedia.org/wiki/Messy_(Lola_Young_song)
+2025-029-S_a024b206684e581c,S_a024b206684e581c,,Stargazing,Myles Smith,Folk-pop,Pop|Folk,https://en.wikipedia.org/wiki/Stargazing_(Myles_Smith_song)
+2025-030-S_d8cc56abccb115ef,S_d8cc56abccb115ef,,Love Me Not,Ravyn Lenae,Soft rock|art pop|R&B,Rock|Pop|R&B,https://en.wikipedia.org/wiki/Love_Me_Not_(Ravyn_Lenae_song)
+2025-031-S_0261307a82f23dc2,S_0261307a82f23dc2,,"Good Luck, Babe!",Chappell Roan,Synth-pop|new wave|dance,Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Good_Luck%2C_Babe%21
+2025-032-S_fc452a27832a039d,S_fc452a27832a039d,,No One Noticed,The Marías,Alternative pop,Pop,https://en.wikipedia.org/wiki/No_One_Noticed
+2025-033-S_067c44b00bffea3e,S_067c44b00bffea3e,,All the Way,BigXthaPlug featuring Bailey Zimmerman,Hip-hop|country rap,Hip Hop/Rap|Country,https://en.wikipedia.org/wiki/All_the_Way_(BigXthaPlug_song)
+2025-034-S_ca2cb36d24f2cdb7,S_ca2cb36d24f2cdb7,,Too Sweet,Hozier,Retro-soul|pop rock|funk rock,Soul|Rock|Pop|Funk,https://en.wikipedia.org/wiki/Too_Sweet
+2025-035-S_f5c8eaa9d17798c8,S_f5c8eaa9d17798c8,,Worst Way,Riley Green,Country,Country,https://en.wikipedia.org/wiki/Worst_Way
+2025-036-S_ef10b01491005ec0,S_ef10b01491005ec0,,Sailor Song,Gigi Perez,Pop,Pop,https://music.apple.com/us/album/sailor-song-single/1770187509
+2025-037-S_fa77c7a2b93c5dea,S_fa77c7a2b93c5dea,,Sorry I'm Here for Someone Else,Benson Boone,Pop rock|synth-pop,Rock|Pop|Dance/Electronic,https://en.wikipedia.org/wiki/Sorry_I%27m_Here_for_Someone_Else
+2025-038-S_5678cdd8f07c8b6e,S_5678cdd8f07c8b6e,,Manchild,Sabrina Carpenter,Country pop|bubblegum pop|pop rock|synth-pop,Country|Pop|Rock|Dance/Electronic,https://en.wikipedia.org/wiki/Manchild_(Sabrina_Carpenter_song)
+2025-039-S_ae219eba7046d332,S_ae219eba7046d332,,Anxiety,Doechii,Pop rap|hip hop,Hip Hop/Rap|Pop,https://en.wikipedia.org/wiki/Anxiety_(Doechii_song)
+2025-040-S_7df99d39d70c8e02,S_7df99d39d70c8e02,,I Got Better,Morgan Wallen,Country pop,Country|Pop,https://en.wikipedia.org/wiki/I_Got_Better
+2025-041-S_d8b7ad0b2417487f,S_d8b7ad0b2417487f,,Sticky,"Tyler, the Creator featuring GloRilla , Sexyy Red and Lil Wayne",Southern hip-hop,Hip Hop/Rap,https://en.wikipedia.org/wiki/Sticky_(Tyler%2C_the_Creator_song)
+2025-042-S_8816801b51678827,S_8816801b51678827,,Undressed,Sombr,Indie Rock,Rock,https://music.apple.com/us/album/undressed-single/1802084937
+2025-043-S_0974bf2ecc078be9,S_0974bf2ecc078be9,,I Never Lie,Zach Top,Neotraditional country,Country,https://en.wikipedia.org/wiki/I_Never_Lie
+2025-044-S_ee55b87bc8c8725f,S_ee55b87bc8c8725f,,Back to Friends,Sombr,Indie pop,Pop,https://en.wikipedia.org/wiki/Back_to_Friends
+2025-045-S_a4115b0ef572f9ce,S_a4115b0ef572f9ce,,Bed Chem,Sabrina Carpenter,R&B|disco|synth-pop,R&B|Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Bed_Chem
+2025-046-S_6236ef8638125182,S_6236ef8638125182,,Sports Car,Tate McRae,Pop|dance-pop,Pop|Dance/Electronic,https://en.wikipedia.org/wiki/Sports_Car_(song)
+2025-047-S_3ef84b401656af12,S_3ef84b401656af12,,Mystical Magical,Benson Boone,Pop rock,Rock|Pop,https://en.wikipedia.org/wiki/Mystical_Magical
+2025-048-S_3269669a9772bd29,S_3269669a9772bd29,,Whatchu Kno About Me,GloRilla and Sexyy Red,Crunk,Hip Hop/Rap,https://en.wikipedia.org/wiki/Whatchu_Kno_About_Me
+2025-049-S_38897bfedbd5571e,S_38897bfedbd5571e,,Indigo,Sam Barber featuring Avery Anna,Country,Country,https://en.wikipedia.org/wiki/Indigo_(Sam_Barber_song)
+2025-050-S_337432372f6484f7,S_337432372f6484f7,,Please Please Please,Sabrina Carpenter,Country pop|disco-pop|synth-pop|yacht rock,Country|Pop|Dance/Electronic|Rock,https://en.wikipedia.org/wiki/Please_Please_Please_(Sabrina_Carpenter_song)
+2025-051-S_80072da2f1fec7f8,S_80072da2f1fec7f8,,DTMF,Bad Bunny,Plena|hip-hop|alternative reggaeton,Hip Hop/Rap|Latin,https://en.wikipedia.org/wiki/DTMF_(song)
+2025-052-S_d857e5779532b1fd,S_d857e5779532b1fd,,Blue Strips,Jessie Murph,Pop|pop trap,Pop|Hip Hop/Rap,https://en.wikipedia.org/wiki/Blue_Strips
+2025-053-S_d046e0c6815363aa,S_d046e0c6815363aa,,Peekaboo,Kendrick Lamar featuring AzChike,West Coast hip-hop,Hip Hop/Rap,https://en.wikipedia.org/wiki/Peekaboo_(song)
+2025-054-S_9f96881eeb1ca15d,S_9f96881eeb1ca15d,,Your Idol,"Saja Boys : Andrew Choi , Neckwav, Danny Chung, Kevin Woo and Samuil Lee",K-Pop (soundtrack catalog),Pop,https://music.apple.com/us/album/kpop-demon-hunters-soundtrack-from-the-netflix-film/1820264137
+2025-055-S_b5c2d9cb11e11950,S_b5c2d9cb11e11950,,High Road,Koe Wetzel featuring Jessie Murph,Country rock,Country|Rock,https://en.wikipedia.org/wiki/High_Road_(Koe_Wetzel_song)
+2025-056-S_08e65d2dfc11bf5c,S_08e65d2dfc11bf5c,,Abracadabra,Lady Gaga,Dance|dance-pop|electropop|synth-pop|acid techno,Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Abracadabra_(Lady_Gaga_song)
+2025-057-S_3be4e84afd5f675e,S_3be4e84afd5f675e,,Who,Jimin,Dance-pop|R&B|hip hop,Dance/Electronic|Pop|R&B|Hip Hop/Rap,https://en.wikipedia.org/wiki/Who_(song)
+2025-058-S_d53db44e2d521c8a,S_d53db44e2d521c8a,,Burning Blue,Mariah the Scientist,R&B,R&B,https://en.wikipedia.org/wiki/Burning_Blue_(song)
+2025-059-S_8134f5e6f4ad38e0,S_8134f5e6f4ad38e0,,All I Want for Christmas Is You,Mariah Carey,Christmas|pop|pop soul|R&B,Pop|Soul|R&B,https://en.wikipedia.org/wiki/All_I_Want_for_Christmas_Is_You
+2025-060-S_b4542339310300e6,S_b4542339310300e6,,Daisies,Justin Bieber,Alternative pop,Pop,https://en.wikipedia.org/wiki/Daisies_(Justin_Bieber_song)
+2025-061-S_0e448c7fa480c41f,S_0e448c7fa480c41f,,Soda Pop,"Saja Boys : Andrew Choi , Neckwav, Danny Chung, Kevin Woo and Samuil Lee",K-Pop (soundtrack catalog),Pop,https://music.apple.com/us/album/kpop-demon-hunters-soundtrack-from-the-netflix-film/1820264137
+2025-062-S_9b3e0405b2f424c9,S_9b3e0405b2f424c9,,Like Him,"Tyler, the Creator featuring Lola Young",Neo-soul,Soul,https://en.wikipedia.org/wiki/Like_Him
+2025-063-S_2e67f915ac7ba73e,S_2e67f915ac7ba73e,,Residuals,Chris Brown,R&B,R&B,https://en.wikipedia.org/wiki/Residuals_(song)
+2025-064-S_c85e6d24c8fabc8d,S_c85e6d24c8fabc8d,,Smile,Morgan Wallen,Country,Country,https://music.apple.com/us/album/smile-single/1785714729
+2025-065-S_ada74d559d01dd80,S_ada74d559d01dd80,84,Last Christmas,Wham!,"Pop,Rock",Pop|Rock,https://doi.org/10.7910/DVN/KRQMKU
+2025-066-S_0d60a7aa1a60653e,S_0d60a7aa1a60653e,,Am I Okay?,Megan Moroney,Country,Country,https://en.wikipedia.org/wiki/Am_I_Okay%3F_(song)
+2025-067-S_d3b0d7f8d1d4d1e4,S_d3b0d7f8d1d4d1e4,,Rockin' Around the Christmas Tree,Brenda Lee,Rockabilly|Christmas,Rock,https://en.wikipedia.org/wiki/Rockin%27_Around_the_Christmas_Tree
+2025-068-S_23ffac9b728a7aee,S_23ffac9b728a7aee,,How It's Done,"Huntrix : Ejae , Audrey Nuna and Rei Ami",K-pop|electropop|hip-hop,Pop|Dance/Electronic|Hip Hop/Rap,https://en.wikipedia.org/wiki/How_It%27s_Done_(Huntrix_song)
+2025-069-S_8f20d52fde3287a7,S_8f20d52fde3287a7,,Happen to Me,Russell Dickerson,Country pop,Country|Pop,https://en.wikipedia.org/wiki/Happen_to_Me
+2025-070-S_fa0d1208423850dd,S_fa0d1208423850dd,,Baile Inolvidable,Bad Bunny,Salsa,Latin,https://en.wikipedia.org/wiki/Baile_Inolvidable
+2025-071-S_81c72def98a12fd1,S_81c72def98a12fd1,,Weren't for the Wind,Ella Langley,Country,Country,https://en.wikipedia.org/wiki/Weren%27t_for_the_Wind
+2025-072-S_35868180abfa5cc5,S_35868180abfa5cc5,,I Ain't Comin' Back,Morgan Wallen featuring Post Malone,Country,Country,https://music.apple.com/us/album/im-the-problem/1802103958
+2025-073-S_07256b02198907d8,S_07256b02198907d8,,Cry for Me,The Weeknd,R&B/Soul,R&B|Soul,https://music.apple.com/us/album/cry-for-me/1793702595?i=1793702597&uo=4
+2025-074-S_5a89c2ab996534a7,S_5a89c2ab996534a7,,Bad Dreams,Teddy Swims,Pop-soul|pop rock,Soul|Pop|Rock,https://en.wikipedia.org/wiki/Bad_Dreams_(song)
+2025-075-S_c9ff8007a9dff6a2,S_c9ff8007a9dff6a2,,Denial Is a River,Doechii,Hip-hop,Hip Hop/Rap,https://en.wikipedia.org/wiki/Denial_Is_a_River
+2025-076-S_17d1e68170b2a875,S_17d1e68170b2a875,,BMF,SZA,Bossa nova|pop,Pop,https://en.wikipedia.org/wiki/BMF_(song)
+2025-077-S_3b5ca1d2038c4b2d,S_3b5ca1d2038c4b2d,,Eoo,Bad Bunny,Reggaeton,Latin,https://en.wikipedia.org/wiki/Eoo_(song)
+2025-078-S_564e2bfcaa8b9e01,S_564e2bfcaa8b9e01,,I'm Gonna Love You,Cody Johnson and Carrie Underwood,Country,Country,https://en.wikipedia.org/wiki/I%27m_Gonna_Love_You
+2025-079-S_53a58c994bb0df70,S_53a58c994bb0df70,,I Am Not Okay,Jelly Roll,Country,Country,https://en.wikipedia.org/wiki/I_Am_Not_Okay
+2025-080-S_df9d34823cbe6835,S_df9d34823cbe6835,,Backup Plan,Bailey Zimmerman and Luke Combs,Country,Country,https://en.wikipedia.org/wiki/Backup_Plan
+2025-081-S_73c6e1326a9f4033,S_73c6e1326a9f4033,68,Jingle Bell Rock,Bobby Helms,Jazz/Swing,Jazz/Swing,https://doi.org/10.7910/DVN/KRQMKU
+2025-082-S_195bc5d4be45ade9,S_195bc5d4be45ade9,,Revolving Door,Tate McRae,Pop|Jersey club,Pop|Dance/Electronic,https://en.wikipedia.org/wiki/Revolving_Door_(Tate_McRae_song)
+2025-083-S_3cb8a795ca9a94fe,S_3cb8a795ca9a94fe,,What It Sounds Like,"Huntrix : Ejae , Audrey Nuna and Rei Ami",K-Pop (soundtrack catalog),Pop,https://music.apple.com/us/album/kpop-demon-hunters-soundtrack-from-the-netflix-film/1820264137
+2025-084-S_a9c49aeeb75594ae,S_a9c49aeeb75594ae,,Hard Fought Hallelujah,Brandon Lake and Jelly Roll,Country,Country,https://music.apple.com/us/album/hard-fought-hallelujah-single/1792964302
+2025-085-S_3eb1aa1ff2103a6e,S_3eb1aa1ff2103a6e,,Somebody Loves Me,PartyNextDoor and Drake,R&B,R&B,https://en.wikipedia.org/wiki/Somebody_Loves_Me_(PartyNextDoor_and_Drake_song)
+2025-086-S_62a93d62030e8698,S_62a93d62030e8698,,Liar,Jelly Roll,Country rock,Country|Rock,https://en.wikipedia.org/wiki/Liar_(Jelly_Roll_song)
+2025-087-S_febb9f3900cec1e6,S_febb9f3900cec1e6,,Tu Boda,Óscar Maydon and Fuerza Regida,corrido tumbado|sierreño,Latin,https://en.wikipedia.org/wiki/Tu_Boda
+2025-088-S_9be5debfce8d9873,S_9be5debfce8d9873,,After All the Bars Are Closed,Thomas Rhett,Country,Country,https://en.wikipedia.org/wiki/After_All_the_Bars_Are_Closed
+2025-089-S_6ac5f0e5b1a2f115,S_6ac5f0e5b1a2f115,,Nuevayol,Bad Bunny,Dembow,Latin,https://en.wikipedia.org/wiki/Nuevayol
+2025-090-S_aba4ba203c96b5fe,S_aba4ba203c96b5fe,,20 Cigarettes,Morgan Wallen,Country pop,Country|Pop,https://en.wikipedia.org/wiki/20_Cigarettes_(song)
+2025-091-S_68ba1a001a7e9229,S_68ba1a001a7e9229,,Rather Lie,Playboi Carti and the Weeknd,Cloud rap|alternative R&B,Hip Hop/Rap|R&B,https://en.wikipedia.org/wiki/Rather_Lie
+2025-092-S_6aa6f9cf3a3fa9d1,S_6aa6f9cf3a3fa9d1,,Free,Ejae and Andrew Choi,K-Pop (soundtrack catalog),Pop,https://music.apple.com/us/album/kpop-demon-hunters-soundtrack-from-the-netflix-film/1820264137
+2025-093-S_79e2d8821b083c07,S_79e2d8821b083c07,,Takedown,"Huntrix : Ejae , Audrey Nuna and Rei Ami",K-Pop (soundtrack catalog),Pop,https://music.apple.com/us/album/kpop-demon-hunters-soundtrack-from-the-netflix-film/1820264137
+2025-094-S_27ab21dc5f826db5,S_27ab21dc5f826db5,,Heart of a Woman,Summer Walker,R&B,R&B,https://en.wikipedia.org/wiki/Heart_of_a_Woman_(song)
+2025-095-S_7d921b843add8c36,S_7d921b843add8c36,,House Again,Hudson Westbrook,Country,Country,https://en.wikipedia.org/wiki/House_Again
+2025-096-S_17b0896c02443773,S_17b0896c02443773,,Dark Thoughts,Lil Tecca,Hip-Hop/Rap,Hip Hop/Rap,https://music.apple.com/us/album/dark-thoughts/1819514118?i=1819514237&uo=4
+2025-097-S_faae06f02a21d761,S_faae06f02a21d761,,No Pole,Don Toliver,Hip Hop/Rap,Hip Hop/Rap,https://music.apple.com/us/music-video/no-pole/1798323866
+2025-098-S_cb7761818208b99f,S_cb7761818208b99f,,Folded,Kehlani,R&B,R&B,https://en.wikipedia.org/wiki/Folded_(song)
+2025-099-S_da11294033c14c57,S_da11294033c14c57,,Superman,Morgan Wallen,Country,Country,https://music.apple.com/us/album/im-the-problem/1802103958
+2025-100-S_b2b3a0f9b29d2577,S_b2b3a0f9b29d2577,,Loco,Netón Vega,Reggaeton,Latin,https://en.wikipedia.org/wiki/Loco_(Net%C3%B3n_Vega_song)
+2026-001-S_3833d25aed963910,S_3833d25aed963910,,Choosin' Texas,Ella Langley,Country,Country,https://en.wikipedia.org/wiki/Choosin%27_Texas
+2026-002-S_82be14a5ca31011a,S_82be14a5ca31011a,,I Just Might,Bruno Mars,Disco-pop|pop-soul|funk,Dance/Electronic|Pop|Soul|Funk,https://en.wikipedia.org/wiki/I_Just_Might
+2026-003-S_488e130cbb7bacb9,S_488e130cbb7bacb9,,Man I Need,Olivia Dean,Pop|R&B|gospel,Pop|R&B|Gospel,https://en.wikipedia.org/wiki/Man_I_Need
+2026-004-S_45cb6d409ea376c4,S_45cb6d409ea376c4,,Be Her,Ella Langley,Country,Country,https://en.wikipedia.org/wiki/Be_Her
+2026-005-S_08abc4c6820ea9b9,S_08abc4c6820ea9b9,,So Easy (To Fall In Love),Olivia Dean,Jazz pop|bossa nova,Pop|Jazz/Swing,https://en.wikipedia.org/wiki/So_Easy_(To_Fall_in_Love)
+2026-006-S_62926eb8fe8971a9,S_62926eb8fe8971a9,,Dracula,Tame Impala & JENNIE,Alternative,Alternative,https://music.apple.com/us/album/dracula-with-jennie-single/1874125260
+2026-007-S_e694f2b9bcae690b,S_e694f2b9bcae690b,,Risk It All,Bruno Mars,Bolero|Latin ballad,Latin,https://en.wikipedia.org/wiki/Risk_It_All_(Bruno_Mars_song)
+2026-008-S_d5420ea98b6b98e5,S_d5420ea98b6b98e5,,Babydoll,Dominic Fike,Alternative rock|indie rock|reggae fusion,Rock|Reggae,https://en.wikipedia.org/wiki/Babydoll_(Dominic_Fike_song)
+2026-009-S_de2adfb3a93f2c8b,S_de2adfb3a93f2c8b,,Midnight Sun,Zara Larsson,Electropop|drum and bass|hyperpop|Jersey club,Dance/Electronic,https://en.wikipedia.org/wiki/Midnight_Sun_(Zara_Larsson_song)
+2026-010-S_2e90ffc7bf53d7e2,S_2e90ffc7bf53d7e2,,Boston,Stella Lefty,Country pop,Country|Pop,https://en.wikipedia.org/wiki/Boston_(Stella_Lefty_song)
+2026-011-S_a101b41122f257e2,S_a101b41122f257e2,,Earrings,Malcolm Todd,Alternative,Alternative,https://music.apple.com/us/song/1738257931
+2026-012-S_e6b9f26a8e592518,S_e6b9f26a8e592518,,Be By You,Luke Combs,Country,Country,https://en.wikipedia.org/wiki/Be_By_You
+2026-013-S_46db7278e76cd6b9,S_46db7278e76cd6b9,,Drop Dead,Olivia Rodrigo,Synth-pop|chamber pop|indie pop|pop rock|soft rock,Dance/Electronic|Pop|Rock,https://en.wikipedia.org/wiki/Drop_Dead
+2026-014-S_22da5d609cf72636,S_22da5d609cf72636,,Loving Life Again,Ella Langley,Country,Country,https://en.wikipedia.org/wiki/Loving_Life_Again
+2026-015-S_01dec4bf79e5b7e8,S_01dec4bf79e5b7e8,,Stateside,PinkPantheress With Zara Larsson,Pop,Pop,https://music.apple.com/us/song/1843595808
+2026-016-S_2a7e486f2b229021,S_2a7e486f2b229021,,Hate That I Made You Love Me,Ariana Grande,Pop|alt-pop|R&B|synth-pop|downtempo,Pop|R&B|Dance/Electronic,https://en.wikipedia.org/wiki/Hate_That_I_Made_You_Love_Me
+2026-017-S_9ef7468cb55ffb21,S_9ef7468cb55ffb21,,I Can't Love You Anymore,Ella Langley & Morgan Wallen,Country pop,Country|Pop,https://en.wikipedia.org/wiki/I_Can%27t_Love_You_Anymore_(Ella_Langley_and_Morgan_Wallen_song)
+2026-018-S_aaf84b66c7c24884,S_aaf84b66c7c24884,,Janice STFU,Drake,Hip-hop|R&B,Hip Hop/Rap|R&B,https://en.wikipedia.org/wiki/Janice_STFU
+2026-019-S_cb7761818208b99f,S_cb7761818208b99f,,Folded,Kehlani,R&B,R&B,https://en.wikipedia.org/wiki/Folded_(song)
+2026-020-S_58539c876d4566ec,S_58539c876d4566ec,,Stupid Song,Olivia Rodrigo,Pop rock|synth-rock,Rock|Pop,https://en.wikipedia.org/wiki/Stupid_Song
+2026-021-S_042c131942b349e9,S_042c131942b349e9,,Sleepless In A Hotel Room,Luke Combs,Country,Country,https://en.wikipedia.org/wiki/Sleepless_in_a_Hotel_Room
+2026-022-S_de0c2b5c9d63c05e,S_de0c2b5c9d63c05e,,The Cure,Olivia Rodrigo,Alternative rock|indie rock|pop,Rock|Pop,https://en.wikipedia.org/wiki/The_Cure_(Olivia_Rodrigo_song)
+2026-023-S_2167736d6e9a99a8,S_2167736d6e9a99a8,,Homewrecker,sombr,Indie pop,Pop,https://en.wikipedia.org/wiki/Homewrecker_(Sombr_song)
+2026-024-S_466ca4212f2682e0,S_466ca4212f2682e0,,Golden,"HUNTR/X: EJAE, Audrey Nuna & REI AMI",K-Pop (soundtrack catalog),Pop,https://music.apple.com/us/album/kpop-demon-hunters-soundtrack-from-the-netflix-film/1820264137
+2026-025-S_fb4d7612334f9bfc,S_fb4d7612334f9bfc,,E85,Don Toliver,Rap rock|trap,Hip Hop/Rap|Rock,https://en.wikipedia.org/wiki/E85_(song)
+2026-026-S_3a41c78e699a49c4,S_3a41c78e699a49c4,,The Fate Of Ophelia,Taylor Swift,Dance-pop|synth-pop|funk,Dance/Electronic|Pop|Funk,https://en.wikipedia.org/wiki/The_Fate_of_Ophelia
+2026-027-S_002ce0f5b4a2b693,S_002ce0f5b4a2b693,,Ordinary,Alex Warren,Chamber pop,Pop,https://en.wikipedia.org/wiki/Ordinary_(Alex_Warren_song)
+2026-028-S_22665797714eb046,S_22665797714eb046,,Die On This Hill,Sienna Spiro,Pop|soul,Pop|Soul,https://en.wikipedia.org/wiki/Die_on_This_Hill
+2026-029-S_891c23d1a8cf280a,S_891c23d1a8cf280a,,Opalite,Taylor Swift,Pop rock|soft rock|synth-pop,Rock|Pop|Dance/Electronic,https://en.wikipedia.org/wiki/Opalite_(song)
+2026-030-S_5cf5f015c149de40,S_5cf5f015c149de40,,Freakin' Out,Dexter And The Moonrocks,Alternative rock,Rock,https://en.wikipedia.org/wiki/Freakin%27_Out_(Dexter_and_the_Moonrocks_song)
+2026-031-S_e881f9d283b0928f,S_e881f9d283b0928f,,"I Knew It, I Knew You",Taylor Swift,Country|country pop,Country|Pop,https://en.wikipedia.org/wiki/I_Knew_It%2C_I_Knew_You
+2026-032-S_89139d79ec77ef83,S_89139d79ec77ef83,,Lush Life,Zara Larsson,Electropop|tropical pop,Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Lush_Life_(Zara_Larsson_song)
+2026-033-S_629310395e487939,S_629310395e487939,,Been By Now,Morgan Wallen,Country pop,Country|Pop,https://en.wikipedia.org/wiki/Been_By_Now
+2026-034-S_d1b6a7b931805069,S_d1b6a7b931805069,,Orbiter,Noah Kahan,Alternative,Alternative,https://music.apple.com/us/song/6762758927
+2026-035-S_3cc8e3dbe3e29742,S_3cc8e3dbe3e29742,,Yukon,Justin Bieber,R&B,R&B,https://en.wikipedia.org/wiki/Yukon_(song)
+2026-036-S_c5c26f223c1af4ff,S_c5c26f223c1af4ff,,Where Is My Husband!,RAYE,R&B|soul|pop|big band|gospel,R&B|Soul|Pop|Gospel,https://en.wikipedia.org/wiki/Where_Is_My_Husband%21
+2026-037-S_5648805a69c8fa37,S_5648805a69c8fa37,,Iloveitiloveitiloveit,Bella Kay,Indie pop,Pop,https://en.wikipedia.org/wiki/Iloveitiloveitiloveit
+2026-038-S_59c2d3a2032bf4ff,S_59c2d3a2032bf4ff,,Shabang,Drake,Hip-hop,Hip Hop/Rap,https://en.wikipedia.org/wiki/Shabang
+2026-039-S_1e36cc679e3c59e6,S_1e36cc679e3c59e6,,The Great Divide,Noah Kahan,Folk rock|heartland rock,Rock|Folk,https://en.wikipedia.org/wiki/The_Great_Divide_(Noah_Kahan_song)
+2026-040-S_bcbe4d41af7b08ac,S_bcbe4d41af7b08ac,,What You Need,Tems,Afrobeats,Afrobeats,https://music.apple.com/us/album/what-you-need-single/1882510085
+2026-041-S_22cc5bbeb6e8fa8d,S_22cc5bbeb6e8fa8d,,Pop Dat Thang,DaBaby,Hip-hop|Miami bass,Hip Hop/Rap,https://en.wikipedia.org/wiki/Pop_Dat_Thang
+2026-042-S_8ba79f84ee4e9448,S_8ba79f84ee4e9448,,Rethink Some Things,Luke Combs,Country,Country,https://en.wikipedia.org/wiki/Rethink_Some_Things
+2026-043-S_252fbd3be55676e5,S_252fbd3be55676e5,,Cinderella,Mac Miller Featuring Ty Dolla $ign,Hip-Hop,Hip Hop/Rap,https://music.apple.com/us/song/1147227707
+2026-044-S_8a99d79719a2d5c0,S_8a99d79719a2d5c0,,American Girls,Harry Styles,Italo disco|house,Dance/Electronic,https://en.wikipedia.org/wiki/American_Girls_(Harry_Styles_song)
+2026-045-S_7bbfcb6981ed8086,S_7bbfcb6981ed8086,,Self Aware,Temper City,Indie rock|alternative rock,Rock,https://en.wikipedia.org/wiki/Self_Aware
+2026-046-S_f060e8fcff878695,S_f060e8fcff878695,,Spend Dat,Yung Miami,Hip-hop,Hip Hop/Rap,https://en.wikipedia.org/wiki/Spend_Dat
+2026-047-S_e5705d231677a76e,S_e5705d231677a76e,,The Fall,Cody Johnson,Country,Country,https://en.wikipedia.org/wiki/The_Fall_(Cody_Johnson_song)
+2026-048-S_83ee789580ec6a52,S_83ee789580ec6a52,,Dead Fresh,Lil Baby,Trap,Hip Hop/Rap,https://en.wikipedia.org/wiki/Dead_Fresh
+2026-049-S_5333103b01bba8ae,S_5333103b01bba8ae,,What You Saying,Lil Uzi Vert,Jersey club,Dance/Electronic,https://en.wikipedia.org/wiki/What_You_Saying
+2026-050-S_2f929d854e0bf2e6,S_2f929d854e0bf2e6,,Change My Mind,Riley Green,Country,Country,https://en.wikipedia.org/wiki/Change_My_Mind_(Riley_Green_song)
+2026-051-S_9b3c15e2470bedf6,S_9b3c15e2470bedf6,,Body,Don Toliver,Trap,Hip Hop/Rap,https://en.wikipedia.org/wiki/Body_(Don_Toliver_song)
+2026-052-S_122eef65875edfb0,S_122eef65875edfb0,,BbY WOW,"Karol G, Judeline & rusowsky",Dancehall|Latin pop,Reggae|Pop|Latin,https://en.wikipedia.org/wiki/Bby_Wow
+2026-053-S_b86e0f9a5ed4dd86,S_b86e0f9a5ed4dd86,,Fever Dream,Alex Warren,Pop,Pop,https://en.wikipedia.org/wiki/Fever_Dream_(song)
+2026-054-S_ee55b87bc8c8725f,S_ee55b87bc8c8725f,,Back To Friends,sombr,Indie pop,Pop,https://en.wikipedia.org/wiki/Back_to_Friends
+2026-055-S_30d1306731881556,S_30d1306731881556,,Mr. Know It All,Teddy Swims,Pop,Pop,https://music.apple.com/us/album/mr-know-it-all-single/1889361601
+2026-056-S_efed305ce58f74f6,S_efed305ce58f74f6,,Don't We,Morgan Wallen,Country,Country,https://en.wikipedia.org/wiki/Don%27t_We
+2026-057-S_58cc9ca8d910b221,S_58cc9ca8d910b221,,Animal,KATSEYE,Pop,Pop,https://en.wikipedia.org/wiki/Animal_(Katseye_song)
+2026-058-S_fdfce0515ddd3bde,S_fdfce0515ddd3bde,,Jaded,Koe Wetzel & Ella Langley,Country rock,Country|Rock,https://en.wikipedia.org/wiki/Jaded_(Koe_Wetzel_and_Ella_Langley_song)
+2026-059-S_5ede4dcc489ce404,S_5ede4dcc489ce404,,McArthur,"HARDY, Eric Church, Morgan Wallen & Tim McGraw",Country,Country,https://en.wikipedia.org/wiki/McArthur_(song)
+2026-060-S_446a0dc0d3836400,S_446a0dc0d3836400,,Loser,Tame Impala,Psychedelic pop|funk,Pop|Funk,https://en.wikipedia.org/wiki/Loser_(Tame_Impala_song)
+2026-061-S_aa72d3eb0f9a8f6e,S_aa72d3eb0f9a8f6e,,Something To Lose,Stella Lefty Featuring Vincent Mason,Country,Country,https://en.wikipedia.org/wiki/Something_to_Lose
+2026-062-S_c85524e990eb4307,S_c85524e990eb4307,,Dai Dai (FIFA World Cup Official Song 2026),Shakira X Burna Boy,Pop,Pop,https://music.apple.com/us/album/dai-dai-single/6768469975
+2026-063-S_73a97288abbcb206,S_73a97288abbcb206,,My Body Isn't Ready,sombr,Pop rock|soft rock,Rock|Pop,https://en.wikipedia.org/wiki/My_Body_Isn%27t_Ready
+2026-064-S_88efe764790931c7,S_88efe764790931c7,,Raindance,Dave & Tems,Afroswing,Afrobeats,https://en.wikipedia.org/wiki/Raindance_(song)
+2026-065-S_f4071c6cebcb48de,S_f4071c6cebcb48de,,Swim,BTS,Alternative pop|synth-pop,Pop|Dance/Electronic,https://en.wikipedia.org/wiki/Swim_(BTS_song)
+2026-066-S_6c6dc6ec17012c91,S_6c6dc6ec17012c91,,Petal,Ariana Grande,R&B,R&B,https://en.wikipedia.org/wiki/Petal_(Ariana_Grande_song)
+2026-067-S_f64883129bb96291,S_f64883129bb96291,,Hit The Wall,Gracie Abrams,Synth-pop,Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Hit_the_Wall
+2026-068-S_ec6283b5332a96a0,S_ec6283b5332a96a0,,Let 'Em Know,T.I.,Southern hip hop|trap,Hip Hop/Rap,https://en.wikipedia.org/wiki/Let_%27Em_Know
+2026-069-S_3c3c18c0f480465e,S_3c3c18c0f480465e,,Oh Yeah?,Steve Lacy,Dream pop|synth-wave,Pop|Dance/Electronic,https://en.wikipedia.org/wiki/Oh_Yeah%3F_(song)
+2026-070-S_d54fa332a09daa4b,S_d54fa332a09daa4b,,Beautiful Things,Megan Moroney,Country,Country,https://en.wikipedia.org/wiki/Beautiful_Things_(Megan_Moroney_song)
+2026-071-S_714605a0df31d062,S_714605a0df31d062,,Doors,Noah Kahan,Folk rock|Americana|roots rock,Rock|Folk|Country,https://en.wikipedia.org/wiki/Doors_(song)
+2026-072-S_1d9532e468915097,S_1d9532e468915097,,"Phone, Keys, Wallet",Lainey Wilson & John Mayer,Country,Country,https://en.wikipedia.org/wiki/Phone%2C_Keys%2C_Wallet
+2026-073-S_6314caa85b74f5ac,S_6314caa85b74f5ac,,Dandelion,Ella Langley,Country,Country,https://music.apple.com/us/song/1869436838
+2026-074-S_1343836f3892724b,S_1343836f3892724b,,Nicole Kidman,ADELA,Pop,Pop,https://music.apple.com/us/album/nicole-kidman/6807192580?i=6807192825&uo=4
+2026-075-S_581b52f1125a2ef0,S_581b52f1125a2ef0,,Ain't In LA,ADELA,Synth-pop,Dance/Electronic|Pop,https://en.wikipedia.org/wiki/Ain%27t_in_LA
+2026-076-S_b4542339310300e6,S_b4542339310300e6,,Daisies,Justin Bieber,Alternative pop,Pop,https://en.wikipedia.org/wiki/Daisies_(Justin_Bieber_song)
+2026-077-S_51cad069a8b32e6e,S_51cad069a8b32e6e,,Rein Me In,Sam Fender & Olivia Dean,Heartland rock,Rock,https://en.wikipedia.org/wiki/Rein_Me_In
+2026-078-S_01cfc5c2ad654b59,S_01cfc5c2ad654b59,,Days Like These,Luke Combs,Country,Country,https://en.wikipedia.org/wiki/Days_Like_These_(Luke_Combs_song)
+2026-079-S_5490eb57f0ba2067,S_5490eb57f0ba2067,,Tit For Tat,Tate McRae,Pop,Pop,https://en.wikipedia.org/wiki/Tit_for_Tat_(Tate_McRae_song)
+2026-080-S_c0ec29afdd1462ec,S_c0ec29afdd1462ec,,Motion Party,BossMan Dlow,Hip-hop|trap,Hip Hop/Rap,https://en.wikipedia.org/wiki/Motion_Party
+2026-081-S_eb2ed568f14a4e28,S_eb2ed568f14a4e28,,Great Expectation,Sienna Spiro,Pop,Pop,https://music.apple.com/us/song/6769552411
+2026-082-S_6180bfc266d5df2b,S_6180bfc266d5df2b,,Brunette,Tucker Wetmore,Country pop,Country|Pop,https://en.wikipedia.org/wiki/Brunette_(song)
+2026-083-S_7ec6f504c0e725ff,S_7ec6f504c0e725ff,,I Ain't Coming Back,Morgan Wallen Featuring Post Malone,Country,Country,https://music.apple.com/us/album/im-the-problem/1802103958
+2026-084-S_ea93a4770de73355,S_ea93a4770de73355,,Morning Dew (Donk),Beyonce,R&B,R&B,https://en.wikipedia.org/wiki/Morning_Dew_(Donk)
+2026-085-S_2eb6243e6411b9a1,S_2eb6243e6411b9a1,,Bloodstream,Alyssa Grace,Indie Pop,Pop,https://music.apple.com/us/album/bloodstream/6783576156?i=6783576167&uo=4
+2026-086-S_80072da2f1fec7f8,S_80072da2f1fec7f8,,DTMF,Bad Bunny,Plena|hip-hop|alternative reggaeton,Hip Hop/Rap|Latin,https://en.wikipedia.org/wiki/DTMF_(song)
+2026-087-S_adedc554253114fd,S_adedc554253114fd,,Amen,Shaboozey & Jelly Roll,Country,Country,https://en.wikipedia.org/wiki/Amen_(Shaboozey_and_Jelly_Roll_song)
+2026-088-S_55974fb6b60574c5,S_55974fb6b60574c5,,End Of Beginning,Djo,Synth-pop|baroque rock|Indie pop,Dance/Electronic|Pop|Rock,https://en.wikipedia.org/wiki/End_of_Beginning
+2026-089-S_14767718fd078f3b,S_14767718fd078f3b,,AH HA,Cardi B,Hip-Hop/Rap,Hip Hop/Rap,https://music.apple.com/us/album/ah-ha/6796433825?i=6796433834&uo=4
+2026-090-S_aba4ba203c96b5fe,S_aba4ba203c96b5fe,,20 Cigarettes,Morgan Wallen,Country pop,Country|Pop,https://en.wikipedia.org/wiki/20_Cigarettes_(song)
+2026-091-S_e7c7d81a2b11725d,S_e7c7d81a2b11725d,,Take Me Back (Leave Me There),Cody Johnson,Country,Country,https://music.apple.com/us/song/1892466278
+2026-092-S_e391c603b45b96f4,S_e391c603b45b96f4,,Don't Tell On Me,Jason Aldean,Country rock,Country|Rock,https://en.wikipedia.org/wiki/Don%27t_Tell_on_Me
+2026-093-S_38c6a570cc2e5992,S_38c6a570cc2e5992,,Mexico Honey,Kacey Musgraves,Country (album catalog),Country,https://music.apple.com/us/album/middle-of-nowhere/6764160788
+2026-094-S_4c914f0637fd887c,S_4c914f0637fd887c,,It Depends,Chris Brown Featuring Bryson Tiller,R&B|Bronx drill,R&B|Hip Hop/Rap,https://en.wikipedia.org/wiki/It_Depends
+2026-095-S_1c34aaff69861d0f,S_1c34aaff69861d0f,,Honeybee,Olivia Rodrigo,Pop,Pop,https://music.apple.com/us/album/honeybee/1889992111?i=1889992116&uo=4
+2026-096-S_27d2bc198dfe5a5c,S_27d2bc198dfe5a5c,,White Keys,Dominic Fike,Indie pop,Pop,https://en.wikipedia.org/wiki/White_Keys
+2026-097-S_0c2754b137c33f0c,S_0c2754b137c33f0c,,Aperture,Harry Styles,Electropop,Dance/Electronic,https://en.wikipedia.org/wiki/Aperture_(song)
+2026-098-S_d504f66f1fb1c651,S_d504f66f1fb1c651,,When Did You Get Hot?,Sabrina Carpenter,R&B,R&B,https://en.wikipedia.org/wiki/When_Did_You_Get_Hot%3F
+2026-099-S_35b7b1bbe241b916,S_35b7b1bbe241b916,,Cowgirl,Shaboozey,Country,Country,https://music.apple.com/us/song/6771920974
+2026-100-S_5adce0aa2c901c09,S_5adce0aa2c901c09,,Ran To Atlanta,Drake Featuring Future & Molly Santana,Trap,Hip Hop/Rap,https://en.wikipedia.org/wiki/Ran_to_Atlanta

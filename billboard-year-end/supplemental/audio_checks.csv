@@ -1,0 +1,187 @@
+song_id,status,match_reason,reccobeats_title,reccobeats_artists,reccobeats_id,isrc,spotify_url,audio_source_url,energy,danceability,acousticness,valence,speechiness,instrumentalness,liveness,tempo,loudness
+S_01cfc5c2ad654b59,matched,exact_normalized_title_and_full_credit,Days Like These,Luke Combs,f5a7118f-c161-4f0e-969b-068ce4e69ede,US6XF2500304,https://open.spotify.com/track/0aPgAvLQZNqfLDMrXv0IPE,https://api.reccobeats.com/v1/track/f5a7118f-c161-4f0e-969b-068ce4e69ede/audio-features,0.339,0.752,0.842,0.303,0.039,0.0,0.0856,135.903,-7.409
+S_02fbd4f3718380e9,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_06b1a6c3ca8495a7,matched,exact_normalized_title_and_full_credit,Slide,H.E.R. | YG,e4732edd-ed8b-46ba-96cb-7b8c3bfd7eac,USRC11902591,https://open.spotify.com/track/05dWuTWSkf3kbLtUM0fSZR,https://api.reccobeats.com/v1/track/e4732edd-ed8b-46ba-96cb-7b8c3bfd7eac/audio-features,0.479,0.83,0.084,0.201,0.342,4.1e-05,0.134,97.005,-8.409
+S_075774c07cf4c49d,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_0953f4bbedbaf019,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_09f34b63e2b7366f,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_0d4f33b6b772fabe,matched,exact_normalized_title_and_full_credit,Chasin' You,Morgan Wallen,19deeef2-79ab-46c6-a0f2-03d3ee6b8380,QZ22S1800006,https://open.spotify.com/track/0WiyWiJDkNCyGNqkv7NByy,https://api.reccobeats.com/v1/track/19deeef2-79ab-46c6-a0f2-03d3ee6b8380/audio-features,0.591,0.631,0.667,0.494,0.0277,0.0,0.11,97.087,-5.806
+S_0e448c7fa480c41f,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_11209689439a48d3,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_122eef65875edfb0,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_12e0da2351a854de,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_1343836f3892724b,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_136bda1c2c631695,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_14767718fd078f3b,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_16b7aa35297fc34a,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_1a85182038bbfe25,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_1b31bcf025fb4efe,matched,exact_normalized_title_and_full_credit,Only Human,Jonas Brothers,7a04500e-4fed-46d4-b43f-be992fb57869,USUG11901281,https://open.spotify.com/track/5VWGzq6tAxtg3NcmxO0x7E,https://api.reccobeats.com/v1/track/7a04500e-4fed-46d4-b43f-be992fb57869/audio-features,0.496,0.795,0.107,0.873,0.0721,0.0,0.0645,94.01,-5.883
+S_1beb3b14f1b6796e,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_1c34aaff69861d0f,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_1c7d779cab41e6c0,matched,exact_normalized_title_and_full_credit,Walk Em Down,NLE Choppa | Roddy Ricch,8a8670af-a2ae-48bd-9b0a-403d68094b5c,USWB12000247,https://open.spotify.com/track/5Pdnad6256RnCjTHhb49so,https://api.reccobeats.com/v1/track/8a8670af-a2ae-48bd-9b0a-403d68094b5c/audio-features,0.744,0.867,0.268,0.645,0.227,0.0,0.0713,84.005,-5.171
+S_1d461da7c09913ae,matched,exact_normalized_title_and_full_credit,Intentions,Justin Bieber | Quavo,c43ba484-1bc1-4a94-9855-a37dd4625a15,USUM72001302,https://open.spotify.com/track/364dI1bYnvamSnBJ8JcNzN,https://api.reccobeats.com/v1/track/c43ba484-1bc1-4a94-9855-a37dd4625a15/audio-features,0.553,0.811,0.317,0.86,0.0552,0.0,0.105,148.014,-6.644
+S_1d9532e468915097,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_1e0093e40025a99f,matched,exact_normalized_title_and_full_credit,Lovin' On You,Luke Combs,83bb87ad-77cc-4c6e-9664-66c63dcfede5,US6XF1700261,https://open.spotify.com/track/0nYvjcSlCgjcwogQAwIwNp,https://api.reccobeats.com/v1/track/83bb87ad-77cc-4c6e-9664-66c63dcfede5/audio-features,0.949,0.572,0.00165,0.53,0.06,0.000195,0.163,118.974,-4.865
+S_22cc5bbeb6e8fa8d,matched,exact_normalized_title_and_full_credit,POP DAT THANG,DaBaby,88d3bcb7-a80e-4d66-8a96-20ae1f06bff0,USUM72512875,https://open.spotify.com/track/0kav2DxndmxlsiT3pqXZjG,https://api.reccobeats.com/v1/track/88d3bcb7-a80e-4d66-8a96-20ae1f06bff0/audio-features,0.735,0.883,0.00674,0.374,0.165,5.64e-05,0.184,139.04,-7.638
+S_230ca057424ea50b,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_23ffac9b728a7aee,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_2626061b3bb1db6f,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_2e90ffc7bf53d7e2,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_2eb6243e6411b9a1,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_30ef3499f5ecd4f1,matched,exact_normalized_title_and_full_credit,Before You Go,Lewis Capaldi,bec0069a-0aa4-442f-acc0-f3bf7c119c4e,DEUM71905868,https://open.spotify.com/track/2gMXnyrvIjhVBUZwvLZDMP,https://api.reccobeats.com/v1/track/bec0069a-0aa4-442f-acc0-f3bf7c119c4e/audio-features,0.574,0.459,0.608,0.183,0.0577,0.0,0.0885,111.881,-4.857
+S_328856a8da439eb1,matched,exact_normalized_title_and_full_credit,Lose You To Love Me,Selena Gomez,6ab587d7-4d79-48ed-8804-14ca96a1a977,USUM71918727,https://open.spotify.com/track/4l0Mvzj72xxOpRrp6h8nHi,https://api.reccobeats.com/v1/track/6ab587d7-4d79-48ed-8804-14ca96a1a977/audio-features,0.342,0.516,0.55,0.0993,0.0425,0.0,0.21,102.819,-8.985
+S_349ba9f654f328bd,matched,exact_normalized_title_and_full_credit,High Fashion,Roddy Ricch | Mustard,10ec3c34-2ec6-43ed-8aa4-f9cfa6d90998,USAT21906985,https://open.spotify.com/track/4CCLFPwY0YtSe3noYcw0nw,https://api.reccobeats.com/v1/track/10ec3c34-2ec6-43ed-8aa4-f9cfa6d90998/audio-features,0.499,0.83,0.271,0.511,0.114,0.0,0.3,97.953,-8.442
+S_34cd900ebd5d0293,matched,exact_normalized_title_and_full_credit,I Like It,Cardi B | Bad Bunny | J Balvin,e0957065-4a53-41bd-a96a-f0cfb9751d25,USAT21801431,https://open.spotify.com/track/58q2HKrzhC3ozto2nDdN4z,https://api.reccobeats.com/v1/track/e0957065-4a53-41bd-a96a-f0cfb9751d25/audio-features,0.726,0.816,0.099,0.65,0.129,0.0,0.372,136.048,-3.998
+S_3576ecd79bbd7a40,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_35b7b1bbe241b916,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_36171effb083c0a5,matched,exact_normalized_title_and_full_credit,The Box,Roddy Ricch,ddbc1644-c2a9-40d7-b88a-c1ec82eb6ab5,USAT21906978,https://open.spotify.com/track/0nbXyq5TXYPCO7pr3N8S4I,https://api.reccobeats.com/v1/track/ddbc1644-c2a9-40d7-b88a-c1ec82eb6ab5/audio-features,0.586,0.896,0.104,0.642,0.0559,0.0,0.79,116.971,-6.687
+S_388a6bd3bf5c66e4,matched,exact_normalized_title_and_full_credit,One Man Band,Old Dominion,a4583d7f-984e-4c7e-8647-1c9fc3db7105,USRN11800147,https://open.spotify.com/track/7cA3PnUQDlUyBBwpRozQeo,https://api.reccobeats.com/v1/track/a4583d7f-984e-4c7e-8647-1c9fc3db7105/audio-features,0.358,0.706,0.677,0.478,0.0347,0.0,0.107,75.991,-8.331
+S_38a005029f7bb9e1,matched,exact_normalized_title_and_full_credit,We Paid,Lil Baby | 42 Dugg,3b63202f-588a-4797-aeab-ebda0cb79252,USUG12000092,https://open.spotify.com/track/5zzL1eZmBUyHqBMEWRskZE,https://api.reccobeats.com/v1/track/3b63202f-588a-4797-aeab-ebda0cb79252/audio-features,0.542,0.926,0.135,0.564,0.293,0.0,0.0877,135.14,-5.064
+S_38c6a570cc2e5992,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_3c19d3892521f71e,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_3cb8a795ca9a94fe,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_3e4485a53c2b7310,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_3e8e58ddb8592828,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_3f21194f007bd9d4,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_414ff3ceef7d7f57,matched,exact_normalized_title_and_full_credit,Señorita,Shawn Mendes | Camila Cabello,19fb5def-71ca-4e1a-8487-304c8647e82e,USUM71911283,https://open.spotify.com/track/6v3KW9xbzN5yKLt9YKDYA2,https://api.reccobeats.com/v1/track/19fb5def-71ca-4e1a-8487-304c8647e82e/audio-features,0.548,0.759,0.0379,0.75,0.0289,0.0,0.0828,116.963,-6.049
+S_43d44d8e01120d4f,matched,exact_normalized_title_and_full_credit,Tequila,Dan + Shay,9e402726-c00d-4d88-b79f-0a7d07b24f6f,USWB11702518,https://open.spotify.com/track/3UxjbtPrNrtxoWzpSDnQ3x,https://api.reccobeats.com/v1/track/9e402726-c00d-4d88-b79f-0a7d07b24f6f/audio-features,0.581,0.489,0.0312,0.493,0.0282,0.0,0.132,86.021,-5.731
+S_445904f9287d1a32,matched,exact_normalized_title_and_full_credit,Panini,Lil Nas X,b8ac4d41-7153-4c14-b4dc-638165e1188e,USSM11903948,https://open.spotify.com/track/6fTt0CH2t0mdeB2N9XFG5r,https://api.reccobeats.com/v1/track/b8ac4d41-7153-4c14-b4dc-638165e1188e/audio-features,0.594,0.703,0.342,0.475,0.0752,0.0,0.123,153.848,-6.146
+S_45c3e6e6f7c62590,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_4699cf169cd41138,matched,exact_normalized_title_and_full_credit,Circles,Post Malone,8ee17e48-aa36-4ad2-a83a-f1273405d930,USUM71915699,https://open.spotify.com/track/2cDQL8HMW238cdPv47Gwwh,https://api.reccobeats.com/v1/track/8ee17e48-aa36-4ad2-a83a-f1273405d930/audio-features,0.768,0.703,0.228,0.558,0.0405,0.00238,0.0893,120.013,-3.492
+S_4c914f0637fd887c,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_4e67b4abfd5245c1,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_4fac954218af00a0,matched,exact_normalized_title_and_full_credit,Bluebird,Miranda Lambert,51072078-b1b5-4897-b0bb-d75abe931677,US6XF1800265,https://open.spotify.com/track/0kPeZAyIhIfeZNrtfjJGDB,https://api.reccobeats.com/v1/track/51072078-b1b5-4897-b0bb-d75abe931677/audio-features,0.633,0.661,0.038,0.613,0.0348,2.75e-06,0.124,81.984,-5.986
+S_51cad069a8b32e6e,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_524372869838eb4a,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_5324cc9fea3e9d89,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_53374951c4638177,matched,exact_normalized_title_and_full_credit,More Than My Hometown,Morgan Wallen,0fef40e6-10c7-4eeb-a2d2-c8bc42fbde3f,QZ22S1800117,https://open.spotify.com/track/5OELUCYgOHKFAvCERnAvfS,https://api.reccobeats.com/v1/track/0fef40e6-10c7-4eeb-a2d2-c8bc42fbde3f/audio-features,0.869,0.62,0.615,0.597,0.0462,0.0,0.131,126.019,-5.479
+S_5490eb57f0ba2067,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_5648805a69c8fa37,matched,exact_normalized_title_and_full_credit,iloveitiloveitiloveit,Bella Kay,b272a80f-ccd1-4ff3-82af-3a533d8bb541,USAT22600011,https://open.spotify.com/track/5IMpnpD0tQVcqWlVIgtAtV,https://api.reccobeats.com/v1/track/b272a80f-ccd1-4ff3-82af-3a533d8bb541/audio-features,0.327,0.615,0.735,0.382,0.0332,3.09e-05,0.112,143.198,-8.13
+S_57fdf8263389da84,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_581b52f1125a2ef0,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_58539c876d4566ec,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_59c2d3a2032bf4ff,matched,exact_normalized_title_and_full_credit,Shabang,Drake,2da49db8-733d-40bb-b84a-47254df7b3a8,USUG12604765,https://open.spotify.com/track/6vjpQIdABqntoe3zPazPec,https://api.reccobeats.com/v1/track/2da49db8-733d-40bb-b84a-47254df7b3a8/audio-features,0.533,0.864,0.107,0.644,0.111,0.0,0.125,116.994,-6.294
+S_5cf5f015c149de40,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_5e5cefc3d23bd354,matched,exact_normalized_title_and_full_credit,Heart On Ice,Rod Wave,afea11f2-3318-4673-8776-f0e80c57bfa7,USUYG1257043,https://open.spotify.com/track/591ks2A0o7ratTpiRdI7M6,https://api.reccobeats.com/v1/track/afea11f2-3318-4673-8776-f0e80c57bfa7/audio-features,0.387,0.732,0.0493,0.242,0.0741,0.0,0.141,157.875,-8.47
+S_6180bfc266d5df2b,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_62926eb8fe8971a9,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_6314caa85b74f5ac,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_66dc9317bdb53bda,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_680b6d6eb4dfe179,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_69637de5fbf63060,matched,exact_normalized_title_and_full_credit,Wishing Well,Juice WRLD,e6fe50bf-5f66-4f25-9646-7fa52edec634,USUG12001905,https://open.spotify.com/track/2U5WueTLIK5WJLD7mvDODv,https://api.reccobeats.com/v1/track/e6fe50bf-5f66-4f25-9646-7fa52edec634/audio-features,0.613,0.65,0.00336,0.0804,0.128,0.0,0.267,149.972,-6.13
+S_6b7c1a31f3b36e9e,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_6ba2e53a1c0d9f98,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_6c6dc6ec17012c91,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_6c831d0ebc4960e2,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_714605a0df31d062,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_71c4b014b31b7f30,matched,exact_normalized_title_and_full_credit,Watermelon Sugar,Harry Styles,c68d1e3e-23d8-4a94-9bdc-0c2f10a1c65a,USSM11912587,https://open.spotify.com/track/6UelLqGlWMcVH1E5c4H7lY,https://api.reccobeats.com/v1/track/c68d1e3e-23d8-4a94-9bdc-0c2f10a1c65a/audio-features,0.816,0.548,0.122,0.557,0.0465,0.0,0.335,95.39,-4.209
+S_7568744ccec0cac3,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_7651d07f1d28e78a,matched,exact_normalized_title_and_full_credit,ily (i love you baby),Surf Mesa | Emilee,27a6f558-fb82-4184-8091-6255baad6199,QZJRC1945204,https://open.spotify.com/track/6OrTIKYL4kkIL23h6tUBVb,https://api.reccobeats.com/v1/track/27a6f558-fb82-4184-8091-6255baad6199/audio-features,0.799,0.667,0.0589,0.288,0.0812,0.0119,0.362,112.054,-7.318
+S_79aa2bae64ec50e1,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_79aaf7fe135c8cb6,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_7b126c0eea7ff450,matched,exact_normalized_title_and_full_credit,Youngblood,5 Seconds of Summer,00d3e779-fa96-40c3-9ce3-face6c5fa900,GBUM71800366,https://open.spotify.com/track/2iUXsYOEPhVqEBwsqP70rE,https://api.reccobeats.com/v1/track/00d3e779-fa96-40c3-9ce3-face6c5fa900/audio-features,0.854,0.597,0.0169,0.152,0.463,0.0,0.124,120.276,-5.114
+S_7bbfcb6981ed8086,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_7c5b596fe3863158,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_7ca5359ee78eee8c,matched,exact_normalized_title_and_full_credit,Dance Monkey,Tones And I,a5668c62-5ee7-475a-8ac5-345a6e19fae1,QZES71982312,https://open.spotify.com/track/2XU0oxnq2qxCpomAAuJY8K,https://api.reccobeats.com/v1/track/a5668c62-5ee7-475a-8ac5-345a6e19fae1/audio-features,0.588,0.824,0.692,0.513,0.0924,0.000104,0.149,98.027,-6.4
+S_7ec6f504c0e725ff,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_7ef95f2d589244a7,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_80d6580845fcdd04,matched,exact_normalized_title_and_full_credit,Nobody but You,Blake Shelton | Gwen Stefani,b8d326f1-e51a-43b6-a77d-db1da9919311,USWB11902679,https://open.spotify.com/track/6S9ydj7jVx2KrkLluImHrH,https://api.reccobeats.com/v1/track/b8d326f1-e51a-43b6-a77d-db1da9919311/audio-features,0.653,0.465,0.111,0.233,0.0273,0.000125,0.172,143.912,-5.515
+S_87227b3f1bc46de8,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_885cad4b764a1dbf,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_8983fe4937adc918,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_8b4133a4a7521232,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_8c9ce085491968e6,matched,exact_normalized_title_and_full_credit,Come & Go,Juice WRLD | Marshmello,5a9699b8-2f61-41f0-9690-8f186bfe3080,USUG12001904,https://open.spotify.com/track/3HbAiB6Mfs5NtuXG0XyVb8,https://api.reccobeats.com/v1/track/5a9699b8-2f61-41f0-9690-8f186bfe3080/audio-features,0.811,0.625,0.0173,0.532,0.0659,0.0,0.16,144.994,-5.183
+S_942be8fe13890c21,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_96a9faa9aac8b0ff,matched,exact_normalized_title_and_full_credit,Yummy,Justin Bieber,088b23ae-99bd-472e-aa85-e78e44693afe,USUM71923046,https://open.spotify.com/track/16wAOAZ2OkqoIDN7TpChjR,https://api.reccobeats.com/v1/track/088b23ae-99bd-472e-aa85-e78e44693afe/audio-features,0.506,0.677,0.345,0.497,0.0964,0.0,0.118,145.843,-6.652
+S_97cb5dcebd18c702,matched,exact_normalized_title_and_full_credit,Memories,Maroon 5,a2ed17c2-3633-4818-b59a-c430f0a88763,USUM71913350,https://open.spotify.com/track/0k18MibINBc41Hq7m9tOy3,https://api.reccobeats.com/v1/track/a2ed17c2-3633-4818-b59a-c430f0a88763/audio-features,0.327,0.775,0.841,0.595,0.0557,0.0,0.0821,91.05,-7.241
+S_9f96881eeb1ca15d,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_a4e7991b9994c87d,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_a9e8a1f47db06e99,matched,exact_normalized_title_and_full_credit,Don't Start Now,Dua Lipa,7c4e8b3f-55ca-4387-90f9-dbc3e49831be,GBAHT1901121,https://open.spotify.com/track/3PfIrDoz19wz7qK7tYeu62,https://api.reccobeats.com/v1/track/7c4e8b3f-55ca-4387-90f9-dbc3e49831be/audio-features,0.793,0.793,0.0123,0.679,0.083,0.0,0.0951,123.95,-4.521
+S_aa72d3eb0f9a8f6e,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_aeb167782a8be71e,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_af9da4d622c32013,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_b304917d753cdf32,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_b39262ee9d9ae9f8,matched,exact_normalized_title_and_full_credit,The Bones,Maren Morris,42dfaa2c-ee76-4c15-951c-65f76d908ba8,USG4X1800054,https://open.spotify.com/track/7yFhA2fUsL2oIMWlw5DaHQ,https://api.reccobeats.com/v1/track/42dfaa2c-ee76-4c15-951c-65f76d908ba8/audio-features,0.57,0.612,0.278,0.334,0.0347,0.0,0.0963,77.004,-6.642
+S_b42d5c8ce368b9d6,matched,exact_normalized_title_and_full_credit,One Of Them Girls,Lee Brice,d6a76df6-58ab-4c71-8d50-f6a609e42423,USCRB1900135,https://open.spotify.com/track/6uyiyatWPCqC59Mm4rO8xL,https://api.reccobeats.com/v1/track/d6a76df6-58ab-4c71-8d50-f6a609e42423/audio-features,0.79,0.643,0.29,0.808,0.0461,0.0,0.107,95.981,-6.079
+S_b4981538919ae14c,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_b7b1158af480c1c2,matched,exact_normalized_title_and_full_credit,bad guy,Billie Eilish,e0d3ae09-478f-49bf-9cca-761e4f10aa8f,USUM71900764,https://open.spotify.com/track/2Fxmhks0bxGSBdJ92vM42m,https://api.reccobeats.com/v1/track/e0d3ae09-478f-49bf-9cca-761e4f10aa8f/audio-features,0.425,0.701,0.328,0.562,0.375,0.13,0.1,135.128,-10.965
+S_b86e0f9a5ed4dd86,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_b9674e6dd59932d7,matched,exact_normalized_title_and_full_credit,Someone You Loved,Lewis Capaldi,602ad3ef-3886-4a6f-9970-9a16a1ccffdc,DEUM71807062,https://open.spotify.com/track/2TIlqbIneP0ZY1O0EzYLlc,https://api.reccobeats.com/v1/track/602ad3ef-3886-4a6f-9970-9a16a1ccffdc/audio-features,0.405,0.501,0.751,0.447,0.032,0.0,0.105,109.889,-5.679
+S_b9c69e9962c5e2fa,matched,exact_normalized_title_and_full_credit,WAP,Cardi B | Megan Thee Stallion,50c9f46d-2494-45ec-b818-95a25fd0be97,USAT22005111,https://open.spotify.com/track/59KSnYGvDeAWqPnijrsGHL,https://api.reccobeats.com/v1/track/50c9f46d-2494-45ec-b818-95a25fd0be97/audio-features,0.454,0.935,0.0194,0.357,0.375,0.0,0.0824,133.073,-7.509
+S_bc7fab9ac4c10802,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_bcbe4d41af7b08ac,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_bf6bd3d837030812,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_bfb7459ad68e0d39,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_c0c285d0fd7098d0,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_c0ec29afdd1462ec,matched,exact_normalized_title_and_full_credit,Motion Party,BossMan Dlow,7517e7dd-f799-4e97-9944-a3e27d9ec6c0,USQX92601166,https://open.spotify.com/track/53nEDUTKZNkZ1bwXrH9gBR,https://api.reccobeats.com/v1/track/7517e7dd-f799-4e97-9944-a3e27d9ec6c0/audio-features,0.82,0.89,0.0124,0.711,0.127,0.0,0.073,110.96,-3.259
+S_c58e34f9880cda6e,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_c6df68ef2b9e1699,matched,exact_normalized_title_and_full_credit,ROCKSTAR,DaBaby | Roddy Ricch,69e50a4f-e269-415b-80c2-323407364042,USUM72007941,https://open.spotify.com/track/5tm3mKOAcbLuJIfv0CHMzW,https://api.reccobeats.com/v1/track/69e50a4f-e269-415b-80c2-323407364042/audio-features,0.69,0.746,0.247,0.497,0.164,0.0,0.101,89.979,-7.956
+S_c71b41942a1bb059,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_c85524e990eb4307,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_c98fca49d481ea32,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_cc86be25316a4d18,matched,exact_normalized_title_and_full_credit,"10,000 Hours",Dan + Shay | Justin Bieber,3f6184da-78c4-4814-b723-b8863035a69d,USWB11902440,https://open.spotify.com/track/02BrHXx28t3WlsPwFdkD0X,https://api.reccobeats.com/v1/track/3f6184da-78c4-4814-b723-b8863035a69d/audio-features,0.63,0.654,0.149,0.43,0.0259,0.0,0.111,89.991,-4.644
+S_cd0f8288537eab6f,matched,exact_normalized_title_and_full_credit,Say So,Doja Cat,210b3b66-f34c-4246-a0b8-c281bdbd2d23,USRC11903454,https://open.spotify.com/track/3Dv1eDb0MEgF93GpLXlucZ,https://api.reccobeats.com/v1/track/210b3b66-f34c-4246-a0b8-c281bdbd2d23/audio-features,0.673,0.787,0.264,0.779,0.159,3.35e-06,0.0904,110.962,-4.583
+S_ce02d1a2b78d5ad7,matched,exact_normalized_title_and_full_credit,Break My Heart,Dua Lipa,4bea0b5e-552a-4489-99d3-6476b48773fb,GBAHT1901303,https://open.spotify.com/track/59CrwNtNqzOmODXRxwaknc,https://api.reccobeats.com/v1/track/4bea0b5e-552a-4489-99d3-6476b48773fb/audio-features,0.729,0.73,0.167,0.467,0.0884,1.39e-06,0.349,113.011,-3.434
+S_d0f8bf37369826aa,matched,exact_normalized_title_and_full_credit,Happier,Marshmello | Bastille,0f0119d2-9e76-438c-b567-3c49a3c9957c,USUG11801651,https://open.spotify.com/track/2P37MKMGTN8tZoAlz4883n,https://api.reccobeats.com/v1/track/0f0119d2-9e76-438c-b567-3c49a3c9957c/audio-features,0.792,0.687,0.191,0.671,0.0452,0.0,0.167,100.011,-2.749
+S_d1b6a7b931805069,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_d410fa3095783d11,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_d42abc59b3d6703b,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_d54fa332a09daa4b,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_d95d1fc5cca9da32,matched,exact_normalized_title_and_full_credit,Even Though I'm Leaving,Luke Combs,db97bab4-0775-471b-9812-9282c3c7a8b4,US6XF1700254,https://open.spotify.com/track/5Fhe63YOMZsGdB3CgCDuBi,https://api.reccobeats.com/v1/track/db97bab4-0775-471b-9812-9282c3c7a8b4/audio-features,0.755,0.554,0.225,0.624,0.0319,0.0,0.301,77.962,-6.04
+S_db066f056feadd16,matched,exact_normalized_title_and_full_credit,Die From A Broken Heart,Maddie & Tae,0d8156bc-51ff-4a99-b717-f1e438b1ab22,USUM71805387,https://open.spotify.com/track/3DA4SE262k6rdEtlHteNyq,https://api.reccobeats.com/v1/track/0d8156bc-51ff-4a99-b717-f1e438b1ab22/audio-features,0.522,0.596,0.372,0.443,0.0358,0.0,0.291,76.043,-6.633
+S_dc2de648e791b630,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_dcae0d3342bf3786,matched,exact_normalized_title_and_full_credit,I Hope You're Happy Now,Lee Brice | Carly Pearce,75fee672-f2a0-4f6a-a074-4b42a28c8362,USCJY1944081,https://open.spotify.com/track/2HWfXtWFeZpejgYSB3WZnV,https://api.reccobeats.com/v1/track/75fee672-f2a0-4f6a-a074-4b42a28c8362/audio-features,0.759,0.592,0.141,0.338,0.035,6.1e-06,0.138,118.02,-5.787
+S_de0c2b5c9d63c05e,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_df7d739d6811fd43,matched,exact_normalized_title_and_full_credit,One Margarita,Luke Bryan,5b52c4de-d555-4b3c-8446-bc4060dec50d,USUG12000522,https://open.spotify.com/track/1Y3TlYJNhIa7k4YAvFkJAB,https://api.reccobeats.com/v1/track/5b52c4de-d555-4b3c-8446-bc4060dec50d/audio-features,0.842,0.641,0.0969,0.738,0.0464,0.0,0.169,89.997,-4.872
+S_e391c603b45b96f4,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_e467162e2d553ea2,matched,exact_normalized_title_and_full_credit,Party Girl,StaySolidRocky,46dd92c0-d1c1-434a-b960-3fd945c7c5ea,USSM12002247,https://open.spotify.com/track/3FCXuJ78fwKx8IslpHU5Nm,https://api.reccobeats.com/v1/track/46dd92c0-d1c1-434a-b960-3fd945c7c5ea/audio-features,0.431,0.729,0.746,0.621,0.0643,0.0,0.0994,130.087,-9.867
+S_e5377a992d4aa5e1,matched,exact_normalized_title_and_full_credit,Trampoline,SHAED,0021b586-6a16-46f3-962d-3ef5e5efa9ce,QZ47A1800201,https://open.spotify.com/track/0lsRatBUs9HNIZAmoGABzk,https://api.reccobeats.com/v1/track/0021b586-6a16-46f3-962d-3ef5e5efa9ce/audio-features,0.412,0.689,0.488,0.537,0.0301,0.00016,0.0659,126.754,-7.523
+S_e66722f945283c98,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_e7c7d81a2b11725d,matched,exact_normalized_title_and_full_credit,Take Me Back (Leave Me There),Cody Johnson,87d64ef2-b751-407e-b0eb-09d65bffecb9,USWB12601485,https://open.spotify.com/track/3eZcmEO0X0nsfV8E3NZelo,https://api.reccobeats.com/v1/track/87d64ef2-b751-407e-b0eb-09d65bffecb9/audio-features,0.572,0.725,0.137,0.43,0.028,0.0,0.137,89.994,-5.577
+S_e80cb30ecfb6cf44,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_e881f9d283b0928f,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_eb7fdbfc8bfe5ad1,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_ebaa00deafed204e,matched,exact_normalized_title_and_full_credit,Adore You,Harry Styles,7199dce2-b622-4539-b671-85a64ee6fad8,USSM11912588,https://open.spotify.com/track/3jjujdWJ72nww5eGnfs2E7,https://api.reccobeats.com/v1/track/7199dce2-b622-4539-b671-85a64ee6fad8/audio-features,0.771,0.676,0.0237,0.569,0.0483,7e-06,0.102,99.048,-3.675
+S_ec6283b5332a96a0,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_ededf7e80374d546,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_ee9ded3b67e67e67,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_f060e8fcff878695,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_f0b0506e45c4ca3d,matched,exact_normalized_title_and_full_credit,Sunday Best,Surfaces,a902a32d-dfd3-4408-84bb-c8c9bb557431,TCAEA1802695,https://open.spotify.com/track/1qYKWcEOrh2tM8PlgIm8K1,https://api.reccobeats.com/v1/track/a902a32d-dfd3-4408-84bb-c8c9bb557431/audio-features,0.555,0.869,0.137,0.738,0.0454,0.0,0.0746,112.003,-5.984
+S_f4071c6cebcb48de,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_f425ac156c0b5554,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_f485dae693fe6a14,matched,exact_normalized_title_and_full_credit,White Horse,Chris Stapleton,074ed7a9-a81d-44e5-82ba-8d8fb6017334,USUG12300484,https://open.spotify.com/track/7MSWxMumjz6lHj7oRApNbg,https://api.reccobeats.com/v1/track/074ed7a9-a81d-44e5-82ba-8d8fb6017334/audio-features,0.77,0.353,0.0016,0.224,0.0493,0.598,0.109,145.225,-11.066
+S_f4950a98aeb10c7e,matched,exact_normalized_title_and_full_credit,everything i wanted,Billie Eilish,ee3e6c48-ab00-45c1-b56a-b10ba6620376,USUM71922577,https://open.spotify.com/track/3ZCTVFBt2Brf31RLEnCkWJ,https://api.reccobeats.com/v1/track/ee3e6c48-ab00-45c1-b56a-b10ba6620376/audio-features,0.225,0.704,0.902,0.243,0.0994,0.657,0.106,120.006,-14.454
+S_f64883129bb96291,matched,exact_normalized_title_and_full_credit,Hit the Wall,Gracie Abrams,6392bcf2-26d8-4f5c-be2a-a1a61c9d3c66,USUG12603693,https://open.spotify.com/track/61Oyg0lrAOMjBpEStqfOZ1,https://api.reccobeats.com/v1/track/6392bcf2-26d8-4f5c-be2a-a1a61c9d3c66/audio-features,0.56,0.628,0.594,0.443,0.156,0.0,0.0955,120.023,-9.128
+S_f7943c95cd18354b,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_fae70dec51af4701,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_fc2d241ab2d35f4a,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_fce86275c7c87a8b,matched,exact_normalized_title_and_full_credit,Hard To Forget,Sam Hunt,2a9221c1-0460-4034-a163-c9f2fb872bea,USUM72002308,https://open.spotify.com/track/10xuH52YSXHWFwCaF1fsDd,https://api.reccobeats.com/v1/track/2a9221c1-0460-4034-a163-c9f2fb872bea/audio-features,0.689,0.689,0.23,0.664,0.045,0.0,0.57,130.069,-5.517
+S_fd8343e8192ae368,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_fdfce0515ddd3bde,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_ffd28ca93cc712ff,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_5cdd2fa66cf619fc,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_eb8faab0adbf358b,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_2570ed47a70c523f,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_1310752841282cdb,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_c38c032e5f4adfb3,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_c52ddc356837f5b1,matched,exact_normalized_title_and_full_credit,I Want To Hold Your Hand,The Beatles,7e3df85e-d109-45d3-8a51-cbcaa2572837,GBAYE0601549,https://open.spotify.com/track/5J3Mf6dyqeGy67yuQ7ql9B,https://api.reccobeats.com/v1/track/7e3df85e-d109-45d3-8a51-cbcaa2572837/audio-features,0.753,0.287,0.0652,0.882,0.0387,0.0,0.288,130.637,-7.587
+S_33c3b32e885e9297,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_d2ef8e15b1c77380,matched,exact_normalized_title_and_full_credit,California Dreamin',The Mamas & The Papas,8e099115-9861-4495-b1b3-d26febddade9,USMC16532697,https://open.spotify.com/track/4lKNSRbJSHVZnNjZMCEh37,https://api.reccobeats.com/v1/track/8e099115-9861-4495-b1b3-d26febddade9/audio-features,0.61,0.552,0.34,0.669,0.0338,0.0,0.0494,112.363,-9.876
+S_10025caa16101e4a,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_90c95e8c2d6874bc,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_6fbad0d0a0005039,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_cc371bde4ad784a6,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_5ef0d2309bfc14fb,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_911e981cf1d5065e,matched,exact_normalized_title_and_full_credit,The First Time Ever I Saw Your Face,Roberta Flack,9821f133-198c-4baf-87a9-50599d857c6f,USAT20107944,https://open.spotify.com/track/0SxFyA4FqmEQqZVuAlg8lf,https://api.reccobeats.com/v1/track/9821f133-198c-4baf-87a9-50599d857c6f/audio-features,0.0264,0.311,0.731,0.139,0.037,0.00205,0.156,120.653,-21.644
+S_868b983df512facf,matched,exact_normalized_title_and_full_credit,Tie A Yellow Ribbon Round The Ole Oak Tree,Dawn,5fbba503-b871-40dd-b755-1de4cb50debe,USAR17500007,https://open.spotify.com/track/602emtzbPIgCLLaoUB5AtO,https://api.reccobeats.com/v1/track/5fbba503-b871-40dd-b755-1de4cb50debe/audio-features,0.763,0.574,0.245,0.652,0.0522,0.0,0.0552,88.186,-7.474
+S_109c5ab268f63f7d,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_f0ca7888e196117d,matched,exact_normalized_title_and_full_credit,Love Will Keep Us Together,Captain & Tennille,3def3756-c2ed-4da9-a7c3-b2e2e75e2d7e,USAM17500299,https://open.spotify.com/track/10pcZvQ4QTKeHRvTUAeHVD,https://api.reccobeats.com/v1/track/3def3756-c2ed-4da9-a7c3-b2e2e75e2d7e/audio-features,0.554,0.681,0.476,0.933,0.0343,0.0,0.167,129.587,-10.333
+S_2fd30e9abaa68cc0,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,
+S_34d70e098ff2e4cb,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_0458f76ae2d4ec88,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_c30a41593c083cb9,matched,exact_normalized_title_and_full_credit,Call Me,Blondie,d5b61592-eea6-49cc-aa43-d4e902765328,USUPV1100170,https://open.spotify.com/track/3DNvcQXYZX3XUMwMKwWqoN,https://api.reccobeats.com/v1/track/d5b61592-eea6-49cc-aa43-d4e902765328/audio-features,0.903,0.444,0.00105,0.344,0.0581,0.169,0.67,150.143,-5.241
+S_51494d2250818535,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_2cc7e0e2a1df4ffd,matched,exact_normalized_title_and_full_credit,Every Breath You Take,The Police,58a33700-57db-4184-abbe-b17ab58d3256,GBAAM8300001,https://open.spotify.com/track/5SzlOCnNzuOViRLWH0f3zW,https://api.reccobeats.com/v1/track/58a33700-57db-4184-abbe-b17ab58d3256/audio-features,0.449,0.822,0.572,0.715,0.035,0.00583,0.0733,117.396,-9.845
+S_69b8e287c7bd13bb,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_2098621f58df3420,unresolved,ambiguous_recording,,,,,,,,,,,,,,,
+S_c8ba88e739dd8c6a,unresolved,no_exact_title_and_credit,,,,,,,,,,,,,,,

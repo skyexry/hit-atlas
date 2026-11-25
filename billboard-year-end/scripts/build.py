@@ -185,6 +185,24 @@ def main():
     extra_art=json.loads((cache/'artist_extra.json').read_text()) if (cache/'artist_extra.json').exists() else {}
     # Checked spelling, abbreviated artist names, alternate titles and double-sided order in the two source rows.
     checked_perot=set('1959-86 1963-7 1967-60 1970-19 1971-72 1973-21 1974-7 1975-40 1977-40 1978-25 1979-25 1979-92 1980-24 1981-11 1981-81 1982-67 1984-61 1989-15 1989-47 1990-40 1990-78 1991-66 1992-25 1993-52 1997-2 1999-47 2000-29 2002-33 2005-35 2007-75 2008-50 2009-87 2010-26 2010-69 2013-71 2014-11 2014-90 2016-82 2020-95'.split())
+    # Manually reconciled Perot rows. Use the source rank when the two
+    # transcriptions disagree. Preserve source title and credit as published.
+    perot_rank_overrides = {
+        (1959, 46): 46,  # Bobby Bare recording issued under Bill Parsons
+        (1960, 81): 81,  # Robert Mersey recorded under the name Spencer Ross
+        (1965, 46): 47,  # Henry VIII title and rank variant
+        (1969, 87): 88,  # The Supremes and Temptations, abbreviated credit
+        (1972, 99): 100,  # Good Foot, Pt. 1 by James Brown
+        (1973, 86): 86,  # Blue Ridge Rangers is John Fogerty
+        (1975, 98): 98,  # Source includes the B-side Free Wheelin
+        (1983, 92): 92,  # Workbook stores True as Boolean
+        (1984, 75): 75,  # K.C. is an abbreviated credit
+        (1985, 1): 1,  # George Michael / Wham! release credit
+        (1991, 53): 53,  # Source credits DMA for DNA
+        (2003, 38): 38,  # Source credits the Casey brothers of Jagged Edge
+        (2005, 90): 90,  # Workbook stores True as Boolean
+        (2015, 61): 61,  # Workbook stores 7/11 as a spreadsheet date
+    }
     for year,rank,title,credit,parts,signed in chart:
         ids=[]
         for name,page in signed:
@@ -213,6 +231,9 @@ def main():
         pr=matching(perot[year],rank,title,credit)
         if not pr and f'{year}-{rank}' in checked_perot:
             pr=next(r for r in perot[year] if r[0]==rank)
+        if not pr and (year, rank) in perot_rank_overrides:
+            source_rank = perot_rank_overrides[year, rank]
+            [pr] = [row for row in perot[year] if row[0] == source_rank]
         annotations.append(dict(source_rank=pr[0] if pr else '',source_title=pr[1] if pr else '',source_artist=pr[2] if pr else '',entry_id=eid,song_id=sid,source_genres=pr[3] if pr else '',genres='|'.join(genre_labels(pr[3])) if pr else '',source_url=PEROT if pr else ''))
         rec=matching(bl[year],rank,title,credit);state='missing';txt='';src='';rule='';upstream=''
         compound=len(parts)>1 and ('/' in title or ' / ' in title)

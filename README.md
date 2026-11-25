@@ -2,15 +2,17 @@
 
 Hit Atlas explores how the genres, credited artists, lyrics, and recorded sound of U.S. Billboard Year-End Hot 100 hits have changed.
 
+[Open the interactive project on GitHub Pages](https://skyexry.github.io/hit-atlas/)
+
 ## Data
 
 - [1959–2023 historical data and methods](billboard-year-end/README.md). The public tables contain 6,501 chart entries and provide song, genre, lyric, and artist-origin data with source links and coverage counts.
 - [2024–2026 extension and CSV downloads](billboard-year-end/extension-2024-2026/README.md). Includes the published 2024 and 2025 year-end charts and a 2026 project estimate based on 48 weekly charts through the issue dated November 28. Each appearance earns 101 minus its weekly rank.
-- Together, the two public chart releases contain **6,801 entries**. Genre labels cover 6,500 of 6,501 historical entries. ReccoBeats audio matches are available for selected 2021–2026 entries. Coverage is 97/100 in 2024, 96/100 in 2025, and 58/100 in the 2026 estimate. Missing fields and different view-specific date ranges are documented in the linked data notes.
+- [Unified analysis CSVs and data dictionary](billboard-year-end/data/README.md). The current release has **6,801 chart entries, 6,451 song records, and 2,838 credited artist or group records**. It includes supplemental genre, lyrics, artist, and audio matches. [Download annual coverage CSV](https://raw.githubusercontent.com/skyexry/hit-atlas/main/billboard-year-end/data/coverage.csv).
 
 ## Interactive views
 
-Clone or download the repository and open the linked demo pages in a browser. These demos use the samples listed below.
+The public D3 site reads the unified CSVs for genre shares, artist origins, and the linked artist treemap and chart history. The independent demos below retain their documented samples. To run the public site locally, serve the repository root with `python3 -m http.server` and open http://localhost:8000.
 
 | Task | Views | Demo sample |
 | --- | --- | --- |
