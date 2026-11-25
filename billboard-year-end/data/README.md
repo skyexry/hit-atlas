@@ -1,6 +1,6 @@
-# Hit Atlas unified Billboard dataset
+# HitAtlas dataset
 
-This is the entry point for all **nine analysis CSVs**. The data contain **6,801 chart entries, 6,451 song records, and 2,838 credited artist or group records**. They cover the U.S. Billboard Year-End Hot 100 for 1959–2025 and a separate 2026 year-to-date estimate based on weekly Hot 100 charts through the chart dated November 28, 2026.
+The HitAtlas dataset contains **nine relational tables stored as CSV files**. The data contain **6,801 chart entries, 6,451 song records, and 2,838 credited artist or group records**. They cover the U.S. Billboard Year-End Hot 100 for 1959–2025 and a separate 2026 year-to-date estimate based on weekly Hot 100 charts through the chart dated November 28, 2026.
 
 The full CSVs are publicly downloadable in the table below. A [public GitHub Gist] provides the [three-row sample CSV] and [annual coverage CSV] as raw text for quick inspection and D3 testing. The Gist is a sample and coverage snapshot of the unified release.
 
