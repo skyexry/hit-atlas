@@ -6,17 +6,19 @@ This page shows the coverage and original sources for all nine tables. The [publ
 
 ## Coverage at a glance
 
-| CSV | Rows | Coverage in this release |
-|---|---:|---|
-| [chart_entries.csv][chart] | 6,801 | Year, rank, and song ID for **6,801/6,801 entries (100.0%)**. |
-| [songs.csv][songs] | 6,451 | **6,801/6,801 chart entries (100.0%)** link to a song record. |
-| [song_artists.csv][credits] | 7,696 | **6,451/6,451 songs (100.0%)** have at least one linked credit. Ambiguous credits remain subject to review. |
-| [artists.csv][artists] | 2,838 | Origins for **2,793/2,838 (98.4%)** and artist genres for **2,656/2,838 (93.6%)**. |
-| [genres.csv][genres] | 6,801 | Song genre labels for **6,801/6,801 chart entries (100.0%)**. |
-| [lyrics.csv][lyrics] | 6,451 | Usable text for **6,299/6,451 song records (97.6%)**, representing **6,646/6,801 chart entries (97.7%)**. |
-| [lyric_metrics.csv][metrics] | 6,451 | A status for every song and usable language and token counts for **6,299/6,451 songs (97.6%)**. |
-| [audio_features.csv][audio] | 759 | Features for **629/759 completed lookups or reused matches (82.9%)**, or **629/6,801 chart entries overall (9.2%)**. |
-| [coverage.csv][coverage] | 68 | One summary for **68/68 chart years (100.0%)**. The 2026 row is labeled as an estimate. |
+| CSV | Rows | Coverage metric | Covered / total | Coverage (%) |
+|---|---:|---|---:|---:|
+| [chart_entries.csv][chart] | 6,801 | Entries with year, rank, and song ID | 6,801/6,801 | 100.0% |
+| [songs.csv][songs] | 6,451 | Chart entries linked to a song record | 6,801/6,801 | 100.0% |
+| [song_artists.csv][credits] | 7,696 | Songs with at least one linked credit | 6,451/6,451 | 100.0% |
+| [artists.csv][artists] | 2,838 | Artist records with a documented origin<br>Artist records with a genre | 2,793/2,838<br>2,656/2,838 | 98.4%<br>93.6% |
+| [genres.csv][genres] | 6,801 | Chart entries with a song genre | 6,801/6,801 | 100.0% |
+| [lyrics.csv][lyrics] | 6,451 | Song records with usable lyrics<br>Chart entries with usable lyrics | 6,299/6,451<br>6,646/6,801 | 97.6%<br>97.7% |
+| [lyric_metrics.csv][metrics] | 6,451 | Songs with estimated language and token counts | 6,299/6,451 | 97.6% |
+| [audio_features.csv][audio] | 759 | Entries with audio features among completed lookups or reused matches<br>Entries with audio features across the full chart dataset | 629/759<br>629/6,801 | 82.9%<br>9.2% |
+| [coverage.csv][coverage] | 68 | Chart years with a coverage summary, including the 2026 estimate | 68/68 | 100.0% |
+
+**Audio coverage depends on the source data.** The original ReccoBeats extract targeted chart years 2021–2026. For earlier years, we ran targeted lookups, and missing recording identifiers made it harder to verify the charted version. [ReccoBeats]
 
 ## Sources and what we did
 
