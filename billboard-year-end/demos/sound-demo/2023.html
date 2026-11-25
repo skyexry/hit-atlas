@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How did Billboard hits sound in 2023?</title>
+<style>
+:root{color-scheme:light;font:16px/1.5 Inter,system-ui,sans-serif;color:#243c32;background:#f6f5ee}
+*{box-sizing:border-box}body{margin:0}main{max-width:1160px;margin:auto;padding:30px clamp(14px,4vw,48px)}
+header{border-top:4px solid #23513b;padding:16px 0 24px}.source{letter-spacing:.12em;font-size:.75rem;font-weight:750;color:#30644a}
+h1{font-size:clamp(30px,4.6vw,55px);letter-spacing:-.05em;line-height:1.08;margin:8px 0 12px}
+p{margin:4px 0;color:#52675a}.card{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(230px,1fr);gap:18px;background:#fffef9;border:1px solid #d8dfd0;border-radius:12px;padding:20px}
+figure{margin:0;align-self:center}svg{display:block;width:100%;height:auto;overflow:visible}
+aside{border-left:1px solid #dbe0d5;padding-left:20px}h2{margin:0;font-size:1.3rem}aside p,details{font-size:.84rem}
+#options{display:grid;grid-template-columns:1fr;gap:3px;margin-top:12px}label{display:flex;gap:9px;align-items:center;cursor:pointer;padding:1px 0}label b{font-weight:500}label small{margin-left:auto;font-variant-numeric:tabular-nums;color:#516659}input{width:16px;height:16px;accent-color:var(--c)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--c);flex:none}details{margin:16px 0}summary{cursor:pointer;font-weight:600}a{color:#146650}
+#readout{min-height:1.5em;color:#354c3e;text-align:center;font-size:.87rem}circle[tabindex]:focus{outline:none;stroke:#17291e;stroke-width:3}
+@media(max-width:750px){main{padding:16px 12px}.card{grid-template-columns:1fr;padding:12px;gap:12px}aside{border:0;border-top:1px solid #dbe0d5;padding:13px 0}#options{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px}label{font-size:.85rem;gap:4px}}
+.panel{border:1px solid #d8dfd0;background:#fffef9;border-radius:12px;margin:16px 0;padding:clamp(12px,3vw,24px)}
+.panel svg{max-width:780px;margin:auto}.panel svg text{fill:#3a5147;font-size:13px}
+.filters,.legend{display:flex;flex-wrap:wrap;gap:8px 16px;margin:12px 0}.legend span{font-size:.87rem;display:inline-flex;align-items:center;gap:6px}
+.filters label{flex-wrap:wrap;font-size:.9rem}select,button{font:inherit;color:inherit;background:#fffef9;border:1px solid #bdcdbf;border-radius:5px;padding:4px 7px}
+.close{float:right;cursor:pointer}.axisHit,.axisName,#scatter circle{cursor:pointer}.axisName{text-decoration:underline;text-underline-offset:3px}.axisName:focus{outline:2px solid #17674d}
+#songDetail{min-height:1.6em}#corrStats{font-variant-numeric:tabular-nums}
+#hexLegend{margin:8px 0;color:#354c3e;font-size:.85rem}#hexLegend span{display:inline-flex;align-items:center;gap:4px;margin:2px 6px}#hexLegend i{width:15px;height:11px;border-radius:2px}#scatter polygon[role=button]{cursor:pointer}#scatter polygon:focus-visible{stroke:#172e25;stroke-width:2}
+.trendValues{overflow:auto}#trendTable{border-collapse:collapse;width:100%;font-size:.87rem;font-variant-numeric:tabular-nums}#trendTable caption{text-align:left;color:#52675a;margin:5px 0}#trendTable td,#trendTable th{padding:5px 8px;border-bottom:1px solid #dbe0d5;text-align:right;white-space:nowrap}#trendTable tr>:first-child{text-align:left}#trendTable .dot{display:inline-block;margin-right:5px}#trendTable small{color:#52675a}
+</style>
+<main>
+<header><div class="source">BILLBOARD YEAR-END HOT 100 · 2023</div><h1>How did the genres sound?</h1><p>Each line shows the median audio profile of one genre. ReccoBeats coverage: 99 of 100 chart entries.</p></header>
+<section class="card"><figure><svg id="radar" viewBox="0 0 560 395" role="group" aria-label="Genre sound profiles on five shared zero-to-one scales"></svg><figcaption id="readout" aria-live="polite"></figcaption></figure>
+<aside><h2>Compare genres</h2><p>Matched entries / chart entries in each genre</p><div id="options"></div></aside></section>
+<section class="panel" id="trendPanel" hidden>
+<button id="closeTrend" class="close" aria-label="Close annual trend">Close</button>
+<h2 id="trendTitle" tabindex="-1"></h2><p id="trendScope"></p>
+<svg id="trend" viewBox="0 0 680 235" role="img" aria-labelledby="trendTitle"></svg><div class="trendValues"><table id="trendTable"><caption>Genre medians · matched / chart entries</caption><thead></thead><tbody></tbody></table></div>
+</section>
+<section class="panel" aria-labelledby="corrTitle"><h2 id="corrTitle">Which audio features move together?</h2>
+<div class="filters"><label>Chart <select id="corrMode"><option value="scatter">Scatterplot</option><option value="hexbin">Hexbin</option></select></label><label>Horizontal axis <select id="xFeature"></select></label><label>Vertical axis <select id="yFeature"></select></label><label>Sample <select id="genre"></select></label></div>
+<p id="corrStats" aria-live="polite"></p>
+<svg id="scatter" viewBox="0 0 680 320" role="group" aria-label="Song-level feature scatterplot"></svg>
+<div id="hexLegend" hidden></div>
+<p id="songDetail" aria-live="polite"></p></section>
+<details><summary>Features, sample and source data</summary><p>Energy measures perceived intensity, danceability describes rhythmic suitability for dancing, acousticness estimates an acoustic sound, valence indicates musical positivity, and speechiness detects spoken delivery. Each uses its original 0–1 scale.</p><p>Tracks were looked up directly in ReccoBeats and checked against the chart title and performer credits. Genre tags come from the project’s Billboard dataset. Songs with several tags contribute once to each of their genres. Where several releases matched the same billing, we selected one with audio features, preferring an exact title and then the higher ReccoBeats popularity score. <a href="reccobeats-2023.csv" download>Download the 2023 matches</a> or <a href="reccobeats-2021-2023.csv" download>all three years of trend data</a>.</p></details>
+</main>
+<script id="annual" type="application/json">{"2021":{"n":96,"total":100,"genres":{"Pop":{"n":51,"total":52,"values":[0.627,0.697,0.182,0.519,0.0559]},"R&B":{"n":6,"total":6,"values":[0.667,0.6739999999999999,0.0207,0.48950000000000005,0.056650000000000006]},"Disco":{"n":1,"total":1,"values":[0.73,0.513,0.00143,0.334,0.0598]},"Funk":{"n":2,"total":2,"values":[0.71,0.6745,0.007815,0.45999999999999996,0.0914]},"Hip Hop/Rap":{"n":39,"total":42,"values":[0.608,0.736,0.175,0.467,0.147]},"Soul":{"n":1,"total":1,"values":[0.893,0.807,0.0451,0.537,0.0347]},"Indie":{"n":4,"total":4,"values":[0.5760000000000001,0.7375,0.14550000000000002,0.4405,0.07239999999999999]},"Rock":{"n":10,"total":10,"values":[0.6785000000000001,0.6405000000000001,0.1525,0.5914999999999999,0.05]},"Country":{"n":19,"total":19,"values":[0.65,0.601,0.18,0.653,0.0356]},"Latin":{"n":3,"total":3,"values":[0.648,0.731,0.31,0.342,0.0544]},"Reggae":{"n":1,"total":1,"values":[0.526,0.736,0.0153,0.654,0.0566]},"Dance/Electronic":{"n":1,"total":1,"values":[0.744,0.724,0.00219,0.645,0.0398]},"Folk":{"n":1,"total":1,"values":[0.859,0.535,0.0528,0.698,0.0344]}}},"2022":{"n":99,"total":100,"genres":{"Pop":{"n":47,"total":48,"values":[0.655,0.687,0.164,0.55,0.053]},"Indie":{"n":5,"total":5,"values":[0.525,0.761,0.44,0.539,0.0944]},"Rock":{"n":18,"total":18,"values":[0.768,0.6315,0.1175,0.5845,0.0498]},"Soul":{"n":9,"total":9,"values":[0.527,0.742,0.327,0.441,0.0546]},"Hip Hop/Rap":{"n":26,"total":27,"values":[0.6635,0.784,0.07350000000000001,0.48,0.129]},"Latin":{"n":8,"total":9,"values":[0.5940000000000001,0.7255,0.12014999999999999,0.34650000000000003,0.08255]},"Country":{"n":26,"total":26,"values":[0.7545,0.584,0.14200000000000002,0.523,0.03615]},"Funk":{"n":3,"total":3,"values":[0.739,0.727,0.298,0.901,0.0468]},"Jazz/Swing":{"n":2,"total":2,"values":[0.45899999999999996,0.72,0.628,0.753,0.0359]},"R&B":{"n":5,"total":5,"values":[0.781,0.687,0.0581,0.677,0.0795]},"Folk":{"n":4,"total":4,"values":[0.833,0.5529999999999999,0.179395,0.6545,0.04105]}}},"2023":{"n":99,"total":100,"genres":{"Country":{"n":29,"total":29,"values":[0.701,0.57,0.149,0.511,0.0316]},"Pop":{"n":48,"total":49,"values":[0.5945,0.6385000000000001,0.21050000000000002,0.5035000000000001,0.0519]},"R&B":{"n":8,"total":8,"values":[0.5565,0.663,0.09655,0.441,0.0801]},"Hip Hop/Rap":{"n":31,"total":31,"values":[0.614,0.763,0.0976,0.507,0.102]},"Latin":{"n":11,"total":11,"values":[0.72,0.69,0.281,0.559,0.0522]},"Dance/Electronic":{"n":1,"total":1,"values":[0.965,0.561,0.00383,0.304,0.0343]},"Soul":{"n":5,"total":5,"values":[0.5,0.515,0.695,0.31,0.0352]},"Rock":{"n":4,"total":4,"values":[0.6915,0.69,0.12565,0.4085,0.035750000000000004]},"Indie":{"n":4,"total":4,"values":[0.5435,0.4255,0.633,0.261,0.03385]},"Funk":{"n":2,"total":2,"values":[0.482,0.642,0.615,0.7895,0.04255]},"Jazz/Swing":{"n":2,"total":2,"values":[0.44699999999999995,0.6759999999999999,0.63,0.8425,0.04295]},"Folk":{"n":2,"total":2,"values":[0.605,0.529,0.2954,0.6995,0.0479]}}}}</script>
+<script id="summary" type="application/json">[{"genre": "Pop", "n": 48, "total": 49, "values": [0.5945, 0.6385000000000001, 0.21050000000000002, 0.5035000000000001, 0.0519]}, {"genre": "Hip Hop/Rap", "n": 31, "total": 31, "values": [0.614, 0.763, 0.0976, 0.507, 0.102]}, {"genre": "Country", "n": 29, "total": 29, "values": [0.701, 0.57, 0.149, 0.511, 0.0316]}, {"genre": "Latin", "n": 11, "total": 11, "values": [0.72, 0.69, 0.281, 0.559, 0.0522]}, {"genre": "R&B", "n": 8, "total": 8, "values": [0.5565, 0.663, 0.09655, 0.441, 0.0801]}, {"genre": "Soul", "n": 5, "total": 5, "values": [0.5, 0.515, 0.695, 0.31, 0.0352]}, {"genre": "Indie", "n": 4, "total": 4, "values": [0.5435, 0.4255, 0.633, 0.261, 0.03385]}, {"genre": "Rock", "n": 4, "total": 4, "values": [0.6915, 0.69, 0.12565, 0.4085, 0.035750000000000004]}, {"genre": "Folk", "n": 2, "total": 2, "values": [0.605, 0.529, 0.2954, 0.6995, 0.0479]}, {"genre": "Funk", "n": 2, "total": 2, "values": [0.482, 0.642, 0.615, 0.7895, 0.04255]}, {"genre": "Jazz/Swing", "n": 2, "total": 2, "values": [0.44699999999999995, 0.6759999999999999, 0.63, 0.8425, 0.04295]}, {"genre": "Dance/Electronic", "n": 1, "total": 1, "values": [0.965, 0.561, 0.00383, 0.304, 0.0343]}]</script>
+<script id="tracks" type="application/json">[{"year":2023,"title":"Last Night","artist":"Morgan Wallen","rank":1,"genres":["Country"],"values":[0.673,0.492,0.413,0.488,0.0347,0.137,0.0,203.812,-5.431]},{"year":2023,"title":"Flowers","artist":"Miley Cyrus","rank":2,"genres":["Pop"],"values":[0.691,0.706,0.0584,0.632,0.0633,0.0232,6.99e-05,118.048,-4.775]},{"year":2023,"title":"Kill Bill","artist":"SZA","rank":3,"genres":["Hip Hop/Rap","Pop","R&B"],"values":[0.735,0.644,0.0521,0.418,0.0391,0.161,0.144,88.98,-5.747]},{"year":2023,"title":"Anti-Hero","artist":"Taylor Swift","rank":4,"genres":["Pop"],"values":[0.648,0.633,0.121,0.49,0.062,0.161,2.62e-06,96.888,-6.645]},{"year":2023,"title":"Creepin '","artist":"Metro Boomin , the Weeknd and 21 Savage","rank":5,"genres":["Latin"],"values":[0.613,0.716,0.391,0.157,0.0522,0.0813,0.0,97.914,-6.018]},{"year":2023,"title":"Calm Down","artist":"Rema and Selena Gomez","rank":6,"genres":["Pop"],"values":[0.806,0.801,0.382,0.802,0.0381,0.114,0.000669,106.999,-5.206]},{"year":2023,"title":"Die for You","artist":"The Weeknd and Ariana Grande","rank":7,"genres":["R&B","Pop"],"values":[0.485,0.568,0.276,0.517,0.0582,0.323,0.0,66.961,-7.635]},{"year":2023,"title":"Fast Car","artist":"Luke Combs","rank":8,"genres":["Country"],"values":[0.603,0.712,0.186,0.67,0.0262,0.115,0.0,97.994,-5.52]},{"year":2023,"title":"Snooze","artist":"SZA","rank":9,"genres":["Hip Hop/Rap","Pop","R&B"],"values":[0.551,0.559,0.141,0.392,0.132,0.11,0.0,143.008,-7.231]},{"year":2023,"title":"I'm Good (Blue)","artist":"David Guetta and Bebe Rexha","rank":10,"genres":["Pop","Dance/Electronic"],"values":[0.965,0.561,0.00383,0.304,0.0343,0.371,7.07e-06,128.04,-3.673]},{"year":2023,"title":"Unholy","artist":"Sam Smith and Kim Petras","rank":11,"genres":["Pop"],"values":[0.454,0.719,0.0138,0.224,0.0707,0.318,4.83e-06,131.007,-7.384]},{"year":2023,"title":"You Proof","artist":"Morgan Wallen","rank":12,"genres":["Country"],"values":[0.818,0.728,0.323,0.681,0.0329,0.582,0.0,119.706,-5.068]},{"year":2023,"title":"Something in the Orange","artist":"Zach Bryan","rank":13,"genres":["Country","Pop"],"values":[0.192,0.369,0.555,0.148,0.04,0.0954,8.35e-06,175.212,-12.151]},{"year":2023,"title":"Rich Flex","artist":"Drake and 21 Savage","rank":14,"genres":["Hip Hop/Rap"],"values":[0.518,0.549,0.0517,0.418,0.257,0.378,1.21e-06,160.07,-9.39]},{"year":2023,"title":"As It Was","artist":"Harry Styles","rank":15,"genres":["Pop"],"values":[0.731,0.52,0.342,0.662,0.0557,0.311,0.00101,173.93,-5.338]},{"year":2023,"title":"Rock and a Hard Place","artist":"Bailey Zimmerman","rank":16,"genres":["Country","Pop"],"values":[0.568,0.582,0.577,0.394,0.0275,0.105,0.0,121.991,-7.3]},{"year":2023,"title":"Under the Influence","artist":"Chris Brown","rank":17,"genres":["Hip Hop/Rap","R&B"],"values":[0.562,0.755,0.0186,0.368,0.0355,0.18,0.000231,116.931,-8.947]},{"year":2023,"title":"Cruel Summer","artist":"Taylor Swift","rank":18,"genres":["Pop"],"values":[0.702,0.552,0.117,0.564,0.157,0.105,2.06e-05,169.994,-5.707]},{"year":2023,"title":"Thinkin' Bout Me","artist":"Morgan Wallen","rank":19,"genres":["Country"],"values":[0.789,0.659,0.487,0.468,0.0293,0.115,0.0,139.982,-5.723]},{"year":2023,"title":"Boy's a Liar Pt. 2","artist":"PinkPantheress and Ice Spice","rank":20,"genres":["Pop"],"values":[0.809,0.696,0.252,0.857,0.05,0.248,0.000128,132.962,-8.254]},{"year":2023,"title":"Favorite Song","artist":"Toosii","rank":21,"genres":["Hip Hop/Rap"],"values":[0.38,0.814,0.274,0.434,0.0494,0.098,0.0,116.029,-9.34]},{"year":2023,"title":"Thought You Should Know","artist":"Morgan Wallen","rank":22,"genres":["Country"],"values":[0.701,0.537,0.48,0.552,0.0264,0.145,6.65e-06,139.995,-6.214]},{"year":2023,"title":"Thank God","artist":"Kane Brown and Katelyn Brown","rank":23,"genres":["Rock","Pop","Soul"],"values":[0.455,0.738,0.695,0.441,0.0352,0.107,0.0,99.945,-8.735]},{"year":2023,"title":"Sure Thing","artist":"Miguel","rank":24,"genres":["R&B"],"values":[0.597,0.682,0.00551,0.464,0.106,0.177,3.43e-05,80.958,-7.969]},{"year":2023,"title":"All My Life","artist":"Lil Durk featuring J. Cole","rank":25,"genres":["Hip Hop/Rap"],"values":[0.57,0.787,0.0449,0.733,0.225,0.135,0.0,142.974,-5.881]},{"year":2023,"title":"Ella Baila Sola","artist":"Eslabon Armado and Peso Pluma","rank":26,"genres":["Latin"],"values":[0.758,0.668,0.483,0.834,0.0332,0.0837,1.89e-05,147.989,-5.176]},{"year":2023,"title":"Just Wanna Rock","artist":"Lil Uzi Vert","rank":28,"genres":["Hip Hop/Rap"],"values":[0.545,0.486,0.0652,0.0385,0.0336,0.0642,0.00474,150.187,-7.924]},{"year":2023,"title":"Cuff It","artist":"Beyoncé","rank":29,"genres":["R&B","Pop"],"values":[0.689,0.78,0.0368,0.642,0.141,0.0698,9.69e-06,115.042,-5.668]},{"year":2023,"title":"Vampire","artist":"Olivia Rodrigo","rank":30,"genres":["Pop"],"values":[0.53,0.484,0.154,0.323,0.0538,0.263,0.0,136.848,-5.821]},{"year":2023,"title":"FukUMean","artist":"Gunna","rank":31,"genres":["Hip Hop/Rap"],"values":[0.622,0.847,0.119,0.22,0.0903,0.285,0.0,130.001,-6.747]},{"year":2023,"title":"Lavender Haze","artist":"Taylor Swift","rank":32,"genres":["Pop"],"values":[0.449,0.735,0.23,0.0955,0.0883,0.132,0.00126,97.05,-10.56]},{"year":2023,"title":"Players","artist":"Coi Leray","rank":33,"genres":["Hip Hop/Rap"],"values":[0.512,0.948,0.0269,0.599,0.146,0.0504,8.57e-06,105.004,-5.74]},{"year":2023,"title":"Need a Favor","artist":"Jelly Roll","rank":34,"genres":["Hip Hop/Rap","Country"],"values":[0.771,0.502,0.0123,0.557,0.032,0.0801,1.82e-05,157.978,-4.246]},{"year":2023,"title":"Dance the Night","artist":"Dua Lipa","rank":35,"genres":["Pop"],"values":[0.845,0.671,0.0207,0.775,0.048,0.329,0.0,110.056,-4.93]},{"year":2023,"title":"Love You Anyway","artist":"Luke Combs","rank":36,"genres":["Country"],"values":[0.489,0.532,0.149,0.32,0.0311,0.237,0.0,139.807,-7.419]},{"year":2023,"title":"One Thing at a Time","artist":"Morgan Wallen","rank":37,"genres":["Country"],"values":[0.923,0.613,0.00413,0.893,0.0307,0.284,1.97e-06,141.982,-5.187]},{"year":2023,"title":"Superhero (Heroes & Villains)","artist":"Metro Boomin , Future and Chris Brown","rank":38,"genres":["Hip Hop/Rap"],"values":[0.583,0.709,0.138,0.533,0.204,0.195,2.97e-06,116.624,-5.298]},{"year":2023,"title":"Bad Habit","artist":"Steve Lacy","rank":39,"genres":["Funk","Indie"],"values":[0.494,0.686,0.613,0.7,0.0355,0.402,5.8e-05,168.946,-7.093]},{"year":2023,"title":"La Bebé","artist":"Yng Lvcas and Peso Pluma","rank":40,"genres":["Latin"],"values":[0.479,0.812,0.213,0.559,0.333,0.0756,1.21e-06,169.922,-5.678]},{"year":2023,"title":"Golden Hour","artist":"Jvke","rank":41,"genres":["Soul","Indie"],"values":[0.593,0.515,0.653,0.153,0.0322,0.25,0.162,94.467,-4.801]},{"year":2023,"title":"Religiously","artist":"Bailey Zimmerman","rank":42,"genres":["Country","Pop"],"values":[0.67,0.57,0.426,0.593,0.0274,0.108,0.0,140.924,-6.519]},{"year":2023,"title":"Spin Bout U","artist":"Drake and 21 Savage","rank":43,"genres":["Hip Hop/Rap"],"values":[0.72,0.763,0.00961,0.229,0.0447,0.165,0.0,129.971,-6.383]},{"year":2023,"title":"Cupid","artist":"Fifty Fifty","rank":44,"genres":["Pop"],"values":[0.724,0.769,0.533,0.905,0.0326,0.299,0.0,120.057,-5.388]},{"year":2023,"title":"Search & Rescue","artist":"Drake","rank":45,"genres":["Hip Hop/Rap","Pop"],"values":[0.441,0.828,0.0757,0.533,0.0685,0.295,8.68e-06,140.009,-8.562]},{"year":2023,"title":"Barbie World","artist":"Nicki Minaj and Ice Spice with Aqua","rank":46,"genres":["Hip Hop/Rap","Pop"],"values":[0.58,0.77,0.519,0.753,0.247,0.233,0.000127,144.072,-8.393]},{"year":2023,"title":"Next Thing You Know","artist":"Jordan Davis","rank":47,"genres":["Country"],"values":[0.608,0.549,0.682,0.399,0.0481,0.0966,0.0,78.534,-8.253]},{"year":2023,"title":"Escapism","artist":"Raye featuring 070 Shake","rank":48,"genres":["Pop","Hip Hop/Rap"],"values":[0.742,0.538,0.138,0.25,0.114,0.0934,4.67e-05,96.107,-5.355]},{"year":2023,"title":"Un x100to","artist":"Grupo Frontera and Bad Bunny","rank":49,"genres":["Latin"],"values":[0.72,0.571,0.213,0.542,0.0458,0.271,0.0,83.827,-4.089]},{"year":2023,"title":"Until I Found You","artist":"Stephen Sanchez","rank":50,"genres":["Soul"],"values":[0.5,0.346,0.757,0.191,0.0388,0.189,0.0,202.466,-6.097]},{"year":2023,"title":"Shirt","artist":"SZA","rank":51,"genres":["Hip Hop/Rap","Pop","R&B"],"values":[0.512,0.848,0.228,0.572,0.102,0.0879,0.00232,120.009,-7.72]},{"year":2023,"title":"Paint the Town Red","artist":"Doja Cat","rank":52,"genres":["Pop"],"values":[0.556,0.864,0.255,0.726,0.194,0.112,3.85e-06,99.974,-7.683]},{"year":2023,"title":"Made You Look","artist":"Meghan Trainor","rank":53,"genres":["Pop"],"values":[0.522,0.834,0.34,0.854,0.0703,0.0783,1.59e-06,145.035,-3.574]},{"year":2023,"title":"Wait in the Truck","artist":"Hardy featuring Lainey Wilson","rank":54,"genres":["Country","Pop"],"values":[0.464,0.542,0.276,0.251,0.0265,0.0989,0.0,139.999,-6.986]},{"year":2023,"title":"All I Want for Christmas Is You","artist":"Mariah Carey","rank":55,"genres":["Indie"],"values":[0.627,0.336,0.164,0.35,0.0384,0.0708,0.0,150.273,-7.463]},{"year":2023,"title":"Everything I Love","artist":"Morgan Wallen","rank":56,"genres":["Country"],"values":[0.841,0.567,0.00543,0.712,0.0263,0.137,0.000922,103.982,-3.933]},{"year":2023,"title":"Chemical","artist":"Post Malone","rank":57,"genres":["Hip Hop/Rap","Pop"],"values":[0.88,0.49,0.00154,0.392,0.0435,0.103,0.0,169.949,-4.856]},{"year":2023,"title":"Heart Like a Truck","artist":"Lainey Wilson","rank":58,"genres":["Country","Pop"],"values":[0.632,0.587,0.148,0.392,0.0311,0.158,1.01e-05,139.974,-5.416]},{"year":2023,"title":"Going, Going, Gone","artist":"Luke Combs","rank":59,"genres":["Country"],"values":[0.56,0.565,0.538,0.325,0.0275,0.0961,0.0,159.931,-6.034]},{"year":2023,"title":"Rockin' Around the Christmas Tree","artist":"Brenda Lee","rank":60,"genres":["Pop","Funk","Jazz/Swing"],"values":[0.47,0.598,0.617,0.879,0.0496,0.505,0.0,67.086,-8.744]},{"year":2023,"title":"Dancin' in the Country","artist":"Tyler Hubbard","rank":61,"genres":["Country","Pop"],"values":[0.871,0.657,0.0031,0.532,0.0675,0.102,0.0,114.974,-4.614]},{"year":2023,"title":"Daylight","artist":"David Kushner","rank":62,"genres":["Soul"],"values":[0.432,0.51,0.825,0.31,0.0334,0.0933,0.000294,129.872,-9.492]},{"year":2023,"title":"Lift Me Up","artist":"Rihanna","rank":63,"genres":["Indie","Pop"],"values":[0.299,0.247,0.899,0.172,0.0315,0.131,0.0,177.115,-6.083]},{"year":2023,"title":"Eyes Closed","artist":"Ed Sheeran","rank":64,"genres":["Soul","Pop"],"values":[0.526,0.777,0.302,0.389,0.0645,0.105,0.0,107.071,-6.221]},{"year":2023,"title":"TQG","artist":"Karol G and Shakira","rank":65,"genres":["Pop","Latin"],"values":[0.647,0.587,0.619,0.686,0.327,0.106,0.0,90.123,-3.385]},{"year":2023,"title":"Try That in a Small Town","artist":"Jason Aldean","rank":66,"genres":["Country","Rock"],"values":[0.861,0.457,0.0583,0.376,0.0529,0.106,1.28e-05,145.989,-3.771]},{"year":2023,"title":"Tennessee Orange","artist":"Megan Moroney","rank":67,"genres":["Country","Pop"],"values":[0.488,0.38,0.126,0.268,0.029,0.115,7.23e-06,156.031,-6.637]},{"year":2023,"title":"Jingle Bell Rock","artist":"Bobby Helms","rank":68,"genres":["Jazz/Swing"],"values":[0.424,0.754,0.643,0.806,0.0363,0.0652,0.0,119.705,-8.463]},{"year":2023,"title":"Princess Diana","artist":"Ice Spice and Nicki Minaj","rank":69,"genres":["Hip Hop/Rap","Pop"],"values":[0.689,0.898,0.165,0.772,0.171,0.0957,0.0,147.964,-5.092]},{"year":2023,"title":"Tomorrow 2","artist":"GloRilla and Cardi B","rank":70,"genres":["Hip Hop/Rap"],"values":[0.812,0.791,0.0766,0.698,0.409,0.118,0.0,159.78,-3.979]},{"year":2023,"title":"A Holly Jolly Christmas","artist":"Burl Ives","rank":71,"genres":["Folk"],"values":[0.375,0.682,0.579,0.888,0.0303,0.076,0.0,140.453,-13.056]},{"year":2023,"title":"Where She Goes","artist":"Bad Bunny","rank":72,"genres":["Hip Hop/Rap","Latin"],"values":[0.8,0.652,0.143,0.234,0.0614,0.112,0.629,143.978,-4.019]},{"year":2023,"title":"Bebe Dame","artist":"Fuerza Regida and Grupo Frontera","rank":73,"genres":["Latin"],"values":[0.602,0.529,0.299,0.756,0.0458,0.0716,0.0,157.643,-4.629]},{"year":2023,"title":"I Remember Everything","artist":"Zach Bryan featuring Kacey Musgraves","rank":74,"genres":["Country","Pop"],"values":[0.453,0.429,0.554,0.155,0.0459,0.102,2e-06,77.639,-7.746]},{"year":2023,"title":"I Like You (A Happier Song)","artist":"Post Malone featuring Doja Cat","rank":75,"genres":["Hip Hop/Rap","Pop"],"values":[0.67,0.733,0.121,0.472,0.0751,0.121,0.0,100.964,-6.009]},{"year":2023,"title":"What It Is (Block Boy)","artist":"Doechii featuring Kodak Black","rank":76,"genres":["Hip Hop/Rap","Latin"],"values":[0.743,0.728,0.0976,0.712,0.173,0.125,0.0,171.859,-5.819]},{"year":2023,"title":"Nobody Gets Me","artist":"SZA","rank":77,"genres":["Hip Hop/Rap","Pop","R&B"],"values":[0.284,0.358,0.805,0.276,0.0285,0.183,0.0,99.796,-8.285]},{"year":2023,"title":"Rich Men North of Richmond","artist":"Oliver Anthony Music","rank":78,"genres":["Country","Pop"],"values":[0.264,0.678,0.753,0.528,0.0622,0.302,0.0,121.722,-12.384]},{"year":2023,"title":"Super Freaky Girl","artist":"Nicki Minaj","rank":79,"genres":["Hip Hop/Rap","Pop"],"values":[0.891,0.95,0.0645,0.912,0.241,0.309,1.77e-05,133.01,-2.653]},{"year":2023,"title":"Dial Drunk","artist":"Noah Kahan and Post Malone","rank":80,"genres":["Hip Hop/Rap","Pop"],"values":[0.606,0.669,0.124,0.69,0.0292,0.112,0.0,112.108,-7.193]},{"year":2023,"title":"What Was I Made For?","artist":"Billie Eilish","rank":81,"genres":["Pop"],"values":[0.084,0.391,0.953,0.111,0.0317,0.0983,0.0,79.449,-17.843]},{"year":2023,"title":"Seven","artist":"Jung Kook featuring Latto","rank":82,"genres":["Hip Hop/Rap"],"values":[0.831,0.79,0.312,0.872,0.044,0.0797,0.0,124.987,-4.185]},{"year":2023,"title":"Wait for U","artist":"Future featuring Drake and Tems","rank":83,"genres":["Hip Hop/Rap"],"values":[0.642,0.463,0.314,0.339,0.34,0.0686,0.0,83.389,-4.474]},{"year":2023,"title":"Last Christmas","artist":"Wham!","rank":84,"genres":["Pop","Rock"],"values":[0.583,0.735,0.193,0.941,0.0277,0.183,5.15e-06,107.741,-8.648]},{"year":2023,"title":"Handle on You","artist":"Parker McCollum","rank":85,"genres":["Country"],"values":[0.928,0.591,0.00441,0.619,0.0316,0.291,0.0,105.025,-3.925]},{"year":2023,"title":"Por Las Noches","artist":"Peso Pluma","rank":86,"genres":["Latin"],"values":[0.597,0.69,0.311,0.453,0.0395,0.0727,4.18e-05,185.084,-7.494]},{"year":2023,"title":"Memory Lane","artist":"Old Dominion","rank":87,"genres":["Country","Rock"],"values":[0.8,0.645,0.0189,0.375,0.0363,0.0858,1.12e-05,118.977,-4.272]},{"year":2023,"title":"Area Codes","artist":"Kaliii","rank":88,"genres":["Hip Hop/Rap"],"values":[0.388,0.823,0.0187,0.507,0.491,0.0876,0.0,154.569,-10.867]},{"year":2023,"title":"Bury Me in Georgia","artist":"Kane Brown","rank":89,"genres":["Folk","Country"],"values":[0.835,0.376,0.0118,0.511,0.0655,0.471,3.71e-06,160.069,-5.824]},{"year":2023,"title":"PRC","artist":"Peso Pluma and Natanael Cano","rank":90,"genres":["Latin"],"values":[0.826,0.784,0.0965,0.893,0.0538,0.123,7.09e-05,138.078,-6.34]},{"year":2023,"title":"What My World Spins Around","artist":"Jordan Davis","rank":91,"genres":["Country"],"values":[0.733,0.686,0.111,0.7,0.0401,0.153,0.0,124.882,-6.483]},{"year":2023,"title":"Ain't That Some","artist":"Morgan Wallen","rank":92,"genres":["Country"],"values":[0.811,0.64,0.00154,0.686,0.0279,0.363,9.34e-06,121.089,-5.834]},{"year":2023,"title":"Wild as Her","artist":"Corey Kent","rank":93,"genres":["Country","Pop"],"values":[0.748,0.5,0.00291,0.448,0.0364,0.112,0.0,148.009,-5.927]},{"year":2023,"title":"Peaches & Eggplants","artist":"Young Nudy featuring 21 Savage","rank":94,"genres":["Hip Hop/Rap"],"values":[0.536,0.911,0.00897,0.584,0.282,0.111,3.73e-06,146.014,-7.884]},{"year":2023,"title":"I Wrote the Book","artist":"Morgan Wallen","rank":95,"genres":["Country"],"values":[0.833,0.686,0.0619,0.833,0.0381,0.0657,3.76e-05,143.965,-3.768]},{"year":2023,"title":"Bzrp Music Sessions, Vol. 53","artist":"Bizarrap and Shakira","rank":96,"genres":["Hip Hop/Rap","Latin"],"values":[0.745,0.842,0.281,0.53,0.0399,0.118,2.61e-05,122.06,-4.231]},{"year":2023,"title":"Meltdown","artist":"Travis Scott featuring Drake","rank":97,"genres":["Pop"],"values":[0.774,0.557,0.012,0.397,0.351,0.396,0.0,111.975,-5.275]},{"year":2023,"title":"Put It on da Floor Again","artist":"Latto featuring Cardi B","rank":98,"genres":["Hip Hop/Rap"],"values":[0.614,0.849,0.0282,0.472,0.317,0.0603,0.0,111.363,-7.323]},{"year":2023,"title":"Bloody Mary","artist":"Lady Gaga","rank":99,"genres":["Pop"],"values":[0.634,0.591,0.0107,0.44,0.0291,0.113,1.95e-06,99.998,-6.365]},{"year":2023,"title":"Watermelon Moonshine","artist":"Lainey Wilson","rank":100,"genres":["Country","Pop"],"values":[0.413,0.739,0.47,0.649,0.0282,0.131,2.51e-05,139.921,-6.709]}]</script>
+<script>
+const groups=JSON.parse(document.getElementById('summary').textContent);
+const axes=['Energy','Danceability','Acousticness','Valence','Speechiness'];
+const chart=document.getElementById('radar'),readout=document.getElementById('readout');
+const colors=['#146c52','#ad492c','#52499a','#277c9b','#8c5816','#a03f72','#556c20','#66483b','#383d93','#b04c56','#4e737c','#72516d','#386d39','#89354a','#655940'];
+const selected=new Set(['Pop','Hip Hop/Rap','Country'].filter(g=>groups.some(row=>row.genre===g&&row.n)));
+const help='Select a feature axis to explore its 2021–2023 trend. Hover over a point for its median.';
+function shape(tag,attrs,text){
+ const node=document.createElementNS('http://www.w3.org/2000/svg',tag);
+ for(const [k,v] of Object.entries(attrs))node.setAttribute(k,v);
+ if(text!==undefined)node.textContent=text;
+ chart.append(node);return node;
+}
+function point(i,value){const a=i*Math.PI*2/5-Math.PI/2;return [280+143*value*Math.cos(a),197+143*value*Math.sin(a)]}
+function polygon(vs,attrs){return shape('polygon',{points:vs.map((v,i)=>point(i,v).join(',')).join(' '),...attrs})}
+function draw(){
+ chart.replaceChildren();readout.textContent=selected.size?help:'Select a genre to see its profile.';
+ for(const tick of [.25,.5,.75,1])polygon(axes.map(()=>tick),{fill:'none',stroke:'#d9e0d4'});
+ axes.forEach((axis,i)=>{
+   const [x,y]=point(i,1),[lx,ly]=point(i,1.13);
+   shape('line',{x1:280,y1:197,x2:x,y2:y,stroke:'#d9e0d4'});
+   const hit=shape('line',{class:'axisHit',x1:280,y1:197,x2:x,y2:y,stroke:'transparent','stroke-width':14});
+   hit.onclick=()=>openTrend(i);
+   const axisLabel=shape('text',{class:'axisName',role:'button',tabindex:0,'aria-controls':'trendPanel','aria-label':'Explore '+axis+' over time',x:lx,y:ly,'dominant-baseline':'middle','text-anchor':i===0?'middle':i<3?'start':'end','font-size':15,fill:'#324c3a'},axis);
+   axisLabel.onclick=()=>openTrend(i);
+   axisLabel.onkeydown=event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();openTrend(i)}};
+ });
+ for(const tick of [0,.25,.5,.75,1])shape('text',{x:286,y:197-143*tick-3,'font-size':10,fill:'#66766a'},String(tick));
+ groups.forEach((g,j)=>{
+   if(!selected.has(g.genre))return;
+   const color=colors[j%colors.length];polygon(g.values,{fill:'none',stroke:color,'stroke-width':2.8,'stroke-linejoin':'round'});
+   g.values.forEach((v,i)=>{
+     const [cx,cy]=point(i,v),label=g.genre+' · '+axes[i]+' '+v.toFixed(3)+' · '+g.n+' songs';
+     const marker=shape('circle',{cx,cy,r:4,fill:color,tabindex:0,'aria-label':label});
+     for(const event of ['mouseenter','focus','click'])marker.addEventListener(event,()=>readout.textContent=label);
+     for(const event of ['mouseleave','blur'])marker.addEventListener(event,()=>readout.textContent=help);
+   });
+ });
+}
+groups.forEach((g,j)=>{
+ const label=document.createElement('label');label.style.setProperty('--c',colors[j%colors.length]);
+ const input=document.createElement('input');input.type='checkbox';input.checked=selected.has(g.genre);input.disabled=!g.n;
+ input.onchange=()=>{if(input.checked)selected.add(g.genre);else selected.delete(g.genre);draw();if(!trendPanel.hidden)drawTrend()};
+ const dot=document.createElement('span');dot.className='dot';
+ const name=document.createElement('b');name.textContent=g.genre;const count=document.createElement('small');count.textContent=g.n+' / '+g.total;
+ label.append(input,dot,name,count);document.getElementById('options').append(label);
+});
+const $=id=>document.getElementById(id);
+const tracks=JSON.parse($('tracks').textContent);
+const features=[...axes,'Liveness','Instrumentalness','Tempo (BPM)','Loudness (dB)'];
+const annual=JSON.parse($('annual').textContent);
+const trendPanel=$('trendPanel');
+let trendFeature=0;
+function mark(parent,tag,attrs,text){
+ const el=document.createElementNS('http://www.w3.org/2000/svg',tag);
+ for(const [key,value] of Object.entries(attrs))el.setAttribute(key,value);
+ if(text!==undefined)el.textContent=text;
+ parent.append(el);return el;
+}
+function openTrend(i){
+ trendFeature=i;trendPanel.hidden=false;drawTrend();
+ $('trendTitle').focus({preventScroll:true});trendPanel.scrollIntoView({block:'nearest'});
+}
+$('closeTrend').onclick=()=>{
+ trendPanel.hidden=true;chart.querySelectorAll('.axisName')[trendFeature].focus();
+};
+function gridline(plot,x1,y1,x2,y2){
+ return mark(plot,'line',{x1,y1,x2,y2,stroke:'#dde3da'});
+}
+function drawTrend(){
+ const years=Object.keys(annual).map(Number).sort((a,b)=>a-b);
+ const plot=$('trend'),table=$('trendTable');
+ plot.replaceChildren();table.tHead.replaceChildren();table.tBodies[0].replaceChildren();
+ $('trendTitle').textContent=axes[trendFeature]+' by chart year';
+ $('trendScope').textContent='Matched Billboard entries: '+years.map(year=>year+' · '+annual[year].n+'/'+annual[year].total).join('   |   ');
+ const heading=table.tHead.insertRow();
+ for(const title of ['Genre',...years]){
+  const th=document.createElement('th');th.scope='col';th.textContent=title;heading.append(th);
+ }
+ const x=year=>65+545*(year-years[0])/(years.at(-1)-years[0]);
+ const y=value=>193-161*value;
+ for(const tick of [0,.25,.5,.75,1]){
+  gridline(plot,55,y(tick),645,y(tick));mark(plot,'text',{x:46,y:y(tick)+4,'text-anchor':'end'},tick);
+ }
+ for(const year of years)mark(plot,'text',{x:x(year),y:216,'text-anchor':'middle'},year);
+ groups.forEach((group,j)=>{
+  if(!selected.has(group.genre))return;
+  const color=colors[j%colors.length],row=table.tBodies[0].insertRow();
+  const label=document.createElement('th'),swatch=document.createElement('span');
+  label.scope='row';swatch.className='dot';swatch.style.background=color;label.append(swatch,group.genre);row.append(label);
+  let previous=null;
+  for(const year of years){
+   const cell=row.insertCell(),g=annual[year].genres[group.genre];
+   if(!g?.n){previous=null;cell.textContent='— ('+(g?.n||0)+'/'+(g?.total||0)+')';continue}
+   const value=g.values[trendFeature],count=document.createElement('small');
+   count.textContent=' ('+g.n+'/'+g.total+')';cell.append(value.toFixed(3),count);
+   if(previous&&year===previous.year+1)mark(plot,'line',{class:'series',x1:x(previous.year),y1:y(previous.value),x2:x(year),y2:y(value),stroke:color,'stroke-width':2.4});
+   const tooltip=group.genre+' · '+year+' · '+value.toFixed(3)+' · '+g.n+'/'+g.total+' entries';
+   const dot=mark(plot,'circle',{cx:x(year),cy:y(value),r:5,fill:color,stroke:'#fff','stroke-width':1,'aria-label':tooltip});
+   mark(dot,'title',{},tooltip);previous={year,value};
+  }
+ });
+ if(!selected.size)table.tBodies[0].insertRow().insertCell().textContent='Select a genre above.';
+}
+
+function pearson(rows,xi,yi){
+ if(rows.length<3)return null;
+ const mean=i=>rows.reduce((s,r)=>s+r.values[i],0)/rows.length;
+ const mx=mean(xi),my=mean(yi);let xy=0,xx=0,yy=0;
+ for(const r of rows){
+  const dx=r.values[xi]-mx,dy=r.values[yi]-my;
+  xy+=dx*dy;xx+=dx*dx;yy+=dy*dy;
+ }
+ return xx&&yy?xy/Math.sqrt(xx*yy):null;
+}
+function domain(i){
+ if(i<7)return [0,1];
+ const vals=tracks.map(t=>t.values[i]),step=i===7?20:5;
+ return [Math.floor(Math.min(...vals)/step)*step,Math.ceil(Math.max(...vals)/step)*step];
+}
+const hexColors=['#cde9db','#95cdb4','#5bab8b','#277d60','#084d3a'];
+function countColor(n){return hexColors[n===1?0:n===2?1:n<=4?2:n<=8?3:4]}
+
+function drawHexbin(plot,sample,xi,yi){
+ const left=64,right=548,top=80,bottom=387,radius=20;
+ const [xmin,xmax]=domain(xi),[ymin,ymax]=domain(yi);
+ const width=right-left,height=bottom-top,spacing=Math.sqrt(3)*radius;
+ const cells=new Map(),intervals=14;
+ const xCounts=Array(intervals).fill(0),yCounts=Array(intervals).fill(0);
+ for(const song of sample){
+  const fx=(song.values[xi]-xmin)/(xmax-xmin),fy=(song.values[yi]-ymin)/(ymax-ymin);
+  xCounts[Math.min(intervals-1,Math.floor(fx*intervals))]++;
+  yCounts[Math.min(intervals-1,Math.floor(fy*intervals))]++;
+  const px=fx*width,py=(1-fy)*height,nearRow=Math.round(py/(1.5*radius));
+  let best=null,distance=Infinity;
+  // In a staggered grid the nearest centre lies in one of three adjacent rows.
+  for(let row=nearRow-1;row<=nearRow+1;row++){
+   const offset=(Math.abs(row)%2)/2,col=Math.round(px/spacing-offset);
+   const cx=(col+offset)*spacing,cy=row*1.5*radius;
+   const d=(cx-px)**2+(cy-py)**2;
+   if(d<distance){distance=d;best={key:row+','+col,cx:left+cx,cy:top+cy}}
+  }
+  if(!cells.has(best.key))cells.set(best.key,{...best,songs:[]});
+  cells.get(best.key).songs.push(song);
+ }
+ for(let i=0;i<=4;i++){
+  const x=left+i*width/4,y=bottom-i*height/4;
+  gridline(plot,x,top,x,bottom);gridline(plot,left,y,right,y);
+  mark(plot,'text',{x,y:bottom+22,'text-anchor':'middle'},+(xmin+(xmax-xmin)*i/4).toFixed(2));
+  mark(plot,'text',{x:left-9,y:y+4,'text-anchor':'end'},+(ymin+(ymax-ymin)*i/4).toFixed(2));
+ }
+ mark(plot,'text',{x:(left+right)/2,y:bottom+47,'text-anchor':'middle'},features[xi]);
+ mark(plot,'text',{transform:'translate(17 '+((top+bottom)/2)+') rotate(-90)','text-anchor':'middle'},features[yi]);
+ const clip=mark(mark(plot,'defs',{}),'clipPath',{id:'hexBounds'});
+ mark(clip,'rect',{x:left,y:top,width,height});
+ const area=mark(plot,'g',{'clip-path':'url(#hexBounds)'});
+ const prompt='Select a hexagon to see its songs.';
+ $('songDetail').textContent=prompt;
+ let active=null;
+ for(const cell of cells.values()){
+  const n=cell.songs.length,desc=n+(n===1?' song: ':' songs: ')+cell.songs.map(s=>s.title+' — '+s.artist).join(' · ');
+  const points=Array.from({length:6},(_,i)=>{
+   const angle=Math.PI*(i/3-.5);
+   return [cell.cx+radius*Math.cos(angle),cell.cy+radius*Math.sin(angle)].join(',');
+  }).join(' ');
+  const hex=mark(area,'polygon',{points,fill:countColor(n),stroke:'#fff','stroke-width':1,tabindex:0,role:'button','aria-label':desc,'data-count':n});
+  const activate=()=>{
+   if(active)active.setAttribute('stroke','#fff');active=hex;hex.setAttribute('stroke','#172e25');$('songDetail').textContent=desc;
+  };
+  hex.onclick=activate;hex.onkeydown=e=>{if(['Enter',' '].includes(e.key)){e.preventDefault();activate()}};
+  hex.onfocus=hex.onmouseenter=()=>$('songDetail').textContent=desc;
+  hex.onblur=hex.onmouseleave=()=>$('songDetail').textContent=active?active.getAttribute('aria-label'):prompt;
+ }
+ const peak=Math.max(1,...xCounts,...yCounts);
+ function bar(parent,x,y,w,h,n){
+  const rect=mark(parent,'rect',{x,y,width:w,height:h,fill:'#81b69e','data-count':n});
+  mark(rect,'title',{},n+(n===1?' song':' songs'));
+ }
+ const upper=mark(plot,'g',{'aria-label':'Horizontal feature distribution'}),side=mark(plot,'g',{'aria-label':'Vertical feature distribution'});
+ for(let i=0;i<intervals;i++){
+  const h=54*xCounts[i]/peak,w=54*yCounts[i]/peak;
+  bar(upper,left+i*width/intervals,top-8-h,width/intervals-1,h,xCounts[i]);
+  bar(side,right+8,bottom-(i+1)*height/intervals,w,height/intervals-1,yCounts[i]);
+ }
+}
+
+function drawScatter(){
+ const plot=$('scatter'),xi=+$('xFeature').value,yi=+$('yFeature').value,genre=$('genre').value;
+ const sample=tracks.filter(t=>genre==='All genres'||t.genres.includes(genre));
+ const r=pearson(sample,xi,yi),[xmin,xmax]=domain(xi),[ymin,ymax]=domain(yi);
+ const x=v=>64+579*(v-xmin)/(xmax-xmin),y=v=>266-236*(v-ymin)/(ymax-ymin);
+ $('corrStats').textContent='2023 · '+sample.length+' matched '+(sample.length===1?'song':'songs')+' · '+(r===null?'Pearson r unavailable ('+(sample.length<3?'fewer than 3 songs':'constant feature')+')':'Pearson r = '+r.toFixed(2));
+ const prompt='Select a song to see its chart rank and feature values.';let pinned=null;
+ $('songDetail').textContent=prompt;plot.replaceChildren();
+ const hex=$('corrMode').value==='hexbin';
+ $('hexLegend').hidden=!hex;
+ plot.setAttribute('viewBox',hex?'0 0 622 448':'0 0 680 320');
+ plot.setAttribute('aria-label',hex?'Song counts in hexagonal bins with marginal histograms':'Song-level feature scatterplot');
+ for(const opt of $('xFeature').options)opt.disabled=+opt.value===yi;
+ for(const opt of $('yFeature').options)opt.disabled=+opt.value===xi;
+ if(hex){drawHexbin(plot,sample,xi,yi);return}
+ for(let i=0;i<=4;i++){
+  const xv=xmin+(xmax-xmin)*i/4,yv=ymin+(ymax-ymin)*i/4;
+  gridline(plot,x(xv),30,x(xv),266);gridline(plot,64,y(yv),643,y(yv));
+  mark(plot,'text',{x:x(xv),y:287,'text-anchor':'middle'},+xv.toFixed(2));
+  mark(plot,'text',{x:54,y:y(yv)+4,'text-anchor':'end'},+yv.toFixed(2));
+ }
+ mark(plot,'text',{x:355,y:314,'text-anchor':'middle'},features[xi]);
+ mark(plot,'text',{transform:'translate(17 148) rotate(-90)','text-anchor':'middle'},features[yi]);
+ for(const t of sample){
+  const desc='#'+t.rank+' · '+t.title+' — '+t.artist+' · '+features[xi]+' '+t.values[xi].toFixed(3)+' · '+features[yi]+' '+t.values[yi].toFixed(3);
+  const dot=mark(plot,'circle',{cx:x(t.values[xi]),cy:y(t.values[yi]),r:5,fill:'#197755','fill-opacity':.62,stroke:'#fff','stroke-width':.75,tabindex:0,role:'button','aria-label':desc});
+  const pin=()=>{if(pinned)pinned.setAttribute('stroke','#fff');pinned=dot;dot.setAttribute('stroke','#163726');$('songDetail').textContent=desc};
+  dot.onclick=pin;dot.onkeydown=e=>{if([' ','Enter'].includes(e.key)){e.preventDefault();pin()}};
+  dot.onmouseenter=dot.onfocus=()=>$('songDetail').textContent=desc;
+  dot.onmouseleave=dot.onblur=()=>$('songDetail').textContent=pinned?pinned.getAttribute('aria-label'):prompt;
+ }
+}
+for(const id of ['xFeature','yFeature']){
+ features.forEach((feature,i)=>$(id).add(new Option(feature,i)));
+ $(id).onchange=drawScatter;
+}
+$('xFeature').value=2;$('yFeature').value=0;
+for(const name of ['All genres',...groups.map(g=>g.genre)])$('genre').add(new Option(name,name));
+$('hexLegend').textContent='Songs per hexagon';
+['1','2','3–4','5–8','9+'].forEach((label,i)=>{
+ const chip=document.createElement('span'),swatch=document.createElement('i');
+ swatch.style.backgroundColor=hexColors[i];chip.append(swatch,label);$('hexLegend').append(chip);
+});
+$('corrMode').onchange=drawScatter;
+$('genre').onchange=drawScatter;
+drawScatter();
+
+draw();
+</script>
+</html>

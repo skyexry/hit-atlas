@@ -2,9 +2,17 @@
 
 ## 项目状态
 
-这个仓库保留 **Hit Atlas 的 Spotify 原型**，包括全球和地区榜单、歌曲母表、歌词、分析结果和[交互预览](web/hit-atlas-demo.html)。这些成果仍可用于复现旧版和探索 Spotify 榜单。
+当前项目研究 **美国 Billboard 年终 Hot 100**。历史数据覆盖 **1959–2023**，包括榜位、歌曲、艺人署名与来源、曲风和歌词。声音特征草稿使用 **2021–2023** 年直接从 ReccoBeats 查询的录音。
 
-当前课程项目转向 **美国 Billboard 年终 Hot 100**。榜单、排名和样本口径以 Billboard 为准。歌曲级资料可在核对录音版本后复用。当前可视化草稿在本地工作区，本仓库记录的是 Spotify 阶段的成果。
+| 入口 | 内容 |
+|---|---|
+| [Billboard 数据与方法](billboard-year-end/README.md) | 表结构、数据来源、覆盖和校验方法 |
+| [历史总览](billboard-year-end/explorer.html) | 1959–2023 年曲风、艺人来源和歌词关键词 |
+| [艺人来源地图](billboard-year-end/demos/artist-origin-sketch/map-to-artists.html) | 选择年份、来源地和艺人，查看上榜歌曲 |
+| [歌词词频草稿](billboard-year-end/demos/lyric-words-demo/index.html) | 关键词趋势、按曲风找词、年度气泡图 |
+| [声音特征草稿](billboard-year-end/demos/sound-demo/2023.html) | 曲风雷达图、年度折线、散点图和 Hexbin |
+
+互动页面可从 GitHub 下载后用浏览器打开。旧版的全球和地区榜单、歌曲母表、歌词和分析见下方 Spotify 原型及其[交互预览](web/hit-atlas-demo.html)。
 
 ## Spotify 原型
 
