@@ -1,0 +1,4 @@
+﻿year,chart_kind,chart_entries,distinct_songs,lyrics_usable,audio_matched,distinct_artists,artists_origin_known
+2024,billboard_year_end,100,100,88,97,83,83
+2025,billboard_year_end,100,100,91,96,77,75
+2026,weekly_rank_points_ytd,100,100,93,58,80,80

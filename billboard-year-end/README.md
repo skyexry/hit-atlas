@@ -2,6 +2,8 @@
 
 [Historical explorer](explorer.html) · [Annual coverage](coverage.csv) · [Chart entries](chart_entries.csv)
 
+[2024–2026 chart extension](extension-2024-2026/README.md) adds the 2024 and 2025 year-end charts and a 2026 weekly-rank estimate, with matching lyrics, audio, artist origins, and coverage. Historical explorer counts below describe the 1959–2023 release.
+
 The dataset contains **6,501 entries across 65 year-end charts**. The 1969 chart contains 101 entries because Paul Revere & the Raiders' “Let Me” and The Box Tops' “Sweet Cream Ladies” share rank 100. All other years contain 100 entries.
 
 | Measure | Coverage |
