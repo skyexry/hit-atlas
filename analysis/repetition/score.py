@@ -11,7 +11,7 @@ from pathlib import Path
 
 
 REPO = Path(__file__).resolve().parents[2]
-DEFAULT_INPUT = REPO / "Spotify基础数据集/歌曲与歌词/逐行歌词.csv"
+DEFAULT_INPUT = REPO / "spotify-base-dataset/songs-and-lyrics/lyric-lines.csv"
 MATCH = re.compile(rb"^match (\d+) \d+(?: |$)", re.MULTILINE)
 
 

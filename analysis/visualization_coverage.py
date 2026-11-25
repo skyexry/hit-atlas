@@ -6,8 +6,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "Spotify基础数据集"
-LYRICS = DATA / "歌曲与歌词"
+DATA = ROOT / "spotify-base-dataset"
+LYRICS = DATA / "songs-and-lyrics"
 ANALYSIS = ROOT / "analysis"
 AUDIO = "tempo_bpm energy danceability loudness_db acousticness audio_valence instrumentalness speechiness liveness".split()
 EMOTIONS = "anger anticipation disgust fear joy sadness surprise trust".split()
@@ -23,12 +23,12 @@ def covered(rows, key, predicate):
 
 
 def coverage_sets(songs):
-    lines = read(LYRICS / "逐行歌词.csv")
+    lines = read(LYRICS / "lyric-lines.csv")
     lyric_with_lines = {r["lyrics_version_id"] for r in lines if r["line_text"].strip()}
     line_version = {r["line_id"]: r["lyrics_version_id"] for r in lines}
     evidence = read(ANALYSIS / "emotion/lyric_emotion_tokens.csv")
     scores = read(ANALYSIS / "emotion/lyric_emotions.csv")
-    audio = read(DATA / "音乐特征/song_audio_features.csv")
+    audio = read(DATA / "audio-features/song_audio_features.csv")
     recco = read(ANALYSIS / "song_audio_reccobeats.csv")
     pmemo = read(ANALYSIS / "song_listener_ratings.csv")
     pmemo_axes = {m: covered(pmemo, "song_id", lambda r: r["metric_id"] == m and r["value_raw"] != "")
@@ -40,7 +40,7 @@ def coverage_sets(songs):
     features = {
         "catalogue_metadata": covered(songs, "song_id", lambda r: all(r[k] for k in ("title", "artist", "spotify_id", "duration_s"))),
         "lyrics_lines": via_lyric(lyric_with_lines),
-        "lyrics_confirmed": covered(read(LYRICS / "歌词匹配.csv"), "song_id", lambda r: r["lyrics_status"] == "元数据匹配已确认"),
+        "lyrics_confirmed": covered(read(LYRICS / "lyric-matches.csv"), "song_id", lambda r: r["lyrics_status"] == "元数据匹配已确认"),
         "lyrics_primary_language": via_lyric(covered(scores, "lyrics_version_id", lambda r:
             r["language"] not in {"", "und"} and float(r["language_confidence"]) >= 0.60)),
         "lyrics_emotion": via_lyric(covered(scores, "lyrics_version_id", lambda r: r["emotion_status"] == "scored")),
@@ -66,8 +66,8 @@ def coverage_sets(songs):
 
 
 def main():
-    songs = read(LYRICS / "歌曲母表.csv")
-    chart = read(LYRICS / "榜位对应.csv")
+    songs = read(LYRICS / "song-master.csv")
+    chart = read(LYRICS / "chart-positions.csv")
     song_ids = {row["song_id"] for row in songs}
     assert len(song_ids) == len(songs)
     assert all(r["song_id"] in song_ids for r in chart)
@@ -81,11 +81,11 @@ def main():
             groups["global_top50", year, market, "position"].append(row)
             if year >= "2024":
                 groups["global_recent_top50", "", "", "position"].append(row)
-        if row["source_file"] == "地区同期Top50_2024-2026.csv":
+        if row["source_file"] == "regional-matched-window-top-50-2024-2026.csv":
             groups["regional_ytd_top50", "", "", "position"].append(row)
             groups["regional_ytd_top50", year, "", "position"].append(row)
             groups["regional_ytd_top50", year, market, "position"].append(row)
-        if row["source_file"] == "榜单明细.csv" and market != "Global":
+        if row["source_file"] == "chart-entries.csv" and market != "Global":
             groups["regional_annual_or_historical", year, market, "position"].append(row)
 
     # A repeated song counts once in the master and once per chart position elsewhere.

@@ -8,14 +8,14 @@ The diagram shows the current song-level joins. A chart position joins to a song
 
 ## Data sources
 
-- **Chart data.** Earlier global charts use Wrapped playlists, announcements, archived snapshots and published playlist exports. The 2026 global estimate uses weekly Top 200 chart observations. Regional estimates use the daily archive for January 1 through November 12 of each year. [Source register](../Spotify基础数据集/榜单来源.csv) · [Weekly archive](https://zenodo.org/records/23644526) · [Regional daily charts](https://www.kaggle.com/datasets/gonzalopezgil/spotify-charts-daily-updated/versions/173)
+- **Chart data.** Earlier global charts use Wrapped playlists, announcements, archived snapshots and published playlist exports. The 2026 global estimate uses weekly Top 200 chart observations. Regional estimates use the daily archive for January 1 through November 12 of each year. [Source register](../spotify-base-dataset/chart-sources.csv) · [Weekly archive](https://zenodo.org/records/23644526) · [Regional daily charts](https://www.kaggle.com/datasets/gonzalopezgil/spotify-charts-daily-updated/versions/173)
 - **Recording metadata.** Read the individual `metadata_source` or chart-side provenance for each match. Sources include Spotify track and playlist metadata, Deezer, MGD+, cached Spotify exports and corroborating reports for some historical credits.
-- **Lyrics.** Most default transcriptions come from LRCLIB. Gap filling also uses lyrics published by artists or labels and other lyric catalogues, including Uta-Net. The lyric-version table records the selected source for each transcription. [LRCLIB API](https://lrclib.net/docs) · [Matching rules](../Spotify基础数据集/歌曲与歌词/使用说明.md)
-- **Audio.** The feature table imports Spotify Audio Features from MGD+, archived annual data, Kaggle exports, and the P-Arpan combined dataset. ReccoBeats fills residual gaps by exact Spotify track ID and is recorded at field level. [MGD+](https://zenodo.org/records/8086643) · [Merged audio corpus](https://huggingface.co/datasets/P-Arpan/Mood_Based_Music_Search) · [Source priority rules](../Spotify基础数据集/音乐特征/README.md)
+- **Lyrics.** Most default transcriptions come from LRCLIB. Gap filling also uses lyrics published by artists or labels and other lyric catalogues, including Uta-Net. The lyric-version table records the selected source for each transcription. [LRCLIB API](https://lrclib.net/docs) · [Matching rules](../spotify-base-dataset/songs-and-lyrics/README.md)
+- **Audio.** The feature table imports Spotify Audio Features from MGD+, archived annual data, Kaggle exports, and the P-Arpan combined dataset. ReccoBeats fills residual gaps by exact Spotify track ID and is recorded at field level. [MGD+](https://zenodo.org/records/8086643) · [Merged audio corpus](https://huggingface.co/datasets/P-Arpan/Mood_Based_Music_Search) · [Source priority rules](../spotify-base-dataset/audio-features/README.md)
 
 In 2024–2026, the global Top 50 contains 150 chart positions with 150 default lyric links, 58 metadata-checked lyric links, and 139 links with the core audio features. The regional sample has 3,450 positions with 3,439 default lyric links, 1,877 metadata-checked lyric links, and 2,784 links with core audio features. These are chart-position counts. The working corpus has 2,963 songs. Of these, 2,950 have default lyric links across 2,890 distinct transcriptions, and 2,397 have matched audio features. [Visualization data and coverage](visualization-data.md)
 
-On November 24, 2026, a rebuild from the retained source downloads and the original song-ID snapshot reproduced the original 601 audio rows byte for byte. A separate rebuild from the retained weekly exports reproduced all 50 positions and observed stream totals in the 2026 global year-to-date estimate. The regional same-window table was produced from archived daily chart records. This check reviewed its earlier audit and aggregation rules. [Chart audit](../Spotify基础数据集/榜单审计/审计结果.md)
+On November 24, 2026, a rebuild from the retained source downloads and the original song-ID snapshot reproduced the original 601 audio rows byte for byte. A separate rebuild from the retained weekly exports reproduced all 50 positions and observed stream totals in the 2026 global year-to-date estimate. The regional same-window table was produced from archived daily chart records. This check reviewed its earlier audit and aggregation rules. [Chart audit](../spotify-base-dataset/chart-audit/README.md)
 
 The lyric audit matched 2,318 of 2,890 version checksums to retained source responses. The other 572 versions carry source URLs and were outside this cache comparison. The lyric-version URL identifies the transcription. The lyric-match status describes the separate check that links it to the song.
 
@@ -23,7 +23,7 @@ The archived analysis includes emotion-word rates and Lempel–Ziv repetition de
 
 ## Chart positions
 
-A chart position in one source. The key is `source_file + year + market + position`. [CSV](../Spotify基础数据集/歌曲与歌词/榜位对应.csv)
+A chart position in one source. The key is `source_file + year + market + position`. [CSV](../spotify-base-dataset/songs-and-lyrics/chart-positions.csv)
 
 | Field | Type | Source or construction |
 |---|---|---|
@@ -48,7 +48,7 @@ A chart position in one source. The key is `source_file + year + market + positi
 
 ## Song master
 
-One row per project song or recording entry. A song can appear on several charts, and a live version or remix can have its own project row. The master is the place to look up the track and link it to lyrics or audio. [Song master CSV](../Spotify基础数据集/歌曲与歌词/歌曲母表.csv)
+One row per project song or recording entry. A song can appear on several charts, and a live version or remix can have its own project row. The master is the place to look up the track and link it to lyrics or audio. [Song master CSV](../spotify-base-dataset/songs-and-lyrics/song-master.csv)
 
 | Field | Type | What it means and where it comes from |
 |---|---|---|
@@ -70,13 +70,13 @@ One row per project song or recording entry. A song can appear on several charts
 
 **Sources and version matching.** Display titles, artist credits and track IDs primarily come from chart rows and the track catalogue. A lookup uses title, performer credit and version labels. When older chart rows lack a track ID, the project can select a documented representative catalogue entry. The original chart fields remain available in the chart table.
 
-Duration comes from a separate lookup recorded in `duration_source_url`. The metadata audit distinguishes values tied to a full Spotify ID, direct catalogue lookups, cross-catalogue evidence and lyric-catalogue duration. MusicBrainz, Apple Music and Deezer provide cross-catalogue evidence for matching titles and artist credits. Use the audit status when limiting calculations to durations with stronger recording evidence. [Metadata audit CSV](../Spotify基础数据集/歌曲与歌词/歌曲元数据核验.csv)
+Duration comes from a separate lookup recorded in `duration_source_url`. The metadata audit distinguishes values tied to a full Spotify ID, direct catalogue lookups, cross-catalogue evidence and lyric-catalogue duration. MusicBrainz, Apple Music and Deezer provide cross-catalogue evidence for matching titles and artist credits. Use the audit status when limiting calculations to durations with stronger recording evidence. [Metadata audit CSV](../spotify-base-dataset/songs-and-lyrics/song-metadata-audit.csv)
 
 **Example.** Artemas’s “i like the way you kiss me” appears at No. 11 on the 2024 global chart. The archived Spotify list supplies the title, artist and Spotify ID. The duration and its separate source are in the song master and metadata audit. [2024 global list snapshot](https://github.com/mackorone/spotify-playlist-archive/blob/d89a503d061cdd75396fb954b9917c18ae4afad9/playlists/pretty/37i9dQZF1DX18jTM2l2fJY.md)
 
 ## Song metadata audit
 
-One row per project song, keyed by `song_id`. Added artist credits and Spotify IDs can be traced independently from duration. [CSV](../Spotify基础数据集/歌曲与歌词/歌曲元数据核验.csv)
+One row per project song, keyed by `song_id`. Added artist credits and Spotify IDs can be traced independently from duration. [CSV](../spotify-base-dataset/songs-and-lyrics/song-metadata-audit.csv)
 
 | Field | Type | Source or construction |
 |---|---|---|
@@ -108,7 +108,7 @@ LRCLIB-only durations share their source with the lyrics and are suitable for de
 
 ## Lyric match
 
-One decision per song, keyed by `song_id`. [CSV](../Spotify基础数据集/歌曲与歌词/歌词匹配.csv)
+One decision per song, keyed by `song_id`. [CSV](../spotify-base-dataset/songs-and-lyrics/lyric-matches.csv)
 
 | Field | Type | Source or construction |
 |---|---|---|
@@ -120,7 +120,7 @@ One decision per song, keyed by `song_id`. [CSV](../Spotify基础数据集/歌�
 
 ## Lyric versions
 
-One frozen transcription, keyed by `lyrics_version_id`. [CSV](../Spotify基础数据集/歌曲与歌词/歌词版本.csv)
+One frozen transcription, keyed by `lyrics_version_id`. [CSV](../spotify-base-dataset/songs-and-lyrics/lyric-versions.csv)
 
 | Field | Type | Source or construction |
 |---|---|---|
@@ -132,7 +132,7 @@ One frozen transcription, keyed by `lyrics_version_id`. [CSV](../Spotify基础�
 
 ## Lyric lines
 
-One occurrence of a line in a transcription, keyed by `line_id`. [CSV](../Spotify基础数据集/歌曲与歌词/逐行歌词.csv)
+One occurrence of a line in a transcription, keyed by `line_id`. [CSV](../spotify-base-dataset/songs-and-lyrics/lyric-lines.csv)
 
 | Field | Type | Source or construction |
 |---|---|---|
@@ -143,7 +143,7 @@ One occurrence of a line in a transcription, keyed by `line_id`. [CSV](../Spotif
 
 ## Audio features
 
-One matched recording per song, keyed by `song_id`. [CSV](../Spotify基础数据集/音乐特征/song_audio_features.csv)
+One matched recording per song, keyed by `song_id`. [CSV](../spotify-base-dataset/audio-features/song_audio_features.csv)
 
 | Field | Type | Source or construction |
 |---|---|---|
@@ -151,7 +151,7 @@ One matched recording per song, keyed by `song_id`. [CSV](../Spotify基础数据
 | `matched_spotify_id` | ID | Full Spotify ID used for the exact catalogue join. |
 | `tempo_bpm`, `loudness_db` | Number (BPM), number (dB) | Estimate from the Spotify archive or the ReccoBeats fallback. |
 | `energy`, `danceability`, `acousticness`, `audio_valence`, `instrumentalness`, `speechiness`, `liveness` | Number (0–1) | Estimate from the Spotify archive or the ReccoBeats fallback. Audio valence describes how positive the recording sounds. |
-| `key`, `mode`, `time_signature` | Integer | Spotify archive tonal and meter estimates. ReccoBeats can fill key and mode. The project treats meter values in Spotify’s documented 3–7 range as usable. See [audio feature coverage](../Spotify基础数据集/音乐特征/README.md#coverage). |
+| `key`, `mode`, `time_signature` | Integer | Spotify archive tonal and meter estimates. ReccoBeats can fill key and mode. The project treats meter values in Spotify’s documented 3–7 range as usable. See [audio feature coverage](../spotify-base-dataset/audio-features/README.md#coverage). |
 | `feature_method` | Text | Method for the preferred row. Field-level ReccoBeats fills take precedence over this label when tracing a specific value. |
 | `audio_source`, `audio_source_url`, `audio_source_record` | Text, URL, text | Provenance of the preferred archived row or the ReccoBeats row, including the source URL and record locator. |
 | `reccobeats_fields`, `reccobeats_source_url` | Text, URL | Names of metrics filled by ReccoBeats and their source endpoint. |

@@ -30,7 +30,7 @@ def main():
     parser.add_argument("--raw-cache", type=Path, required=True)
     parser.add_argument("--output", type=Path, default=Path(__file__).with_name("recovered_lyric_scores.csv"))
     args = parser.parse_args()
-    songs = {r["song_id"]: r for r in read(DATA / "歌曲母表.csv")}
+    songs = {r["song_id"]: r for r in read(DATA / "song-master.csv")}
     grouped, provenance, token_requests = {}, {}, []
     for song_id, (source_id, title, artist) in RECORDINGS.items():
         song = songs[song_id]

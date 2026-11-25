@@ -13,7 +13,7 @@ from urllib.parse import urlencode
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SONGS = ROOT / "Spotify基础数据集/歌曲与歌词/歌曲母表.csv"
+SONGS = ROOT / "spotify-base-dataset/songs-and-lyrics/song-master.csv"
 BASE = "https://api.reccobeats.com/v1"
 METRICS = {
     "tempo": "tempo_bpm", "energy": "energy", "danceability": "danceability",

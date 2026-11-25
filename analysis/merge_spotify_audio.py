@@ -16,7 +16,7 @@ from reccobeats_coverage import METRICS, ROOT, SONGS, have_core, read_csv
 
 ZENODO = "https://zenodo.org/records/11453410"
 KAGGLE = "https://www.kaggle.com/datasets/serkantysz/550k-spotify-songs-audio-lyrics-and-genres/versions/1"
-DATA = ROOT / "Spotify基础数据集/音乐特征/song_audio_features.csv"
+DATA = ROOT / "spotify-base-dataset/audio-features/song_audio_features.csv"
 METHOD = "Spotify Audio Features"
 COLUMNS = ["spotify_id", "title", "duration_ms", *METRICS, "time_signature", "audio_source", "source_url", "source_record"]
 

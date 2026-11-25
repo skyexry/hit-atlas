@@ -9,7 +9,7 @@ import numpy as np
 import onnxruntime as ort
 from tokenizers import Tokenizer
 
-LYRICS = Path(__file__).resolve().parents[2] / "Spotify基础数据集/歌曲与歌词/逐行歌词.csv"
+LYRICS = Path(__file__).resolve().parents[2] / "spotify-base-dataset/songs-and-lyrics/lyric-lines.csv"
 REVISION = "2c4055b12046f11709e9df2c122e59ffbdc2f900"
 METHOD = "multilingual-minilm-l12-int8-lyrics-v1"
 LIMIT = 128
@@ -93,7 +93,7 @@ def main():
     assert np.all(np.isfinite(vectors)) and np.allclose(np.linalg.norm(vectors, axis=1), 1)
     scores = np.clip(vectors @ vectors.T, -1, 1)
     np.fill_diagonal(scores, -np.inf)
-    with LYRICS.with_name("歌词版本.csv").open(encoding="utf-8-sig", newline="") as handle:
+    with LYRICS.with_name("lyric-versions.csv").open(encoding="utf-8-sig", newline="") as handle:
         checksums = {row["lyrics_version_id"]: row["text_sha256"] for row in csv.DictReader(handle)}
     equivalent = defaultdict(list)
     for index, original_index in enumerate(keep):

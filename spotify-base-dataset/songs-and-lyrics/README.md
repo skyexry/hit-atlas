@@ -4,11 +4,11 @@ This page documents the archived Spotify prototype. The current project uses the
 
 | Table | Record and join |
 | --- | --- |
-| [Song master](歌曲母表.csv) | One project recording, keyed by `song_id`, with the selected lyric version |
-| [Chart positions](榜位对应.csv) | One source position, joined to the recording by `song_id` |
-| [Lyric matches](歌词匹配.csv) | The selected version and verification status for each `song_id` |
-| [Lyric versions](歌词版本.csv) | Transcription provenance, keyed by `lyrics_version_id` |
-| [Lyric lines](逐行歌词.csv) | Ordered source text, keyed by `line_id`, grouped by `lyrics_version_id` |
+| [Song master](song-master.csv) | One project recording, keyed by `song_id`, with the selected lyric version |
+| [Chart positions](chart-positions.csv) | One source position, joined to the recording by `song_id` |
+| [Lyric matches](lyric-matches.csv) | The selected version and verification status for each `song_id` |
+| [Lyric versions](lyric-versions.csv) | Transcription provenance, keyed by `lyrics_version_id` |
+| [Lyric lines](lyric-lines.csv) | Ordered source text, keyed by `line_id`, grouped by `lyrics_version_id` |
 
 Analyze each lyric version once and rejoin to chart positions when summarizing by year or market. [Field dictionary](../../docs/data-field-sources.md) and [analysis methods](../../docs/lyrics-analysis-notes.md).
 

@@ -61,7 +61,7 @@ def save(path, rows):
 
 def emotion_cases():
     versions = {r["lyrics_version_id"]: r for r in read_csv(HERE / "emotion/lyric_emotions.csv")}
-    lines = read_csv(DATA / "逐行歌词.csv")
+    lines = read_csv(DATA / "lyric-lines.csv")
     by_line = {r["line_id"]: r for r in lines}
     nearby = {(r["lyrics_version_id"], int(r["line_no"])): r["line_text"] for r in lines}
     pools = defaultdict(list)

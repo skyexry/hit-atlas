@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-DATA = HERE.parents[1] / "Spotify基础数据集/歌曲与歌词"
+DATA = HERE.parents[1] / "spotify-base-dataset/songs-and-lyrics"
 NEGATION = {
     "en": re.compile(r"(?:\b(?:not|never|no)\b|n['’]t)\s+(?:(?:very|really|at all)\s+)?$", re.I),
     "zh-Hant": re.compile(r"(?:並不|沒有|不再|不太|不|別|沒)\s*$"),
@@ -23,7 +23,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=HERE / "lyric_negation_flags.csv")
     args = parser.parse_args()
-    by_line = {row["line_id"]: row for row in read(DATA / "逐行歌词.csv")}
+    by_line = {row["line_id"]: row for row in read(DATA / "lyric-lines.csv")}
     langs = {row["lyrics_version_id"]: row["language"] for row in read(HERE / "lyric_emotions.csv")}
     with args.output.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")

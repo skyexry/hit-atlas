@@ -12,7 +12,7 @@ from pathlib import Path
 from zipfile import ZipFile
 
 
-DATA = Path(__file__).resolve().parents[2] / "Spotify基础数据集/歌曲与歌词"
+DATA = Path(__file__).resolve().parents[2] / "spotify-base-dataset/songs-and-lyrics"
 EMOTIONS = ("anger", "anticipation", "disgust", "fear", "joy", "sadness", "surprise", "trust")
 LANGUAGES = {
     "af": "Afrikaans", "ar": "Arabic", "bg": "Bulgarian", "bn": "Bengali",
@@ -54,7 +54,7 @@ def lexicons(archive, languages):
 
 def read_lyrics():
     grouped = defaultdict(list)
-    with (DATA / "逐行歌词.csv").open(encoding="utf-8-sig", newline="") as handle:
+    with (DATA / "lyric-lines.csv").open(encoding="utf-8-sig", newline="") as handle:
         for row in csv.DictReader(handle):
             grouped[row["lyrics_version_id"]].append(row)
     for rows in grouped.values():

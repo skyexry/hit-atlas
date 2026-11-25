@@ -10,7 +10,7 @@ from pathlib import Path
 from mlx_lm import batch_generate, load
 
 
-DATA = Path(__file__).resolve().parents[2] / "Spotify基础数据集/歌曲与歌词"
+DATA = Path(__file__).resolve().parents[2] / "spotify-base-dataset/songs-and-lyrics"
 THEMES = {
     "romance": "Romantic attraction, desire, intimacy or an ongoing love relationship.",
     "heartbreak": "Breakup, rejection or longing for a lost or unavailable partner.",
@@ -47,11 +47,11 @@ def read_csv(path):
 
 def eligible_lyrics():
     chosen = {
-        r["lyrics_version_id"] for r in read_csv(DATA / "歌词匹配.csv")
+        r["lyrics_version_id"] for r in read_csv(DATA / "lyric-matches.csv")
         if r["lyrics_status"] == "元数据匹配已确认" and r["lyrics_version_id"]
     }
     grouped = defaultdict(list)
-    for row in read_csv(DATA / "逐行歌词.csv"):
+    for row in read_csv(DATA / "lyric-lines.csv"):
         if row["lyrics_version_id"] in chosen:
             grouped[row["lyrics_version_id"]].append(row)
     for rows in grouped.values():

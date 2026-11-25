@@ -2,7 +2,7 @@
 
 This page documents the archived Spotify prototype. The current project uses the U.S. Billboard Year-End Hot 100. [Current project](https://github.com/skyexry/hit-atlas#hit-atlas)
 
-Start with the selected `lyrics_version_id` in the [Spotify song tables](../Spotify基础数据集/歌曲与歌词/使用说明.md). The lyric-version table supplies source metadata, the line table provides ordered text and stable `line_id` values, and the match table records verification status by `song_id`. Chart positions connect by `song_id`.
+Start with the selected `lyrics_version_id` in the [Spotify song tables](../spotify-base-dataset/songs-and-lyrics/README.md). The lyric-version table supplies source metadata, the line table provides ordered text and stable `line_id` values, and the match table records verification status by `song_id`. Chart positions connect by `song_id`.
 
 | Output | Unit | Method |
 | --- | --- | --- |
