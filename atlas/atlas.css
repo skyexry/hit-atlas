@@ -266,7 +266,7 @@ h1, h2, h3 { margin: 0; }
 @media (max-width: 720px) { .side { grid-template-columns: minmax(0, 1fr); } }
 .crate-head { display: flex; align-items: flex-end; gap: 16px; margin-bottom: 8px; }
 .big-year { font-weight: 850; font-stretch: 72%; font-size: clamp(3.4rem, 6vw, 5.4rem); line-height: .78; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
-.big-year small { display: block; font-size: .2em; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; margin-top: 6px; font-stretch: 100%; }
+.big-year small { display: block; font-size: .2em; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; margin-top: 6px; font-stretch: 100%; white-space: nowrap; }
 .crate-legend { display: flex; align-items: center; gap: 14px; margin: 10px 0 6px; padding: 8px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
 .legend-record { width: 64px; height: 64px; flex: none; overflow: visible; }
 .crate-legend ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, auto)); gap: 2px 18px; font-size: .78rem; color: var(--ink-2); }
