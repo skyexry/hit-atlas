@@ -1,8 +1,8 @@
-# HitAtlas dataset
+# Hit Atlas dataset
 
-The HitAtlas dataset contains **nine relational tables stored as CSV files** with **6,801 chart entries, 6,451 song records, and 2,838 credited artist or group records**. It combines the U.S. Billboard Year-End Hot 100 for 1959–2025 with a 2026 year-to-date estimate based on weekly Hot 100 charts through November 28, 2026.
+The Hit Atlas dataset contains **nine core relational tables** with **6,801 chart entries, 6,451 song records, and 2,838 credited artist or group records**. It combines the U.S. Billboard Year-End Hot 100 for 1959–2025 with a 2026 year-to-date estimate based on weekly Hot 100 charts through the chart dated November 28, 2026.
 
-This page shows the coverage and original sources for all nine tables. The [public GitHub Gist] also provides a [three-row sample CSV] and a snapshot of the [annual coverage CSV].
+This page documents the core tables and the derived lyric features and keywords. The [lyric emotion tables](emotion/README.md) document the segment annotations, chart samples, and model comparison. The [public GitHub Gist] also provides a [three-row sample CSV] and a snapshot of the [annual coverage CSV].
 
 ## Coverage at a glance
 
@@ -41,7 +41,11 @@ To regenerate the tables, run `python3 billboard-year-end/scripts/measure_lyrics
 
 The [historical build](../scripts/build.py) checks the title and artist in the source URL and screens candidate transcripts. The [historical audit](../source_review.csv) records source-match evidence. The [supplement lookup](../scripts/supplement.py), [2024–2026 extension](../extension-2024-2026/README.md), and [release merge](../scripts/merge_release.py) document or implement gap filling, source reuse and join rules. The [view build](../scripts/build_views.py) creates normalized tokens from the stored transcripts.
 
-The optional [section scoring script](../scripts/score_lyric_sections.py) uses only the Python standard library. Run it with no arguments to count chunks and unique requests for a 10-song pilot. Once `HF_TOKEN` has Inference Providers access, run it with `--probe` to test on synthetic text. Passing `--output /path/to/new.csv` submits the selected lyric chunks to hosted inference and exports source line ranges and the 11 scores. The fields `start_pct` and `end_pct` give each chunk's position from 0 to 100 using cumulative non-whitespace characters in the scored lyric text. The field `section_marker` marks the first chunk after a recognized bracketed label, including inline labels in flattened Genius text. For a plot, place that marker at `start_pct`. Blank lines and a 300-character chunk limit supply fallback boundaries. Repeated chunks with identical text reuse a score. The historical and 2024–2026 lyric tables share the same fields after UTF-8 BOM handling. The Blakely/Genius text stored in Atlas is flattened, while the newer LRCLIB transcripts generally retain line breaks.
+The historical and 2024–2026 lyric tables share the same fields after UTF-8 BOM handling. The Blakely/Genius transcripts stored in Atlas are flattened, while the newer LRCLIB transcripts generally retain line breaks. Segment analysis uses recognized section markers, blank lines, and a 300-character chunk limit. The [emotion data dictionary](emotion/README.md#preparation-and-joins) describes the position fields and the TabularisAI and Astra methods.
+
+## Lyric emotion annotations, 1959–2026
+
+The [emotion tables](emotion/README.md#data-tables) contain **53,950 segments for 6,301 song records**, covering **6,648 of 6,801 chart entries**. They include two supplemental lyric matches used for emotion analysis, so coverage is slightly higher than in the core lyrics table. The full-corpus annotations and the 2021–2025 top-ten summaries support [song timelines and year comparisons](emotion/README.md#visualization-uses).
 
 ## CSV data dictionary
 
@@ -146,7 +150,7 @@ Genre, lyric, and audio percentages use chart entries as the denominator. Origin
 
 ## Known limitations and potential bias
 
-The charts represent U.S. hits under Billboard’s changing rules, and the 2026 estimate uses partial-year weekly rankings. Genre labels vary by source, and missing artist origins can affect country counts. The English-dominant, top-15 lyric pilot underrepresents multilingual and lower-ranked songs. Our original ReccoBeats extract targeted 2021–2026, and missing recording IDs make older charted versions harder to verify. In the 2026 estimate, we matched audio for 8 of the top 10 entries and 25 of ranks 51–100, so audio comparisons may overrepresent higher-ranked songs.
+The charts represent U.S. hits under Billboard’s changing rules, and the 2026 estimate uses partial-year weekly rankings. Genre labels vary by source, and missing artist origins can affect country counts. The standalone keyword demo uses the top 15 songs per year for 2014–2023. The full-corpus emotion annotations have [separate coverage and limitations](emotion/README.md#known-limitations). Our original ReccoBeats extract targeted 2021–2026, and missing recording IDs make older charted versions harder to verify. In the 2026 estimate, we matched audio for 8 of the top 10 entries and 25 of ranks 51–100, so audio comparisons may overrepresent higher-ranked songs.
 
 [Historical source notes](../README.md#sources-and-preparation) and the [2024–2026 source audit](../extension-2024-2026/README.md) document the inputs. The interactive site uses [D3 7.9.0] and [Natural Earth boundaries].
 

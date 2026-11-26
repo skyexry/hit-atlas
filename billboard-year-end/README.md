@@ -4,6 +4,8 @@
 
 [2024–2026 chart extension](extension-2024-2026/README.md) adds the 2024 and 2025 year-end charts and a 2026 weekly-rank estimate, with matching lyrics, audio, artist origins, and coverage. These historical counts describe the original snapshot. The [unified release](data/README.md) adds sourced annotations and supports the [public D3 site](https://skyexry.github.io/hit-atlas/).
 
+For segment-level lyric emotions and the 2021–2025 top-ten comparison, see the [lyric emotion tables](data/emotion/README.md). They use song IDs from the unified release.
+
 The dataset contains **6,501 entries across 65 year-end charts**. The 1969 chart contains 101 entries because Paul Revere & the Raiders' “Let Me” and The Box Tops' “Sweet Cream Ladies” share rank 100. All other years contain 100 entries.
 
 | Measure | Coverage |

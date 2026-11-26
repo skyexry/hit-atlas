@@ -1,0 +1,123 @@
+song_id,title,section,chunk,section_label,section_marker,start_pct,end_pct,review_status,primary_emotion,labels,sarcasm,rationale,four_class_status
+S_59b8a6f6251cb947,Levitating,1,1,,,0.0,10.34331,labeled,joy,joy|love,,,four_class
+S_59b8a6f6251cb947,Levitating,1,2,,,10.34331,10.827465,labeled,joy,joy,,,four_class
+S_59b8a6f6251cb947,Levitating,2,1,Pre-Chorus,Pre-Chorus,10.827465,15.140845,labeled,love,love|joy,,,four_class
+S_59b8a6f6251cb947,Levitating,3,1,Chorus,Chorus,15.140845,23.151408,labeled,love,love|joy,,,four_class
+S_59b8a6f6251cb947,Levitating,4,1,Verse 2,Verse 2,23.151408,33.318662,labeled,love,love|joy,,,four_class
+S_59b8a6f6251cb947,Levitating,4,2,Verse 2,,33.318662,36.707746,labeled,joy,joy,,Page text or an embed counter was ignored.,four_class
+S_59b8a6f6251cb947,Levitating,5,1,Pre-Chorus,Pre-Chorus,36.707746,41.021127,labeled,love,love|joy,,,four_class
+S_59b8a6f6251cb947,Levitating,6,1,Chorus,Chorus,41.021127,49.03169,labeled,love,love|joy,,,four_class
+S_59b8a6f6251cb947,Levitating,7,1,Post-Chorus,Post-Chorus,49.03169,58.934859,labeled,joy,joy|love,,,four_class
+S_59b8a6f6251cb947,Levitating,8,1,Bridge,Bridge,58.934859,69.322183,labeled,joy,joy|love,,,four_class
+S_59b8a6f6251cb947,Levitating,8,2,Bridge,,69.322183,69.93838,insufficient_evidence,,,,Isolated vocalization or address carries little emotional evidence.,insufficient_evidence
+S_59b8a6f6251cb947,Levitating,9,1,Pre-Chorus,Pre-Chorus,69.93838,73.195423,labeled,love,love|joy,,,four_class
+S_59b8a6f6251cb947,Levitating,10,1,Chorus,Chorus,73.195423,77.772887,labeled,love,love|joy,,,four_class
+S_59b8a6f6251cb947,Levitating,11,1,Post-Chorus,Post-Chorus,77.772887,88.160211,labeled,joy,joy|love,,,four_class
+S_59b8a6f6251cb947,Levitating,11,2,Post-Chorus,,88.160211,89.964789,labeled,joy,joy,,,four_class
+S_59b8a6f6251cb947,Levitating,12,1,Chorus,Chorus,89.964789,100.0,labeled,love,love|joy,,Page text or an embed counter was ignored.,four_class
+S_d14bce603a0fe997,Save Your Tears,1,1,,,0.0,1.812689,insufficient_evidence,,,,Isolated vocalization or address carries little emotional evidence.,insufficient_evidence
+S_d14bce603a0fe997,Save Your Tears,2,1,Verse 1: The Weeknd,Verse 1: The Weeknd,1.812689,15.005035,labeled,sadness,sadness,,,four_class
+S_d14bce603a0fe997,Save Your Tears,3,1,Refrain: The Weeknd & Ariana Grande,Refrain: The Weeknd & Ariana Grande,15.005035,20.241692,labeled,sadness,sadness|anger,,The speaker regrets causing tears and sounds baffled by their repeated withdrawal.,four_class
+S_d14bce603a0fe997,Save Your Tears,4,1,Pre-Chorus: The Weeknd,Pre-Chorus: The Weeknd,20.241692,25.176234,labeled,love,love|sadness,,,four_class
+S_d14bce603a0fe997,Save Your Tears,5,1,Chorus: The Weeknd & Ariana Grande,Chorus: The Weeknd & Ariana Grande,25.176234,31.21853,labeled,sadness,sadness,,,four_class
+S_d14bce603a0fe997,Save Your Tears,6,1,Verse 2: Ariana Grande,Verse 2: Ariana Grande,31.21853,45.216516,labeled,sadness,sadness,,Page text or an embed counter was ignored.,four_class
+S_d14bce603a0fe997,Save Your Tears,7,1,Refrain: Ariana Grande,Refrain: Ariana Grande,45.216516,53.373615,labeled,sadness,sadness|anger,,The speaker regrets causing tears and sounds baffled by their repeated withdrawal.,four_class
+S_d14bce603a0fe997,Save Your Tears,8,1,Pre-Chorus: Ariana Grande,Pre-Chorus: Ariana Grande,53.373615,64.048338,labeled,sadness,sadness|love,,,four_class
+S_d14bce603a0fe997,Save Your Tears,9,1,Chorus: Ariana Grande,Chorus: Ariana Grande,64.048338,70.090634,labeled,sadness,sadness,,,four_class
+S_d14bce603a0fe997,Save Your Tears,10,1,"Refrain: Both, Ariana Grande","Refrain: Both, Ariana Grande",70.090634,79.758308,labeled,sadness,sadness|anger,,The speaker regrets causing tears and sounds baffled by their repeated withdrawal.,four_class
+S_d14bce603a0fe997,Save Your Tears,11,1,"Chorus: Both, Ariana Grande & The Weeknd","Chorus: Both, Ariana Grande & The Weeknd",79.758308,90.634441,labeled,sadness,sadness,,,four_class
+S_d14bce603a0fe997,Save Your Tears,12,1,Outro: The Weeknd & Both,Outro: The Weeknd & Both,90.634441,100.0,labeled,sadness,sadness,,Page text or an embed counter was ignored.,four_class
+S_cfcb3f09f40d8272,Blinding Lights,1,1,,,0.0,0.401606,insufficient_evidence,,,,Isolated vocalization or address carries little emotional evidence.,insufficient_evidence
+S_cfcb3f09f40d8272,Blinding Lights,2,1,Verse 1,Verse 1,0.401606,16.767068,labeled,love,love|sadness,,,four_class
+S_cfcb3f09f40d8272,Blinding Lights,3,1,Pre-Chorus,Pre-Chorus,16.767068,26.305221,labeled,sadness,sadness,,,four_class
+S_cfcb3f09f40d8272,Blinding Lights,4,1,Chorus,Chorus,26.305221,40.662651,labeled,love,love|sadness,,,four_class
+S_cfcb3f09f40d8272,Blinding Lights,5,1,Verse 2,Verse 2,40.662651,50.60241,labeled,anger,anger,,A closing time window impedes reaching the person the speaker seeks. Page text or an embed counter was ignored.,four_class
+S_cfcb3f09f40d8272,Blinding Lights,6,1,Pre-Chorus,Pre-Chorus,50.60241,58.73494,labeled,sadness,sadness,,,four_class
+S_cfcb3f09f40d8272,Blinding Lights,7,1,Chorus,Chorus,58.73494,71.987952,labeled,love,love|sadness,,,four_class
+S_cfcb3f09f40d8272,Blinding Lights,8,1,Bridge,Bridge,71.987952,84.136546,labeled,love,love,,,four_class
+S_cfcb3f09f40d8272,Blinding Lights,9,1,Chorus,Chorus,84.136546,91.666667,labeled,love,love|sadness,,,four_class
+S_cfcb3f09f40d8272,Blinding Lights,10,1,Post-Chorus,Post-Chorus,91.666667,92.771084,insufficient_evidence,,,,Isolated vocalization or address carries little emotional evidence.,insufficient_evidence
+S_cfcb3f09f40d8272,Blinding Lights,11,1,Outro,Outro,92.771084,100.0,labeled,love,love|sadness,,Page text or an embed counter was ignored.,four_class
+S_43fa3d9e6ab063fc,Mood,1,1,,,0.0,1.952663,insufficient_evidence,,,,Isolated vocalization or address carries little emotional evidence.,insufficient_evidence
+S_43fa3d9e6ab063fc,Mood,2,1,Chorus: 24kGoldn,Chorus: 24kGoldn,1.952663,16.035503,labeled,anger,anger,,The repeated complaint targets a partner’s behavior during a recurring argument.,four_class
+S_43fa3d9e6ab063fc,Mood,2,2,Chorus: 24kGoldn,,16.035503,20.0,labeled,anger,anger,,The refusal to follow the partner’s demands continues the complaint.,four_class
+S_43fa3d9e6ab063fc,Mood,3,1,Verse 1: iann dior,Verse 1: iann dior,20.0,34.08284,labeled,anger,anger|sadness,,Recurring conflict spoils the company the speaker wants.,four_class
+S_43fa3d9e6ab063fc,Mood,3,2,Verse 1: iann dior,,34.08284,36.686391,labeled,anger,anger,,Recurring conflict spoils the company the speaker wants. Page text or an embed counter was ignored.,four_class
+S_43fa3d9e6ab063fc,Mood,4,1,Pre-Chorus: iann dior,Pre-Chorus: iann dior,36.686391,40.887574,labeled,anger,anger|sadness,,The speaker recognizes the painful pattern and resists another round.,four_class
+S_43fa3d9e6ab063fc,Mood,5,1,Chorus: 24kGoldn,Chorus: 24kGoldn,40.887574,54.970414,labeled,anger,anger,,The repeated complaint targets a partner’s behavior during a recurring argument.,four_class
+S_43fa3d9e6ab063fc,Mood,5,2,Chorus: 24kGoldn,,54.970414,58.639053,labeled,anger,anger,,The refusal to follow the partner’s demands continues the complaint.,four_class
+S_43fa3d9e6ab063fc,Mood,6,1,Verse 2: 24kGoldn,Verse 2: 24kGoldn,58.639053,72.662722,labeled,anger,anger,,An accusation of insincerity turns into an ultimatum.,four_class
+S_43fa3d9e6ab063fc,Mood,6,2,Verse 2: 24kGoldn,,72.662722,77.337278,labeled,love,love,,,four_class
+S_43fa3d9e6ab063fc,Mood,7,1,"Pre-Chorus: iann dior, iann dior & 24kGoldn","Pre-Chorus: iann dior, iann dior & 24kGoldn",77.337278,81.538462,labeled,anger,anger|sadness,,The speaker recognizes the painful pattern and resists another round.,four_class
+S_43fa3d9e6ab063fc,Mood,8,1,Chorus: 24kGoldn,Chorus: 24kGoldn,81.538462,95.621302,labeled,anger,anger,,The repeated complaint targets a partner’s behavior during a recurring argument.,four_class
+S_43fa3d9e6ab063fc,Mood,8,2,Chorus: 24kGoldn,,95.621302,100.0,labeled,anger,anger,,The refusal to follow the partner’s demands continues the complaint. Page text or an embed counter was ignored.,four_class
+S_475501d6a59aedf7,Good 4 U,1,1,,,0.0,0.235156,insufficient_evidence,,,,Isolated vocalization or address carries little emotional evidence.,insufficient_evidence
+S_475501d6a59aedf7,Good 4 U,2,1,Verse 1,Verse 1,0.235156,14.285714,labeled,anger,anger,yes,Mock congratulations about self-improvement underline resentment over how quickly the ex moved on.,four_class
+S_475501d6a59aedf7,Good 4 U,2,2,Verse 1,,14.285714,17.048795,labeled,anger,anger,yes,The apparent compliment completes the complaint that a new partner benefits from the speaker’s efforts.,four_class
+S_475501d6a59aedf7,Good 4 U,3,1,Chorus,Chorus,17.048795,31.040564,labeled,anger,anger|sadness,yes,Apparent praise of the ex’s happiness gives way to an account of the speaker’s distress.,four_class
+S_475501d6a59aedf7,Good 4 U,3,2,Chorus,,31.040564,31.922399,labeled,anger,anger,yes,This fragment completes the chorus’s bitter congratulation.,four_class
+S_475501d6a59aedf7,Good 4 U,4,1,Verse 2,Verse 2,31.922399,46.090535,labeled,anger,anger,yes,Congratulations on the ex’s easy transition express resentment at being discarded.,four_class
+S_475501d6a59aedf7,Good 4 U,4,2,Verse 2,,46.090535,54.556143,labeled,anger,anger|sadness,,A remembered promise gives way to direct rejection and an accusation of unequal suffering. Page text or an embed counter was ignored.,four_class
+S_475501d6a59aedf7,Good 4 U,5,1,Chorus,Chorus,54.556143,68.547913,labeled,anger,anger|sadness,yes,Apparent praise of the ex’s happiness gives way to an account of the speaker’s distress.,four_class
+S_475501d6a59aedf7,Good 4 U,5,2,Chorus,,68.547913,71.369782,labeled,anger,anger,yes,This fragment completes the chorus’s bitter congratulation.,four_class
+S_475501d6a59aedf7,Good 4 U,6,1,Bridge,Bridge,71.369782,82.480894,labeled,sadness,sadness|anger,,The speaker questions their own reactions while describing the pain of a partner’s indifference.,four_class
+S_475501d6a59aedf7,Good 4 U,7,1,Chorus,Chorus,82.480894,96.590241,labeled,anger,anger|sadness,yes,Apparent praise of the ex’s happiness gives way to an account of the speaker’s distress.,four_class
+S_475501d6a59aedf7,Good 4 U,7,2,Chorus,,96.590241,96.942975,labeled,anger,anger,yes,This fragment completes the chorus’s bitter congratulation.,four_class
+S_475501d6a59aedf7,Good 4 U,8,1,Outro,Outro,96.942975,100.0,labeled,anger,anger,yes,Congratulations on the ex’s easy transition express resentment at being discarded. Page text or an embed counter was ignored.,four_class
+S_32430221511c7989,Kiss Me More,1,1,,,0.0,5.343866,labeled,love,love,,,four_class
+S_32430221511c7989,Kiss Me More,2,1,Chorus: Doja Cat,Chorus: Doja Cat,5.343866,11.05948,labeled,love,love|joy,,,four_class
+S_32430221511c7989,Kiss Me More,3,1,Post-Chorus: Doja Cat,Post-Chorus: Doja Cat,11.05948,21.096654,labeled,love,love|joy,,,four_class
+S_32430221511c7989,Kiss Me More,4,1,Verse 2: Doja Cat,Verse 2: Doja Cat,21.096654,32.109665,labeled,joy,joy|love,,,four_class
+S_32430221511c7989,Kiss Me More,4,2,Verse 2: Doja Cat,,32.109665,43.447955,labeled,joy,joy|love,,,four_class
+S_32430221511c7989,Kiss Me More,4,3,Verse 2: Doja Cat,,43.447955,45.771375,insufficient_evidence,,,,Ticket promotion and recommendation text occupy the entire chunk.,insufficient_evidence
+S_32430221511c7989,Kiss Me More,5,1,Chorus: Doja Cat,Chorus: Doja Cat,45.771375,51.486989,labeled,love,love|joy,,,four_class
+S_32430221511c7989,Kiss Me More,6,1,Post-Chorus: Doja Cat,Post-Chorus: Doja Cat,51.486989,60.641264,labeled,love,love|joy,,,four_class
+S_32430221511c7989,Kiss Me More,7,1,Verse 3: SZA,Verse 3: SZA,60.641264,71.840149,labeled,anger,anger,,The speaker feels constrained and disparages the partner’s adequacy.,four_class
+S_32430221511c7989,Kiss Me More,7,2,Verse 3: SZA,,71.840149,82.806691,labeled,anger,anger,,Accusations of dishonesty and a belittling remark give way to flirtation.,four_class
+S_32430221511c7989,Kiss Me More,7,3,Verse 3: SZA,,82.806691,85.083643,labeled,,,,,outside_four_classes
+S_32430221511c7989,Kiss Me More,8,1,"Chorus: Doja Cat, SZA, Both","Chorus: Doja Cat, SZA, Both",85.083643,91.263941,labeled,love,love|joy,,,four_class
+S_32430221511c7989,Kiss Me More,9,1,"Post-Chorus: SZA, Doja Cat","Post-Chorus: SZA, Doja Cat",91.263941,100.0,labeled,love,love|joy,,Page text or an embed counter was ignored.,four_class
+S_fbd466913f8618ca,Leave the Door Open,1,1,,,0.0,1.108968,insufficient_evidence,,,,Isolated vocalization or address carries little emotional evidence.,insufficient_evidence
+S_fbd466913f8618ca,Leave the Door Open,2,1,,,1.108968,12.43973,labeled,joy,joy,,,four_class
+S_fbd466913f8618ca,Leave the Door Open,2,2,,,12.43973,17.888139,labeled,love,love|joy,,,four_class
+S_fbd466913f8618ca,Leave the Door Open,3,1,,,17.888139,22.275796,labeled,love,love,,,four_class
+S_fbd466913f8618ca,Leave the Door Open,4,1,,,22.275796,31.195757,labeled,love,love,,,four_class
+S_fbd466913f8618ca,Leave the Door Open,5,1,,,31.195757,43.008679,labeled,love,love|joy,,,four_class
+S_fbd466913f8618ca,Leave the Door Open,5,2,,,43.008679,46.721311,labeled,love,love|joy,,,four_class
+S_fbd466913f8618ca,Leave the Door Open,6,1,,,46.721311,52.362584,labeled,love,love,,,four_class
+S_fbd466913f8618ca,Leave the Door Open,7,1,,,52.362584,61.812922,labeled,love,love,,,four_class
+S_fbd466913f8618ca,Leave the Door Open,8,1,,,61.812922,73.384764,labeled,love,love,,,four_class
+S_fbd466913f8618ca,Leave the Door Open,8,2,,,73.384764,78.784957,labeled,love,love,,,four_class
+S_fbd466913f8618ca,Leave the Door Open,9,1,,,78.784957,90.067502,labeled,love,love,,,four_class
+S_fbd466913f8618ca,Leave the Door Open,9,2,,,90.067502,100.0,labeled,love,love,,,four_class
+S_7863aa6b98b4dc33,Drivers License,1,1,,,0.0,10.869565,labeled,sadness,sadness,,,four_class
+S_7863aa6b98b4dc33,Drivers License,2,1,Verse 2,Verse 2,10.869565,22.186701,labeled,sadness,sadness|love,,,four_class
+S_7863aa6b98b4dc33,Drivers License,3,1,Chorus,Chorus,22.186701,35.294118,labeled,sadness,sadness|love,,,four_class
+S_7863aa6b98b4dc33,Drivers License,4,1,Verse 3,Verse 3,35.294118,50.127877,labeled,sadness,sadness|love,,Page text or an embed counter was ignored.,four_class
+S_7863aa6b98b4dc33,Drivers License,5,1,Chorus,Chorus,50.127877,63.491049,labeled,sadness,sadness|love,,,four_class
+S_7863aa6b98b4dc33,Drivers License,6,1,Bridge,Bridge,63.491049,79.092072,labeled,sadness,sadness|love,,,four_class
+S_7863aa6b98b4dc33,Drivers License,6,2,Bridge,,79.092072,83.503836,labeled,love,love|sadness,,,four_class
+S_7863aa6b98b4dc33,Drivers License,7,1,Chorus,Chorus,83.503836,96.419437,labeled,sadness,sadness|love,,,four_class
+S_7863aa6b98b4dc33,Drivers License,8,1,Outro,Outro,96.419437,100.0,labeled,sadness,sadness,,Page text or an embed counter was ignored.,four_class
+S_ec9568ac6ea11ca1,Montero (Call Me by Your Name),1,1,,,0.0,17.929482,labeled,love,love,,,four_class
+S_ec9568ac6ea11ca1,Montero (Call Me by Your Name),1,2,,,17.929482,21.08027,labeled,,,,,outside_four_classes
+S_ec9568ac6ea11ca1,Montero (Call Me by Your Name),2,1,Pre-Chorus,Pre-Chorus,21.08027,31.057764,labeled,love,love,,,four_class
+S_ec9568ac6ea11ca1,Montero (Call Me by Your Name),3,1,Chorus,Chorus,31.057764,41.635409,labeled,love,love,,,four_class
+S_ec9568ac6ea11ca1,Montero (Call Me by Your Name),4,1,Post-Chorus,Post-Chorus,41.635409,44.486122,insufficient_evidence,,,,Vocalization followed by recommendation-page text.,insufficient_evidence
+S_ec9568ac6ea11ca1,Montero (Call Me by Your Name),5,1,Verse 2,Verse 2,44.486122,62.115529,labeled,joy,joy|love,,,four_class
+S_ec9568ac6ea11ca1,Montero (Call Me by Your Name),5,2,Verse 2,,62.115529,70.742686,labeled,,,,,outside_four_classes
+S_ec9568ac6ea11ca1,Montero (Call Me by Your Name),6,1,Pre-Chorus,Pre-Chorus,70.742686,80.72018,labeled,love,love,,,four_class
+S_ec9568ac6ea11ca1,Montero (Call Me by Your Name),7,1,Chorus,Chorus,80.72018,91.297824,labeled,love,love,,,four_class
+S_ec9568ac6ea11ca1,Montero (Call Me by Your Name),8,1,Post-Chorus,Post-Chorus,91.297824,100.0,labeled,love,love,,Page text or an embed counter was ignored.,four_class
+S_9594e145bd730624,Peaches,1,1,,,0.0,8.79462,labeled,joy,joy,,,four_class
+S_9594e145bd730624,Peaches,2,1,,,8.79462,19.710295,labeled,love,love,,,four_class
+S_9594e145bd730624,Peaches,3,1,,,19.710295,28.504915,labeled,joy,joy,,,four_class
+S_9594e145bd730624,Peaches,4,1,,,28.504915,40.662183,labeled,love,love|sadness,,,four_class
+S_9594e145bd730624,Peaches,4,2,,,40.662183,41.852043,labeled,,,,,outside_four_classes
+S_9594e145bd730624,Peaches,5,1,,,41.852043,50.646663,labeled,joy,joy,,,four_class
+S_9594e145bd730624,Peaches,6,1,,,50.646663,62.648733,labeled,love,love,,,four_class
+S_9594e145bd730624,Peaches,6,2,,,62.648733,64.769788,labeled,love,love,,,four_class
+S_9594e145bd730624,Peaches,7,1,,,64.769788,75.581997,labeled,joy,joy,,,four_class
+S_9594e145bd730624,Peaches,7,2,,,75.581997,86.497672,labeled,joy,joy,,,four_class
+S_9594e145bd730624,Peaches,7,3,,,86.497672,97.46508,labeled,joy,joy,,,four_class
+S_9594e145bd730624,Peaches,7,4,,,97.46508,100.0,labeled,joy,joy,,,four_class

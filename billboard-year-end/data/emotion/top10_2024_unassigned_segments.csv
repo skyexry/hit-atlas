@@ -1,0 +1,50 @@
+rank,title,section,chunk,section_label,start_pct,end_pct,astra_primary_emotion,astra_labels,four_class_status,sarcasm,rationale,song_lyric_pct,annual_contribution_pp
+1,Lose Control,1,1,,0.0,20.293848,fear,fear|frustration,outside_four_classes,,,20.2938480,2.0293848
+3,Beautiful Things,3,1,,19.746568,28.194298,gratitude,gratitude|fear,outside_four_classes,,,8.447730,0.844773
+3,Beautiful Things,4,1,,28.194298,39.281943,fear,fear|love,outside_four_classes,,,11.0876450,1.1087645
+3,Beautiful Things,5,1,,39.281943,41.710665,fear,fear,outside_four_classes,,,2.4287220,0.2428722
+3,Beautiful Things,6,1,,41.710665,49.419219,fear,fear|love,outside_four_classes,,,7.7085540,0.7708554
+3,Beautiful Things,7,1,,49.419219,57.127772,fear,fear|love,outside_four_classes,,,7.7085530,0.7708553
+3,Beautiful Things,8,1,,57.127772,60.190074,fear,fear,outside_four_classes,,,3.0623020,0.3062302
+3,Beautiful Things,9,1,,60.190074,72.967265,fear,fear,outside_four_classes,,,12.7771910,1.2777191
+3,Beautiful Things,10,1,,72.967265,83.526927,fear,fear|gratitude,outside_four_classes,,,10.5596620,1.0559662
+3,Beautiful Things,11,1,,83.526927,91.23548,fear,fear|love,outside_four_classes,,,7.7085530,0.7708553
+4,I Had Some Help,2,1,,9.768212,18.377483,contempt,contempt,outside_four_classes,,,8.6092710,0.8609271
+4,I Had Some Help,4,1,,35.182119,35.678808,,,insufficient_evidence,,,0.4966890,0.0496689
+4,I Had Some Help,8,1,,72.682119,74.172185,,,insufficient_evidence,,,1.4900660,0.1490066
+4,I Had Some Help,11,1,,98.509934,100.0,,,insufficient_evidence,,,1.4900660,0.1490066
+5,Lovin on Me,3,1,,21.210782,31.816173,neutral,neutral,outside_four_classes,,,10.6053910,1.0605391
+5,Lovin on Me,3,2,,31.816173,34.644278,neutral,neutral,outside_four_classes,,A clothing pun describes the attention someone seeks.,2.8281050,0.2828105
+6,Not Like Us,1,1,,0.0,6.064727,contempt,contempt|anger,outside_four_classes,,,6.0647270,0.6064727
+6,Not Like Us,1,3,,11.585532,17.840631,contempt,contempt|anger,outside_four_classes,,,6.2550990,0.6255099
+6,Not Like Us,1,4,,17.840631,24.231711,disgust,disgust|contempt,outside_four_classes,,,6.391080,0.639108
+6,Not Like Us,1,5,,24.231711,27.250476,contempt,contempt,outside_four_classes,,,3.0187650,0.3018765
+6,Not Like Us,2,1,,27.250476,33.070438,contempt,contempt|anger,outside_four_classes,,,5.8199620,0.5819962
+6,Not Like Us,2,2,,33.070438,38.836008,contempt,contempt,outside_four_classes,,,5.765570,0.576557
+6,Not Like Us,2,3,,38.836008,44.873538,contempt,contempt,outside_four_classes,,,6.037530,0.603753
+6,Not Like Us,2,5,,50.775088,57.410933,disgust,disgust|contempt,outside_four_classes,,,6.6358450,0.6635845
+6,Not Like Us,2,7,,63.448463,66.576013,contempt,contempt|joy,outside_four_classes,,,3.127550,0.312755
+6,Not Like Us,3,1,,66.576013,73.075877,contempt,contempt|anger,outside_four_classes,,,6.4998640,0.6499864
+6,Not Like Us,3,2,,73.075877,78.923035,contempt,contempt|anger,outside_four_classes,,,5.8471580,0.5847158
+6,Not Like Us,3,3,,78.923035,84.661409,contempt,contempt,outside_four_classes,,,5.7383740,0.5738374
+6,Not Like Us,3,4,,84.661409,90.290998,contempt,contempt|anger,outside_four_classes,,,5.6295890,0.5629589
+6,Not Like Us,3,5,,90.290998,96.274137,contempt,contempt,outside_four_classes,,,5.9831390,0.5983139
+6,Not Like Us,3,6,,96.274137,100.0,neutral,neutral,outside_four_classes,,,3.7258630,0.3725863
+8,Million Dollar Baby,1,1,,0.0,15.616438,,,insufficient_evidence,,Repeated prompt leaves the intended feeling unspecified.,15.6164380,1.5616438
+8,Million Dollar Baby,1,2,,15.616438,17.808219,,,insufficient_evidence,,,2.1917810,0.2191781
+8,Million Dollar Baby,2,1,,17.808219,29.726027,neutral,neutral,outside_four_classes,,The singer asserts ambition and personal standards.,11.9178080,1.1917808
+8,Million Dollar Baby,4,1,,66.575342,81.712329,neutral,neutral,outside_four_classes,,,15.1369870,1.5136987
+8,Million Dollar Baby,4,2,,81.712329,86.30137,neutral,neutral,outside_four_classes,,,4.5890410,0.4589041
+8,Million Dollar Baby,5,1,,86.30137,100.0,,,insufficient_evidence,,,13.698630,1.369863
+9,I Remember Everything,3,2,Verse 2: Kacey Musgraves,56.551724,58.344828,,,insufficient_evidence,,Ticket promotion and page furniture only.,1.7931040,0.1793104
+10,Too Sweet,1,1,,0.0,7.355243,neutral,neutral,outside_four_classes,,,7.3552430,0.7355243
+10,Too Sweet,3,1,,17.13615,27.1518,neutral,neutral,outside_four_classes,,,10.015650,1.001565
+10,Too Sweet,4,1,,27.1518,34.428795,neutral,neutral,outside_four_classes,,The speaker states affectionate incompatibility as a personal preference.,7.2769950,0.7276995
+10,Too Sweet,5,1,,34.428795,41.001565,neutral,neutral,outside_four_classes,,,6.572770,0.657277
+10,Too Sweet,6,1,,41.001565,44.444444,,,insufficient_evidence,,,3.4428790,0.3442879
+10,Too Sweet,7,1,,44.444444,52.973396,neutral,neutral,outside_four_classes,,,8.5289520,0.8528952
+10,Too Sweet,10,1,,73.395931,80.594679,neutral,neutral,outside_four_classes,,,7.1987480,0.7198748
+10,Too Sweet,11,1,,80.594679,87.167449,neutral,neutral,outside_four_classes,,,6.572770,0.657277
+10,Too Sweet,12,1,,87.167449,90.29734,,,insufficient_evidence,,,3.1298910,0.3129891
+10,Too Sweet,13,1,,90.29734,93.42723,,,insufficient_evidence,,,3.129890,0.312989
+10,Too Sweet,14,1,,93.42723,100.0,neutral,neutral,outside_four_classes,,,6.572770,0.657277
