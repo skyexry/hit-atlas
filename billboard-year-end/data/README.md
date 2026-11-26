@@ -2,7 +2,7 @@
 
 The Hit Atlas dataset contains **nine core relational tables** with **6,801 chart entries, 6,451 song records, and 2,838 credited artist or group records**. It combines the U.S. Billboard Year-End Hot 100 for 1959–2025 with a 2026 year-to-date estimate based on weekly Hot 100 charts through the chart dated November 28, 2026.
 
-This page documents the core tables and the derived lyric features and keywords. The [lyric emotion tables](emotion/README.md) document the segment annotations, chart samples, and model comparison. The [public GitHub Gist] also provides a [three-row sample CSV] and a snapshot of the [annual coverage CSV].
+This page documents the core tables and the derived lyric features and keywords. See [visualization exports](#visualization-exports) for annual word bubbles, keyword search, vocabulary comparison, and view coverage. The [lyric emotion tables](emotion/README.md) document the segment annotations, full-chart summaries, chart samples, and model comparison. The [public GitHub Gist] also provides a [three-row sample CSV] and a snapshot of the [annual coverage CSV].
 
 ## Coverage at a glance
 
@@ -36,6 +36,21 @@ This page documents the core tables and the derived lyric features and keywords.
 [Keyword summaries](lyric_keywords_1959-2026.csv) report up to 20 terms by frequency and 20 by TF-IDF for each genre and year, plus a pooled 1959–2025 period for published year-end charts. Songs are counted once within each group, and a song with multiple tags can contribute to each tagged genre. Frequency is the mean number of uses per 1,000 words across eligible songs, including songs with zero uses. TF-IDF treats each genre as a document within the period, divides term count by its non-stopword token count, and applies smoothed IDF. Terms need at least two distinct songs in a group to rank. The all-genres rows report frequency.
 
 To regenerate the tables, run `python3 billboard-year-end/scripts/measure_lyrics.py --include-estimates` from the repository root with `vaderSentiment==3.3.2` available. The [2021–2025 feature pilot](lyric_features_2021-2025.csv) and [keyword pilot](lyric_keywords_2021-2025.csv) use the same rules with the shorter year range.
+
+## Visualization exports
+
+| File | Unit and size | Use |
+|---|---|---|
+| [lyric_year_words.csv](lyric_year_words.csv) | One word and chart year, up to 60 words per year. **4,080** | The annual word bubble view can use `songs_with_term` for horizontal position, `mean_per_1000_words` for circle area, and `occurrences` and `eligible_songs` in details. The eligible group includes usable lyrics estimated to be English. It counts each eligible song once and includes zeros in the mean. |
+| [lyric_term_index.json](lyric_term_index.json) | **27,147** normalized tokens across **6,216** song records | Load when starting keyword search. `songs[i]` holds `[song_id, word_tokens]`. Each `terms[word]` holds a flat list of pairs `[song_index, occurrences, …]` for songs that use the word. Join to chart entries by `song_id` for an arbitrary word's annual trend or song drill-down. |
+| [lyric_vocabulary.csv](lyric_vocabulary.csv) | One eligible song record. **6,216** | `word_tokens`, `unique_word_tokens`, `ttr`, and `mattr_50`. MATTR averages the type-token ratio across all consecutive 50-token windows for a comparison at a common text length. It is blank for shorter lyrics. Join through `song_id`. |
+| [analysis_coverage.csv](analysis_coverage.csv) | One chart year. **68** | Chart-entry counts for English keyword eligibility, emotion availability and missing reasons, and matched, unresolved, or unprocessed audio. The artist counts distinguish origin codes present on the [world basemap](../site/world.geojson), known origin codes outside it, and unknown origins. Artist counts use distinct credited artists per year. |
+
+Normalize keyword queries to Unicode NFKC, lowercase, and straight apostrophes. For word search, a song present in the index's song list with no posting for that word has zero uses. A song outside the list is outside the search sample. Divide each song's count by its token count, multiply by 1,000, and average over eligible songs in the selected group. The index stores individual word counts. Phrase searches need the token sequence from the original transcript.
+
+The audio table's 629 matched entries contain values for all nine published features. Its unresolved rows and unprocessed entries have distinct coverage statuses. The current basemap omits the codes BB, IM, SG, and VC, affecting six artist records with a known origin. They can still be included in an artist-origin list or table.
+
+Run `python3 billboard-year-end/scripts/build_analysis_views.py` from the repository root to regenerate these files and the [emotion summaries](emotion/README.md#full-corpus) from the current unified CSVs.
 
 ## Lyric matching and section analysis
 

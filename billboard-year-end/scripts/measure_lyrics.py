@@ -8,8 +8,6 @@ import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 BRACKETED = re.compile(r"\[[^\]\n]{0,200}\]")
@@ -40,10 +38,14 @@ def stop_words():
     return set("".join(pieces).split())
 
 
+def lyric_tokens(cleaned):
+    normalized = unicodedata.normalize("NFKC", cleaned).lower().replace("’", "'")
+    return WORD.findall(normalized)
+
+
 def song_metrics(raw, analyzer):
     cleaned = " ".join(BRACKETED.sub(" ", raw).split())
-    normalized = unicodedata.normalize("NFKC", cleaned).lower().replace("’", "'")
-    counts = Counter(WORD.findall(normalized))
+    counts = Counter(lyric_tokens(cleaned))
     total = sum(counts.values())
     if not total:
         return counts, {}
@@ -55,7 +57,7 @@ def song_metrics(raw, analyzer):
     }
 
 
-def term_metrics(period, groups, song_counts, stop):
+def term_metrics(period, groups, song_counts, stop, top_words=TOP_WORDS):
     documents = {}
     for genre, song_ids in sorted(groups.items()):
         counts, prevalence, rates = Counter(), Counter(), Counter()
@@ -77,13 +79,13 @@ def term_metrics(period, groups, song_counts, stop):
     genre_count = len(documents) - 1
     for genre, (counts, prevalence, rates) in documents.items():
         candidates = [term for term in counts if prevalence[term] >= MIN_SONGS_PER_TERM]
-        common = sorted(candidates, key=lambda term: (-rates[term], term))[:TOP_WORDS]
+        common = sorted(candidates, key=lambda term: (-rates[term], term))[:top_words]
         tokens = sum(counts.values())
         scores = {
             term: counts[term] / tokens * (math.log((1 + genre_count) / (1 + df[term])) + 1)
             for term in candidates if genre != "All genres" and genre_count > 1
         }
-        distinct = sorted(scores, key=lambda term: (-scores[term], term))[:TOP_WORDS]
+        distinct = sorted(scores, key=lambda term: (-scores[term], term))[:top_words]
         frequency_ranks = {term: rank for rank, term in enumerate(common, 1)}
         tfidf_ranks = {term: rank for rank, term in enumerate(distinct, 1)}
         for term in dict.fromkeys(common + distinct):
@@ -110,6 +112,8 @@ def main():
     ]
     if not entries:
         parser.error("No published year-end chart entries in the selected range")
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+
     language = {row["song_id"]: row["estimated_primary_language"] for row in read("lyric_metrics")}
     lyrics = {row["song_id"]: row for row in read("lyrics")}
     genres = {row["entry_id"]: row["genres"].split("|") for row in read("genres")}

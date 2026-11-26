@@ -21,6 +21,8 @@ The 150 song records without annotations include 44 instrumentals, 41 missing ly
 |---|---|---|
 | [segment_emotions.csv](segment_emotions.csv) | One lyric segment per song record. **53,950** | Start and end positions, section labels and markers, Astra's primary and secondary labels, four-category display fields, sarcasm flags, short rationales where available, and lyric provenance. Use for song timelines and for aggregation by chart year or genre. |
 | [song_status.csv](song_status.csv) | One song record. **6,451** | Chart years, chart entry count, core lyric status, annotation status, provenance, and segment counts. Use to show coverage and identify songs that lack usable lyrics. |
+| [song_emotion_summary.csv](song_emotion_summary.csv) | One annotated song. **6,301** | Segment count, lyric span percentages for joy, love, sadness, anger, outside the four categories, and insufficient evidence. Sarcasm has separate count and span fields. Join by `song_id` for custom groups. |
+| [annual_emotion_summary.csv](annual_emotion_summary.csv) | One full chart year. **68** | Equal-weight averages of song-level shares for all annotated songs on each chart, with total and annotated song counts. The estimated 2026 chart retains its `chart_kind`. |
 
 [Download the full segment CSV](segment_emotions.csv?raw=1) to work with all 53,950 rows.
 
@@ -57,8 +59,8 @@ All six files below cover the same **122 segments** from the ten highest-ranked 
 | Task | View | Data used |
 |---|---|---|
 | Explore a song | Lyric progress timeline with verse, chorus, and sarcasm markers | Full-corpus segment positions, labels, and section markers |
-| Compare chart years | Stacked bars for the four main categories and an expandable unassigned share | Annual top-ten summary or a recomputed full-chart summary joined by `song_id` |
-| Inspect coverage | Annual coverage counts with a breakdown of missing or unmatched lyrics | Chart entries and song annotation status |
+| Compare chart years | Stacked bars for the four main categories and an expandable unassigned share | Full-chart annual summary or annual top-ten summary |
+| Inspect coverage | Annual coverage counts with a breakdown of missing or unmatched lyrics | [Analysis coverage](../analysis_coverage.csv) and song annotation status |
 | Review model behavior | Per-category agreement and missed labels, with examples by segment | Linked 2021 pilot and model comparison tables |
 
 ## Known limitations
