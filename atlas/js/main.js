@@ -25,6 +25,9 @@ function hashYear(years) {
   return m && years.includes(+m[1]) ? +m[1] : null;
 }
 
+// README cards open a specific chart and, where applicable, its featured year.
+const showcaseTargets = ["#chart-crate", "#word-explorer", "#artist-map", "#sound-tiles"];
+
 async function boot() {
   const [data, world] = await Promise.all([
     loadAtlas("data/atlas.json"),
@@ -32,7 +35,11 @@ async function boot() {
   ]);
   const years = data.years.map(y => y.year);
   const lastPublished = data.years.filter(y => !y.est).at(-1).year;
-  const store = createStore({ year: hashYear(years) ?? lastPublished, emotion: null, genre: null, order: "rank", word: "love" });
+  const target = location.hash;
+  const requestedYear = Number(new URLSearchParams(location.search).get("year"));
+  const showcaseYear = years.includes(requestedYear) ? requestedYear : null;
+  const chartYear = target === "#chart-crate" || target === "#word-explorer" ? showcaseYear : null;
+  const store = createStore({ year: hashYear(years) ?? chartYear ?? lastPublished, emotion: null, genre: null, order: "rank", word: "love" });
   const facts = storyFacts(data);
   initOpening(data, {
     onPickYear(year) {
@@ -43,7 +50,7 @@ async function boot() {
   const dialog = createSongDialog(data, store);
   initHeart(data, store, facts, dialog);
   const words = initWords(data, store, dialog);
-  initOrigins(data, world, store, dialog);
+  initOrigins(data, world, store, dialog, target === "#artist-map" ? showcaseYear : null);
   const sound = initSound(data, store, dialog);
 
   // Keep the selected year in the URL without adding history entries.
@@ -56,6 +63,12 @@ async function boot() {
     if (y) store.set({ year: y });
   });
   if (hashYear(years)) document.getElementById("heart").scrollIntoView();
+  if (showcaseTargets.includes(target)) {
+    // Chart rendering and font loading can move the anchor below its initial position.
+    document.fonts.ready.then(() => {
+      if (location.hash === target) document.querySelector(target).scrollIntoView({ behavior: "instant" });
+    });
+  }
   window.hitAtlas = { data, store, facts, words, sound }; // handy for checking values in the console
 }
 

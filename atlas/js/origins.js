@@ -55,7 +55,7 @@ function periodText(from, to, data) {
 }
 
 // ── Chapter ─────────────────────────────────────────────────────────────
-export function initOrigins(data, world, store, dialog) {
+export function initOrigins(data, world, store, dialog, initialYear) {
   const years = data.years.map(y => y.year);
   const first = years[0], last = years.at(-1);
   const yearly = years.map(y => {
@@ -508,7 +508,7 @@ export function initOrigins(data, world, store, dialog) {
     raf = requestAnimationFrame(() => { views.strip.resize(); views.map.resize(); views.tree.resize(); });
   }).observe(document.getElementById("origins"));
 
-  setPeriod(first, last);
+  setPeriod(initialYear ?? first, initialYear ?? last);
 }
 
 // ── Facts for the copy ──────────────────────────────────────────────────
