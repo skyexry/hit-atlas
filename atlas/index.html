@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Where Did Our Love Go? · Hit Atlas</title>
+  <meta name="description" content="Sixty-eight years of Billboard Year-End Hot 100 lyrics, read groove by groove: love led the hits for 44 straight years, then joy took over, and now no feeling holds the lead.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23161412'/%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%23e15e8e' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23efe5cf'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900;1,62..125,300..900&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..800,0..100;1,9..144,300..800,0..100&display=swap">
+  <link rel="stylesheet" href="atlas.css">
+  <script defer src="../billboard-year-end/site/d3.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#heart">Skip to the interactive chapter</a>
+
+<header class="masthead">
+  <a class="wordmark" href="#top" aria-label="Hit Atlas, back to the top">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15"/><circle class="wm-groove" cx="16" cy="16" r="11"/><circle class="wm-label" cx="16" cy="16" r="5"/></svg>
+    <span>Hit Atlas</span>
+  </a>
+  <nav aria-label="Tracklist">
+    <a href="#opening">Intro</a>
+    <a href="#heart"><b>01</b> <span class="nav-long">The heart of the chart</span><span class="nav-short">Heart</span></a>
+    <a href="#words"><b>02</b> <span class="nav-long">The words</span><span class="nav-short">Words</span></a>
+    <a href="#origins"><b>03</b> <span class="nav-long">Who sang them</span><span class="nav-short">Origins</span></a>
+    <a href="#sound"><b>04</b> <span class="nav-long">Sad words, happy sound</span><span class="nav-short">Sound</span></a>
+    <a href="#notes">Data &amp; method</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- OPENING ─────────────────────────────────────────── -->
+  <section id="opening" class="opening" aria-labelledby="opening-title">
+    <div class="opening-stage" aria-hidden="false">
+      <figure class="hero-figure">
+        <div class="hero-record-wrap">
+          <svg id="hero-record" viewBox="0 0 640 640" role="img" aria-labelledby="hero-record-desc"></svg>
+          <div class="hero-sheen" aria-hidden="true"></div>
+        </div>
+        <p id="hero-record-desc" class="sr-only">A record with 68 grooves, one per Billboard Year-End chart from 1959 at the outer edge to the 2026 estimate at the label. Each groove is divided by the share of lyric text expressing love, joy, sadness, anger, and other feelings. The same values are listed in the table view in the chapter below.</p>
+        <figcaption class="hero-readout" id="hero-readout" aria-live="polite"></figcaption>
+      </figure>
+    </div>
+
+    <div class="opening-steps">
+      <article class="step step-hero" data-step="0">
+        <div class="step-card">
+        <p class="kicker">Billboard Year-End Hot 100 · 1959–2026</p>
+        <h1 id="opening-title">Where did our <em>love</em> go?</h1>
+        <p class="dek" id="hero-dek">Sixty-eight years of hit lyrics, read groove by groove.</p>
+        <p class="hero-meta" id="hero-meta"></p>
+        <div class="hero-actions">
+          <a class="btn btn-ink" href="#step-read">Play the record <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-line" href="#heart">Skip to the chart <span aria-hidden="true">→</span></a>
+        </div>
+        </div>
+      </article>
+
+      <article class="step" data-step="1" id="step-read">
+        <div class="step-card">
+        <p class="step-num">How to read it</p>
+        <h2>Each groove is one year</h2>
+        <p>The outer edge is 1959. The grooves move inward a year at a time to the 2026 estimate at the label. Each groove shows the share of lyric text that expresses each feeling, averaged song by song across that year’s chart.</p>
+        <ul class="emo-key" id="hero-key" aria-label="Feelings"></ul>
+        <p class="fine">Feelings come from model annotations of 53,950 lyric segments. Hover or focus the record to read any year.</p>
+        </div>
+      </article>
+
+      <article class="step" data-step="2">
+        <div class="step-card">
+        <p class="step-num" id="era1-range"></p>
+        <h2 id="era1-title">Love leads</h2>
+        <p id="era1-text"></p>
+        <div class="feature" data-feature="1975-1"></div>
+        </div>
+      </article>
+
+      <article class="step" data-step="3">
+        <div class="step-card">
+        <p class="step-num" id="era2-range"></p>
+        <h2 id="era2-title">Then joy takes over</h2>
+        <p id="era2-text"></p>
+        <div class="feature" data-feature="2011-2"></div>
+        </div>
+      </article>
+
+      <article class="step" data-step="4">
+        <div class="step-card">
+        <p class="step-num" id="era3-range"></p>
+        <h2>No feeling leads</h2>
+        <p id="era3-text"></p>
+        <div class="feature" data-feature="2024-1"></div>
+        </div>
+      </article>
+
+      <article class="step" data-step="5">
+        <div class="step-card">
+        <p class="step-num">2026 · estimate through November 28</p>
+        <h2>Love is back, carrying heartbreak</h2>
+        <p id="era4-text"></p>
+        <div class="feature" data-feature="2026-1"></div>
+        </div>
+      </article>
+
+      <article class="step step-cta" data-step="6">
+        <div class="step-card">
+        <h2>Now pick a year</h2>
+        <p>Every year’s chart opens as a crate of 100 records. Each groove follows one song’s lyric from its first line at the edge to its last line at the label.</p>
+        <a class="btn btn-ink" href="#heart">Open the crate <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TRACK 01 ─────────────────────────────────────────── -->
+  <section id="heart" class="chapter" aria-labelledby="heart-title">
+    <div class="chapter-spine" aria-hidden="true">Track 01 · The heart of the chart</div>
+    <header class="chapter-head">
+      <p class="kicker"><span class="track-badge">Track 01</span> Lyrics · genres · 6,801 chart entries</p>
+      <h2 id="heart-title">Who leads the heart of the chart?</h2>
+      <p class="dek">The four lines follow the share of hit lyrics expressing each feeling. Choose a year to open its crate. Its records, feelings, and genre mix update together.</p>
+    </header>
+
+    <div class="controls" role="group" aria-label="Chapter controls">
+      <div class="year-picker">
+        <button type="button" class="icon-btn" id="year-prev" aria-label="Previous year">◀</button>
+        <label class="sr-only" for="year-select">Chart year</label>
+        <select id="year-select"></select>
+        <button type="button" class="icon-btn" id="year-next" aria-label="Next year">▶</button>
+      </div>
+      <div class="chip-row" id="emotion-chips" role="group" aria-label="Focus a feeling"></div>
+      <div class="seg-toggle" role="group" aria-label="Order the crate">
+        <span class="seg-label">Crate order</span>
+        <button type="button" data-order="rank" aria-pressed="true">Chart rank</button>
+        <button type="button" data-order="feeling" aria-pressed="false">Main feeling</button>
+      </div>
+    </div>
+
+    <figure class="panel panel-lines">
+      <figcaption class="panel-head">
+        <h3>Share of lyric text by feeling, 1959–2026</h3>
+        <p class="panel-sub">Each year averages its annotated songs equally. The colored strip shows which of the four feelings led. Select a year to open it below.</p>
+      </figcaption>
+      <div class="lines-wrap">
+        <svg id="lines" role="img" aria-labelledby="lines-desc"></svg>
+        <p id="lines-desc" class="sr-only"></p>
+      </div>
+    </figure>
+
+    <div class="year-detail">
+      <section class="panel panel-crate" aria-labelledby="crate-title">
+        <header class="crate-head">
+          <div class="big-year" id="big-year" aria-hidden="true"></div>
+          <div>
+            <h3 id="crate-title">The year’s records</h3>
+            <p class="panel-sub" id="crate-sub"></p>
+          </div>
+        </header>
+        <div class="crate-legend" aria-hidden="true">
+          <svg viewBox="0 0 120 120" class="legend-record" id="legend-record"></svg>
+          <ul>
+            <li><b>Edge</b> first lyric line</li>
+            <li><b>Grooves</b> feeling of each lyric segment, in order</li>
+            <li><b>Label</b> chart rank</li>
+            <li><span class="nodata-swatch"></span> no lyrics to annotate</li>
+          </ul>
+        </div>
+        <div id="crate" class="crate"></div>
+        <p class="fine crate-hint">Hover or focus a record for its feelings. Select it to pull it from the crate. With the keyboard, use the arrow keys inside the crate.</p>
+      </section>
+
+      <aside class="side">
+        <section class="panel panel-feel" aria-labelledby="feel-title">
+          <h3 id="feel-title">Feelings this year</h3>
+          <div id="feel-bar" class="tall-bar"></div>
+          <ul id="feel-legend" class="feel-legend"></ul>
+          <p class="fine" id="feel-coverage"></p>
+        </section>
+        <section class="panel panel-genre" aria-labelledby="genre-title">
+          <h3 id="genre-title">Genres this year</h3>
+          <p class="panel-sub">Each chart entry splits one unit across its genre tags. Select a genre to find its records.</p>
+          <div class="pie-row">
+            <svg id="genre-pie" viewBox="0 0 240 240" role="group" aria-label="Genre share pie chart"></svg>
+            <ol id="genre-list" class="genre-list"></ol>
+          </div>
+          <p class="fine">Genre tags come from the Perot genre dataset and music catalogs, kept as published. Some surprise: the 1964 Beatles hits are tagged Country and Rock.</p>
+        </section>
+      </aside>
+    </div>
+
+    <section class="panel panel-multiples" aria-labelledby="multiples-title">
+      <header class="panel-head">
+        <h3 id="multiples-title">What was charting: genre share, 1959–2026</h3>
+        <p class="panel-sub">Same scale in every panel. Hover any panel to read one year across all genres; select to jump to that year. Genres outside the seven colored ones form “Other” in the pie.</p>
+      </header>
+      <div id="multiples" class="multiples"></div>
+    </section>
+
+    <section class="panel panel-notes" id="notes" aria-labelledby="notes-title">
+      <h3 id="notes-title">Data &amp; method</h3>
+      <div class="notes-grid">
+        <div>
+          <p><b>Chart.</b> U.S. Billboard Year-End Hot 100 for 1959–2025, from annual transcriptions. 2026 is a project estimate from 48 weekly Hot 100 charts through November 28, 2026. It is drawn with dashed lines and hollow marks.</p>
+          <p><b>Feelings.</b> A language model labeled 53,950 lyric segments from 6,301 songs, reading each song’s full lyric for context. Each song’s share is the fraction of its lyric text, by character position, in each label. A year averages its annotated songs equally, so a song that charted in two years counts in both. Frustration counts as anger. Contempt, fear, gratitude, surprise, disgust, and neutral are grouped as “other.” These are model annotations of lyric text, not listener measurements.</p>
+        </div>
+        <div>
+          <p><b>Coverage.</b> Songs without usable lyrics are shown as plain grooves and excluded from the averages: instrumentals, missing transcripts, matches awaiting review, and compound singles. The gray bars under the line chart show each year’s annotated share.</p>
+          <p><b>Listening.</b> “Play on Spotify” links and cover art appear only for recordings matched in Hit Atlas’s audio table. Other songs offer a clearly labeled Spotify search.</p>
+          <p><b>Files.</b> <a href="../billboard-year-end/data/emotion/annual_emotion_summary.csv">annual_emotion_summary.csv</a> · <a href="../billboard-year-end/data/emotion/segment_emotions.csv">segment_emotions.csv</a> · <a href="../billboard-year-end/data/genres.csv">genres.csv</a> · <a href="../billboard-year-end/data/README.md">data dictionary</a> · <a href="../billboard-year-end/scripts/build_atlas_data.py">build script</a></p>
+        </div>
+      </div>
+      <details class="table-view">
+        <summary>Table view: annual shares and coverage</summary>
+        <div class="table-scroll"><table id="annual-table"></table></div>
+      </details>
+    </section>
+  </section>
+
+  <!-- TRACK 02 ─────────────────────────────────────────── -->
+  <section id="words" class="chapter" aria-labelledby="words-title">
+    <div class="chapter-spine" aria-hidden="true">Track 02 · The words</div>
+    <header class="chapter-head">
+      <p class="kicker"><span class="track-badge">Track 02</span> Lyrics · 6,216 English transcripts</p>
+      <h2 id="words-title">Love is still the word. It’s just said less.</h2>
+      <p class="dek" id="words-dek"></p>
+    </header>
+
+    <div class="controls" role="group" aria-label="Choose a year and a word">
+      <div class="year-picker">
+        <button type="button" class="icon-btn" id="w-play" aria-label="Play through the years" aria-pressed="false">▶</button>
+        <button type="button" class="icon-btn" id="w-prev" aria-label="Previous year">◀</button>
+        <label class="sr-only" for="w-year">Chart year</label>
+        <select id="w-year"></select>
+        <button type="button" class="icon-btn" id="w-next" aria-label="Next year">▶</button>
+      </div>
+      <form class="word-search" id="w-search" role="search">
+        <label for="w-query" class="sr-only">Find a word</label>
+        <input id="w-query" list="w-suggest" placeholder="Find any word, e.g. heart" autocomplete="off" spellcheck="false">
+        <datalist id="w-suggest"></datalist>
+        <button class="btn btn-ink" type="submit">Trace it</button>
+      </form>
+      <span id="w-status" class="w-status" role="status" aria-live="polite"></span>
+    </div>
+
+    <div class="words-grid">
+      <figure class="panel panel-bubbles">
+        <figcaption class="panel-head">
+          <h3 id="bubble-title">The year in words</h3>
+          <p class="panel-sub">The year’s 60 most-used words, leaving out common function words; each appears in at least two songs. Position: how many songs use the word. Size: average uses per 1,000 words, on one scale for every year. Select a word to trace it.</p>
+        </figcaption>
+        <div class="bubbles-wrap"><svg id="bubbles" role="group" aria-label="Word bubbles for the selected year"></svg></div>
+        <p class="fine" id="bubble-note"></p>
+      </figure>
+      <aside class="panel panel-trace" aria-labelledby="trace-title">
+        <h3 id="trace-title">“love”</h3>
+        <div class="trace-wrap"><svg id="trace" role="img"></svg></div>
+        <p class="fine" id="trace-note"></p>
+      </aside>
+    </div>
+
+    <section class="panel panel-wordsongs" aria-labelledby="ws-title">
+      <h3 id="ws-title">Songs that say the word</h3>
+      <p class="panel-sub" id="ws-sub"></p>
+      <ol id="ws-list" class="ws-list"></ol>
+    </section>
+
+    <details class="table-view">
+      <summary id="words-table-summary">Table view: the year’s 60 words</summary>
+      <div class="table-scroll"><table id="words-table"></table></div>
+    </details>
+    <p class="fine words-note">Words come from the cleaned Hit Atlas lyric index (<code>lyric_term_index.json</code>, <code>lyric_year_words.csv</code>): usable lyrics estimated to be English, with Genius page text, section markers, and bracketed labels removed and repeated lines kept. A song that charts in two years counts in both.</p>
+  </section>
+
+  <!-- TRACK 03 ─────────────────────────────────────────── -->
+  <section id="origins" class="chapter" aria-labelledby="origins-title">
+    <div class="chapter-spine" aria-hidden="true">Track 03 · Who sang them</div>
+    <header class="chapter-head">
+      <p class="kicker"><span class="track-badge">Track 03</span> Artist origins · credited performers</p>
+      <h2 id="origins-title">How American is the American chart?</h2>
+      <p class="dek" id="origins-dek"></p>
+    </header>
+
+    <div class="controls" role="group" aria-label="Choose years for the origin views">
+      <div class="chip-row" id="era-chips" role="group" aria-label="Eras"></div>
+      <div class="range-picker">
+        <label for="from-year">From</label>
+        <select id="from-year"></select>
+        <label for="to-year">to</label>
+        <select id="to-year"></select>
+      </div>
+    </div>
+
+    <figure class="panel panel-strip">
+      <figcaption class="panel-head">
+        <h3>Artists from outside the U.S., share of each year’s credited artists</h3>
+        <p class="panel-sub"><span class="key-swatch" style="background:#17140f"></span>born or formed in the U.K. <span class="key-swatch" style="background:#a39a8d"></span>elsewhere outside the U.S. Drag across the bars to choose years, or click one year.</p>
+      </figcaption>
+      <div class="strip-wrap">
+        <svg id="origin-strip" role="img" aria-labelledby="origin-strip-desc"></svg>
+        <p id="origin-strip-desc" class="sr-only"></p>
+      </div>
+    </figure>
+    <p class="origin-summary" id="origin-summary" aria-live="polite"></p>
+
+    <figure class="panel panel-map">
+      <figcaption class="panel-head">
+        <h3 id="map-title">Where the artists came from</h3>
+        <p class="panel-sub">Each record is one origin, sized by distinct credited artists: a performer’s birthplace, or a group’s formation place or documented origin. Records are nudged apart so none overlap. Select one to see its artists.</p>
+      </figcaption>
+      <div class="map-wrap"><svg id="origin-map" role="group" aria-label="Map of artist origins"></svg></div>
+      <div class="map-legend" id="map-legend"></div>
+    </figure>
+
+    <div class="origin-detail">
+      <section class="panel panel-tree" aria-labelledby="tree-title">
+        <div class="tree-top">
+          <h3 id="tree-title">Artists from one origin</h3>
+          <label class="inline-select"><span class="sr-only">Origin</span><select id="origin-select"></select></label>
+        </div>
+        <p class="panel-sub" id="tree-head"></p>
+        <p class="panel-sub">Tile area is the artist’s credited chart appearances in these years (one per entry, per credited artist). Color is the artist’s main chart genre, using Track 01’s genre colors.</p>
+        <div id="origin-tree" class="origin-tree"></div>
+        <div class="tree-legend" id="tree-legend"></div>
+        <p class="fine">Genres come from each song’s chart tags in the Perot dataset, which often files British Invasion hits under Country.</p>
+      </section>
+      <aside class="panel panel-artist" aria-labelledby="artist-title">
+        <div class="tree-top">
+          <h3 id="artist-title">Their records</h3>
+          <label class="inline-select"><span class="sr-only">Artist</span><select id="artist-select"></select></label>
+        </div>
+        <div id="artist-detail" aria-live="polite"></div>
+      </aside>
+    </div>
+
+    <details class="table-view">
+      <summary id="origin-table-summary">Table view: origins</summary>
+      <div class="table-scroll"><table id="origin-table"></table></div>
+    </details>
+    <p class="fine origin-note">Origins come from Wikidata birthplaces (P19) and group formation places (P740), plus documented artist biographies. Three credit fragments in the artist table (“the”, “cast”, “:”) are left out. Hit Atlas files the credit “Paul &amp; Linda McCartney” under the name “Paul”; the panel shows the Wikipedia title where it differs.</p>
+  </section>
+
+  <!-- TRACK 04 ─────────────────────────────────────────── -->
+  <section id="sound" class="chapter" aria-labelledby="sound-title">
+    <div class="chapter-spine" aria-hidden="true">Track 04 · Sad words, happy sound</div>
+    <header class="chapter-head">
+      <p class="kicker"><span class="track-badge">Track 04</span> Sound · 2021–2026 · audio features of the matched recordings</p>
+      <h2 id="sound-title">Do sad songs sound sad?</h2>
+      <p class="dek" id="sound-dek"></p>
+    </header>
+
+    <div class="controls" role="group" aria-label="Choose years, a sound feature and a grouping">
+      <div class="chip-row" id="sound-years" role="group" aria-label="Years"></div>
+      <label class="range-picker"><span>Feature</span><select id="sound-feature"></select></label>
+      <div class="seg-toggle" id="sound-group" role="group" aria-label="Rows">
+        <span class="seg-label">Rows</span>
+        <button type="button" data-group="feeling" aria-pressed="true">Lyric feeling</button>
+        <button type="button" data-group="genre" aria-pressed="false">Genre</button>
+      </div>
+    </div>
+
+    <div class="sound-tiles" id="sound-tiles" aria-live="polite"></div>
+
+    <figure class="panel panel-swarm">
+      <figcaption class="panel-head">
+        <h3 id="swarm-title">Every song’s sound, by what its lyrics feel</h3>
+        <p class="panel-sub">Each dot is one song at its exact value; dots only shift up or down to avoid overlapping. The black tick marks each row’s median. Select a dot to open the record and listen.</p>
+      </figcaption>
+      <div class="swarm-wrap"><svg id="sound-swarm" role="img"></svg></div>
+      <p class="fine" id="sound-coverage"></p>
+    </figure>
+
+    <div class="exceptions">
+      <section class="panel" aria-labelledby="exc-sad-title">
+        <h3 id="exc-sad-title">Sad words, bright sound</h3>
+        <p class="panel-sub">At least 60% sad or angry lyric text and valence above 0.5, highest first.</p>
+        <ol id="exc-sad" class="exc-list"></ol>
+      </section>
+      <section class="panel" aria-labelledby="exc-glad-title">
+        <h3 id="exc-glad-title">Bright words, dark sound</h3>
+        <p class="panel-sub">At least 60% joyful or loving lyric text and valence at or below 0.5, lowest first.</p>
+        <ol id="exc-glad" class="exc-list"></ol>
+      </section>
+    </div>
+
+    <details class="table-view">
+      <summary id="sound-table-summary">Table view</summary>
+      <div class="table-scroll"><table id="sound-table"></table></div>
+    </details>
+    <p class="fine sound-note">Audio features come from ReccoBeats for the recording matched to each chart entry (<code>audio_features.csv</code>). Valence, energy, danceability, and acousticness are 0–1 model scores; tempo is in beats per minute and loudness in decibels. Audio is matched for 553 of the 600 entries from 2021 to 2026 but only a few dozen earlier ones, so this chapter starts in 2021. Lyric feelings come from Astra’s segment annotations in Track 01. A song’s main feeling is the label with the largest share of its lyric text. The correlation tile compares the four lyric feeling shares with valence, energy, danceability, and acousticness. Play links open the matched recording on Spotify.</p>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <p>Hit Atlas · Billboard Year-End Hot 100, 1959–2026 · <a href="https://github.com/skyexry/hit-atlas">Repository</a> · <a href="../index.html">Earlier views</a></p>
+</footer>
+
+<div id="tooltip" class="tooltip" role="status" aria-live="polite" hidden></div>
+
+<dialog id="song-dialog" class="song-dialog" aria-labelledby="sd-title">
+  <form method="dialog" class="sd-close-row"><button class="icon-btn" value="close" aria-label="Close song">✕</button></form>
+  <div class="sd-body">
+    <div class="sd-visual">
+      <svg id="sd-record" viewBox="0 0 400 400" role="img" aria-labelledby="sd-record-desc"></svg>
+      <p id="sd-record-desc" class="sr-only"></p>
+      <div class="sd-strip-wrap">
+        <p class="micro">Lyric, first line → last line</p>
+        <svg id="sd-strip" viewBox="0 0 400 56" role="img" aria-label="Lyric segments in order"></svg>
+      </div>
+    </div>
+    <div class="sd-notes">
+      <p class="sd-rank" id="sd-rank"></p>
+      <h2 id="sd-title"></h2>
+      <p class="sd-artist" id="sd-artist"></p>
+      <p class="sd-genres" id="sd-genres"></p>
+      <div id="sd-feel"></div>
+      <div id="sd-listen" class="sd-listen"></div>
+      <div id="sd-audio"></div>
+      <p class="sd-history" id="sd-history"></p>
+    </div>
+  </div>
+  <div class="sd-nav">
+    <button type="button" class="btn btn-line" id="sd-prev">◀ Previous record</button>
+    <button type="button" class="btn btn-ink" id="sd-crate" hidden>Open this year’s crate</button>
+    <button type="button" class="btn btn-line" id="sd-next">Next record ▶</button>
+  </div>
+</dialog>
+</body>
+</html>
