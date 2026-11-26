@@ -6,13 +6,13 @@ import hashlib
 import json
 import re
 import sys
-import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 from urllib.parse import quote
 
 import langid
 from babel import Locale
+from measure_lyrics import clean_lyric_text, lyric_tokens
 
 root=Path(__file__).resolve().parents[1]
 cache=Path(sys.argv[1])
@@ -58,8 +58,7 @@ def main():
             h=hashlib.sha256(text.encode()).hexdigest()
             if h not in languages:languages[h]=langid.classify(text[:10000])[0]
             lang=languages[h]
-            normalized=unicodedata.normalize('NFKC',text).lower().replace('’',"'")
-            tokens=Counter(re.findall(r"[^\W\d_]+(?:'[^\W\d_]+)*",normalized))
+            tokens=Counter(lyric_tokens(clean_lyric_text(raw)))
             if lang=='en':
                 for w,n in tokens.items():lex[w].extend([idx,n])
         qualities.append(dict(song_id=sid,lyrics_status=ly['status'],estimated_primary_language=lang,word_tokens=sum(tokens.values())))

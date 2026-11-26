@@ -12,6 +12,23 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 BRACKETED = re.compile(r"\[[^\]\n]{0,200}\]")
 WORD = re.compile(r"[^\W\d_]+(?:'[^\W\d_]+)*")
+TICKET_PROMO = re.compile(
+    r"See (?:(?!See |\bLive\b)[^\r\n\[\]]){1,100}? Live[ \t]*"
+    r"Get tickets as low as[ \t]+\$\d[\d,]*(?:\.\d{2})?"
+)
+UPCOMING_SHOWS = re.compile(
+    r"^See upcoming [^\r\n]{1,50} shows[ \t]*\r?\n"
+    r"Get tickets for your favorite artists[ \t]*(?:\r?\n|$)", re.MULTILINE
+)
+RECOMMENDATION_LIST = re.compile(
+    r"^You might also like[ \t]*\r?\n"
+    r"(?:[^\s\[\]\r\n][^\r\n]*\r?\n){6}(?=[ \t]*(?:\r?\n|\[|\Z))",
+    re.MULTILINE,
+)
+RECOMMENDATION_LINE = re.compile(r"^You might also like[ \t]*(?:\r?\n|$)", re.MULTILINE)
+RECOMMENDATION_INLINE = re.compile(r"You might also like(?=Embed|\b)")
+EMBED_COUNTER = re.compile(r"\d[\d,]*(?:\.\d+)?[KM]?Embed\s*\Z")
+EMBED_LABEL = re.compile(r"Embed\s*\Z")
 TOP_WORDS = 20
 MIN_SONGS_PER_TERM = 2
 
@@ -43,8 +60,28 @@ def lyric_tokens(cleaned):
     return WORD.findall(normalized)
 
 
+def strip_lyric_page_text(raw):
+    text, promos = TICKET_PROMO.subn(" ", raw)
+    text, counters = EMBED_COUNTER.subn("", text)
+    # Flattened Genius transcripts can place the recommendation cue inline.
+    # An embed footer or ad corroborates that this phrase is page furniture.
+    footer = EMBED_LABEL.search(text) and RECOMMENDATION_INLINE.search(text)
+    if footer:
+        text = EMBED_LABEL.sub("", text)
+    # Some multiline copies include three title/artist pairs after the cue.
+    text = RECOMMENDATION_LIST.sub("", text)
+    if promos or counters or footer:
+        text = RECOMMENDATION_INLINE.sub(" ", text)
+    text = RECOMMENDATION_LINE.sub("", text)
+    return UPCOMING_SHOWS.sub("", text)
+
+
+def clean_lyric_text(raw):
+    return BRACKETED.sub(" ", strip_lyric_page_text(raw))
+
+
 def song_metrics(raw, analyzer):
-    cleaned = " ".join(BRACKETED.sub(" ", raw).split())
+    cleaned = " ".join(clean_lyric_text(raw).split())
     counts = Counter(lyric_tokens(cleaned))
     total = sum(counts.values())
     if not total:

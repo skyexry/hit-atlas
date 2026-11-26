@@ -2,6 +2,7 @@
 import csv
 from collections import defaultdict
 from pathlib import Path
+from measure_lyrics import BRACKETED, lyric_tokens, strip_lyric_page_text
 
 root = Path(__file__).resolve().parents[1]
 extension = root / "extension-2024-2026"
@@ -53,6 +54,12 @@ def main():
         if tables["lyrics.csv"][song_id]["status"] in ("missing", "unverified"):
             tables["lyrics.csv"][song_id] = row
             tables["lyric_metrics.csv"][song_id] = metric_updates[song_id]
+
+    for song_id, row in tables["lyrics.csv"].items():
+        if row["status"] == "usable":
+            cleaned = strip_lyric_page_text(row["lyrics"])
+            if cleaned != row["lyrics"]:
+                tables["lyric_metrics.csv"][song_id]["word_tokens"] = len(lyric_tokens(BRACKETED.sub(" ", cleaned)))
 
     artist_genres = supplemental_rows("artist_genres.csv", "artist_id")
     artist_origins = supplemental_rows("artist_origins.csv", "artist_id")

@@ -4102,7 +4102,7 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 1999-100-S_0206e6a442868631,1999,100,S_0206e6a442868631,(God Must Have Spent) A Little More Time on You,Alabama and NSYNC,billboard_year_end,usable,en,Jazz/Swing|Pop,317,110,0.347003,0.9975
 2000-001-S_e5c186fc928053d2,2000,1,S_e5c186fc928053d2,Breathe,Faith Hill,billboard_year_end,usable,en,Country,256,95,0.371094,0.327
 2000-002-S_59ff5fceafbe61b1,2000,2,S_59ff5fceafbe61b1,Smooth,Santana featuring Rob Thomas,billboard_year_end,usable,en,R&B|Rock,351,107,0.304843,0.9944
-2000-003-S_35f22f5568b8eae5,2000,3,S_35f22f5568b8eae5,Maria Maria,Santana featuring The Product G&B,billboard_year_end,usable,en,R&B|Rock,407,144,0.353808,0.9945
+2000-003-S_35f22f5568b8eae5,2000,3,S_35f22f5568b8eae5,Maria Maria,Santana featuring The Product G&B,billboard_year_end,usable,en,R&B|Rock,403,142,0.352357,0.9941
 2000-004-S_32402e518ef0d9ec,2000,4,S_32402e518ef0d9ec,I Wanna Know,Joe,billboard_year_end,usable,en,Indie|R&B,478,115,0.240586,0.9988
 2000-005-S_271286d623d744d4,2000,5,S_271286d623d744d4,Everything You Want,Vertical Horizon,billboard_year_end,usable,en,Rock,334,108,0.323353,0.9439
 2000-006-S_31dbc7de8426ea3b,2000,6,S_31dbc7de8426ea3b,Say My Name,Destiny's Child,billboard_year_end,usable,en,R&B|Pop|Indie,891,157,0.176207,0.9995
@@ -4115,7 +4115,7 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2000-013-S_7336d28832a2daba,2000,13,S_7336d28832a2daba,"Jumpin', Jumpin'",Destiny's Child,billboard_year_end,usable,en,R&B|Pop|Indie,809,159,0.196539,0.9985
 2000-014-S_b6b8d7b9b62a8272,2000,14,S_b6b8d7b9b62a8272,Thong Song,Sisqó,billboard_year_end,usable,en,Hip Hop/Rap|Pop|Indie,948,118,0.124473,0.9948
 2000-015-S_45a43328c0d8d014,2000,15,S_45a43328c0d8d014,Kryptonite,3 Doors Down,billboard_year_end,usable,en,Rock,291,99,0.340206,0.9891
-2000-016-S_0dd8aa158b302aa4,2000,16,S_0dd8aa158b302aa4,There You Go,Pink,billboard_year_end,usable,en,Pop,622,149,0.23955,0.9789
+2000-016-S_0dd8aa158b302aa4,2000,16,S_0dd8aa158b302aa4,There You Go,Pink,billboard_year_end,usable,en,Pop,610,140,0.229508,0.9737
 2000-017-S_ecea063f87b9175a,2000,17,S_ecea063f87b9175a,Music,Madonna,billboard_year_end,usable,en,R&B|Pop,262,62,0.236641,0.9946
 2000-018-S_6f6b54259b6e5dea,2000,18,S_6f6b54259b6e5dea,Doesn't Really Matter,Janet,billboard_year_end,usable,en,R&B|Pop|Indie,730,101,0.138356,0.9999
 2000-019-S_592f67da23348f9a,2000,19,S_592f67da23348f9a,What a Girl Wants,Christina Aguilera,billboard_year_end,usable,en,Pop,431,118,0.273782,0.9987
@@ -4128,7 +4128,7 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2000-026-S_6ea7829209c0f0ac,2000,26,S_6ea7829209c0f0ac,I Try,Macy Gray,billboard_year_end,usable,en,Soul,385,84,0.218182,0.9918
 2000-027-S_3c49fe6931832f70,2000,27,S_3c49fe6931832f70,It's Gonna Be Me,NSYNC,billboard_year_end,usable,en,Jazz/Swing|Pop,281,85,0.302491,0.9828
 2000-028-S_c88f380a466e7ae1,2000,28,S_c88f380a466e7ae1,That's the Way It Is,Celine Dion,billboard_year_end,usable,en,Pop,349,90,0.25788,0.9974
-2000-029-S_9c12f26e970cd0f9,2000,29,S_9c12f26e970cd0f9,Country Grammar (Hot Shit),Nelly,billboard_year_end,usable,en,Hip Hop/Rap|Pop,840,292,0.347619,-0.8258
+2000-029-S_9c12f26e970cd0f9,2000,29,S_9c12f26e970cd0f9,Country Grammar (Hot Shit),Nelly,billboard_year_end,usable,en,Hip Hop/Rap|Pop,829,285,0.343788,-0.843
 2000-030-S_5ce26808c8e1fe59,2000,30,S_5ce26808c8e1fe59,Bring It All to Me,Blaque,billboard_year_end,usable,en,R&B|Pop|Indie,401,101,0.25187,0.9988
 2000-031-S_c5b549dfc59c0274,2000,31,S_c5b549dfc59c0274,Show Me the Meaning of Being Lonely,Backstreet Boys,billboard_year_end,usable,en,Jazz/Swing|Pop,292,90,0.308219,0.9778
 2000-032-S_a778b3987a329c3c,2000,32,S_a778b3987a329c3c,Hot Boyz,"Missy Elliott featuring Nas , Eve and Q-Tip",billboard_year_end,usable,en,Hip Hop/Rap,613,295,0.48124,0.9648
@@ -4151,12 +4151,12 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2000-049-S_a41152756f18df63,2000,49,S_a41152756f18df63,Blue (Da Ba Dee),Eiffel 65,billboard_year_end,usable,en,Dance/Electronic,597,72,0.120603,0.7579
 2000-050-S_0911d8e5e567112c,2000,50,S_0911d8e5e567112c,Desert Rose,Sting featuring Cheb Mami,billboard_year_end,usable,en,Pop|Rock,263,97,0.368821,0.9917
 2000-051-S_a1a3d081df681aff,2000,51,S_a1a3d081df681aff,The Real Slim Shady,Eminem,billboard_year_end,usable,en,Hip Hop/Rap,1014,347,0.342209,0.999
-2000-052-S_2730e43b8f1d9b80,2000,52,S_2730e43b8f1d9b80,Most Girls,Pink,billboard_year_end,usable,en,Pop,537,111,0.206704,0.9993
+2000-052-S_2730e43b8f1d9b80,2000,52,S_2730e43b8f1d9b80,Most Girls,Pink,billboard_year_end,usable,en,Pop,525,101,0.192381,0.9993
 2000-053-S_ba0e176b66d4bdae,2000,53,S_ba0e176b66d4bdae,Wifey,Next,billboard_year_end,usable,en,Jazz/Swing|Indie|R&B,502,164,0.326693,0.9974
 2000-054-S_6b2461bd6ba50963,2000,54,S_6b2461bd6ba50963,Wonderful,Everclear,billboard_year_end,usable,en,Rock,595,130,0.218487,0.9971
 2000-055-S_36d21bdbf1fe1a1b,2000,55,S_36d21bdbf1fe1a1b,Oops!... I Did It Again,Britney Spears,billboard_year_end,usable,en,Pop,331,100,0.302115,0.998
 2000-056-S_50db9410ca614623,2000,56,S_50db9410ca614623,I Wanna Love You Forever,Jessica Simpson,billboard_year_end,usable,en,Pop,338,126,0.372781,0.997
-2000-057-S_e52a21cb8931c007,2000,57,S_e52a21cb8931c007,Give Me Just One Night (Una Noche),98 Degrees,billboard_year_end,usable,en,Jazz/Swing,354,97,0.274011,0.8934
+2000-057-S_e52a21cb8931c007,2000,57,S_e52a21cb8931c007,Give Me Just One Night (Una Noche),98 Degrees,billboard_year_end,usable,en,Jazz/Swing,350,94,0.268571,0.8481
 2000-058-S_bd0a3aea321625bd,2000,58,S_bd0a3aea321625bd,Take a Picture,Filter,billboard_year_end,usable,en,Rock,264,52,0.19697,0.8144
 2000-059-S_cbe4f7e1f8adc2ae,2000,59,S_cbe4f7e1f8adc2ae,Otherside,Red Hot Chili Peppers,billboard_year_end,usable,en,Folk|Rock,298,103,0.345638,-0.9778
 2000-060-S_7c784a12961a1bde,2000,60,S_7c784a12961a1bde,Big Pimpin',Jay-Z featuring UGK,billboard_year_end,usable,en,Hip Hop/Rap,804,330,0.410448,-0.993
@@ -4172,7 +4172,7 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2000-070-S_a8869726b97cf9f9,2000,70,S_a8869726b97cf9f9,Meet Virginia,Train,billboard_year_end,usable,en,Pop|Rock,283,115,0.40636,0.8636
 2000-071-S_b9db522c8468cfbb,2000,71,S_b9db522c8468cfbb,Party Up (Up in Here),DMX,billboard_year_end,usable,en,Hip Hop/Rap,875,271,0.309714,-0.9991
 2000-072-S_2cab50a7f92259bf,2000,72,S_2cab50a7f92259bf,Case of the Ex (Whatcha Gonna Do),Mýa,billboard_year_end,usable,en,R&B|Pop|Indie,635,136,0.214173,-0.175
-2000-073-S_b2852d7dc5b84c1c,2000,73,S_b2852d7dc5b84c1c,Forgot About Dre,Dr. Dre featuring Eminem,billboard_year_end,usable,en,Hip Hop/Rap|Funk,914,342,0.374179,-0.9457
+2000-073-S_b2852d7dc5b84c1c,2000,73,S_b2852d7dc5b84c1c,Forgot About Dre,Dr. Dre featuring Eminem,billboard_year_end,usable,en,Hip Hop/Rap|Funk,910,340,0.373626,-0.9613
 2000-074-S_8ea70f859434ab87,2000,74,S_8ea70f859434ab87,That's the Way,Jo Dee Messina,billboard_year_end,usable,en,Country,386,131,0.339378,0.9009
 2000-075-S_061dea2bb02069ed,2000,75,S_061dea2bb02069ed,Swear It Again,Westlife,billboard_year_end,usable,en,Jazz/Swing,429,112,0.261072,0.9612
 2000-076-S_f028f09eb47d8863,2000,76,S_f028f09eb47d8863,The Next Episode,Dr. Dre featuring Snoop Dogg,billboard_year_end,usable,en,Hip Hop/Rap,452,215,0.475664,-0.9881
@@ -4193,10 +4193,10 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2000-091-S_16894dbfb0108750,2000,91,S_16894dbfb0108750,I Like It,Sammie,billboard_year_end,usable,en,Hip Hop/Rap,470,111,0.23617,0.999
 2000-092-S_720987ca8f8058e6,2000,92,S_720987ca8f8058e6,24/7,Kevon Edmonds,billboard_year_end,usable,en,R&B,247,133,0.538462,0.992
 2000-093-S_c5634f6418495c50,2000,93,S_c5634f6418495c50,Girl on TV,LFO,billboard_year_end,usable,en,Jazz/Swing,594,146,0.245791,0.9978
-2000-094-S_ad9ca5dff9264595,2000,94,S_ad9ca5dff9264595,Bounce with Me,Lil' Bow Wow featuring Xscape,billboard_year_end,usable,en,Indie|Hip Hop/Rap|R&B,769,235,0.305592,0.9967
+2000-094-S_ad9ca5dff9264595,2000,94,S_ad9ca5dff9264595,Bounce with Me,Lil' Bow Wow featuring Xscape,billboard_year_end,usable,en,Indie|Hip Hop/Rap|R&B,757,229,0.30251,0.9964
 2000-095-S_56c9e4ac5c0cf333,2000,95,S_56c9e4ac5c0cf333,Cowboy Take Me Away,Dixie Chicks,billboard_year_end,usable,en,Country,246,76,0.308943,0.9924
 2000-096-S_b438dd6f148e17f4,2000,96,S_b438dd6f148e17f4,I Don't Wanna,Aaliyah,billboard_year_end,usable,en,R&B|Pop|Indie,454,121,0.26652,-0.2117
-2000-097-S_ff0c8e25d8ca4315,2000,97,S_ff0c8e25d8ca4315,Independent Women Part I,Destiny's Child,billboard_year_end,usable,en,R&B|Pop|Indie,640,150,0.234375,0.9961
+2000-097-S_ff0c8e25d8ca4315,2000,97,S_ff0c8e25d8ca4315,Independent Women Part I,Destiny's Child,billboard_year_end,usable,en,R&B|Pop|Indie,636,148,0.232704,0.9958
 2000-098-S_1fe5aa3c13aa9879,2000,98,S_1fe5aa3c13aa9879,Gotta Tell You,Samantha Mumba,billboard_year_end,usable,en,Pop,352,94,0.267045,-0.9819
 2000-099-S_baca4ec20f73fd84,2000,99,S_baca4ec20f73fd84,Waiting for Tonight,Jennifer Lopez,billboard_year_end,usable,en,Indie|Pop,358,98,0.273743,0.9961
 2000-100-S_39e4c6cc0de0f601,2000,100,S_39e4c6cc0de0f601,Shackles (Praise You),Mary Mary,billboard_year_end,usable,en,R&B,512,116,0.226562,0.9995
@@ -4209,7 +4209,7 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2001-007-S_e2e57048d1dc8156,2001,7,S_e2e57048d1dc8156,Let Me Blow Ya Mind,Eve featuring Gwen Stefani,billboard_year_end,usable,en,Hip Hop/Rap|Pop|Indie,576,260,0.451389,-0.9879
 2001-008-S_977932f1de71c21f,2001,8,S_977932f1de71c21f,Thank You,Dido,billboard_year_end,usable,en,Dance/Electronic,242,99,0.409091,0.9967
 2001-009-S_94b51a9f813323a3,2001,9,S_94b51a9f813323a3,Again,Lenny Kravitz,billboard_year_end,usable,en,Rock,304,74,0.243421,0.9785
-2001-010-S_ff0c8e25d8ca4315,2001,10,S_ff0c8e25d8ca4315,Independent Women Part I,Destiny's Child,billboard_year_end,usable,en,R&B|Pop|Indie,640,150,0.234375,0.9961
+2001-010-S_ff0c8e25d8ca4315,2001,10,S_ff0c8e25d8ca4315,Independent Women Part I,Destiny's Child,billboard_year_end,usable,en,R&B|Pop|Indie,636,148,0.232704,0.9958
 2001-011-S_b3f2f032517e0764,2001,11,S_b3f2f032517e0764,Hit 'Em Up Style (Oops!),Blu Cantrell,billboard_year_end,usable,en,Indie|Pop,661,164,0.248109,0.9883
 2001-012-S_b61fb381f7b2a4ec,2001,12,S_b61fb381f7b2a4ec,It Wasn't Me,Shaggy featuring Rikrok,billboard_year_end,usable,en,Hip Hop/Rap|Reggae,605,195,0.322314,-0.972
 2001-013-S_342304c7d3693386,2001,13,S_342304c7d3693386,Stutter,Joe featuring Mystikal,billboard_year_end,usable,en,R&B|Hip Hop/Rap,804,176,0.218905,-0.999
@@ -4296,7 +4296,7 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2001-094-S_bfe9a83fee56fdb5,2001,94,S_bfe9a83fee56fdb5,"So Fresh, So Clean",Outkast,billboard_year_end,usable,en,Hip Hop/Rap,778,215,0.27635,1.0
 2001-095-S_2ebb55d7c2a787b5,2001,95,S_2ebb55d7c2a787b5,E.I.,Nelly,billboard_year_end,usable,en,Hip Hop/Rap|Pop,655,294,0.448855,-0.9739
 2001-096-S_40c48e18adaf7bcf,2001,96,S_40c48e18adaf7bcf,Be Like That,3 Doors Down,billboard_year_end,usable,en,Rock,311,106,0.340836,0.9941
-2001-097-S_2730e43b8f1d9b80,2001,97,S_2730e43b8f1d9b80,Most Girls,Pink,billboard_year_end,usable,en,Pop,537,111,0.206704,0.9993
+2001-097-S_2730e43b8f1d9b80,2001,97,S_2730e43b8f1d9b80,Most Girls,Pink,billboard_year_end,usable,en,Pop,525,101,0.192381,0.9993
 2001-098-S_bc6205792a0ebd06,2001,98,S_bc6205792a0ebd06,Oochie Wally,QB Finest featuring Nas and Bravehearts,billboard_year_end,usable,en,Hip Hop/Rap,622,266,0.427653,-0.9915
 2001-099-S_2a02059a1deb6fc0,2001,99,S_2a02059a1deb6fc0,Hero,Enrique Iglesias,billboard_year_end,usable,en,Pop|Latin,240,74,0.308333,0.9565
 2001-100-S_e89536391fc5f8c7,2001,100,S_e89536391fc5f8c7,Hemorrhage (In My Hands),Fuel,billboard_year_end,usable,en,Rock,218,78,0.357798,0.9799
@@ -6100,406 +6100,406 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2019-098-S_2b75c0068eea4b5b,2019,98,S_2b75c0068eea4b5b,Boyfriend,Ariana Grande and Social House,billboard_year_end,usable,en,Pop,509,123,0.24165,0.9783
 2019-099-S_5aa6bba454306b40,2019,99,S_5aa6bba454306b40,Walk Me Home,Pink,billboard_year_end,usable,en,Pop,251,92,0.366534,-0.9912
 2019-100-S_07ee96955016b85e,2019,100,S_07ee96955016b85e,Robbery,Juice Wrld,billboard_year_end,usable,en,Hip Hop/Rap,436,137,0.31422,-0.8205
-2020-001-S_cfcb3f09f40d8272,2020,1,S_cfcb3f09f40d8272,Blinding Lights,The Weeknd,billboard_year_end,usable,en,R&B|Pop,264,98,0.371212,0.7494
+2020-001-S_cfcb3f09f40d8272,2020,1,S_cfcb3f09f40d8272,Blinding Lights,The Weeknd,billboard_year_end,usable,en,R&B|Pop,259,95,0.366795,0.5972
 2020-002-S_4699cf169cd41138,2020,2,S_4699cf169cd41138,Circles,Post Malone,billboard_year_end,usable,en,Hip Hop/Rap|Pop,314,96,0.305732,0.9686
-2020-003-S_36171effb083c0a5,2020,3,S_36171effb083c0a5,The Box,Roddy Ricch,billboard_year_end,usable,en,Hip Hop/Rap,549,193,0.351548,-0.9868
-2020-004-S_a9e8a1f47db06e99,2020,4,S_a9e8a1f47db06e99,Don't Start Now,Dua Lipa,billboard_year_end,usable,en,Pop,318,85,0.267296,-0.9867
+2020-003-S_36171effb083c0a5,2020,3,S_36171effb083c0a5,The Box,Roddy Ricch,billboard_year_end,usable,en,Hip Hop/Rap,544,190,0.349265,-0.9883
+2020-004-S_a9e8a1f47db06e99,2020,4,S_a9e8a1f47db06e99,Don't Start Now,Dua Lipa,billboard_year_end,usable,en,Pop,305,75,0.245902,-0.9873
 2020-005-S_c6df68ef2b9e1699,2020,5,S_c6df68ef2b9e1699,Rockstar,DaBaby featuring Roddy Ricch,billboard_year_end,usable,en,Pop|Hip Hop/Rap,656,231,0.352134,0.9953
-2020-006-S_ebaa00deafed204e,2020,6,S_ebaa00deafed204e,Adore You,Harry Styles,billboard_year_end,usable,en,Pop,373,69,0.184987,0.9935
-2020-007-S_c98fca49d481ea32,2020,7,S_c98fca49d481ea32,Life Is Good,Future featuring Drake,billboard_year_end,usable,en,Hip Hop/Rap,800,277,0.34625,0.9133
-2020-008-S_97cb5dcebd18c702,2020,8,S_97cb5dcebd18c702,Memories,Maroon 5,billboard_year_end,usable,en,Pop,455,110,0.241758,0.9842
-2020-009-S_b39262ee9d9ae9f8,2020,9,S_b39262ee9d9ae9f8,The Bones,Maren Morris,billboard_year_end,usable,en,Country,335,102,0.304478,0.9961
+2020-006-S_ebaa00deafed204e,2020,6,S_ebaa00deafed204e,Adore You,Harry Styles,billboard_year_end,usable,en,Pop,368,66,0.179348,0.9929
+2020-007-S_c98fca49d481ea32,2020,7,S_c98fca49d481ea32,Life Is Good,Future featuring Drake,billboard_year_end,usable,en,Hip Hop/Rap,788,269,0.341371,0.7082
+2020-008-S_97cb5dcebd18c702,2020,8,S_97cb5dcebd18c702,Memories,Maroon 5,billboard_year_end,usable,en,Pop,443,101,0.227991,0.9833
+2020-009-S_b39262ee9d9ae9f8,2020,9,S_b39262ee9d9ae9f8,The Bones,Maren Morris,billboard_year_end,usable,en,Country,322,91,0.282609,0.996
 2020-010-S_b9674e6dd59932d7,2020,10,S_b9674e6dd59932d7,Someone You Loved,Lewis Capaldi,billboard_year_end,usable,en,Pop,323,96,0.297214,0.9788
-2020-011-S_cd0f8288537eab6f,2020,11,S_cd0f8288537eab6f,Say So,Doja Cat,billboard_year_end,usable,en,Pop,496,158,0.318548,0.9802
-2020-012-S_714671ba6c1e604e,2020,12,S_714671ba6c1e604e,I Hope,Gabby Barrett featuring Charlie Puth,billboard_year_end,usable,en,Country,490,134,0.273469,0.9994
+2020-011-S_cd0f8288537eab6f,2020,11,S_cd0f8288537eab6f,Say So,Doja Cat,billboard_year_end,usable,en,Pop,483,148,0.306418,0.9789
+2020-012-S_714671ba6c1e604e,2020,12,S_714671ba6c1e604e,I Hope,Gabby Barrett featuring Charlie Puth,billboard_year_end,usable,en,Country,477,124,0.259958,0.9993
 2020-013-S_136bda1c2c631695,2020,13,S_136bda1c2c631695,Whats Poppin,"Jack Harlow featuring DaBaby , Tory Lanez and Lil Wayne",billboard_year_end,usable,en,Hip Hop/Rap,534,251,0.470037,-0.9699
-2020-014-S_7ca5359ee78eee8c,2020,14,S_7ca5359ee78eee8c,Dance Monkey,Tones and I,billboard_year_end,usable,en,Pop,462,82,0.177489,0.1901
+2020-014-S_7ca5359ee78eee8c,2020,14,S_7ca5359ee78eee8c,Dance Monkey,Tones and I,billboard_year_end,usable,en,Pop,448,74,0.165179,0.0387
 2020-015-S_f425ac156c0b5554,2020,15,S_f425ac156c0b5554,Savage,Megan Thee Stallion featuring Beyoncé,billboard_year_end,usable,en,Hip Hop/Rap|Pop,411,171,0.416058,-0.9984
-2020-016-S_d42abc59b3d6703b,2020,16,S_d42abc59b3d6703b,Roxanne,Arizona Zervas,billboard_year_end,usable,en,Hip Hop/Rap,390,128,0.328205,0.9814
+2020-016-S_d42abc59b3d6703b,2020,16,S_d42abc59b3d6703b,Roxanne,Arizona Zervas,billboard_year_end,usable,en,Hip Hop/Rap,385,125,0.324675,0.9765
 2020-017-S_1d461da7c09913ae,2020,17,S_1d461da7c09913ae,Intentions,Justin Bieber featuring Quavo,billboard_year_end,usable,en,Hip Hop/Rap,482,161,0.334025,0.9982
-2020-018-S_f4950a98aeb10c7e,2020,18,S_f4950a98aeb10c7e,Everything I Wanted,Billie Eilish,billboard_year_end,usable,en,Pop,318,116,0.36478,-0.3421
-2020-019-S_eb7fdbfc8bfe5ad1,2020,19,S_eb7fdbfc8bfe5ad1,Roses (Imanbek remix),Saint Jhn,billboard_year_end,usable,en,Hip Hop/Rap|Dance/Electronic,481,97,0.201663,-0.9059
-2020-020-S_71c4b014b31b7f30,2020,20,S_71c4b014b31b7f30,Watermelon Sugar,Harry Styles,billboard_year_end,usable,en,Pop,241,59,0.244813,0.9662
-2020-021-S_30ef3499f5ecd4f1,2020,21,S_30ef3499f5ecd4f1,Before You Go,Lewis Capaldi,billboard_year_end,usable,en,Pop,324,108,0.333333,-0.9767
-2020-022-S_3c19d3892521f71e,2020,22,S_3c19d3892521f71e,Falling,Trevor Daniel,billboard_year_end,usable,en,Hip Hop/Rap,339,108,0.318584,0.9945
-2020-023-S_cc86be25316a4d18,2020,23,S_cc86be25316a4d18,"10,000 Hours",Dan + Shay and Justin Bieber,billboard_year_end,usable,en,Pop,325,92,0.283077,0.9989
-2020-024-S_b9c69e9962c5e2fa,2020,24,S_b9c69e9962c5e2fa,WAP,Cardi B featuring Megan Thee Stallion,billboard_year_end,usable,en,Hip Hop/Rap|Latin,741,265,0.357625,-0.991
-2020-025-S_c71b41942a1bb059,2020,25,S_c71b41942a1bb059,Ballin',Mustard and Roddy Ricch,billboard_year_end,usable,en,Hip Hop/Rap,609,206,0.338259,-0.9959
-2020-026-S_1a85182038bbfe25,2020,26,S_1a85182038bbfe25,Hot Girl Bummer,Blackbear,billboard_year_end,usable,en,Pop,519,110,0.211946,-0.9996
-2020-027-S_8b4133a4a7521232,2020,27,S_8b4133a4a7521232,Blueberry Faygo,Lil Mosey,billboard_year_end,usable,en,Hip Hop/Rap,544,123,0.226103,-0.9937
-2020-028-S_0953f4bbedbaf019,2020,28,S_0953f4bbedbaf019,Heartless,The Weeknd,billboard_year_end,usable,en,R&B|Pop,402,150,0.373134,-0.999
-2020-029-S_79aaf7fe135c8cb6,2020,29,S_79aaf7fe135c8cb6,Bop,DaBaby,billboard_year_end,usable,en,Hip Hop/Rap,741,222,0.299595,-0.9875
-2020-030-S_328856a8da439eb1,2020,30,S_328856a8da439eb1,Lose You to Love Me,Selena Gomez,billboard_year_end,usable,en,Pop,362,87,0.240331,0.9997
-2020-031-S_c0c285d0fd7098d0,2020,31,S_c0c285d0fd7098d0,Good as Hell,Lizzo,billboard_year_end,usable,en,Hip Hop/Rap|Pop,399,125,0.313283,-0.9971
-2020-032-S_7c5b596fe3863158,2020,32,S_7c5b596fe3863158,Toosie Slide,Drake,billboard_year_end,usable,en,Hip Hop/Rap|Pop,614,176,0.286645,0.4955
-2020-033-S_ce02d1a2b78d5ad7,2020,33,S_ce02d1a2b78d5ad7,Break My Heart,Dua Lipa,billboard_year_end,usable,en,Pop,525,117,0.222857,0.9991
-2020-034-S_0d4f33b6b772fabe,2020,34,S_0d4f33b6b772fabe,Chasin' You,Morgan Wallen,billboard_year_end,usable,en,Country,337,118,0.350148,0.9893
-2020-035-S_f7943c95cd18354b,2020,35,S_f7943c95cd18354b,Savage Love (Laxed – Siren Beat),Jawsh 685 and Jason Derulo,billboard_year_end,usable,en,Pop,392,110,0.280612,0.9955
+2020-018-S_f4950a98aeb10c7e,2020,18,S_f4950a98aeb10c7e,Everything I Wanted,Billie Eilish,billboard_year_end,usable,en,Pop,313,114,0.364217,-0.6868
+2020-019-S_eb7fdbfc8bfe5ad1,2020,19,S_eb7fdbfc8bfe5ad1,Roses (Imanbek remix),Saint Jhn,billboard_year_end,usable,en,Hip Hop/Rap|Dance/Electronic,476,95,0.19958,-0.9386
+2020-020-S_71c4b014b31b7f30,2020,20,S_71c4b014b31b7f30,Watermelon Sugar,Harry Styles,billboard_year_end,usable,en,Pop,236,56,0.237288,0.9584
+2020-021-S_30ef3499f5ecd4f1,2020,21,S_30ef3499f5ecd4f1,Before You Go,Lewis Capaldi,billboard_year_end,usable,en,Pop,319,105,0.329154,-0.9816
+2020-022-S_3c19d3892521f71e,2020,22,S_3c19d3892521f71e,Falling,Trevor Daniel,billboard_year_end,usable,en,Hip Hop/Rap,334,106,0.317365,0.9938
+2020-023-S_cc86be25316a4d18,2020,23,S_cc86be25316a4d18,"10,000 Hours",Dan + Shay and Justin Bieber,billboard_year_end,usable,en,Pop,320,89,0.278125,0.9988
+2020-024-S_b9c69e9962c5e2fa,2020,24,S_b9c69e9962c5e2fa,WAP,Cardi B featuring Megan Thee Stallion,billboard_year_end,usable,en,Hip Hop/Rap|Latin,728,256,0.351648,-0.9914
+2020-025-S_c71b41942a1bb059,2020,25,S_c71b41942a1bb059,Ballin',Mustard and Roddy Ricch,billboard_year_end,usable,en,Hip Hop/Rap,604,203,0.336093,-0.996
+2020-026-S_1a85182038bbfe25,2020,26,S_1a85182038bbfe25,Hot Girl Bummer,Blackbear,billboard_year_end,usable,en,Pop,514,107,0.208171,-0.9996
+2020-027-S_8b4133a4a7521232,2020,27,S_8b4133a4a7521232,Blueberry Faygo,Lil Mosey,billboard_year_end,usable,en,Hip Hop/Rap,539,119,0.220779,-0.9951
+2020-028-S_0953f4bbedbaf019,2020,28,S_0953f4bbedbaf019,Heartless,The Weeknd,billboard_year_end,usable,en,R&B|Pop,397,147,0.370277,-0.9991
+2020-029-S_79aaf7fe135c8cb6,2020,29,S_79aaf7fe135c8cb6,Bop,DaBaby,billboard_year_end,usable,en,Hip Hop/Rap,736,219,0.297554,-0.9882
+2020-030-S_328856a8da439eb1,2020,30,S_328856a8da439eb1,Lose You to Love Me,Selena Gomez,billboard_year_end,usable,en,Pop,357,84,0.235294,0.9997
+2020-031-S_c0c285d0fd7098d0,2020,31,S_c0c285d0fd7098d0,Good as Hell,Lizzo,billboard_year_end,usable,en,Hip Hop/Rap|Pop,394,121,0.307107,-0.9978
+2020-032-S_7c5b596fe3863158,2020,32,S_7c5b596fe3863158,Toosie Slide,Drake,billboard_year_end,usable,en,Hip Hop/Rap|Pop,609,173,0.284072,-0.8276
+2020-033-S_ce02d1a2b78d5ad7,2020,33,S_ce02d1a2b78d5ad7,Break My Heart,Dua Lipa,billboard_year_end,usable,en,Pop,512,107,0.208984,0.9992
+2020-034-S_0d4f33b6b772fabe,2020,34,S_0d4f33b6b772fabe,Chasin' You,Morgan Wallen,billboard_year_end,usable,en,Country,324,110,0.339506,0.989
+2020-035-S_f7943c95cd18354b,2020,35,S_f7943c95cd18354b,Savage Love (Laxed – Siren Beat),Jawsh 685 and Jason Derulo,billboard_year_end,usable,en,Pop,387,107,0.276486,0.996
 2020-036-S_3e8e58ddb8592828,2020,36,S_3e8e58ddb8592828,No Guidance,Chris Brown featuring Drake,billboard_year_end,usable,en,Pop|R&B|Hip Hop/Rap,612,191,0.312092,0.9785
-2020-037-S_942be8fe13890c21,2020,37,S_942be8fe13890c21,My Oh My,Camila Cabello featuring DaBaby,billboard_year_end,usable,en,Soul|Pop,463,153,0.330454,0.9921
-2020-038-S_91f2e609e35b5dbe,2020,38,S_91f2e609e35b5dbe,Dynamite,BTS,billboard_year_end,usable,en,Pop,555,135,0.243243,0.9956
-2020-039-S_e80cb30ecfb6cf44,2020,39,S_e80cb30ecfb6cf44,Go Crazy,Chris Brown and Young Thug,billboard_year_end,usable,en,R&B|Pop|Hip Hop/Rap,578,159,0.275087,-0.7928
+2020-037-S_942be8fe13890c21,2020,37,S_942be8fe13890c21,My Oh My,Camila Cabello featuring DaBaby,billboard_year_end,usable,en,Soul|Pop,450,145,0.322222,0.9918
+2020-038-S_91f2e609e35b5dbe,2020,38,S_91f2e609e35b5dbe,Dynamite,BTS,billboard_year_end,usable,en,Pop,550,132,0.24,0.9953
+2020-039-S_e80cb30ecfb6cf44,2020,39,S_e80cb30ecfb6cf44,Go Crazy,Chris Brown and Young Thug,billboard_year_end,usable,en,R&B|Pop|Hip Hop/Rap,573,156,0.272251,-0.8831
 2020-040-S_349ba9f654f328bd,2020,40,S_349ba9f654f328bd,High Fashion,Roddy Ricch featuring Mustard,billboard_year_end,usable,en,Hip Hop/Rap,643,148,0.230171,0.9978
 2020-041-S_8432e62ed4bdea9d,2020,41,S_8432e62ed4bdea9d,Laugh Now Cry Later,Drake featuring Lil Durk,billboard_year_end,usable,en,Hip Hop/Rap|Funk,603,208,0.344942,-0.9912
-2020-042-S_87227b3f1bc46de8,2020,42,S_87227b3f1bc46de8,Woah,Lil Baby,billboard_year_end,usable,en,Hip Hop/Rap,687,245,0.356623,-0.9229
-2020-043-S_3e4485a53c2b7310,2020,43,S_3e4485a53c2b7310,Death Bed,Powfu featuring Beabadoobee,billboard_year_end,usable,en,Folk,350,141,0.402857,0.9951
+2020-042-S_87227b3f1bc46de8,2020,42,S_87227b3f1bc46de8,Woah,Lil Baby,billboard_year_end,usable,en,Hip Hop/Rap,682,242,0.354839,-0.9411
+2020-043-S_3e4485a53c2b7310,2020,43,S_3e4485a53c2b7310,Death Bed,Powfu featuring Beabadoobee,billboard_year_end,usable,en,Folk,345,139,0.402899,0.9945
 2020-044-S_414ff3ceef7d7f57,2020,44,S_414ff3ceef7d7f57,Señorita,Shawn Mendes and Camila Cabello,billboard_year_end,usable,en,R&B|Rock|Jazz/Swing,397,112,0.282116,0.9986
-2020-045-S_fc2d241ab2d35f4a,2020,45,S_fc2d241ab2d35f4a,Highest in the Room,Travis Scott,billboard_year_end,usable,en,Hip Hop/Rap|Dance/Electronic,308,137,0.444805,0.9867
+2020-045-S_fc2d241ab2d35f4a,2020,45,S_fc2d241ab2d35f4a,Highest in the Room,Travis Scott,billboard_year_end,usable,en,Hip Hop/Rap|Dance/Electronic,303,134,0.442244,0.9848
 2020-046-S_b7b1158af480c1c2,2020,46,S_b7b1158af480c1c2,Bad Guy,Billie Eilish,billboard_year_end,usable,en,Pop,257,118,0.459144,-0.9967
-2020-047-S_43fa3d9e6ab063fc,2020,47,S_43fa3d9e6ab063fc,Mood,24kGoldn featuring Iann Dior,billboard_year_end,usable,en,Indie|Pop,432,130,0.300926,0.9985
-2020-048-S_09f34b63e2b7366f,2020,48,S_09f34b63e2b7366f,Rain on Me,Lady Gaga and Ariana Grande,billboard_year_end,usable,en,Country,354,92,0.259887,0.9934
+2020-047-S_43fa3d9e6ab063fc,2020,47,S_43fa3d9e6ab063fc,Mood,24kGoldn featuring Iann Dior,billboard_year_end,usable,en,Indie|Pop,427,127,0.297424,0.9985
+2020-048-S_09f34b63e2b7366f,2020,48,S_09f34b63e2b7366f,Rain on Me,Lady Gaga and Ariana Grande,billboard_year_end,usable,en,Country,349,89,0.255014,0.9924
 2020-049-S_9a40ee6c143faf49,2020,49,S_9a40ee6c143faf49,For the Night,Pop Smoke featuring Lil Baby and DaBaby,billboard_year_end,usable,en,Hip Hop/Rap,594,214,0.360269,-0.9973
-2020-050-S_aeb167782a8be71e,2020,50,S_aeb167782a8be71e,Ritmo (Bad Boys for Life),Black Eyed Peas and J Balvin,billboard_year_end,usable,en,Hip Hop/Rap|Latin,610,176,0.288525,0.995
-2020-051-S_5e5cefc3d23bd354,2020,51,S_5e5cefc3d23bd354,Heart on Ice,Rod Wave,billboard_year_end,usable,en,Hip Hop/Rap,268,126,0.470149,0.9965
-2020-052-S_80d6580845fcdd04,2020,52,S_80d6580845fcdd04,Nobody but You,Blake Shelton and Gwen Stefani,billboard_year_end,usable,en,Soul|Rock,362,110,0.303867,-0.9967
+2020-050-S_aeb167782a8be71e,2020,50,S_aeb167782a8be71e,Ritmo (Bad Boys for Life),Black Eyed Peas and J Balvin,billboard_year_end,usable,en,Hip Hop/Rap|Latin,605,173,0.28595,0.9946
+2020-051-S_5e5cefc3d23bd354,2020,51,S_5e5cefc3d23bd354,Heart on Ice,Rod Wave,billboard_year_end,usable,en,Hip Hop/Rap,263,122,0.463878,0.9962
+2020-052-S_80d6580845fcdd04,2020,52,S_80d6580845fcdd04,Nobody but You,Blake Shelton and Gwen Stefani,billboard_year_end,usable,en,Soul|Rock,349,100,0.286533,-0.9968
 2020-053-S_e5377a992d4aa5e1,2020,53,S_e5377a992d4aa5e1,Trampoline,Shaed,billboard_year_end,usable,en,Folk|Indie,223,75,0.336323,0.9972
-2020-054-S_8c9ce085491968e6,2020,54,S_8c9ce085491968e6,Come & Go,Juice Wrld and Marshmello,billboard_year_end,usable,en,Rock,391,116,0.296675,0.9995
+2020-054-S_8c9ce085491968e6,2020,54,S_8c9ce085491968e6,Come & Go,Juice Wrld and Marshmello,billboard_year_end,usable,en,Rock,386,113,0.292746,0.9995
 2020-055-S_3f21194f007bd9d4,2020,55,S_3f21194f007bd9d4,Truth Hurts,Lizzo,billboard_year_end,usable,en,Hip Hop/Rap|Pop,520,160,0.307692,0.9997
-2020-056-S_ededf7e80374d546,2020,56,S_ededf7e80374d546,If the World Was Ending,JP Saxe featuring Julia Michaels,billboard_year_end,usable,en,Hip Hop/Rap,474,131,0.276371,-0.9249
-2020-057-S_38a005029f7bb9e1,2020,57,S_38a005029f7bb9e1,We Paid,Lil Baby and 42 Dugg,billboard_year_end,usable,en,Hip Hop/Rap,807,276,0.342007,0.9918
-2020-058-S_96a9faa9aac8b0ff,2020,58,S_96a9faa9aac8b0ff,Yummy,Justin Bieber,billboard_year_end,usable,en,Pop,456,99,0.217105,0.9985
-2020-059-S_388a6bd3bf5c66e4,2020,59,S_388a6bd3bf5c66e4,One Man Band,Old Dominion,billboard_year_end,usable,en,Country|Rock,331,122,0.36858,0.8772
-2020-060-S_bc7fab9ac4c10802,2020,60,S_bc7fab9ac4c10802,Got What I Got,Jason Aldean,billboard_year_end,usable,en,Country|Rock,273,82,0.300366,0.3125
-2020-061-S_f0b0506e45c4ca3d,2020,61,S_f0b0506e45c4ca3d,Sunday Best,Surfaces,billboard_year_end,usable,en,Soul,247,90,0.364372,0.9989
-2020-062-S_075774c07cf4c49d,2020,62,S_075774c07cf4c49d,Godzilla,Eminem featuring Juice Wrld,billboard_year_end,usable,en,Hip Hop/Rap,966,429,0.444099,-0.9974
+2020-056-S_ededf7e80374d546,2020,56,S_ededf7e80374d546,If the World Was Ending,JP Saxe featuring Julia Michaels,billboard_year_end,usable,en,Hip Hop/Rap,469,127,0.270789,-0.9491
+2020-057-S_38a005029f7bb9e1,2020,57,S_38a005029f7bb9e1,We Paid,Lil Baby and 42 Dugg,billboard_year_end,usable,en,Hip Hop/Rap,802,273,0.340399,0.9924
+2020-058-S_96a9faa9aac8b0ff,2020,58,S_96a9faa9aac8b0ff,Yummy,Justin Bieber,billboard_year_end,usable,en,Pop,451,95,0.210643,0.9985
+2020-059-S_388a6bd3bf5c66e4,2020,59,S_388a6bd3bf5c66e4,One Man Band,Old Dominion,billboard_year_end,usable,en,Country|Rock,318,114,0.358491,0.865
+2020-060-S_bc7fab9ac4c10802,2020,60,S_bc7fab9ac4c10802,Got What I Got,Jason Aldean,billboard_year_end,usable,en,Country|Rock,260,73,0.280769,-0.3062
+2020-061-S_f0b0506e45c4ca3d,2020,61,S_f0b0506e45c4ca3d,Sunday Best,Surfaces,billboard_year_end,usable,en,Soul,242,87,0.359504,0.9989
+2020-062-S_075774c07cf4c49d,2020,62,S_075774c07cf4c49d,Godzilla,Eminem featuring Juice Wrld,billboard_year_end,usable,en,Hip Hop/Rap,961,426,0.443288,-0.9973
 2020-063-S_ffd28ca93cc712ff,2020,63,S_ffd28ca93cc712ff,Bandit,Juice Wrld and YoungBoy Never Broke Again,billboard_year_end,usable,en,Hip Hop/Rap,629,195,0.310016,-0.999
-2020-064-S_e467162e2d553ea2,2020,64,S_e467162e2d553ea2,Party Girl,StaySolidRocky,billboard_year_end,usable,en,Pop|Hip Hop/Rap,417,122,0.292566,0.999
-2020-065-S_db066f056feadd16,2020,65,S_db066f056feadd16,Die from a Broken Heart,Maddie & Tae,billboard_year_end,usable,en,Country,308,125,0.405844,0.8055
+2020-064-S_e467162e2d553ea2,2020,64,S_e467162e2d553ea2,Party Girl,StaySolidRocky,billboard_year_end,usable,en,Pop|Hip Hop/Rap,412,119,0.288835,0.999
+2020-065-S_db066f056feadd16,2020,65,S_db066f056feadd16,Die from a Broken Heart,Maddie & Tae,billboard_year_end,usable,en,Country,295,116,0.39322,0.9014
 2020-066-S_8983fe4937adc918,2020,66,S_8983fe4937adc918,Popstar,DJ Khaled featuring Drake,billboard_year_end,usable,en,Hip Hop/Rap,557,199,0.357271,0.9932
-2020-067-S_8134f5e6f4ad38e0,2020,67,S_8134f5e6f4ad38e0,All I Want for Christmas Is You,Mariah Carey,billboard_year_end,usable,en,Indie,393,115,0.292621,0.9831
-2020-068-S_b42d5c8ce368b9d6,2020,68,S_b42d5c8ce368b9d6,One of Them Girls,Lee Brice,billboard_year_end,usable,en,Country|Rock,381,129,0.338583,0.9908
-2020-069-S_fce86275c7c87a8b,2020,69,S_fce86275c7c87a8b,Hard to Forget,Sam Hunt,billboard_year_end,usable,en,Country|Pop|Rock,430,137,0.318605,0.9822
-2020-070-S_df7d739d6811fd43,2020,70,S_df7d739d6811fd43,One Margarita,Luke Bryan,billboard_year_end,usable,en,Country|Rock,326,117,0.358896,0.9513
+2020-067-S_8134f5e6f4ad38e0,2020,67,S_8134f5e6f4ad38e0,All I Want for Christmas Is You,Mariah Carey,billboard_year_end,usable,en,Indie,388,111,0.286082,0.9805
+2020-068-S_b42d5c8ce368b9d6,2020,68,S_b42d5c8ce368b9d6,One of Them Girls,Lee Brice,billboard_year_end,usable,en,Country|Rock,368,121,0.328804,0.9906
+2020-069-S_fce86275c7c87a8b,2020,69,S_fce86275c7c87a8b,Hard to Forget,Sam Hunt,billboard_year_end,usable,en,Country|Pop|Rock,417,128,0.306954,0.9783
+2020-070-S_df7d739d6811fd43,2020,70,S_df7d739d6811fd43,One Margarita,Luke Bryan,billboard_year_end,usable,en,Country|Rock,314,107,0.340764,0.9465
 2020-071-S_445904f9287d1a32,2020,71,S_445904f9287d1a32,Panini,Lil Nas X,billboard_year_end,usable,en,Hip Hop/Rap,217,84,0.387097,0.8667
-2020-072-S_02fbd4f3718380e9,2020,72,S_02fbd4f3718380e9,Hot,Young Thug featuring Gunna,billboard_year_end,usable,en,Hip Hop/Rap,579,248,0.428325,0.5881
-2020-073-S_dcae0d3342bf3786,2020,73,S_dcae0d3342bf3786,I Hope You're Happy Now,Carly Pearce and Lee Brice,billboard_year_end,usable,en,Country,238,104,0.436975,0.9985
-2020-074-S_680b6d6eb4dfe179,2020,74,S_680b6d6eb4dfe179,Emotionally Scarred,Lil Baby,billboard_year_end,usable,en,Hip Hop/Rap,740,287,0.387838,-0.9602
-2020-075-S_fae70dec51af4701,2020,75,S_fae70dec51af4701,Suicidal,YNW Melly featuring Juice Wrld,billboard_year_end,usable,en,Indie,461,125,0.27115,-0.9024
-2020-076-S_bf6bd3d837030812,2020,76,S_bf6bd3d837030812,The Bigger Picture,Lil Baby,billboard_year_end,usable,en,Hip Hop/Rap,1136,391,0.34419,-0.9993
+2020-072-S_02fbd4f3718380e9,2020,72,S_02fbd4f3718380e9,Hot,Young Thug featuring Gunna,billboard_year_end,usable,en,Hip Hop/Rap,574,246,0.428571,0.1447
+2020-073-S_dcae0d3342bf3786,2020,73,S_dcae0d3342bf3786,I Hope You're Happy Now,Carly Pearce and Lee Brice,billboard_year_end,usable,en,Country,225,95,0.422222,0.9984
+2020-074-S_680b6d6eb4dfe179,2020,74,S_680b6d6eb4dfe179,Emotionally Scarred,Lil Baby,billboard_year_end,usable,en,Hip Hop/Rap,735,284,0.386395,-0.9704
+2020-075-S_fae70dec51af4701,2020,75,S_fae70dec51af4701,Suicidal,YNW Melly featuring Juice Wrld,billboard_year_end,usable,en,Indie,456,122,0.267544,-0.9587
+2020-076-S_bf6bd3d837030812,2020,76,S_bf6bd3d837030812,The Bigger Picture,Lil Baby,billboard_year_end,usable,en,Hip Hop/Rap,1131,389,0.343943,-0.9993
 2020-077-S_1b31bcf025fb4efe,2020,77,S_1b31bcf025fb4efe,Only Human,Jonas Brothers,billboard_year_end,usable,en,Jazz/Swing|Pop,331,97,0.293051,0.7234
 2020-078-S_dc2de648e791b630,2020,78,S_dc2de648e791b630,The Woo,Pop Smoke featuring 50 Cent and Roddy Ricch,billboard_year_end,usable,en,Hip Hop/Rap,537,184,0.342644,0.9744
-2020-079-S_7568744ccec0cac3,2020,79,S_7568744ccec0cac3,Sum 2 Prove,Lil Baby,billboard_year_end,usable,en,Hip Hop/Rap,900,306,0.34,-0.9678
-2020-080-S_6c831d0ebc4960e2,2020,80,S_6c831d0ebc4960e2,Stuck with U,Ariana Grande and Justin Bieber,billboard_year_end,usable,en,Pop,408,129,0.316176,-0.9944
+2020-079-S_7568744ccec0cac3,2020,79,S_7568744ccec0cac3,Sum 2 Prove,Lil Baby,billboard_year_end,usable,en,Hip Hop/Rap,895,304,0.339665,-0.9754
+2020-080-S_6c831d0ebc4960e2,2020,80,S_6c831d0ebc4960e2,Stuck with U,Ariana Grande and Justin Bieber,billboard_year_end,usable,en,Pop,403,126,0.312655,-0.995
 2020-081-S_e66722f945283c98,2020,81,S_e66722f945283c98,Mood Swings,Pop Smoke featuring Lil Tjay,billboard_year_end,usable,en,Dance/Electronic,621,229,0.36876,0.967
-2020-082-S_3576ecd79bbd7a40,2020,82,S_3576ecd79bbd7a40,You Should Be Sad,Halsey,billboard_year_end,usable,en,Indie|Pop,457,125,0.273523,-0.9604
-2020-083-S_524372869838eb4a,2020,83,S_524372869838eb4a,Dior,Pop Smoke,billboard_year_end,usable,en,Hip Hop/Rap,483,174,0.360248,0.9791
+2020-082-S_3576ecd79bbd7a40,2020,82,S_3576ecd79bbd7a40,You Should Be Sad,Halsey,billboard_year_end,usable,en,Indie|Pop,452,121,0.267699,-0.9643
+2020-083-S_524372869838eb4a,2020,83,S_524372869838eb4a,Dior,Pop Smoke,billboard_year_end,usable,en,Hip Hop/Rap,478,171,0.357741,0.9754
 2020-084-S_57fdf8263389da84,2020,84,S_57fdf8263389da84,Supalonely,Benee featuring Gus Dapperton,billboard_year_end,usable,en,Pop,423,116,0.274232,-0.9978
-2020-085-S_d95d1fc5cca9da32,2020,85,S_d95d1fc5cca9da32,Even Though I'm Leaving,Luke Combs,billboard_year_end,usable,en,Rock,352,128,0.363636,0.8903
+2020-085-S_d95d1fc5cca9da32,2020,85,S_d95d1fc5cca9da32,Even Though I'm Leaving,Luke Combs,billboard_year_end,usable,en,Rock,339,120,0.353982,0.8742
 2020-086-S_4e67b4abfd5245c1,2020,86,S_4e67b4abfd5245c1,The Scotts,The Scotts ( Travis Scott and Kid Cudi ),billboard_year_end,usable,en,Hip Hop/Rap,307,149,0.485342,0.9874
-2020-087-S_7ef95f2d589244a7,2020,87,S_7ef95f2d589244a7,Juicy,Doja Cat and Tyga,billboard_year_end,usable,en,Pop|Hip Hop/Rap,749,150,0.200267,0.9992
-2020-088-S_885cad4b764a1dbf,2020,88,S_885cad4b764a1dbf,Be Like That,"Kane Brown , Swae Lee and Khalid",billboard_year_end,usable,en,Pop|Latin|R&B,466,147,0.315451,0.9966
-2020-089-S_a4e7991b9994c87d,2020,89,S_a4e7991b9994c87d,Homesick,Kane Brown,billboard_year_end,usable,en,Folk|Country,288,112,0.388889,0.9588
-2020-090-S_bfb7459ad68e0d39,2020,90,S_bfb7459ad68e0d39,Rags2Riches,Rod Wave featuring ATR Son Son,billboard_year_end,usable,en,Hip Hop/Rap,269,107,0.39777,0.9976
-2020-091-S_4fac954218af00a0,2020,91,S_4fac954218af00a0,Bluebird,Miranda Lambert,billboard_year_end,usable,en,Country,320,105,0.328125,0.9979
-2020-092-S_69637de5fbf63060,2020,92,S_69637de5fbf63060,Wishing Well,Juice Wrld,billboard_year_end,usable,en,Hip Hop/Rap,429,134,0.312354,-0.9977
-2020-093-S_5324cc9fea3e9d89,2020,93,S_5324cc9fea3e9d89,Does to Me,Luke Combs featuring Eric Church,billboard_year_end,usable,en,Pop,404,145,0.358911,0.9937
+2020-087-S_7ef95f2d589244a7,2020,87,S_7ef95f2d589244a7,Juicy,Doja Cat and Tyga,billboard_year_end,usable,en,Pop|Hip Hop/Rap,744,147,0.197581,0.9992
+2020-088-S_885cad4b764a1dbf,2020,88,S_885cad4b764a1dbf,Be Like That,"Kane Brown , Swae Lee and Khalid",billboard_year_end,usable,en,Pop|Latin|R&B,461,145,0.314534,0.9963
+2020-089-S_a4e7991b9994c87d,2020,89,S_a4e7991b9994c87d,Homesick,Kane Brown,billboard_year_end,usable,en,Folk|Country,275,104,0.378182,0.9651
+2020-090-S_bfb7459ad68e0d39,2020,90,S_bfb7459ad68e0d39,Rags2Riches,Rod Wave featuring ATR Son Son,billboard_year_end,usable,en,Hip Hop/Rap,264,103,0.390152,0.9974
+2020-091-S_4fac954218af00a0,2020,91,S_4fac954218af00a0,Bluebird,Miranda Lambert,billboard_year_end,usable,en,Country,307,96,0.312704,0.9978
+2020-092-S_69637de5fbf63060,2020,92,S_69637de5fbf63060,Wishing Well,Juice Wrld,billboard_year_end,usable,en,Hip Hop/Rap,424,131,0.308962,-0.9979
+2020-093-S_5324cc9fea3e9d89,2020,93,S_5324cc9fea3e9d89,Does to Me,Luke Combs featuring Eric Church,billboard_year_end,usable,en,Pop,392,136,0.346939,0.9935
 2020-094-S_af9da4d622c32013,2020,94,S_af9da4d622c32013,Pussy Fairy (OTW),Jhené Aiko,billboard_year_end,usable,en,R&B,350,97,0.277143,0.966
-2020-095-S_7651d07f1d28e78a,2020,95,S_7651d07f1d28e78a,ILY (I Love You Baby),Surf Mesa featuring Emilee,billboard_year_end,usable,en,Hip Hop/Rap,229,25,0.10917,0.9988
-2020-096-S_53374951c4638177,2020,96,S_53374951c4638177,More Than My Hometown,Morgan Wallen,billboard_year_end,usable,en,Country,440,168,0.381818,0.9972
-2020-097-S_1e0093e40025a99f,2020,97,S_1e0093e40025a99f,Lovin' on You,Luke Combs,billboard_year_end,usable,en,Hip Hop/Rap,236,94,0.398305,0.9956
-2020-098-S_d410fa3095783d11,2020,98,S_d410fa3095783d11,Said Sum,Moneybagg Yo,billboard_year_end,usable,en,Hip Hop/Rap,657,261,0.39726,-0.9972
-2020-099-S_06b1a6c3ca8495a7,2020,99,S_06b1a6c3ca8495a7,Slide,H.E.R. featuring YG,billboard_year_end,usable,en,Hip Hop/Rap|Latin,593,185,0.311973,0.9434
-2020-100-S_1c7d779cab41e6c0,2020,100,S_1c7d779cab41e6c0,Walk Em Down,NLE Choppa featuring Roddy Ricch,billboard_year_end,usable,en,Hip Hop/Rap|Pop,552,159,0.288043,-0.9869
-2021-001-S_59b8a6f6251cb947,2021,1,S_59b8a6f6251cb947,Levitating,Dua Lipa,billboard_year_end,usable,en,Pop,550,121,0.22,0.9989
-2021-002-S_d14bce603a0fe997,2021,2,S_d14bce603a0fe997,Save Your Tears,The Weeknd and Ariana Grande,billboard_year_end,usable,en,R&B|Pop,255,85,0.333333,0.9879
-2021-003-S_cfcb3f09f40d8272,2021,3,S_cfcb3f09f40d8272,Blinding Lights,The Weeknd,billboard_year_end,usable,en,Pop|Funk|Disco,264,98,0.371212,0.7494
-2021-004-S_43fa3d9e6ab063fc,2021,4,S_43fa3d9e6ab063fc,Mood,24kGoldn featuring Iann Dior,billboard_year_end,usable,en,Hip Hop/Rap,432,130,0.300926,0.9985
-2021-005-S_475501d6a59aedf7,2021,5,S_475501d6a59aedf7,Good 4 U,Olivia Rodrigo,billboard_year_end,usable,en,Pop,429,134,0.312354,0.9987
-2021-006-S_32430221511c7989,2021,6,S_32430221511c7989,Kiss Me More,Doja Cat featuring SZA,billboard_year_end,usable,en,Pop,575,175,0.304348,0.9953
+2020-095-S_7651d07f1d28e78a,2020,95,S_7651d07f1d28e78a,ILY (I Love You Baby),Surf Mesa featuring Emilee,billboard_year_end,usable,en,Hip Hop/Rap,224,21,0.09375,0.9987
+2020-096-S_53374951c4638177,2020,96,S_53374951c4638177,More Than My Hometown,Morgan Wallen,billboard_year_end,usable,en,Country,427,160,0.374707,0.9971
+2020-097-S_1e0093e40025a99f,2020,97,S_1e0093e40025a99f,Lovin' on You,Luke Combs,billboard_year_end,usable,en,Hip Hop/Rap,223,85,0.381166,0.9955
+2020-098-S_d410fa3095783d11,2020,98,S_d410fa3095783d11,Said Sum,Moneybagg Yo,billboard_year_end,usable,en,Hip Hop/Rap,652,258,0.395706,-0.9974
+2020-099-S_06b1a6c3ca8495a7,2020,99,S_06b1a6c3ca8495a7,Slide,H.E.R. featuring YG,billboard_year_end,usable,en,Hip Hop/Rap|Latin,588,182,0.309524,0.9356
+2020-100-S_1c7d779cab41e6c0,2020,100,S_1c7d779cab41e6c0,Walk Em Down,NLE Choppa featuring Roddy Ricch,billboard_year_end,usable,en,Hip Hop/Rap|Pop,547,156,0.285192,-0.989
+2021-001-S_59b8a6f6251cb947,2021,1,S_59b8a6f6251cb947,Levitating,Dua Lipa,billboard_year_end,usable,en,Pop,537,112,0.208566,0.9989
+2021-002-S_d14bce603a0fe997,2021,2,S_d14bce603a0fe997,Save Your Tears,The Weeknd and Ariana Grande,billboard_year_end,usable,en,R&B|Pop,250,82,0.328,0.9855
+2021-003-S_cfcb3f09f40d8272,2021,3,S_cfcb3f09f40d8272,Blinding Lights,The Weeknd,billboard_year_end,usable,en,Pop|Funk|Disco,259,95,0.366795,0.5972
+2021-004-S_43fa3d9e6ab063fc,2021,4,S_43fa3d9e6ab063fc,Mood,24kGoldn featuring Iann Dior,billboard_year_end,usable,en,Hip Hop/Rap,427,127,0.297424,0.9985
+2021-005-S_475501d6a59aedf7,2021,5,S_475501d6a59aedf7,Good 4 U,Olivia Rodrigo,billboard_year_end,usable,en,Pop,416,124,0.298077,0.9988
+2021-006-S_32430221511c7989,2021,6,S_32430221511c7989,Kiss Me More,Doja Cat featuring SZA,billboard_year_end,usable,en,Pop,562,166,0.295374,0.9951
 2021-007-S_fbd466913f8618ca,2021,7,S_fbd466913f8618ca,Leave the Door Open,Silk Sonic ( Bruno Mars and Anderson .Paak ),billboard_year_end,usable,en,Pop,512,132,0.257812,0.9966
-2021-008-S_7863aa6b98b4dc33,2021,8,S_7863aa6b98b4dc33,Drivers License,Olivia Rodrigo,billboard_year_end,usable,en,Pop,381,141,0.370079,0.7026
-2021-009-S_ec9568ac6ea11ca1,2021,9,S_ec9568ac6ea11ca1,Montero (Call Me by Your Name),Lil Nas X,billboard_year_end,usable,en,Hip Hop/Rap,358,141,0.393855,-0.4427
+2021-008-S_7863aa6b98b4dc33,2021,8,S_7863aa6b98b4dc33,Drivers License,Olivia Rodrigo,billboard_year_end,usable,en,Pop,368,132,0.358696,0.6398
+2021-009-S_ec9568ac6ea11ca1,2021,9,S_ec9568ac6ea11ca1,Montero (Call Me by Your Name),Lil Nas X,billboard_year_end,usable,en,Hip Hop/Rap,353,138,0.390935,-0.7321
 2021-010-S_9594e145bd730624,2021,10,S_9594e145bd730624,Peaches,Justin Bieber featuring Daniel Caesar and Giveon,billboard_year_end,usable,en,Pop,491,124,0.252546,-0.8133
-2021-011-S_45c3e6e6f7c62590,2021,11,S_45c3e6e6f7c62590,Butter,BTS,billboard_year_end,usable,en,Pop,393,125,0.318066,0.9957
+2021-011-S_45c3e6e6f7c62590,2021,11,S_45c3e6e6f7c62590,Butter,BTS,billboard_year_end,usable,en,Pop,388,122,0.314433,0.9954
 2021-012-S_8eea69b6efec8ea3,2021,12,S_8eea69b6efec8ea3,Stay,The Kid Laroi and Justin Bieber,billboard_year_end,usable,en,Hip Hop/Rap,414,83,0.200483,-0.661
-2021-013-S_12448836ebc79687,2021,13,S_12448836ebc79687,Deja Vu,Olivia Rodrigo,billboard_year_end,usable,en,Pop,332,141,0.424699,0.9916
-2021-014-S_bac7389c17120cca,2021,14,S_bac7389c17120cca,Positions,Ariana Grande,billboard_year_end,usable,en,Pop,375,90,0.24,0.9924
-2021-015-S_5c146671d0a57abd,2021,15,S_5c146671d0a57abd,Bad Habits,Ed Sheeran,billboard_year_end,usable,en,Soul|Pop,409,129,0.315403,-0.9954
-2021-016-S_6e09c229e29259a7,2021,16,S_6e09c229e29259a7,Heat Waves,Glass Animals,billboard_year_end,usable,en,Indie|Pop|Rock,429,125,0.291375,0.8912
-2021-017-S_7733ee92a65a8906,2021,17,S_7733ee92a65a8906,Without You,The Kid Laroi,billboard_year_end,usable,en,Hip Hop/Rap,325,93,0.286154,-0.9639
-2021-018-S_c330264a912119fa,2021,18,S_c330264a912119fa,Forever After All,Luke Combs,billboard_year_end,usable,en,Country,322,145,0.450311,0.9929
-2021-019-S_e80cb30ecfb6cf44,2021,19,S_e80cb30ecfb6cf44,Go Crazy,Chris Brown and Young Thug,billboard_year_end,usable,en,Hip Hop/Rap,578,159,0.275087,-0.7928
-2021-020-S_dbe1ef9d7698e047,2021,20,S_dbe1ef9d7698e047,Astronaut in the Ocean,Masked Wolf,billboard_year_end,usable,en,Hip Hop/Rap,458,180,0.393013,0.9936
+2021-013-S_12448836ebc79687,2021,13,S_12448836ebc79687,Deja Vu,Olivia Rodrigo,billboard_year_end,usable,en,Pop,319,131,0.410658,0.9912
+2021-014-S_bac7389c17120cca,2021,14,S_bac7389c17120cca,Positions,Ariana Grande,billboard_year_end,usable,en,Pop,370,86,0.232432,0.9922
+2021-015-S_5c146671d0a57abd,2021,15,S_5c146671d0a57abd,Bad Habits,Ed Sheeran,billboard_year_end,usable,en,Soul|Pop,396,118,0.29798,-0.9956
+2021-016-S_6e09c229e29259a7,2021,16,S_6e09c229e29259a7,Heat Waves,Glass Animals,billboard_year_end,usable,en,Indie|Pop|Rock,416,115,0.276442,0.8752
+2021-017-S_7733ee92a65a8906,2021,17,S_7733ee92a65a8906,Without You,The Kid Laroi,billboard_year_end,usable,en,Hip Hop/Rap,320,90,0.28125,-0.9728
+2021-018-S_c330264a912119fa,2021,18,S_c330264a912119fa,Forever After All,Luke Combs,billboard_year_end,usable,en,Country,309,135,0.436893,0.9926
+2021-019-S_e80cb30ecfb6cf44,2021,19,S_e80cb30ecfb6cf44,Go Crazy,Chris Brown and Young Thug,billboard_year_end,usable,en,Hip Hop/Rap,573,156,0.272251,-0.8831
+2021-020-S_dbe1ef9d7698e047,2021,20,S_dbe1ef9d7698e047,Astronaut in the Ocean,Masked Wolf,billboard_year_end,usable,en,Hip Hop/Rap,453,177,0.390728,0.9926
 2021-021-S_691de2bfd49804e1,2021,21,S_691de2bfd49804e1,34+35,Ariana Grande featuring Doja Cat and Megan Thee Stallion,billboard_year_end,usable,en,Hip Hop/Rap|Pop,497,150,0.301811,0.9961
-2021-022-S_0b782e99265ae63f,2021,22,S_0b782e99265ae63f,What You Know Bout Love,Pop Smoke,billboard_year_end,usable,en,Hip Hop/Rap,431,163,0.37819,0.9989
+2021-022-S_0b782e99265ae63f,2021,22,S_0b782e99265ae63f,What You Know Bout Love,Pop Smoke,billboard_year_end,usable,en,Hip Hop/Rap,426,160,0.375587,0.9988
 2021-023-S_8fa58d880f1b52eb,2021,23,S_8fa58d880f1b52eb,My Ex's Best Friend,Machine Gun Kelly featuring Blackbear,billboard_year_end,usable,en,Pop,387,133,0.343669,-0.6523
-2021-024-S_247f7cb38ef41693,2021,24,S_247f7cb38ef41693,Industry Baby,Lil Nas X and Jack Harlow,billboard_year_end,usable,en,Hip Hop/Rap,620,230,0.370968,0.998
-2021-025-S_fcc84b7e78f92a74,2021,25,S_fcc84b7e78f92a74,Therefore I Am,Billie Eilish,billboard_year_end,usable,en,Pop,323,103,0.318885,-0.9886
-2021-026-S_955865191826eaba,2021,26,S_955865191826eaba,Up,Cardi B,billboard_year_end,usable,en,Hip Hop/Rap,579,185,0.319516,-0.9981
-2021-027-S_262190ba4b0e7941,2021,27,S_262190ba4b0e7941,Fancy Like,Walker Hayes,billboard_year_end,usable,en,Country|Rock,431,149,0.345708,0.9988
+2021-024-S_247f7cb38ef41693,2021,24,S_247f7cb38ef41693,Industry Baby,Lil Nas X and Jack Harlow,billboard_year_end,usable,en,Hip Hop/Rap,615,227,0.369106,0.998
+2021-025-S_fcc84b7e78f92a74,2021,25,S_fcc84b7e78f92a74,Therefore I Am,Billie Eilish,billboard_year_end,usable,en,Pop,318,101,0.31761,-0.9904
+2021-026-S_955865191826eaba,2021,26,S_955865191826eaba,Up,Cardi B,billboard_year_end,usable,en,Hip Hop/Rap,566,176,0.310954,-0.9982
+2021-027-S_262190ba4b0e7941,2021,27,S_262190ba4b0e7941,Fancy Like,Walker Hayes,billboard_year_end,usable,en,Country|Rock,418,140,0.334928,0.9988
 2021-028-S_45f348ed314ea250,2021,28,S_45f348ed314ea250,Dakiti,Bad Bunny and Jhay Cortez,billboard_year_end,usable,es,Latin|Hip Hop/Rap,,,,
 2021-029-S_b0ef170db2d1ba71,2021,29,S_b0ef170db2d1ba71,Best Friend,Saweetie featuring Doja Cat,billboard_year_end,usable,en,Pop,551,185,0.335753,0.9963
-2021-030-S_03bae11c0e60b66b,2021,30,S_03bae11c0e60b66b,Rapstar,Polo G,billboard_year_end,usable,en,Hip Hop/Rap,556,216,0.388489,-0.9962
-2021-031-S_6fa6263602fb4b9d,2021,31,S_6fa6263602fb4b9d,Heartbreak Anniversary,Giveon,billboard_year_end,usable,en,R&B,274,92,0.335766,0.9429
+2021-030-S_03bae11c0e60b66b,2021,30,S_03bae11c0e60b66b,Rapstar,Polo G,billboard_year_end,usable,en,Hip Hop/Rap,543,207,0.381215,-0.9963
+2021-031-S_6fa6263602fb4b9d,2021,31,S_6fa6263602fb4b9d,Heartbreak Anniversary,Giveon,billboard_year_end,usable,en,R&B,269,89,0.330855,0.9137
 2021-032-S_9a40ee6c143faf49,2021,32,S_9a40ee6c143faf49,For the Night,Pop Smoke featuring Lil Baby and DaBaby,billboard_year_end,usable,en,Hip Hop/Rap,594,214,0.360269,-0.9973
-2021-033-S_4f3e7989ce7a8d28,2021,33,S_4f3e7989ce7a8d28,Calling My Phone,Lil Tjay and 6lack,billboard_year_end,usable,en,Hip Hop/Rap,651,175,0.268817,0.9906
-2021-034-S_8ab786aee7bba4ac,2021,34,S_8ab786aee7bba4ac,Beautiful Mistakes,Maroon 5 featuring Megan Thee Stallion,billboard_year_end,usable,en,Pop,571,181,0.316988,0.9952
+2021-033-S_4f3e7989ce7a8d28,2021,33,S_4f3e7989ce7a8d28,Calling My Phone,Lil Tjay and 6lack,billboard_year_end,usable,en,Hip Hop/Rap,646,173,0.267802,0.9889
+2021-034-S_8ab786aee7bba4ac,2021,34,S_8ab786aee7bba4ac,Beautiful Mistakes,Maroon 5 featuring Megan Thee Stallion,billboard_year_end,usable,en,Pop,566,178,0.314488,0.995
 2021-035-S_55cbe35aae502b57,2021,35,S_55cbe35aae502b57,Holy,Justin Bieber featuring Chance the Rapper,billboard_year_end,usable,en,Hip Hop/Rap,520,174,0.334615,0.9974
-2021-036-S_b304917d753cdf32,2021,36,S_b304917d753cdf32,On Me,Lil Baby,billboard_year_end,usable,en,Hip Hop/Rap,497,206,0.414487,0.8466
-2021-037-S_2a26a792528ae56c,2021,37,S_2a26a792528ae56c,You Broke Me First,Tate McRae,billboard_year_end,usable,en,Pop,342,118,0.345029,-0.9976
-2021-038-S_75248a599364b28b,2021,38,S_75248a599364b28b,Traitor,Olivia Rodrigo,billboard_year_end,usable,en,Pop,389,139,0.357326,0.6518
-2021-039-S_eda164c89829850b,2021,39,S_eda164c89829850b,Back in Blood,Pooh Shiesty featuring Lil Durk,billboard_year_end,usable,en,Hip Hop/Rap,733,211,0.287858,-0.9967
-2021-040-S_714671ba6c1e604e,2021,40,S_714671ba6c1e604e,I Hope,Gabby Barrett featuring Charlie Puth,billboard_year_end,usable,en,Country,490,134,0.273469,0.9994
-2021-041-S_91f2e609e35b5dbe,2021,41,S_91f2e609e35b5dbe,Dynamite,BTS,billboard_year_end,usable,en,Pop,555,135,0.243243,0.9956
-2021-042-S_99175fbf27e17dfa,2021,42,S_99175fbf27e17dfa,Wockesha,Moneybagg Yo,billboard_year_end,usable,en,Hip Hop/Rap,616,257,0.417208,0.9742
-2021-043-S_763425bc43fab0c2,2021,43,S_763425bc43fab0c2,You Right,Doja Cat and the Weeknd,billboard_year_end,usable,en,R&B|Pop,485,125,0.257732,0.963
+2021-036-S_b304917d753cdf32,2021,36,S_b304917d753cdf32,On Me,Lil Baby,billboard_year_end,usable,en,Hip Hop/Rap,492,203,0.412602,0.7105
+2021-037-S_2a26a792528ae56c,2021,37,S_2a26a792528ae56c,You Broke Me First,Tate McRae,billboard_year_end,usable,en,Pop,329,109,0.331307,-0.9977
+2021-038-S_75248a599364b28b,2021,38,S_75248a599364b28b,Traitor,Olivia Rodrigo,billboard_year_end,usable,en,Pop,376,130,0.345745,0.5759
+2021-039-S_eda164c89829850b,2021,39,S_eda164c89829850b,Back in Blood,Pooh Shiesty featuring Lil Durk,billboard_year_end,usable,en,Hip Hop/Rap,728,209,0.287088,-0.9968
+2021-040-S_714671ba6c1e604e,2021,40,S_714671ba6c1e604e,I Hope,Gabby Barrett featuring Charlie Puth,billboard_year_end,usable,en,Country,477,124,0.259958,0.9993
+2021-041-S_91f2e609e35b5dbe,2021,41,S_91f2e609e35b5dbe,Dynamite,BTS,billboard_year_end,usable,en,Pop,550,132,0.24,0.9953
+2021-042-S_99175fbf27e17dfa,2021,42,S_99175fbf27e17dfa,Wockesha,Moneybagg Yo,billboard_year_end,usable,en,Hip Hop/Rap,611,254,0.415712,0.9659
+2021-043-S_763425bc43fab0c2,2021,43,S_763425bc43fab0c2,You Right,Doja Cat and the Weeknd,billboard_year_end,usable,en,R&B|Pop,480,122,0.254167,0.9485
 2021-044-S_ee9ded3b67e67e67,2021,44,S_ee9ded3b67e67e67,Beat Box 2  /  Beat Box 3,SpotemGottem featuring Pooh Shiesty / SpotemGottem featuring DaBaby,billboard_year_end,compound,,Hip Hop/Rap,,,,
 2021-045-S_8432e62ed4bdea9d,2021,45,S_8432e62ed4bdea9d,Laugh Now Cry Later,Drake featuring Lil Durk,billboard_year_end,usable,en,Pop|Hip Hop/Rap,603,208,0.344942,-0.9912
-2021-046-S_d005b37028044a8e,2021,46,S_d005b37028044a8e,Need to Know,Doja Cat,billboard_year_end,usable,en,Pop,561,182,0.324421,0.9827
-2021-047-S_bc59024998a57e36,2021,47,S_bc59024998a57e36,Wants and Needs,Drake featuring Lil Baby,billboard_year_end,usable,en,Hip Hop/Rap|Pop,622,259,0.416399,0.9967
+2021-046-S_d005b37028044a8e,2021,46,S_d005b37028044a8e,Need to Know,Doja Cat,billboard_year_end,usable,en,Pop,548,174,0.317518,0.9816
+2021-047-S_bc59024998a57e36,2021,47,S_bc59024998a57e36,Wants and Needs,Drake featuring Lil Baby,billboard_year_end,usable,en,Hip Hop/Rap|Pop,617,257,0.416532,0.9971
 2021-048-S_335c0ebdcca9d1ec,2021,48,S_335c0ebdcca9d1ec,Way 2 Sexy,Drake featuring Future and Young Thug,billboard_year_end,usable,en,Hip Hop/Rap,626,220,0.351438,0.9997
 2021-049-S_734e178a455cbe4e,2021,49,S_734e178a455cbe4e,Telepatía,Kali Uchis,billboard_year_end,usable,es,Pop,,,,
 2021-050-S_403fb8cbce8d765a,2021,50,S_403fb8cbce8d765a,Whoopty,CJ,billboard_year_end,usable,km,Hip Hop/Rap,,,,
-2021-051-S_a1de8644d382cde9,2021,51,S_a1de8644d382cde9,Lemonade,Internet Money and Gunna featuring Don Toliver and Nav,billboard_year_end,usable,en,Hip Hop/Rap,530,210,0.396226,-0.9824
-2021-052-S_3b90a9064b03030e,2021,52,S_3b90a9064b03030e,Good Days,SZA,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,461,161,0.349241,0.913
-2021-053-S_d3484e626b987e86,2021,53,S_d3484e626b987e86,Starting Over,Chris Stapleton,billboard_year_end,usable,en,Country,282,127,0.450355,0.9879
-2021-054-S_08a55ce1a832ecb1,2021,54,S_08a55ce1a832ecb1,Body,Megan Thee Stallion,billboard_year_end,usable,en,Hip Hop/Rap|Pop,618,182,0.294498,-0.3157
-2021-055-S_5781cd141487540a,2021,55,S_5781cd141487540a,Willow,Taylor Swift,billboard_year_end,usable,en,Pop,427,131,0.306792,0.9855
+2021-051-S_a1de8644d382cde9,2021,51,S_a1de8644d382cde9,Lemonade,Internet Money and Gunna featuring Don Toliver and Nav,billboard_year_end,usable,en,Hip Hop/Rap,525,206,0.392381,-0.9829
+2021-052-S_3b90a9064b03030e,2021,52,S_3b90a9064b03030e,Good Days,SZA,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,449,152,0.33853,0.9056
+2021-053-S_d3484e626b987e86,2021,53,S_d3484e626b987e86,Starting Over,Chris Stapleton,billboard_year_end,usable,en,Country,269,119,0.442379,0.9873
+2021-054-S_08a55ce1a832ecb1,2021,54,S_08a55ce1a832ecb1,Body,Megan Thee Stallion,billboard_year_end,usable,en,Hip Hop/Rap|Pop,604,174,0.288079,0.4332
+2021-055-S_5781cd141487540a,2021,55,S_5781cd141487540a,Willow,Taylor Swift,billboard_year_end,usable,en,Pop,414,122,0.294686,0.9829
 2021-056-S_a585af38e21db1ad,2021,56,S_a585af38e21db1ad,Bang!,AJR,billboard_year_end,usable,en,Pop|Reggae,377,97,0.257294,0.9529
-2021-057-S_f33b749618353b73,2021,57,S_f33b749618353b73,Better Together,Luke Combs,billboard_year_end,usable,en,Country,344,135,0.392442,0.9932
-2021-058-S_0ea7594b36fa542b,2021,58,S_0ea7594b36fa542b,You're Mines Still,Yung Bleu featuring Drake,billboard_year_end,usable,en,Hip Hop/Rap,483,165,0.341615,0.7078
+2021-057-S_f33b749618353b73,2021,57,S_f33b749618353b73,Better Together,Luke Combs,billboard_year_end,usable,en,Country,331,126,0.380665,0.9931
+2021-058-S_0ea7594b36fa542b,2021,58,S_0ea7594b36fa542b,You're Mines Still,Yung Bleu featuring Drake,billboard_year_end,usable,en,Hip Hop/Rap,478,161,0.33682,0.3879
 2021-059-S_0fe10041ed545e56,2021,59,S_0fe10041ed545e56,Every Chance I Get,DJ Khaled featuring Lil Baby and Lil Durk,billboard_year_end,usable,en,Hip Hop/Rap,905,299,0.330387,-0.9802
-2021-060-S_5da89a3c6839fd08,2021,60,S_5da89a3c6839fd08,Essence,Wizkid featuring Justin Bieber and Tems,billboard_year_end,usable,en,Hip Hop/Rap|Pop|Funk,544,145,0.266544,0.9986
-2021-061-S_81aaf64cd5174e06,2021,61,S_81aaf64cd5174e06,Chasing After You,Ryan Hurd and Maren Morris,billboard_year_end,usable,en,Country,328,98,0.29878,0.995
-2021-062-S_75c346d7d74e09d9,2021,62,S_75c346d7d74e09d9,The Good Ones,Gabby Barrett,billboard_year_end,usable,en,Country,304,102,0.335526,0.9987
-2021-063-S_d7f603ea140f4691,2021,63,S_d7f603ea140f4691,Leave Before You Love Me,Marshmello and Jonas Brothers,billboard_year_end,usable,en,Pop|Dance/Electronic,290,105,0.362069,0.9957
-2021-064-S_00b117f51284e358,2021,64,S_00b117f51284e358,Glad You Exist,Dan + Shay,billboard_year_end,usable,en,Country,388,101,0.260309,0.968
-2021-065-S_79b1bd7c2247e7f0,2021,65,S_79b1bd7c2247e7f0,Lonely,Justin Bieber and Benny Blanco,billboard_year_end,usable,en,Pop,196,100,0.510204,-0.9318
-2021-066-S_1729cec9f3e1318e,2021,66,S_1729cec9f3e1318e,Beggin',Måneskin,billboard_year_end,usable,en,Indie|Pop|Rock,432,162,0.375,0.9993
-2021-067-S_f1be30af4a20357f,2021,67,S_f1be30af4a20357f,Streets,Doja Cat,billboard_year_end,usable,en,Pop,456,172,0.377193,0.9962
-2021-068-S_6e357507c3ca1c6a,2021,68,S_6e357507c3ca1c6a,What's Next,Drake,billboard_year_end,usable,en,Hip Hop/Rap|Pop,573,174,0.303665,0.9963
-2021-069-S_5585e065935c4109,2021,69,S_5585e065935c4109,Famous Friends,Chris Young and Kane Brown,billboard_year_end,usable,en,Folk|Country,274,104,0.379562,0.9961
-2021-070-S_40ebf78a4d359528,2021,70,S_40ebf78a4d359528,Lil Bit,Nelly and Florida Georgia Line,billboard_year_end,usable,en,Hip Hop/Rap|Pop,586,143,0.244027,0.9989
-2021-071-S_f988031910ab3f72,2021,71,S_f988031910ab3f72,Thot Shit,Megan Thee Stallion,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,885,300,0.338983,-0.9997
-2021-072-S_8be786f6d37b2264,2021,72,S_8be786f6d37b2264,Late at Night,Roddy Ricch,billboard_year_end,usable,en,Hip Hop/Rap,451,150,0.332594,0.9947
-2021-073-S_8a4c5b4b2c8ef82f,2021,73,S_8a4c5b4b2c8ef82f,Kings & Queens,Ava Max,billboard_year_end,usable,en,Pop,336,120,0.357143,-0.9736
-2021-074-S_d6600664997c3ebd,2021,74,S_d6600664997c3ebd,Anyone,Justin Bieber,billboard_year_end,usable,en,Pop,333,89,0.267267,0.9979
-2021-075-S_9f2d00956d10f4e5,2021,75,S_9f2d00956d10f4e5,Track Star,Mooski,billboard_year_end,usable,en,Hip Hop/Rap,585,187,0.319658,0.9965
-2021-076-S_63662708c56fd293,2021,76,S_63662708c56fd293,Time Today,Moneybagg Yo,billboard_year_end,usable,en,Hip Hop/Rap,599,237,0.395659,-0.9968
-2021-077-S_e02bfb642c8ec1eb,2021,77,S_e02bfb642c8ec1eb,Cry Baby,Megan Thee Stallion featuring DaBaby,billboard_year_end,usable,en,Hip Hop/Rap|Pop,531,222,0.418079,-0.995
-2021-078-S_8134f5e6f4ad38e0,2021,78,S_8134f5e6f4ad38e0,All I Want for Christmas Is You,Mariah Carey,billboard_year_end,usable,en,Indie|Pop,393,115,0.292621,0.9831
-2021-079-S_691032924e5b2ab0,2021,79,S_691032924e5b2ab0,No More Parties,Coi Leray featuring Lil Durk,billboard_year_end,usable,en,Hip Hop/Rap,622,171,0.27492,0.9768
-2021-080-S_8c5ce1f9ae192485,2021,80,S_8c5ce1f9ae192485,What's Your Country Song,Thomas Rhett,billboard_year_end,usable,en,Country|Rock,288,114,0.395833,0.5626
-2021-081-S_ed5e68ff77aaab71,2021,81,S_ed5e68ff77aaab71,One Too Many,Keith Urban and Pink,billboard_year_end,usable,en,Country|Pop|Rock,404,151,0.373762,0.9635
-2021-082-S_87d2db521cb8ceaf,2021,82,S_87d2db521cb8ceaf,Arcade,Duncan Laurence,billboard_year_end,usable,en,Pop,226,85,0.376106,0.9628
+2021-060-S_5da89a3c6839fd08,2021,60,S_5da89a3c6839fd08,Essence,Wizkid featuring Justin Bieber and Tems,billboard_year_end,usable,en,Hip Hop/Rap|Pop|Funk,539,142,0.263451,0.9985
+2021-061-S_81aaf64cd5174e06,2021,61,S_81aaf64cd5174e06,Chasing After You,Ryan Hurd and Maren Morris,billboard_year_end,usable,en,Country,323,95,0.294118,0.9944
+2021-062-S_75c346d7d74e09d9,2021,62,S_75c346d7d74e09d9,The Good Ones,Gabby Barrett,billboard_year_end,usable,en,Country,291,93,0.319588,0.9986
+2021-063-S_d7f603ea140f4691,2021,63,S_d7f603ea140f4691,Leave Before You Love Me,Marshmello and Jonas Brothers,billboard_year_end,usable,en,Pop|Dance/Electronic,285,102,0.357895,0.9954
+2021-064-S_00b117f51284e358,2021,64,S_00b117f51284e358,Glad You Exist,Dan + Shay,billboard_year_end,usable,en,Country,375,92,0.245333,0.9654
+2021-065-S_79b1bd7c2247e7f0,2021,65,S_79b1bd7c2247e7f0,Lonely,Justin Bieber and Benny Blanco,billboard_year_end,usable,en,Pop,191,97,0.507853,-0.953
+2021-066-S_1729cec9f3e1318e,2021,66,S_1729cec9f3e1318e,Beggin',Måneskin,billboard_year_end,usable,en,Indie|Pop|Rock,420,154,0.366667,0.9993
+2021-067-S_f1be30af4a20357f,2021,67,S_f1be30af4a20357f,Streets,Doja Cat,billboard_year_end,usable,en,Pop,443,162,0.365688,0.9961
+2021-068-S_6e357507c3ca1c6a,2021,68,S_6e357507c3ca1c6a,What's Next,Drake,billboard_year_end,usable,en,Hip Hop/Rap|Pop,568,171,0.301056,0.9959
+2021-069-S_5585e065935c4109,2021,69,S_5585e065935c4109,Famous Friends,Chris Young and Kane Brown,billboard_year_end,usable,en,Folk|Country,269,102,0.379182,0.9961
+2021-070-S_40ebf78a4d359528,2021,70,S_40ebf78a4d359528,Lil Bit,Nelly and Florida Georgia Line,billboard_year_end,usable,en,Hip Hop/Rap|Pop,581,140,0.240964,0.9989
+2021-071-S_f988031910ab3f72,2021,71,S_f988031910ab3f72,Thot Shit,Megan Thee Stallion,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,871,290,0.332951,-0.9997
+2021-072-S_8be786f6d37b2264,2021,72,S_8be786f6d37b2264,Late at Night,Roddy Ricch,billboard_year_end,usable,en,Hip Hop/Rap,446,147,0.329596,0.994
+2021-073-S_8a4c5b4b2c8ef82f,2021,73,S_8a4c5b4b2c8ef82f,Kings & Queens,Ava Max,billboard_year_end,usable,en,Pop,331,118,0.356495,-0.9707
+2021-074-S_d6600664997c3ebd,2021,74,S_d6600664997c3ebd,Anyone,Justin Bieber,billboard_year_end,usable,en,Pop,328,86,0.262195,0.9977
+2021-075-S_9f2d00956d10f4e5,2021,75,S_9f2d00956d10f4e5,Track Star,Mooski,billboard_year_end,usable,en,Hip Hop/Rap,580,184,0.317241,0.9965
+2021-076-S_63662708c56fd293,2021,76,S_63662708c56fd293,Time Today,Moneybagg Yo,billboard_year_end,usable,en,Hip Hop/Rap,594,235,0.395623,-0.9971
+2021-077-S_e02bfb642c8ec1eb,2021,77,S_e02bfb642c8ec1eb,Cry Baby,Megan Thee Stallion featuring DaBaby,billboard_year_end,usable,en,Hip Hop/Rap|Pop,517,213,0.411992,-0.9951
+2021-078-S_8134f5e6f4ad38e0,2021,78,S_8134f5e6f4ad38e0,All I Want for Christmas Is You,Mariah Carey,billboard_year_end,usable,en,Indie|Pop,388,111,0.286082,0.9805
+2021-079-S_691032924e5b2ab0,2021,79,S_691032924e5b2ab0,No More Parties,Coi Leray featuring Lil Durk,billboard_year_end,usable,en,Hip Hop/Rap,617,168,0.272285,0.9699
+2021-080-S_8c5ce1f9ae192485,2021,80,S_8c5ce1f9ae192485,What's Your Country Song,Thomas Rhett,billboard_year_end,usable,en,Country|Rock,275,104,0.378182,0.4999
+2021-081-S_ed5e68ff77aaab71,2021,81,S_ed5e68ff77aaab71,One Too Many,Keith Urban and Pink,billboard_year_end,usable,en,Country|Pop|Rock,391,141,0.360614,0.9604
+2021-082-S_87d2db521cb8ceaf,2021,82,S_87d2db521cb8ceaf,Arcade,Duncan Laurence,billboard_year_end,usable,en,Pop,221,82,0.371041,0.9538
 2021-083-S_9ee33ba80c59afcb,2021,83,S_9ee33ba80c59afcb,Yonaguni,Bad Bunny,billboard_year_end,usable,an,Hip Hop/Rap|Latin,,,,
-2021-084-S_44d38144a1b59df5,2021,84,S_44d38144a1b59df5,Good Time,Niko Moon,billboard_year_end,usable,en,Country,387,120,0.310078,0.9982
-2021-085-S_54a3f691c42b5b00,2021,85,S_54a3f691c42b5b00,If I Didn't Love You,Jason Aldean and Carrie Underwood,billboard_year_end,usable,en,Country|Rock,351,106,0.301994,-0.7602
+2021-084-S_44d38144a1b59df5,2021,84,S_44d38144a1b59df5,Good Time,Niko Moon,billboard_year_end,usable,en,Country,374,111,0.296791,0.9981
+2021-085-S_54a3f691c42b5b00,2021,85,S_54a3f691c42b5b00,If I Didn't Love You,Jason Aldean and Carrie Underwood,billboard_year_end,usable,en,Country|Rock,347,103,0.29683,-0.8415
 2021-086-S_269b93e31902a388,2021,86,S_269b93e31902a388,Knife Talk,Drake featuring 21 Savage and Project Pat,billboard_year_end,usable,en,Hip Hop/Rap|Indie|Rock,542,244,0.450185,-0.9971
-2021-087-S_f0bcba9379a859b3,2021,87,S_f0bcba9379a859b3,POV,Ariana Grande,billboard_year_end,usable,en,Pop,371,123,0.331536,0.9985
-2021-088-S_8245957c4b5e3cc9,2021,88,S_8245957c4b5e3cc9,Just the Way,Parmalee and Blanco Brown,billboard_year_end,usable,en,Country,520,117,0.225,0.9984
-2021-089-S_673151a9324fcd61,2021,89,S_673151a9324fcd61,Take My Breath,The Weeknd,billboard_year_end,usable,en,R&B|Pop,339,106,0.312684,0.993
-2021-090-S_5a52e8df3d7c3a0c,2021,90,S_5a52e8df3d7c3a0c,We're Good,Dua Lipa,billboard_year_end,usable,en,Pop,308,105,0.340909,0.9964
-2021-091-S_689f1e7a8af24fb1,2021,91,S_689f1e7a8af24fb1,Hell of a View,Eric Church,billboard_year_end,usable,en,Country,253,108,0.426877,-0.9955
-2021-092-S_d3b0d7f8d1d4d1e4,2021,92,S_d3b0d7f8d1d4d1e4,Rockin' Around the Christmas Tree,Brenda Lee,billboard_year_end,usable,en,Country|Rock,125,63,0.504,0.9877
-2021-093-S_e88388704a27aa61,2021,93,S_e88388704a27aa61,Put Your Records On,Ritt Momney,billboard_year_end,usable,en,Pop,277,123,0.444043,0.9942
-2021-094-S_8f6e406fcbc89084,2021,94,S_8f6e406fcbc89084,Happier Than Ever,Billie Eilish,billboard_year_end,usable,en,Pop,348,155,0.445402,-0.9892
-2021-095-S_fd2ff7a0ac238f63,2021,95,S_fd2ff7a0ac238f63,Single Saturday Night,Cole Swindell,billboard_year_end,usable,en,Country|Rock,389,141,0.362468,0.9886
-2021-096-S_1cb5345dad7f1fdc,2021,96,S_1cb5345dad7f1fdc,Things a Man Oughta Know,Lainey Wilson,billboard_year_end,usable,en,Country|Pop,299,91,0.304348,0.99
-2021-097-S_6310e56f3389e470,2021,97,S_6310e56f3389e470,Throat Baby (Go Baby),BRS Kash,billboard_year_end,usable,en,Hip Hop/Rap,610,178,0.291803,0.9968
-2021-098-S_2a8dacde34df6fa6,2021,98,S_2a8dacde34df6fa6,Tombstone,Rod Wave,billboard_year_end,usable,en,Hip Hop/Rap,393,158,0.402036,0.9967
-2021-099-S_0424e80f209d6613,2021,99,S_0424e80f209d6613,Drinkin' Beer. Talkin' God. Amen.,Chase Rice featuring Florida Georgia Line,billboard_year_end,usable,en,Country|Pop|Rock,307,119,0.387622,0.991
+2021-087-S_f0bcba9379a859b3,2021,87,S_f0bcba9379a859b3,POV,Ariana Grande,billboard_year_end,usable,en,Pop,366,120,0.327869,0.9985
+2021-088-S_8245957c4b5e3cc9,2021,88,S_8245957c4b5e3cc9,Just the Way,Parmalee and Blanco Brown,billboard_year_end,usable,en,Country,508,108,0.212598,0.9984
+2021-089-S_673151a9324fcd61,2021,89,S_673151a9324fcd61,Take My Breath,The Weeknd,billboard_year_end,usable,en,R&B|Pop,334,103,0.308383,0.9923
+2021-090-S_5a52e8df3d7c3a0c,2021,90,S_5a52e8df3d7c3a0c,We're Good,Dua Lipa,billboard_year_end,usable,en,Pop,295,96,0.325424,0.9966
+2021-091-S_689f1e7a8af24fb1,2021,91,S_689f1e7a8af24fb1,Hell of a View,Eric Church,billboard_year_end,usable,en,Country,240,98,0.408333,-0.9956
+2021-092-S_d3b0d7f8d1d4d1e4,2021,92,S_d3b0d7f8d1d4d1e4,Rockin' Around the Christmas Tree,Brenda Lee,billboard_year_end,usable,en,Country|Rock,120,59,0.491667,0.9861
+2021-093-S_e88388704a27aa61,2021,93,S_e88388704a27aa61,Put Your Records On,Ritt Momney,billboard_year_end,usable,en,Pop,272,120,0.441176,0.9934
+2021-094-S_8f6e406fcbc89084,2021,94,S_8f6e406fcbc89084,Happier Than Ever,Billie Eilish,billboard_year_end,usable,en,Pop,343,151,0.440233,-0.9898
+2021-095-S_fd2ff7a0ac238f63,2021,95,S_fd2ff7a0ac238f63,Single Saturday Night,Cole Swindell,billboard_year_end,usable,en,Country|Rock,377,131,0.34748,0.988
+2021-096-S_1cb5345dad7f1fdc,2021,96,S_1cb5345dad7f1fdc,Things a Man Oughta Know,Lainey Wilson,billboard_year_end,usable,en,Country|Pop,286,81,0.283217,0.9897
+2021-097-S_6310e56f3389e470,2021,97,S_6310e56f3389e470,Throat Baby (Go Baby),BRS Kash,billboard_year_end,usable,en,Hip Hop/Rap,605,175,0.289256,0.9967
+2021-098-S_2a8dacde34df6fa6,2021,98,S_2a8dacde34df6fa6,Tombstone,Rod Wave,billboard_year_end,usable,en,Hip Hop/Rap,388,154,0.396907,0.9968
+2021-099-S_0424e80f209d6613,2021,99,S_0424e80f209d6613,Drinkin' Beer. Talkin' God. Amen.,Chase Rice featuring Florida Georgia Line,billboard_year_end,usable,en,Country|Pop|Rock,294,109,0.370748,0.9908
 2021-100-S_71af2c0db8555705,2021,100,S_71af2c0db8555705,Todo de Ti,Rauw Alejandro,billboard_year_end,usable,es,Hip Hop/Rap|Pop|Latin,,,,
-2022-001-S_6e09c229e29259a7,2022,1,S_6e09c229e29259a7,Heat Waves,Glass Animals,billboard_year_end,usable,en,Indie|Pop|Rock,429,125,0.291375,0.8912
-2022-002-S_74e7cf9419887dff,2022,2,S_74e7cf9419887dff,As It Was,Harry Styles,billboard_year_end,usable,en,Pop,246,101,0.410569,0.8632
+2022-001-S_6e09c229e29259a7,2022,1,S_6e09c229e29259a7,Heat Waves,Glass Animals,billboard_year_end,usable,en,Indie|Pop|Rock,416,115,0.276442,0.8752
+2022-002-S_74e7cf9419887dff,2022,2,S_74e7cf9419887dff,As It Was,Harry Styles,billboard_year_end,usable,en,Pop,241,97,0.40249,0.7976
 2022-003-S_8eea69b6efec8ea3,2022,3,S_8eea69b6efec8ea3,Stay,The Kid Laroi and Justin Bieber,billboard_year_end,usable,en,Pop,414,83,0.200483,-0.661
-2022-004-S_6a8f6b1c55968346,2022,4,S_6a8f6b1c55968346,Easy on Me,Adele,billboard_year_end,usable,en,Soul,219,100,0.456621,0.978
-2022-005-S_88c50ca1832d6019,2022,5,S_88c50ca1832d6019,Shivers,Ed Sheeran,billboard_year_end,usable,en,Soul|Pop,534,131,0.245318,0.9977
-2022-006-S_09abf06e7fab93f0,2022,6,S_09abf06e7fab93f0,First Class,Jack Harlow,billboard_year_end,usable,en,Hip Hop/Rap,490,165,0.336735,0.9937
-2022-007-S_a11160daa11c2428,2022,7,S_a11160daa11c2428,Big Energy,Latto,billboard_year_end,usable,en,Hip Hop/Rap,602,164,0.272425,-0.9942
-2022-008-S_346c8e92e2d271b4,2022,8,S_346c8e92e2d271b4,Ghost,Justin Bieber,billboard_year_end,usable,en,Pop,232,65,0.280172,0.9342
-2022-009-S_758ac5866943d009,2022,9,S_758ac5866943d009,Super Gremlin,Kodak Black,billboard_year_end,usable,en,Hip Hop/Rap|Latin,611,238,0.389525,-0.9964
-2022-010-S_cd1025171aa07ebc,2022,10,S_cd1025171aa07ebc,Cold Heart (Pnau Remix),Elton John and Dua Lipa,billboard_year_end,usable,en,Rock,296,70,0.236486,0.9811
+2022-004-S_6a8f6b1c55968346,2022,4,S_6a8f6b1c55968346,Easy on Me,Adele,billboard_year_end,usable,en,Soul,207,90,0.434783,0.9765
+2022-005-S_88c50ca1832d6019,2022,5,S_88c50ca1832d6019,Shivers,Ed Sheeran,billboard_year_end,usable,en,Soul|Pop,521,121,0.232246,0.9976
+2022-006-S_09abf06e7fab93f0,2022,6,S_09abf06e7fab93f0,First Class,Jack Harlow,billboard_year_end,usable,en,Hip Hop/Rap,477,159,0.333333,0.9934
+2022-007-S_a11160daa11c2428,2022,7,S_a11160daa11c2428,Big Energy,Latto,billboard_year_end,usable,en,Hip Hop/Rap,597,162,0.271357,-0.9944
+2022-008-S_346c8e92e2d271b4,2022,8,S_346c8e92e2d271b4,Ghost,Justin Bieber,billboard_year_end,usable,en,Pop,227,61,0.268722,0.8978
+2022-009-S_758ac5866943d009,2022,9,S_758ac5866943d009,Super Gremlin,Kodak Black,billboard_year_end,usable,en,Hip Hop/Rap|Latin,606,235,0.387789,-0.996
+2022-010-S_cd1025171aa07ebc,2022,10,S_cd1025171aa07ebc,Cold Heart (Pnau Remix),Elton John and Dua Lipa,billboard_year_end,usable,en,Rock,291,66,0.226804,0.9761
 2022-011-S_801a78ca786d39d0,2022,11,S_801a78ca786d39d0,Wait for U,Future featuring Drake and Tems,billboard_year_end,usable,en,Hip Hop/Rap,658,190,0.288754,0.914
-2022-012-S_3b7cc87b2a1a469b,2022,12,S_3b7cc87b2a1a469b,About Damn Time,Lizzo,billboard_year_end,usable,en,Hip Hop/Rap|Pop,364,108,0.296703,0.9906
-2022-013-S_5c146671d0a57abd,2022,13,S_5c146671d0a57abd,Bad Habits,Ed Sheeran,billboard_year_end,usable,en,Pop,409,129,0.315403,-0.9954
-2022-014-S_abde9bb4f74d2458,2022,14,S_abde9bb4f74d2458,Thats What I Want,Lil Nas X,billboard_year_end,usable,en,Hip Hop/Rap,336,128,0.380952,0.9984
-2022-015-S_ce971c7beb5dc3d6,2022,15,S_ce971c7beb5dc3d6,Enemy,Imagine Dragons and JID,billboard_year_end,usable,en,Pop|Rock,430,175,0.406977,-0.9817
-2022-016-S_247f7cb38ef41693,2022,16,S_247f7cb38ef41693,Industry Baby,Lil Nas X and Jack Harlow,billboard_year_end,usable,en,Hip Hop/Rap,620,230,0.370968,0.998
-2022-017-S_556a0d7fc2d839f3,2022,17,S_556a0d7fc2d839f3,ABCDEFU,Gayle,billboard_year_end,usable,en,Pop,390,128,0.328205,-0.9896
-2022-018-S_d005b37028044a8e,2022,18,S_d005b37028044a8e,Need to Know,Doja Cat,billboard_year_end,usable,en,Pop,561,182,0.324421,0.9827
-2022-019-S_819cbcd8cfbac620,2022,19,S_819cbcd8cfbac620,Wasted on You,Morgan Wallen,billboard_year_end,usable,en,Country,284,104,0.366197,-0.9958
+2022-012-S_3b7cc87b2a1a469b,2022,12,S_3b7cc87b2a1a469b,About Damn Time,Lizzo,billboard_year_end,usable,en,Hip Hop/Rap|Pop,359,106,0.295265,0.9889
+2022-013-S_5c146671d0a57abd,2022,13,S_5c146671d0a57abd,Bad Habits,Ed Sheeran,billboard_year_end,usable,en,Pop,396,118,0.29798,-0.9956
+2022-014-S_abde9bb4f74d2458,2022,14,S_abde9bb4f74d2458,Thats What I Want,Lil Nas X,billboard_year_end,usable,en,Hip Hop/Rap,331,125,0.377644,0.9983
+2022-015-S_ce971c7beb5dc3d6,2022,15,S_ce971c7beb5dc3d6,Enemy,Imagine Dragons and JID,billboard_year_end,usable,en,Pop|Rock,425,172,0.404706,-0.9851
+2022-016-S_247f7cb38ef41693,2022,16,S_247f7cb38ef41693,Industry Baby,Lil Nas X and Jack Harlow,billboard_year_end,usable,en,Hip Hop/Rap,615,227,0.369106,0.998
+2022-017-S_556a0d7fc2d839f3,2022,17,S_556a0d7fc2d839f3,ABCDEFU,Gayle,billboard_year_end,usable,en,Pop,378,120,0.31746,-0.99
+2022-018-S_d005b37028044a8e,2022,18,S_d005b37028044a8e,Need to Know,Doja Cat,billboard_year_end,usable,en,Pop,548,174,0.317518,0.9816
+2022-019-S_819cbcd8cfbac620,2022,19,S_819cbcd8cfbac620,Wasted on You,Morgan Wallen,billboard_year_end,usable,en,Country,271,95,0.350554,-0.9959
 2022-020-S_ca8d002d23dfc380,2022,20,S_ca8d002d23dfc380,Me Porto Bonito,Bad Bunny and Chencho Corleone,billboard_year_end,usable,es,Hip Hop/Rap|Latin,,,,
-2022-021-S_d12d2c39d3ee2f80,2022,21,S_d12d2c39d3ee2f80,Woman,Doja Cat,billboard_year_end,usable,en,Country|Rock,448,179,0.399554,0.9566
+2022-021-S_d12d2c39d3ee2f80,2022,21,S_d12d2c39d3ee2f80,Woman,Doja Cat,billboard_year_end,usable,en,Country|Rock,435,171,0.393103,0.9553
 2022-022-S_0b91d84f81fd622f,2022,22,S_0b91d84f81fd622f,Tití Me Preguntó,Bad Bunny,billboard_year_end,usable,es,Latin,,,,
-2022-023-S_213c56f868809d22,2022,23,S_213c56f868809d22,Running Up That Hill (A Deal with God),Kate Bush,billboard_year_end,usable,en,Soul|Pop|Rock,389,92,0.236504,0.9962
+2022-023-S_213c56f868809d22,2022,23,S_213c56f868809d22,Running Up That Hill (A Deal with God),Kate Bush,billboard_year_end,usable,en,Soul|Pop|Rock,384,88,0.229167,0.9958
 2022-024-S_67f1c74d998d6086,2022,24,S_67f1c74d998d6086,We Don't Talk About Bruno,"Carolina Gaitán , Mauro Castillo, Adassa , Rhenzy Feliz , Diane Guerrero , Stephanie Beatriz and the Encanto cast",billboard_year_end,usable,en,Latin|Pop,451,181,0.40133,0.987
-2022-025-S_f9fc512471d10438,2022,25,S_f9fc512471d10438,Late Night Talking,Harry Styles,billboard_year_end,usable,en,Pop|Funk,279,97,0.34767,0.9655
-2022-026-S_bad3af27fd898e22,2022,26,S_bad3af27fd898e22,I Like You (A Happier Song),Post Malone featuring Doja Cat,billboard_year_end,usable,en,Hip Hop/Rap|Pop,576,179,0.310764,0.9991
-2022-027-S_88159b246052edc2,2022,27,S_88159b246052edc2,You Proof,Morgan Wallen,billboard_year_end,usable,en,Country,310,110,0.354839,0.9914
-2022-028-S_78ae0a8c780fd643,2022,28,S_78ae0a8c780fd643,Bad Habit,Steve Lacy,billboard_year_end,usable,en,Jazz/Swing|Hip Hop/Rap|Pop,410,133,0.32439,0.9749
-2022-029-S_c34b3b7bc4dbd831,2022,29,S_c34b3b7bc4dbd831,Sunroof,Nicky Youre and Dazy,billboard_year_end,usable,en,Indie,395,81,0.205063,0.9726
-2022-030-S_3810be3c5906fceb,2022,30,S_3810be3c5906fceb,One Right Now,Post Malone and the Weeknd,billboard_year_end,usable,en,R&B|Pop,424,108,0.254717,0.9402
-2022-031-S_475501d6a59aedf7,2022,31,S_475501d6a59aedf7,Good 4 U,Olivia Rodrigo,billboard_year_end,usable,en,Pop,429,134,0.312354,0.9987
-2022-032-S_09687b62f1f6eb49,2022,32,S_09687b62f1f6eb49,Numb Little Bug,Em Beihold,billboard_year_end,usable,en,Soul,371,127,0.342318,-0.7544
+2022-025-S_f9fc512471d10438,2022,25,S_f9fc512471d10438,Late Night Talking,Harry Styles,billboard_year_end,usable,en,Pop|Funk,274,93,0.339416,0.9525
+2022-026-S_bad3af27fd898e22,2022,26,S_bad3af27fd898e22,I Like You (A Happier Song),Post Malone featuring Doja Cat,billboard_year_end,usable,en,Hip Hop/Rap|Pop,563,171,0.30373,0.9991
+2022-027-S_88159b246052edc2,2022,27,S_88159b246052edc2,You Proof,Morgan Wallen,billboard_year_end,usable,en,Country,297,100,0.3367,0.9911
+2022-028-S_78ae0a8c780fd643,2022,28,S_78ae0a8c780fd643,Bad Habit,Steve Lacy,billboard_year_end,usable,en,Jazz/Swing|Hip Hop/Rap|Pop,405,130,0.320988,0.9727
+2022-029-S_c34b3b7bc4dbd831,2022,29,S_c34b3b7bc4dbd831,Sunroof,Nicky Youre and Dazy,billboard_year_end,usable,en,Indie,390,79,0.202564,0.967
+2022-030-S_3810be3c5906fceb,2022,30,S_3810be3c5906fceb,One Right Now,Post Malone and the Weeknd,billboard_year_end,usable,en,R&B|Pop,419,104,0.24821,0.9089
+2022-031-S_475501d6a59aedf7,2022,31,S_475501d6a59aedf7,Good 4 U,Olivia Rodrigo,billboard_year_end,usable,en,Pop,416,124,0.298077,0.9988
+2022-032-S_09687b62f1f6eb49,2022,32,S_09687b62f1f6eb49,Numb Little Bug,Em Beihold,billboard_year_end,usable,en,Soul,366,124,0.338798,-0.8658
 2022-033-S_7892885299ef13de,2022,33,S_7892885299ef13de,Jimmy Cooks,Drake featuring 21 Savage,billboard_year_end,usable,en,Hip Hop/Rap,661,266,0.402421,0.8577
-2022-034-S_c6b2b8d9b815e913,2022,34,S_c6b2b8d9b815e913,'Til You Can't,Cody Johnson,billboard_year_end,usable,en,Country|Rock,377,128,0.339523,0.9968
-2022-035-S_262190ba4b0e7941,2022,35,S_262190ba4b0e7941,Fancy Like,Walker Hayes,billboard_year_end,usable,en,Country|Rock,431,149,0.345708,0.9988
-2022-036-S_07d2d3e97d473567,2022,36,S_07d2d3e97d473567,The Kind of Love We Make,Luke Combs,billboard_year_end,usable,en,Country,316,108,0.341772,0.9953
-2022-037-S_f67d60baaa4b6f41,2022,37,S_f67d60baaa4b6f41,I Ain't Worried,OneRepublic,billboard_year_end,usable,en,Pop|Rock,261,94,0.360153,0.996
-2022-038-S_76f048ec72cc8555,2022,38,S_76f048ec72cc8555,Break My Soul,Beyoncé,billboard_year_end,usable,en,R&B|Pop,732,162,0.221311,0.9986
-2022-039-S_04f27c9b32c2ce1e,2022,39,S_04f27c9b32c2ce1e,Something in the Orange,Zach Bryan,billboard_year_end,usable,en,Country|Pop,279,121,0.433692,-0.9935
-2022-040-S_d14bce603a0fe997,2022,40,S_d14bce603a0fe997,Save Your Tears,The Weeknd and Ariana Grande,billboard_year_end,usable,en,R&B|Pop,255,85,0.333333,0.9879
+2022-034-S_c6b2b8d9b815e913,2022,34,S_c6b2b8d9b815e913,'Til You Can't,Cody Johnson,billboard_year_end,usable,en,Country|Rock,364,118,0.324176,0.9968
+2022-035-S_262190ba4b0e7941,2022,35,S_262190ba4b0e7941,Fancy Like,Walker Hayes,billboard_year_end,usable,en,Country|Rock,418,140,0.334928,0.9988
+2022-036-S_07d2d3e97d473567,2022,36,S_07d2d3e97d473567,The Kind of Love We Make,Luke Combs,billboard_year_end,usable,en,Country,303,98,0.323432,0.9952
+2022-037-S_f67d60baaa4b6f41,2022,37,S_f67d60baaa4b6f41,I Ain't Worried,OneRepublic,billboard_year_end,usable,en,Pop|Rock,249,85,0.341365,0.9959
+2022-038-S_76f048ec72cc8555,2022,38,S_76f048ec72cc8555,Break My Soul,Beyoncé,billboard_year_end,usable,en,R&B|Pop,727,158,0.217331,0.9986
+2022-039-S_04f27c9b32c2ce1e,2022,39,S_04f27c9b32c2ce1e,Something in the Orange,Zach Bryan,billboard_year_end,usable,en,Country|Pop,266,111,0.417293,-0.9937
+2022-040-S_d14bce603a0fe997,2022,40,S_d14bce603a0fe997,Save Your Tears,The Weeknd and Ariana Grande,billboard_year_end,usable,en,R&B|Pop,250,82,0.328,0.9855
 2022-041-S_20d3495beb504ecf,2022,41,S_20d3495beb504ecf,Smokin out the Window,Silk Sonic ( Bruno Mars and Anderson .Paak ),billboard_year_end,usable,en,Pop,440,141,0.320455,0.9433
-2022-042-S_59b8a6f6251cb947,2022,42,S_59b8a6f6251cb947,Levitating,Dua Lipa,billboard_year_end,usable,en,Pop,550,121,0.22,0.9989
-2022-043-S_4356e934686e3e16,2022,43,S_4356e934686e3e16,In a Minute,Lil Baby,billboard_year_end,usable,en,Hip Hop/Rap,766,304,0.396867,-0.9843
+2022-042-S_59b8a6f6251cb947,2022,42,S_59b8a6f6251cb947,Levitating,Dua Lipa,billboard_year_end,usable,en,Pop,537,112,0.208566,0.9989
+2022-043-S_4356e934686e3e16,2022,43,S_4356e934686e3e16,In a Minute,Lil Baby,billboard_year_end,usable,en,Hip Hop/Rap,761,302,0.396846,-0.9871
 2022-044-S_9d62bde9f3622ec7,2022,44,S_9d62bde9f3622ec7,Moscow Mule,Bad Bunny,billboard_year_end,usable,es,Rock,,,,
-2022-045-S_763425bc43fab0c2,2022,45,S_763425bc43fab0c2,You Right,Doja Cat and the Weeknd,billboard_year_end,usable,en,Pop,485,125,0.257732,0.963
-2022-046-S_3557fd6adcaf0f78,2022,46,S_3557fd6adcaf0f78,She Had Me at Heads Carolina,Cole Swindell,billboard_year_end,usable,en,Country|Rock,397,139,0.350126,0.9924
-2022-047-S_3d655a3f8b283de0,2022,47,S_3d655a3f8b283de0,Vegas,Doja Cat,billboard_year_end,usable,en,Pop,524,179,0.341603,-0.9301
+2022-045-S_763425bc43fab0c2,2022,45,S_763425bc43fab0c2,You Right,Doja Cat and the Weeknd,billboard_year_end,usable,en,Pop,480,122,0.254167,0.9485
+2022-046-S_3557fd6adcaf0f78,2022,46,S_3557fd6adcaf0f78,She Had Me at Heads Carolina,Cole Swindell,billboard_year_end,usable,en,Country|Rock,384,129,0.335938,0.9922
+2022-047-S_3d655a3f8b283de0,2022,47,S_3d655a3f8b283de0,Vegas,Doja Cat,billboard_year_end,usable,en,Pop,511,168,0.328767,-0.9372
 2022-048-S_e3eb6e6a6a85dee8,2022,48,S_e3eb6e6a6a85dee8,Pushin P,Gunna and Future featuring Young Thug,billboard_year_end,usable,en,Hip Hop/Rap,323,137,0.424149,0.4655
-2022-049-S_5c99c4507af896ba,2022,49,S_5c99c4507af896ba,Buy Dirt,Jordan Davis and Luke Bryan,billboard_year_end,usable,en,Country|Rock,383,127,0.331593,0.5824
-2022-050-S_aafe3147cc1bb147,2022,50,S_aafe3147cc1bb147,I Hate U,SZA,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,357,121,0.338936,-0.9906
-2022-051-S_1c9ea95ca9fa4aad,2022,51,S_1c9ea95ca9fa4aad,Boyfriend,Dove Cameron,billboard_year_end,usable,en,Pop,303,95,0.313531,0.9852
-2022-052-S_9d0cd05b6a9b52ea,2022,52,S_9d0cd05b6a9b52ea,Glimpse of Us,Joji,billboard_year_end,usable,en,Pop,304,113,0.371711,0.9658
-2022-053-S_5e5ab80ce9e1bf99,2022,53,S_5e5ab80ce9e1bf99,Surface Pressure,Jessica Darrow,billboard_year_end,usable,en,Pop,458,196,0.427948,0.988
-2022-054-S_59736143831b63e6,2022,54,S_59736143831b63e6,Fall in Love,Bailey Zimmerman,billboard_year_end,usable,en,Country|Pop,407,149,0.366093,0.9969
-2022-055-S_f8d666361026b97b,2022,55,S_f8d666361026b97b,Love Nwantiti (Ah Ah Ah),CKay,billboard_year_end,usable,en,Pop|Funk,357,102,0.285714,0.9926
-2022-056-S_2476e5d8aae9d5ad,2022,56,S_2476e5d8aae9d5ad,Super Freaky Girl,Nicki Minaj,billboard_year_end,usable,en,Pop|Hip Hop/Rap|Funk,567,199,0.35097,-0.9983
+2022-049-S_5c99c4507af896ba,2022,49,S_5c99c4507af896ba,Buy Dirt,Jordan Davis and Luke Bryan,billboard_year_end,usable,en,Country|Rock,370,116,0.313514,0.0192
+2022-050-S_aafe3147cc1bb147,2022,50,S_aafe3147cc1bb147,I Hate U,SZA,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,345,112,0.324638,-0.9909
+2022-051-S_1c9ea95ca9fa4aad,2022,51,S_1c9ea95ca9fa4aad,Boyfriend,Dove Cameron,billboard_year_end,usable,en,Pop,298,91,0.305369,0.9852
+2022-052-S_9d0cd05b6a9b52ea,2022,52,S_9d0cd05b6a9b52ea,Glimpse of Us,Joji,billboard_year_end,usable,en,Pop,292,103,0.35274,0.963
+2022-053-S_5e5ab80ce9e1bf99,2022,53,S_5e5ab80ce9e1bf99,Surface Pressure,Jessica Darrow,billboard_year_end,usable,en,Pop,453,193,0.426049,0.9871
+2022-054-S_59736143831b63e6,2022,54,S_59736143831b63e6,Fall in Love,Bailey Zimmerman,billboard_year_end,usable,en,Country|Pop,395,140,0.35443,0.9968
+2022-055-S_f8d666361026b97b,2022,55,S_f8d666361026b97b,Love Nwantiti (Ah Ah Ah),CKay,billboard_year_end,usable,en,Pop|Funk,352,99,0.28125,0.9919
+2022-056-S_2476e5d8aae9d5ad,2022,56,S_2476e5d8aae9d5ad,Super Freaky Girl,Nicki Minaj,billboard_year_end,usable,en,Pop|Hip Hop/Rap|Funk,554,190,0.34296,-0.9983
 2022-057-S_0ceeb049ced1ad30,2022,57,S_0ceeb049ced1ad30,Hrs and Hrs,Muni Long,billboard_year_end,usable,en,Indie,321,108,0.336449,0.98
-2022-058-S_a41098054319c03e,2022,58,S_a41098054319c03e,Sand in My Boots,Morgan Wallen,billboard_year_end,usable,en,Country,300,129,0.43,0.9914
+2022-058-S_a41098054319c03e,2022,58,S_a41098054319c03e,Sand in My Boots,Morgan Wallen,billboard_year_end,usable,en,Country,287,119,0.414634,0.9911
 2022-059-S_fad6d5bf9e2bf681,2022,59,S_fad6d5bf9e2bf681,Mamiii,Becky G and Karol G,billboard_year_end,usable,es,Hip Hop/Rap|Pop,,,,
 2022-060-S_269b93e31902a388,2022,60,S_269b93e31902a388,Knife Talk,Drake featuring 21 Savage and Project Pat,billboard_year_end,usable,en,Hip Hop/Rap,542,244,0.450185,-0.9971
-2022-061-S_13c1e8b6f8542422,2022,61,S_13c1e8b6f8542422,AA,Walker Hayes,billboard_year_end,usable,en,Country|Rock,420,151,0.359524,0.9967
-2022-062-S_31a70e225f44f8da,2022,62,S_31a70e225f44f8da,Sweetest Pie,Megan Thee Stallion and Dua Lipa,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,659,195,0.295903,-0.9188
+2022-061-S_13c1e8b6f8542422,2022,61,S_13c1e8b6f8542422,AA,Walker Hayes,billboard_year_end,usable,en,Country|Rock,407,142,0.348894,0.9966
+2022-062-S_31a70e225f44f8da,2022,62,S_31a70e225f44f8da,Sweetest Pie,Megan Thee Stallion and Dua Lipa,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,654,193,0.295107,-0.9457
 2022-063-S_662bc31903dd654a,2022,63,S_662bc31903dd654a,Provenza,Karol G,billboard_year_end,usable,es,Hip Hop/Rap|Latin,,,,
-2022-064-S_5da89a3c6839fd08,2022,64,S_5da89a3c6839fd08,Essence,Wizkid featuring Justin Bieber and Tems,billboard_year_end,usable,en,Pop,544,145,0.266544,0.9986
-2022-065-S_8134f5e6f4ad38e0,2022,65,S_8134f5e6f4ad38e0,All I Want for Christmas Is You,Mariah Carey,billboard_year_end,usable,en,Indie|Pop,393,115,0.292621,0.9831
+2022-064-S_5da89a3c6839fd08,2022,64,S_5da89a3c6839fd08,Essence,Wizkid featuring Justin Bieber and Tems,billboard_year_end,usable,en,Pop,539,142,0.263451,0.9985
+2022-065-S_8134f5e6f4ad38e0,2022,65,S_8134f5e6f4ad38e0,All I Want for Christmas Is You,Mariah Carey,billboard_year_end,usable,en,Indie|Pop,388,111,0.286082,0.9805
 2022-066-S_1fd6992b27fb3071,2022,66,S_1fd6992b27fb3071,Bam Bam,Camila Cabello featuring Ed Sheeran,billboard_year_end,usable,en,Pop,524,136,0.259542,0.9977
-2022-067-S_e9a101b5190201f8,2022,67,S_e9a101b5190201f8,5 Foot 9,Tyler Hubbard,billboard_year_end,usable,en,Country|Pop,291,94,0.323024,0.9994
-2022-068-S_3fddda063d24cb01,2022,68,S_3fddda063d24cb01,Get Into It (Yuh),Doja Cat,billboard_year_end,usable,en,Pop,482,131,0.271784,0.9785
+2022-067-S_e9a101b5190201f8,2022,67,S_e9a101b5190201f8,5 Foot 9,Tyler Hubbard,billboard_year_end,usable,en,Country|Pop,287,90,0.313589,0.9994
+2022-068-S_3fddda063d24cb01,2022,68,S_3fddda063d24cb01,Get Into It (Yuh),Doja Cat,billboard_year_end,usable,en,Pop,469,121,0.257996,0.9776
 2022-069-S_4b59d7694ada0ad7,2022,69,S_4b59d7694ada0ad7,Efecto,Bad Bunny,billboard_year_end,usable,es,Hip Hop/Rap|Pop|Latin,,,,
-2022-070-S_05e207ad38ccf70f,2022,70,S_05e207ad38ccf70f,Rock and a Hard Place,Bailey Zimmerman,billboard_year_end,usable,en,Country|Pop,271,104,0.383764,-0.9877
-2022-071-S_ab1c0a1893ec5d8d,2022,71,S_ab1c0a1893ec5d8d,Doin' This,Luke Combs,billboard_year_end,usable,en,Country,397,145,0.365239,0.9887
-2022-072-S_c8132b3605a57773,2022,72,S_c8132b3605a57773,Oh My God,Adele,billboard_year_end,usable,en,Soul|Pop,546,121,0.221612,0.9368
-2022-073-S_579874a8b35d4de9,2022,73,S_579874a8b35d4de9,Better Days,"Neiked , Mae Muller and Polo G",billboard_year_end,usable,en,Hip Hop/Rap,335,133,0.397015,0.9938
+2022-070-S_05e207ad38ccf70f,2022,70,S_05e207ad38ccf70f,Rock and a Hard Place,Bailey Zimmerman,billboard_year_end,usable,en,Country|Pop,258,95,0.368217,-0.9883
+2022-071-S_ab1c0a1893ec5d8d,2022,71,S_ab1c0a1893ec5d8d,Doin' This,Luke Combs,billboard_year_end,usable,en,Country,384,135,0.351562,0.9883
+2022-072-S_c8132b3605a57773,2022,72,S_c8132b3605a57773,Oh My God,Adele,billboard_year_end,usable,en,Soul|Pop,534,111,0.207865,0.9483
+2022-073-S_579874a8b35d4de9,2022,73,S_579874a8b35d4de9,Better Days,"Neiked , Mae Muller and Polo G",billboard_year_end,usable,en,Hip Hop/Rap,330,130,0.393939,0.9927
 2022-074-S_385d037bc1e46ee5,2022,74,S_385d037bc1e46ee5,Meet Me at Our Spot,The Anxiety : Willow and Tyler Cole,billboard_year_end,usable,en,Soul,300,85,0.283333,0.9911
-2022-075-S_2b0b960202bb7f3d,2022,75,S_2b0b960202bb7f3d,Fingers Crossed,Lauren Spencer-Smith,billboard_year_end,usable,en,Soul,327,116,0.35474,0.9622
-2022-076-S_d5a9a103e1d8a125,2022,76,S_d5a9a103e1d8a125,All Too Well (Taylor's Version),Taylor Swift,billboard_year_end,usable,en,Pop,481,213,0.442827,0.9893
+2022-075-S_2b0b960202bb7f3d,2022,75,S_2b0b960202bb7f3d,Fingers Crossed,Lauren Spencer-Smith,billboard_year_end,usable,en,Soul,322,112,0.347826,0.9471
+2022-076-S_d5a9a103e1d8a125,2022,76,S_d5a9a103e1d8a125,All Too Well (Taylor's Version),Taylor Swift,billboard_year_end,usable,en,Pop,468,204,0.435897,0.9892
 2022-077-S_16b7aa35297fc34a,2022,77,S_16b7aa35297fc34a,Party,Bad Bunny and Rauw Alejandro,billboard_year_end,usable,es,Hip Hop/Rap|Pop|Latin,,,,
 2022-078-S_22ee75f79e3aa88d,2022,78,S_22ee75f79e3aa88d,Después de la Playa,Bad Bunny,billboard_year_end,usable,es,Hip Hop/Rap|Latin|Folk,,,,
-2022-079-S_3c916bd87c04e273,2022,79,S_3c916bd87c04e273,You Should Probably Leave,Chris Stapleton,billboard_year_end,usable,en,Country,242,89,0.367769,0.8844
-2022-080-S_d3b0d7f8d1d4d1e4,2022,80,S_d3b0d7f8d1d4d1e4,Rockin' Around the Christmas Tree,Brenda Lee,billboard_year_end,usable,en,Country|Rock,125,63,0.504,0.9877
+2022-079-S_3c916bd87c04e273,2022,79,S_3c916bd87c04e273,You Should Probably Leave,Chris Stapleton,billboard_year_end,usable,en,Country,229,79,0.344978,0.8569
+2022-080-S_d3b0d7f8d1d4d1e4,2022,80,S_d3b0d7f8d1d4d1e4,Rockin' Around the Christmas Tree,Brenda Lee,billboard_year_end,usable,en,Country|Rock,120,59,0.491667,0.9861
 2022-081-S_caf34cc6605a8376,2022,81,S_caf34cc6605a8376,Broadway Girls,Lil Durk featuring Morgan Wallen,billboard_year_end,usable,en,Hip Hop/Rap,479,155,0.323591,-0.9903
-2022-082-S_963e541fa941cdc0,2022,82,S_963e541fa941cdc0,Take My Name,Parmalee,billboard_year_end,usable,en,Country|Rock,345,113,0.327536,0.9899
-2022-083-S_c689111dce03c4cf,2022,83,S_c689111dce03c4cf,What Happened to Virgil,Lil Durk featuring Gunna,billboard_year_end,usable,en,Hip Hop/Rap,618,286,0.462783,-0.9965
-2022-084-S_cdc9561e590d71e5,2022,84,S_cdc9561e590d71e5,Puffin on Zootiez,Future,billboard_year_end,usable,en,Hip Hop/Rap,753,243,0.322709,-0.9923
-2022-085-S_ac4db8631380f33b,2022,85,S_ac4db8631380f33b,Like I Love Country Music,Kane Brown,billboard_year_end,usable,en,Folk|Country,337,113,0.335312,0.999
-2022-086-S_73c6e1326a9f4033,2022,86,S_73c6e1326a9f4033,Jingle Bell Rock,Bobby Helms,billboard_year_end,usable,en,Jazz/Swing,196,56,0.285714,0.8555
+2022-082-S_963e541fa941cdc0,2022,82,S_963e541fa941cdc0,Take My Name,Parmalee,billboard_year_end,usable,en,Country|Rock,333,106,0.318318,0.9895
+2022-083-S_c689111dce03c4cf,2022,83,S_c689111dce03c4cf,What Happened to Virgil,Lil Durk featuring Gunna,billboard_year_end,usable,en,Hip Hop/Rap,613,283,0.461664,-0.9968
+2022-084-S_cdc9561e590d71e5,2022,84,S_cdc9561e590d71e5,Puffin on Zootiez,Future,billboard_year_end,usable,en,Hip Hop/Rap,741,236,0.318489,-0.9926
+2022-085-S_ac4db8631380f33b,2022,85,S_ac4db8631380f33b,Like I Love Country Music,Kane Brown,billboard_year_end,usable,en,Folk|Country,324,104,0.320988,0.999
+2022-086-S_73c6e1326a9f4033,2022,86,S_73c6e1326a9f4033,Jingle Bell Rock,Bobby Helms,billboard_year_end,usable,en,Jazz/Swing,191,51,0.267016,0.7845
 2022-087-S_79c783969ca18bc1,2022,87,S_79c783969ca18bc1,Ojitos Lindos,Bad Bunny and Bomba Estéreo,billboard_year_end,usable,es,Hip Hop/Rap|Latin,,,,
-2022-088-S_e62fd10628d7fe28,2022,88,S_e62fd10628d7fe28,Trouble with a Heartbreak,Jason Aldean,billboard_year_end,usable,en,Country|Rock,351,105,0.299145,-0.9991
-2022-089-S_5665f90fc9602fad,2022,89,S_5665f90fc9602fad,A Holly Jolly Christmas,Burl Ives,billboard_year_end,usable,en,Folk,206,62,0.300971,0.9969
-2022-090-S_32430221511c7989,2022,90,S_32430221511c7989,Kiss Me More,Doja Cat featuring SZA,billboard_year_end,usable,en,Pop,575,175,0.304348,0.9953
-2022-091-S_2efb81a2ae3105e8,2022,91,S_2efb81a2ae3105e8,She Likes It,Russell Dickerson featuring Jake Scott,billboard_year_end,usable,en,Soul|Indie,324,94,0.290123,0.9973
-2022-092-S_b5e5dcea58c04071,2022,92,S_b5e5dcea58c04071,Never Say Never,Cole Swindell and Lainey Wilson,billboard_year_end,usable,en,Country|Rock,316,99,0.313291,-0.9817
-2022-093-S_797e6365eda99864,2022,93,S_797e6365eda99864,Damn Strait,Scotty McCreery,billboard_year_end,usable,en,Country|Rock,362,128,0.353591,-0.6017
-2022-094-S_3486d6bff8657444,2022,94,S_3486d6bff8657444,She's All I Wanna Be,Tate McRae,billboard_year_end,usable,en,Pop,418,128,0.30622,-0.9984
-2022-095-S_c72b500052f3d565,2022,95,S_c72b500052f3d565,Last Night Lonely,Jon Pardi,billboard_year_end,usable,en,Country|Rock,287,87,0.303136,0.9853
-2022-096-S_7a682af6e0e0bec1,2022,96,S_7a682af6e0e0bec1,Flower Shops,Ernest featuring Morgan Wallen,billboard_year_end,usable,en,Country|Pop,246,101,0.410569,0.9648
+2022-088-S_e62fd10628d7fe28,2022,88,S_e62fd10628d7fe28,Trouble with a Heartbreak,Jason Aldean,billboard_year_end,usable,en,Country|Rock,339,96,0.283186,-0.9991
+2022-089-S_5665f90fc9602fad,2022,89,S_5665f90fc9602fad,A Holly Jolly Christmas,Burl Ives,billboard_year_end,usable,en,Folk,202,58,0.287129,0.9966
+2022-090-S_32430221511c7989,2022,90,S_32430221511c7989,Kiss Me More,Doja Cat featuring SZA,billboard_year_end,usable,en,Pop,562,166,0.295374,0.9951
+2022-091-S_2efb81a2ae3105e8,2022,91,S_2efb81a2ae3105e8,She Likes It,Russell Dickerson featuring Jake Scott,billboard_year_end,usable,en,Soul|Indie,311,83,0.266881,0.9973
+2022-092-S_b5e5dcea58c04071,2022,92,S_b5e5dcea58c04071,Never Say Never,Cole Swindell and Lainey Wilson,billboard_year_end,usable,en,Country|Rock,312,96,0.307692,-0.9851
+2022-093-S_797e6365eda99864,2022,93,S_797e6365eda99864,Damn Strait,Scotty McCreery,billboard_year_end,usable,en,Country|Rock,350,118,0.337143,-0.6724
+2022-094-S_3486d6bff8657444,2022,94,S_3486d6bff8657444,She's All I Wanna Be,Tate McRae,billboard_year_end,usable,en,Pop,405,117,0.288889,-0.9986
+2022-095-S_c72b500052f3d565,2022,95,S_c72b500052f3d565,Last Night Lonely,Jon Pardi,billboard_year_end,usable,en,Country|Rock,275,78,0.283636,0.9847
+2022-096-S_7a682af6e0e0bec1,2022,96,S_7a682af6e0e0bec1,Flower Shops,Ernest featuring Morgan Wallen,billboard_year_end,usable,en,Country|Pop,234,91,0.388889,0.9618
 2022-097-S_33b435d0742433c4,2022,97,S_33b435d0742433c4,To the Moon,Jnr Choi and Sam Tompkins,billboard_year_end,usable,en,Soul,459,85,0.185185,0.9924
-2022-098-S_f560d77f3def659c,2022,98,S_f560d77f3def659c,Unholy,Sam Smith and Kim Petras,billboard_year_end,usable,en,Pop,377,124,0.328912,0.9963
-2022-099-S_dc0cc18e2d0613fb,2022,99,S_dc0cc18e2d0613fb,One Mississippi,Kane Brown,billboard_year_end,usable,en,Folk|Country,393,124,0.315522,0.9863
-2022-100-S_3e8b8ca0f305340c,2022,100,S_3e8b8ca0f305340c,Circles Around This Town,Maren Morris,billboard_year_end,usable,en,Country,314,125,0.398089,0.9702
-2023-001-S_df3cddb4f552cd94,2023,1,S_df3cddb4f552cd94,Last Night,Morgan Wallen,billboard_year_end,usable,en,Country,383,121,0.315927,0.9616
-2023-002-S_77b3cbb5b4dc38e3,2023,2,S_77b3cbb5b4dc38e3,Flowers,Miley Cyrus,billboard_year_end,usable,en,Pop,338,85,0.251479,0.9998
-2023-003-S_d465513eb262dd3d,2023,3,S_d465513eb262dd3d,Kill Bill,SZA,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,374,129,0.34492,-0.9409
-2023-004-S_2769a1f53d2e668e,2023,4,S_2769a1f53d2e668e,Anti-Hero,Taylor Swift,billboard_year_end,usable,en,Pop,351,153,0.435897,-0.9883
-2023-005-S_05e812f5901ab03f,2023,5,S_05e812f5901ab03f,Creepin ',"Metro Boomin , the Weeknd and 21 Savage",billboard_year_end,usable,en,Latin,441,158,0.358277,0.9894
-2023-006-S_9aadd69e1bf14b8a,2023,6,S_9aadd69e1bf14b8a,Calm Down,Rema and Selena Gomez,billboard_year_end,usable,en,Pop,612,164,0.267974,0.9962
-2023-007-S_5d444286946f872d,2023,7,S_5d444286946f872d,Die for You,The Weeknd and Ariana Grande,billboard_year_end,usable,en,R&B|Pop,481,125,0.259875,-0.9991
-2023-008-S_22c197cea08185b9,2023,8,S_22c197cea08185b9,Fast Car,Luke Combs,billboard_year_end,usable,en,Country,521,194,0.372361,0.9767
-2023-009-S_3da1e89844c995e8,2023,9,S_3da1e89844c995e8,Snooze,SZA,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,450,136,0.302222,0.9557
-2023-010-S_be2a8728705dc721,2023,10,S_be2a8728705dc721,I'm Good (Blue),David Guetta and Bebe Rexha,billboard_year_end,usable,en,Pop|Dance/Electronic,280,74,0.264286,0.9979
-2023-011-S_f560d77f3def659c,2023,11,S_f560d77f3def659c,Unholy,Sam Smith and Kim Petras,billboard_year_end,usable,en,Pop,377,124,0.328912,0.9963
-2023-012-S_88159b246052edc2,2023,12,S_88159b246052edc2,You Proof,Morgan Wallen,billboard_year_end,usable,en,Country,310,110,0.354839,0.9914
-2023-013-S_04f27c9b32c2ce1e,2023,13,S_04f27c9b32c2ce1e,Something in the Orange,Zach Bryan,billboard_year_end,usable,en,Country|Pop,279,121,0.433692,-0.9935
-2023-014-S_290b8e3d1329abfe,2023,14,S_290b8e3d1329abfe,Rich Flex,Drake and 21 Savage,billboard_year_end,usable,en,Hip Hop/Rap,628,281,0.447452,-0.9986
-2023-015-S_74e7cf9419887dff,2023,15,S_74e7cf9419887dff,As It Was,Harry Styles,billboard_year_end,usable,en,Pop,246,101,0.410569,0.8632
-2023-016-S_05e207ad38ccf70f,2023,16,S_05e207ad38ccf70f,Rock and a Hard Place,Bailey Zimmerman,billboard_year_end,usable,en,Country|Pop,271,104,0.383764,-0.9877
-2023-017-S_ab3ad455df1e24f8,2023,17,S_ab3ad455df1e24f8,Under the Influence,Chris Brown,billboard_year_end,usable,en,Hip Hop/Rap|R&B,292,85,0.291096,0.9947
-2023-018-S_e08f56931365e5cf,2023,18,S_e08f56931365e5cf,Cruel Summer,Taylor Swift,billboard_year_end,usable,en,Pop,460,149,0.323913,-0.9278
-2023-019-S_c4179475f5f06499,2023,19,S_c4179475f5f06499,Thinkin' Bout Me,Morgan Wallen,billboard_year_end,usable,en,Country,452,119,0.263274,-0.7257
-2023-020-S_5aaef9c5f9a0c12d,2023,20,S_5aaef9c5f9a0c12d,Boy's a Liar Pt. 2,PinkPantheress and Ice Spice,billboard_year_end,usable,en,Pop,376,141,0.375,0.9751
-2023-021-S_319311a020d2ffbc,2023,21,S_319311a020d2ffbc,Favorite Song,Toosii,billboard_year_end,usable,en,Hip Hop/Rap,459,136,0.296296,0.9963
-2023-022-S_b477496c177f1bf9,2023,22,S_b477496c177f1bf9,Thought You Should Know,Morgan Wallen,billboard_year_end,usable,en,Country,384,129,0.335938,0.8176
-2023-023-S_bd5ba148e218a948,2023,23,S_bd5ba148e218a948,Thank God,Kane Brown and Katelyn Brown,billboard_year_end,usable,en,Rock|Pop|Soul,324,105,0.324074,0.9998
+2022-098-S_f560d77f3def659c,2022,98,S_f560d77f3def659c,Unholy,Sam Smith and Kim Petras,billboard_year_end,usable,en,Pop,372,121,0.325269,0.9961
+2022-099-S_dc0cc18e2d0613fb,2022,99,S_dc0cc18e2d0613fb,One Mississippi,Kane Brown,billboard_year_end,usable,en,Folk|Country,380,114,0.3,0.9856
+2022-100-S_3e8b8ca0f305340c,2022,100,S_3e8b8ca0f305340c,Circles Around This Town,Maren Morris,billboard_year_end,usable,en,Country,301,113,0.375415,0.9741
+2023-001-S_df3cddb4f552cd94,2023,1,S_df3cddb4f552cd94,Last Night,Morgan Wallen,billboard_year_end,usable,en,Country,370,111,0.3,0.9582
+2023-002-S_77b3cbb5b4dc38e3,2023,2,S_77b3cbb5b4dc38e3,Flowers,Miley Cyrus,billboard_year_end,usable,en,Pop,333,81,0.243243,0.9998
+2023-003-S_d465513eb262dd3d,2023,3,S_d465513eb262dd3d,Kill Bill,SZA,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,362,121,0.334254,-0.9522
+2023-004-S_2769a1f53d2e668e,2023,4,S_2769a1f53d2e668e,Anti-Hero,Taylor Swift,billboard_year_end,usable,en,Pop,338,144,0.426036,-0.9898
+2023-005-S_05e812f5901ab03f,2023,5,S_05e812f5901ab03f,Creepin ',"Metro Boomin , the Weeknd and 21 Savage",billboard_year_end,usable,en,Latin,436,155,0.355505,0.9887
+2023-006-S_9aadd69e1bf14b8a,2023,6,S_9aadd69e1bf14b8a,Calm Down,Rema and Selena Gomez,billboard_year_end,usable,en,Pop,607,161,0.265239,0.9966
+2023-007-S_5d444286946f872d,2023,7,S_5d444286946f872d,Die for You,The Weeknd and Ariana Grande,billboard_year_end,usable,en,R&B|Pop,476,122,0.256303,-0.9991
+2023-008-S_22c197cea08185b9,2023,8,S_22c197cea08185b9,Fast Car,Luke Combs,billboard_year_end,usable,en,Country,508,186,0.366142,0.9756
+2023-009-S_3da1e89844c995e8,2023,9,S_3da1e89844c995e8,Snooze,SZA,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,438,129,0.294521,0.953
+2023-010-S_be2a8728705dc721,2023,10,S_be2a8728705dc721,I'm Good (Blue),David Guetta and Bebe Rexha,billboard_year_end,usable,en,Pop|Dance/Electronic,275,70,0.254545,0.9979
+2023-011-S_f560d77f3def659c,2023,11,S_f560d77f3def659c,Unholy,Sam Smith and Kim Petras,billboard_year_end,usable,en,Pop,372,121,0.325269,0.9961
+2023-012-S_88159b246052edc2,2023,12,S_88159b246052edc2,You Proof,Morgan Wallen,billboard_year_end,usable,en,Country,297,100,0.3367,0.9911
+2023-013-S_04f27c9b32c2ce1e,2023,13,S_04f27c9b32c2ce1e,Something in the Orange,Zach Bryan,billboard_year_end,usable,en,Country|Pop,266,111,0.417293,-0.9937
+2023-014-S_290b8e3d1329abfe,2023,14,S_290b8e3d1329abfe,Rich Flex,Drake and 21 Savage,billboard_year_end,usable,en,Hip Hop/Rap,623,279,0.447833,-0.9986
+2023-015-S_74e7cf9419887dff,2023,15,S_74e7cf9419887dff,As It Was,Harry Styles,billboard_year_end,usable,en,Pop,241,97,0.40249,0.7976
+2023-016-S_05e207ad38ccf70f,2023,16,S_05e207ad38ccf70f,Rock and a Hard Place,Bailey Zimmerman,billboard_year_end,usable,en,Country|Pop,258,95,0.368217,-0.9883
+2023-017-S_ab3ad455df1e24f8,2023,17,S_ab3ad455df1e24f8,Under the Influence,Chris Brown,billboard_year_end,usable,en,Hip Hop/Rap|R&B,279,75,0.268817,0.9945
+2023-018-S_e08f56931365e5cf,2023,18,S_e08f56931365e5cf,Cruel Summer,Taylor Swift,billboard_year_end,usable,en,Pop,447,140,0.313199,-0.9203
+2023-019-S_c4179475f5f06499,2023,19,S_c4179475f5f06499,Thinkin' Bout Me,Morgan Wallen,billboard_year_end,usable,en,Country,439,110,0.250569,-0.7707
+2023-020-S_5aaef9c5f9a0c12d,2023,20,S_5aaef9c5f9a0c12d,Boy's a Liar Pt. 2,PinkPantheress and Ice Spice,billboard_year_end,usable,en,Pop,371,138,0.371968,0.9674
+2023-021-S_319311a020d2ffbc,2023,21,S_319311a020d2ffbc,Favorite Song,Toosii,billboard_year_end,usable,en,Hip Hop/Rap,454,134,0.295154,0.996
+2023-022-S_b477496c177f1bf9,2023,22,S_b477496c177f1bf9,Thought You Should Know,Morgan Wallen,billboard_year_end,usable,en,Country,371,119,0.320755,0.7003
+2023-023-S_bd5ba148e218a948,2023,23,S_bd5ba148e218a948,Thank God,Kane Brown and Katelyn Brown,billboard_year_end,usable,en,Rock|Pop|Soul,319,101,0.316614,0.9998
 2023-024-S_2c4fff90a4c998ba,2023,24,S_2c4fff90a4c998ba,Sure Thing,Miguel,billboard_year_end,usable,en,R&B,491,121,0.246436,0.9988
-2023-025-S_88f0092a632ccc40,2023,25,S_88f0092a632ccc40,All My Life,Lil Durk featuring J. Cole,billboard_year_end,usable,en,Hip Hop/Rap,740,281,0.37973,-0.9899
+2023-025-S_88f0092a632ccc40,2023,25,S_88f0092a632ccc40,All My Life,Lil Durk featuring J. Cole,billboard_year_end,usable,en,Hip Hop/Rap,735,278,0.378231,-0.9914
 2023-026-S_89fd9dc1df6d7ff6,2023,26,S_89fd9dc1df6d7ff6,Ella Baila Sola,Eslabon Armado and Peso Pluma,billboard_year_end,usable,es,Latin,,,,
 2023-027-S_79aa2bae64ec50e1,2023,27,S_79aa2bae64ec50e1,Karma,Taylor Swift featuring Ice Spice,billboard_year_end,usable,en,Pop,384,130,0.338542,0.994
-2023-028-S_76a4493961e09c44,2023,28,S_76a4493961e09c44,Just Wanna Rock,Lil Uzi Vert,billboard_year_end,usable,en,Hip Hop/Rap,285,74,0.259649,-0.9874
-2023-029-S_8c334d1d20a2c7d7,2023,29,S_8c334d1d20a2c7d7,Cuff It,Beyoncé,billboard_year_end,usable,en,R&B|Pop,601,150,0.249584,-0.9631
-2023-030-S_ec7d4be116dcb5e6,2023,30,S_ec7d4be116dcb5e6,Vampire,Olivia Rodrigo,billboard_year_end,usable,en,Pop,406,159,0.391626,-0.9864
-2023-031-S_f36e6242c300185f,2023,31,S_f36e6242c300185f,FukUMean,Gunna,billboard_year_end,usable,en,Hip Hop/Rap,329,165,0.50152,-0.9071
-2023-032-S_9c3a65acb2b57fb4,2023,32,S_9c3a65acb2b57fb4,Lavender Haze,Taylor Swift,billboard_year_end,usable,en,Pop,315,106,0.336508,-0.7865
-2023-033-S_8bbc3ef73795dc61,2023,33,S_8bbc3ef73795dc61,Players,Coi Leray,billboard_year_end,usable,en,Hip Hop/Rap,393,143,0.363868,0.9859
-2023-034-S_7e886324b9041094,2023,34,S_7e886324b9041094,Need a Favor,Jelly Roll,billboard_year_end,usable,en,Hip Hop/Rap|Country,362,107,0.29558,0.9946
-2023-035-S_0bf6721f2e3fbf40,2023,35,S_0bf6721f2e3fbf40,Dance the Night,Dua Lipa,billboard_year_end,usable,en,Pop,419,119,0.28401,0.9974
-2023-036-S_e84966f3c1aaece9,2023,36,S_e84966f3c1aaece9,Love You Anyway,Luke Combs,billboard_year_end,usable,en,Country,262,117,0.446565,0.9921
-2023-037-S_a52581dada503bfc,2023,37,S_a52581dada503bfc,One Thing at a Time,Morgan Wallen,billboard_year_end,usable,en,Country,415,130,0.313253,0.2444
-2023-038-S_30bdf09f88fbdf75,2023,38,S_30bdf09f88fbdf75,Superhero (Heroes & Villains),"Metro Boomin , Future and Chris Brown",billboard_year_end,usable,en,Hip Hop/Rap,582,222,0.381443,-0.9954
-2023-039-S_78ae0a8c780fd643,2023,39,S_78ae0a8c780fd643,Bad Habit,Steve Lacy,billboard_year_end,usable,en,Funk|Indie,410,133,0.32439,0.9749
+2023-028-S_76a4493961e09c44,2023,28,S_76a4493961e09c44,Just Wanna Rock,Lil Uzi Vert,billboard_year_end,usable,en,Hip Hop/Rap,271,62,0.228782,-0.9878
+2023-029-S_8c334d1d20a2c7d7,2023,29,S_8c334d1d20a2c7d7,Cuff It,Beyoncé,billboard_year_end,usable,en,R&B|Pop,596,147,0.246644,-0.9696
+2023-030-S_ec7d4be116dcb5e6,2023,30,S_ec7d4be116dcb5e6,Vampire,Olivia Rodrigo,billboard_year_end,usable,en,Pop,393,151,0.384224,-0.9871
+2023-031-S_f36e6242c300185f,2023,31,S_f36e6242c300185f,FukUMean,Gunna,billboard_year_end,usable,en,Hip Hop/Rap,317,158,0.498423,-0.8897
+2023-032-S_9c3a65acb2b57fb4,2023,32,S_9c3a65acb2b57fb4,Lavender Haze,Taylor Swift,billboard_year_end,usable,en,Pop,302,96,0.317881,-0.8192
+2023-033-S_8bbc3ef73795dc61,2023,33,S_8bbc3ef73795dc61,Players,Coi Leray,billboard_year_end,usable,en,Hip Hop/Rap,388,140,0.360825,0.9849
+2023-034-S_7e886324b9041094,2023,34,S_7e886324b9041094,Need a Favor,Jelly Roll,billboard_year_end,usable,en,Hip Hop/Rap|Country,350,97,0.277143,0.9944
+2023-035-S_0bf6721f2e3fbf40,2023,35,S_0bf6721f2e3fbf40,Dance the Night,Dua Lipa,billboard_year_end,usable,en,Pop,406,109,0.268473,0.9974
+2023-036-S_e84966f3c1aaece9,2023,36,S_e84966f3c1aaece9,Love You Anyway,Luke Combs,billboard_year_end,usable,en,Country,250,107,0.428,0.9919
+2023-037-S_a52581dada503bfc,2023,37,S_a52581dada503bfc,One Thing at a Time,Morgan Wallen,billboard_year_end,usable,en,Country,402,120,0.298507,0.0966
+2023-038-S_30bdf09f88fbdf75,2023,38,S_30bdf09f88fbdf75,Superhero (Heroes & Villains),"Metro Boomin , Future and Chris Brown",billboard_year_end,usable,en,Hip Hop/Rap,577,219,0.379549,-0.9965
+2023-039-S_78ae0a8c780fd643,2023,39,S_78ae0a8c780fd643,Bad Habit,Steve Lacy,billboard_year_end,usable,en,Funk|Indie,405,130,0.320988,0.9727
 2023-040-S_280c51cfe0ac414d,2023,40,S_280c51cfe0ac414d,La Bebé,Yng Lvcas and Peso Pluma,billboard_year_end,usable,es,Latin,,,,
-2023-041-S_0b83605419d0a1d6,2023,41,S_0b83605419d0a1d6,Golden Hour,Jvke,billboard_year_end,usable,en,Soul|Indie,208,104,0.5,0.9891
-2023-042-S_bad45bb76cc3b82a,2023,42,S_bad45bb76cc3b82a,Religiously,Bailey Zimmerman,billboard_year_end,usable,en,Country|Pop,354,141,0.398305,0.9104
-2023-043-S_1f9509f19d172ac0,2023,43,S_1f9509f19d172ac0,Spin Bout U,Drake and 21 Savage,billboard_year_end,usable,en,Hip Hop/Rap,615,255,0.414634,-0.8937
+2023-041-S_0b83605419d0a1d6,2023,41,S_0b83605419d0a1d6,Golden Hour,Jvke,billboard_year_end,usable,en,Soul|Indie,203,101,0.497537,0.9878
+2023-042-S_bad45bb76cc3b82a,2023,42,S_bad45bb76cc3b82a,Religiously,Bailey Zimmerman,billboard_year_end,usable,en,Country|Pop,342,132,0.385965,0.8983
+2023-043-S_1f9509f19d172ac0,2023,43,S_1f9509f19d172ac0,Spin Bout U,Drake and 21 Savage,billboard_year_end,usable,en,Hip Hop/Rap,610,252,0.413115,-0.9321
 2023-044-S_62db1fac5de4fd9d,2023,44,S_62db1fac5de4fd9d,Cupid,Fifty Fifty,billboard_year_end,usable,ko,Pop,,,,
 2023-045-S_694d124bfb3e0a1a,2023,45,S_694d124bfb3e0a1a,Search & Rescue,Drake,billboard_year_end,usable,en,Hip Hop/Rap|Pop,715,142,0.198601,0.9966
-2023-046-S_11dbc21620478df1,2023,46,S_11dbc21620478df1,Barbie World,Nicki Minaj and Ice Spice with Aqua,billboard_year_end,usable,en,Hip Hop/Rap|Pop,473,167,0.353066,-0.5887
-2023-047-S_eb01874cbf97bb0b,2023,47,S_eb01874cbf97bb0b,Next Thing You Know,Jordan Davis,billboard_year_end,usable,en,Country,358,177,0.494413,0.9794
-2023-048-S_19d90fd83bbc2a38,2023,48,S_19d90fd83bbc2a38,Escapism,Raye featuring 070 Shake,billboard_year_end,usable,en,Pop|Hip Hop/Rap,701,245,0.349501,-0.6915
+2023-046-S_11dbc21620478df1,2023,46,S_11dbc21620478df1,Barbie World,Nicki Minaj and Ice Spice with Aqua,billboard_year_end,usable,en,Hip Hop/Rap|Pop,468,164,0.350427,-0.662
+2023-047-S_eb01874cbf97bb0b,2023,47,S_eb01874cbf97bb0b,Next Thing You Know,Jordan Davis,billboard_year_end,usable,en,Country,345,167,0.484058,0.978
+2023-048-S_19d90fd83bbc2a38,2023,48,S_19d90fd83bbc2a38,Escapism,Raye featuring 070 Shake,billboard_year_end,usable,en,Pop|Hip Hop/Rap,696,243,0.349138,-0.7548
 2023-049-S_82a967da8e2d72e1,2023,49,S_82a967da8e2d72e1,Un x100to,Grupo Frontera and Bad Bunny,billboard_year_end,usable,es,Latin,,,,
-2023-050-S_d251dc242299e512,2023,50,S_d251dc242299e512,Until I Found You,Stephen Sanchez,billboard_year_end,usable,en,Soul,186,57,0.306452,-0.8954
-2023-051-S_86283153e711c142,2023,51,S_86283153e711c142,Shirt,SZA,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,356,114,0.320225,-0.9952
-2023-052-S_4a7833f8954149f9,2023,52,S_4a7833f8954149f9,Paint the Town Red,Doja Cat,billboard_year_end,usable,en,Pop,639,183,0.286385,-0.9975
-2023-053-S_028bd8bf3cf2fe27,2023,53,S_028bd8bf3cf2fe27,Made You Look,Meghan Trainor,billboard_year_end,usable,en,Pop,354,110,0.310734,0.631
-2023-054-S_eb82943000c70a22,2023,54,S_eb82943000c70a22,Wait in the Truck,Hardy featuring Lainey Wilson,billboard_year_end,usable,en,Country|Pop,521,177,0.339731,0.9987
-2023-055-S_8134f5e6f4ad38e0,2023,55,S_8134f5e6f4ad38e0,All I Want for Christmas Is You,Mariah Carey,billboard_year_end,usable,en,Indie,393,115,0.292621,0.9831
-2023-056-S_6a8e86d64855cfc9,2023,56,S_6a8e86d64855cfc9,Everything I Love,Morgan Wallen,billboard_year_end,usable,en,Country,323,134,0.414861,0.979
-2023-057-S_4101bcd339f9c844,2023,57,S_4101bcd339f9c844,Chemical,Post Malone,billboard_year_end,usable,en,Hip Hop/Rap|Pop,267,106,0.397004,0.9028
-2023-058-S_9e0bda5a84b76d4e,2023,58,S_9e0bda5a84b76d4e,Heart Like a Truck,Lainey Wilson,billboard_year_end,usable,en,Country|Pop,382,127,0.332461,0.998
-2023-059-S_201a8a4a5fe15ae3,2023,59,S_201a8a4a5fe15ae3,"Going, Going, Gone",Luke Combs,billboard_year_end,usable,en,Country,246,106,0.430894,0.9947
-2023-060-S_d3b0d7f8d1d4d1e4,2023,60,S_d3b0d7f8d1d4d1e4,Rockin' Around the Christmas Tree,Brenda Lee,billboard_year_end,usable,en,Pop|Funk|Jazz/Swing,125,63,0.504,0.9877
-2023-061-S_637b3efc8c3d4e16,2023,61,S_637b3efc8c3d4e16,Dancin' in the Country,Tyler Hubbard,billboard_year_end,usable,en,Country|Pop,388,110,0.283505,0.8786
-2023-062-S_0c1495e0d657b075,2023,62,S_0c1495e0d657b075,Daylight,David Kushner,billboard_year_end,usable,en,Soul,339,103,0.303835,-0.9156
-2023-063-S_946941b11621c73b,2023,63,S_946941b11621c73b,Lift Me Up,Rihanna,billboard_year_end,usable,en,Indie|Pop,183,45,0.245902,0.9955
-2023-064-S_741e88b4c7af4722,2023,64,S_741e88b4c7af4722,Eyes Closed,Ed Sheeran,billboard_year_end,usable,en,Soul|Pop,434,150,0.345622,0.9696
+2023-050-S_d251dc242299e512,2023,50,S_d251dc242299e512,Until I Found You,Stephen Sanchez,billboard_year_end,usable,en,Soul,173,47,0.271676,-0.9079
+2023-051-S_86283153e711c142,2023,51,S_86283153e711c142,Shirt,SZA,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,344,105,0.305233,-0.9954
+2023-052-S_4a7833f8954149f9,2023,52,S_4a7833f8954149f9,Paint the Town Red,Doja Cat,billboard_year_end,usable,en,Pop,626,174,0.277955,-0.9975
+2023-053-S_028bd8bf3cf2fe27,2023,53,S_028bd8bf3cf2fe27,Made You Look,Meghan Trainor,billboard_year_end,usable,en,Pop,341,100,0.293255,0.5499
+2023-054-S_eb82943000c70a22,2023,54,S_eb82943000c70a22,Wait in the Truck,Hardy featuring Lainey Wilson,billboard_year_end,usable,en,Country|Pop,516,174,0.337209,0.9987
+2023-055-S_8134f5e6f4ad38e0,2023,55,S_8134f5e6f4ad38e0,All I Want for Christmas Is You,Mariah Carey,billboard_year_end,usable,en,Indie,388,111,0.286082,0.9805
+2023-056-S_6a8e86d64855cfc9,2023,56,S_6a8e86d64855cfc9,Everything I Love,Morgan Wallen,billboard_year_end,usable,en,Country,311,126,0.405145,0.9859
+2023-057-S_4101bcd339f9c844,2023,57,S_4101bcd339f9c844,Chemical,Post Malone,billboard_year_end,usable,en,Hip Hop/Rap|Pop,254,95,0.374016,0.8893
+2023-058-S_9e0bda5a84b76d4e,2023,58,S_9e0bda5a84b76d4e,Heart Like a Truck,Lainey Wilson,billboard_year_end,usable,en,Country|Pop,369,119,0.322493,0.998
+2023-059-S_201a8a4a5fe15ae3,2023,59,S_201a8a4a5fe15ae3,"Going, Going, Gone",Luke Combs,billboard_year_end,usable,en,Country,234,96,0.410256,0.9945
+2023-060-S_d3b0d7f8d1d4d1e4,2023,60,S_d3b0d7f8d1d4d1e4,Rockin' Around the Christmas Tree,Brenda Lee,billboard_year_end,usable,en,Pop|Funk|Jazz/Swing,120,59,0.491667,0.9861
+2023-061-S_637b3efc8c3d4e16,2023,61,S_637b3efc8c3d4e16,Dancin' in the Country,Tyler Hubbard,billboard_year_end,usable,en,Country|Pop,383,107,0.279373,0.7829
+2023-062-S_0c1495e0d657b075,2023,62,S_0c1495e0d657b075,Daylight,David Kushner,billboard_year_end,usable,en,Soul,334,100,0.299401,-0.9439
+2023-063-S_946941b11621c73b,2023,63,S_946941b11621c73b,Lift Me Up,Rihanna,billboard_year_end,usable,en,Indie|Pop,178,41,0.230337,0.9958
+2023-064-S_741e88b4c7af4722,2023,64,S_741e88b4c7af4722,Eyes Closed,Ed Sheeran,billboard_year_end,usable,en,Soul|Pop,421,141,0.334917,0.9672
 2023-065-S_0d97db157ab1f6de,2023,65,S_0d97db157ab1f6de,TQG,Karol G and Shakira,billboard_year_end,usable,es,Pop|Latin,,,,
-2023-066-S_700d13402edf72a5,2023,66,S_700d13402edf72a5,Try That in a Small Town,Jason Aldean,billboard_year_end,usable,en,Country|Rock,274,105,0.383212,0.9571
-2023-067-S_f7f10f5ca6ec5446,2023,67,S_f7f10f5ca6ec5446,Tennessee Orange,Megan Moroney,billboard_year_end,usable,en,Country|Pop,332,119,0.358434,0.9861
-2023-068-S_73c6e1326a9f4033,2023,68,S_73c6e1326a9f4033,Jingle Bell Rock,Bobby Helms,billboard_year_end,usable,en,Jazz/Swing,196,56,0.285714,0.8555
-2023-069-S_cfa9594fcf724c99,2023,69,S_cfa9594fcf724c99,Princess Diana,Ice Spice and Nicki Minaj,billboard_year_end,usable,en,Hip Hop/Rap|Pop,818,214,0.261614,-0.9482
-2023-070-S_3d6f8e209b1a64d5,2023,70,S_3d6f8e209b1a64d5,Tomorrow 2,GloRilla and Cardi B,billboard_year_end,usable,en,Hip Hop/Rap,878,284,0.323462,-0.9991
-2023-071-S_5665f90fc9602fad,2023,71,S_5665f90fc9602fad,A Holly Jolly Christmas,Burl Ives,billboard_year_end,usable,en,Folk,206,62,0.300971,0.9969
+2023-066-S_700d13402edf72a5,2023,66,S_700d13402edf72a5,Try That in a Small Town,Jason Aldean,billboard_year_end,usable,en,Country|Rock,261,97,0.371648,0.9545
+2023-067-S_f7f10f5ca6ec5446,2023,67,S_f7f10f5ca6ec5446,Tennessee Orange,Megan Moroney,billboard_year_end,usable,en,Country|Pop,320,110,0.34375,0.9854
+2023-068-S_73c6e1326a9f4033,2023,68,S_73c6e1326a9f4033,Jingle Bell Rock,Bobby Helms,billboard_year_end,usable,en,Jazz/Swing,191,51,0.267016,0.7845
+2023-069-S_cfa9594fcf724c99,2023,69,S_cfa9594fcf724c99,Princess Diana,Ice Spice and Nicki Minaj,billboard_year_end,usable,en,Hip Hop/Rap|Pop,813,211,0.259533,-0.9628
+2023-070-S_3d6f8e209b1a64d5,2023,70,S_3d6f8e209b1a64d5,Tomorrow 2,GloRilla and Cardi B,billboard_year_end,usable,en,Hip Hop/Rap,873,282,0.323024,-0.9992
+2023-071-S_5665f90fc9602fad,2023,71,S_5665f90fc9602fad,A Holly Jolly Christmas,Burl Ives,billboard_year_end,usable,en,Folk,202,58,0.287129,0.9966
 2023-072-S_76a8dbf2a2bda390,2023,72,S_76a8dbf2a2bda390,Where She Goes,Bad Bunny,billboard_year_end,usable,es,Hip Hop/Rap|Latin,,,,
 2023-073-S_feebddc9b6cbb1bb,2023,73,S_feebddc9b6cbb1bb,Bebe Dame,Fuerza Regida and Grupo Frontera,billboard_year_end,usable,es,Latin,,,,
-2023-074-S_910dde69188d465f,2023,74,S_910dde69188d465f,I Remember Everything,Zach Bryan featuring Kacey Musgraves,billboard_year_end,usable,en,Country|Pop,343,130,0.379009,0.953
-2023-075-S_bad3af27fd898e22,2023,75,S_bad3af27fd898e22,I Like You (A Happier Song),Post Malone featuring Doja Cat,billboard_year_end,usable,en,Hip Hop/Rap|Pop,576,179,0.310764,0.9991
-2023-076-S_8a6be8253557a077,2023,76,S_8a6be8253557a077,What It Is (Block Boy),Doechii featuring Kodak Black,billboard_year_end,usable,en,Hip Hop/Rap|Latin,760,217,0.285526,0.9988
-2023-077-S_23a96510e31af46e,2023,77,S_23a96510e31af46e,Nobody Gets Me,SZA,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,274,102,0.372263,0.8832
+2023-074-S_910dde69188d465f,2023,74,S_910dde69188d465f,I Remember Everything,Zach Bryan featuring Kacey Musgraves,billboard_year_end,usable,en,Country|Pop,330,120,0.363636,0.9484
+2023-075-S_bad3af27fd898e22,2023,75,S_bad3af27fd898e22,I Like You (A Happier Song),Post Malone featuring Doja Cat,billboard_year_end,usable,en,Hip Hop/Rap|Pop,563,171,0.30373,0.9991
+2023-076-S_8a6be8253557a077,2023,76,S_8a6be8253557a077,What It Is (Block Boy),Doechii featuring Kodak Black,billboard_year_end,usable,en,Hip Hop/Rap|Latin,755,214,0.283444,0.9987
+2023-077-S_23a96510e31af46e,2023,77,S_23a96510e31af46e,Nobody Gets Me,SZA,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,262,94,0.358779,0.8656
 2023-078-S_f08f42fcf0e2fcce,2023,78,S_f08f42fcf0e2fcce,Rich Men North of Richmond,Oliver Anthony Music,billboard_year_end,usable,en,Country|Pop,320,131,0.409375,0.9315
-2023-079-S_2476e5d8aae9d5ad,2023,79,S_2476e5d8aae9d5ad,Super Freaky Girl,Nicki Minaj,billboard_year_end,usable,en,Hip Hop/Rap|Pop,567,199,0.35097,-0.9983
-2023-080-S_6c4752da6dc84a95,2023,80,S_6c4752da6dc84a95,Dial Drunk,Noah Kahan and Post Malone,billboard_year_end,usable,en,Hip Hop/Rap|Pop,481,166,0.345114,-0.999
-2023-081-S_4144441ec7655c61,2023,81,S_4144441ec7655c61,What Was I Made For?,Billie Eilish,billboard_year_end,usable,en,Pop,169,64,0.378698,0.9584
-2023-082-S_967d497303f7877c,2023,82,S_967d497303f7877c,Seven,Jung Kook featuring Latto,billboard_year_end,usable,en,Hip Hop/Rap,266,74,0.278195,0.91
+2023-079-S_2476e5d8aae9d5ad,2023,79,S_2476e5d8aae9d5ad,Super Freaky Girl,Nicki Minaj,billboard_year_end,usable,en,Hip Hop/Rap|Pop,554,190,0.34296,-0.9983
+2023-080-S_6c4752da6dc84a95,2023,80,S_6c4752da6dc84a95,Dial Drunk,Noah Kahan and Post Malone,billboard_year_end,usable,en,Hip Hop/Rap|Pop,477,163,0.341719,-0.9991
+2023-081-S_4144441ec7655c61,2023,81,S_4144441ec7655c61,What Was I Made For?,Billie Eilish,billboard_year_end,usable,en,Pop,164,61,0.371951,0.9409
+2023-082-S_967d497303f7877c,2023,82,S_967d497303f7877c,Seven,Jung Kook featuring Latto,billboard_year_end,usable,en,Hip Hop/Rap,262,70,0.267176,0.875
 2023-083-S_801a78ca786d39d0,2023,83,S_801a78ca786d39d0,Wait for U,Future featuring Drake and Tems,billboard_year_end,usable,en,Hip Hop/Rap,658,190,0.288754,0.914
-2023-084-S_ada74d559d01dd80,2023,84,S_ada74d559d01dd80,Last Christmas,Wham!,billboard_year_end,usable,en,Pop|Rock,551,118,0.214156,0.9995
-2023-085-S_666db2ae6d74c79e,2023,85,S_666db2ae6d74c79e,Handle on You,Parker McCollum,billboard_year_end,usable,en,Country,273,113,0.413919,-0.9217
+2023-084-S_ada74d559d01dd80,2023,84,S_ada74d559d01dd80,Last Christmas,Wham!,billboard_year_end,usable,en,Pop|Rock,546,114,0.208791,0.9995
+2023-085-S_666db2ae6d74c79e,2023,85,S_666db2ae6d74c79e,Handle on You,Parker McCollum,billboard_year_end,usable,en,Country,261,103,0.394636,-0.9301
 2023-086-S_ba7e010e24b1b336,2023,86,S_ba7e010e24b1b336,Por Las Noches,Peso Pluma,billboard_year_end,usable,es,Latin,,,,
-2023-087-S_92ec6efd103bf280,2023,87,S_92ec6efd103bf280,Memory Lane,Old Dominion,billboard_year_end,usable,en,Country|Rock,296,109,0.368243,0.9781
-2023-088-S_737226367976d3cb,2023,88,S_737226367976d3cb,Area Codes,Kaliii,billboard_year_end,usable,en,Hip Hop/Rap,428,175,0.408879,0.8957
-2023-089-S_793e09fbfc92a4ef,2023,89,S_793e09fbfc92a4ef,Bury Me in Georgia,Kane Brown,billboard_year_end,usable,en,Folk|Country,318,130,0.408805,0.9553
+2023-087-S_92ec6efd103bf280,2023,87,S_92ec6efd103bf280,Memory Lane,Old Dominion,billboard_year_end,usable,en,Country|Rock,284,101,0.355634,0.9771
+2023-088-S_737226367976d3cb,2023,88,S_737226367976d3cb,Area Codes,Kaliii,billboard_year_end,usable,en,Hip Hop/Rap,423,173,0.408983,0.8202
+2023-089-S_793e09fbfc92a4ef,2023,89,S_793e09fbfc92a4ef,Bury Me in Georgia,Kane Brown,billboard_year_end,usable,en,Folk|Country,306,119,0.388889,0.951
 2023-090-S_cf3dfb859beebd51,2023,90,S_cf3dfb859beebd51,PRC,Peso Pluma and Natanael Cano,billboard_year_end,usable,es,Latin,,,,
-2023-091-S_27b3a10e5f306b51,2023,91,S_27b3a10e5f306b51,What My World Spins Around,Jordan Davis,billboard_year_end,usable,en,Country,429,138,0.321678,0.9939
-2023-092-S_f11acd48d5d05527,2023,92,S_f11acd48d5d05527,Ain't That Some,Morgan Wallen,billboard_year_end,usable,en,Country,426,121,0.284038,0.9654
-2023-093-S_c4ea642f57786bcd,2023,93,S_c4ea642f57786bcd,Wild as Her,Corey Kent,billboard_year_end,usable,en,Country|Pop,286,132,0.461538,0.9937
-2023-094-S_59c701bb035cb9bc,2023,94,S_59c701bb035cb9bc,Peaches & Eggplants,Young Nudy featuring 21 Savage,billboard_year_end,usable,en,Hip Hop/Rap,654,195,0.298165,0.8904
-2023-095-S_fd2753e7b45e84b3,2023,95,S_fd2753e7b45e84b3,I Wrote the Book,Morgan Wallen,billboard_year_end,usable,en,Country,374,127,0.339572,0.9868
+2023-091-S_27b3a10e5f306b51,2023,91,S_27b3a10e5f306b51,What My World Spins Around,Jordan Davis,billboard_year_end,usable,en,Country,417,128,0.306954,0.9937
+2023-092-S_f11acd48d5d05527,2023,92,S_f11acd48d5d05527,Ain't That Some,Morgan Wallen,billboard_year_end,usable,en,Country,414,110,0.2657,0.9739
+2023-093-S_c4ea642f57786bcd,2023,93,S_c4ea642f57786bcd,Wild as Her,Corey Kent,billboard_year_end,usable,en,Country|Pop,282,128,0.453901,0.9935
+2023-094-S_59c701bb035cb9bc,2023,94,S_59c701bb035cb9bc,Peaches & Eggplants,Young Nudy featuring 21 Savage,billboard_year_end,usable,en,Hip Hop/Rap,649,192,0.29584,0.8089
+2023-095-S_fd2753e7b45e84b3,2023,95,S_fd2753e7b45e84b3,I Wrote the Book,Morgan Wallen,billboard_year_end,usable,en,Country,363,117,0.322314,0.9885
 2023-096-S_47acabe3d2bfb23f,2023,96,S_47acabe3d2bfb23f,"Bzrp Music Sessions, Vol. 53",Bizarrap and Shakira,billboard_year_end,usable,es,Hip Hop/Rap|Latin,,,,
 2023-097-S_45f647c507ec5f90,2023,97,S_45f647c507ec5f90,Meltdown,Travis Scott featuring Drake,billboard_year_end,usable,en,Pop,725,290,0.4,-0.9995
-2023-098-S_4fb4d944d4647dab,2023,98,S_4fb4d944d4647dab,Put It on da Floor Again,Latto featuring Cardi B,billboard_year_end,usable,en,Hip Hop/Rap,605,254,0.419835,-0.9987
-2023-099-S_e9b0ac30fd9c31e7,2023,99,S_e9b0ac30fd9c31e7,Bloody Mary,Lady Gaga,billboard_year_end,usable,en,Pop,304,102,0.335526,0.9597
-2023-100-S_8545509a8d0858fb,2023,100,S_8545509a8d0858fb,Watermelon Moonshine,Lainey Wilson,billboard_year_end,usable,en,Country|Pop,326,136,0.417178,0.9941
+2023-098-S_4fb4d944d4647dab,2023,98,S_4fb4d944d4647dab,Put It on da Floor Again,Latto featuring Cardi B,billboard_year_end,usable,en,Hip Hop/Rap,601,251,0.417637,-0.9989
+2023-099-S_e9b0ac30fd9c31e7,2023,99,S_e9b0ac30fd9c31e7,Bloody Mary,Lady Gaga,billboard_year_end,usable,en,Pop,291,94,0.323024,0.9713
+2023-100-S_8545509a8d0858fb,2023,100,S_8545509a8d0858fb,Watermelon Moonshine,Lainey Wilson,billboard_year_end,usable,en,Country|Pop,313,127,0.405751,0.9938
 2024-001-S_9c1de86b030a2027,2024,1,S_9c1de86b030a2027,Lose Control,Teddy Swims,billboard_year_end,usable,en,Soul,281,114,0.405694,0.5799
 2024-002-S_e29e5002c691b3f5,2024,2,S_e29e5002c691b3f5,A Bar Song (Tipsy),Shaboozey,billboard_year_end,usable,en,Country|Pop|Hip Hop/Rap,356,118,0.331461,0.8327
 2024-003-S_27841ce26c183d67,2024,3,S_27841ce26c183d67,Beautiful Things,Benson Boone,billboard_year_end,usable,en,Rock|Pop|Folk,255,106,0.415686,0.9946
@@ -6508,10 +6508,10 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2024-006-S_6d7528f29f49f0f5,2024,6,S_6d7528f29f49f0f5,Not Like Us,Kendrick Lamar,billboard_year_end,usable,en,Hip Hop/Rap,904,372,0.411504,-0.4933
 2024-007-S_a7e707549cd8bb13,2024,7,S_a7e707549cd8bb13,Espresso,Sabrina Carpenter,billboard_year_end,usable,en,Dance/Electronic|Funk|Pop,391,105,0.268542,0.9936
 2024-008-S_425ecd704b6617c4,2024,8,S_425ecd704b6617c4,Million Dollar Baby,Tommy Richman,billboard_year_end,missing,,R&B|Dance/Electronic|Funk|Hip Hop/Rap,,,,
-2024-009-S_910dde69188d465f,2024,9,S_910dde69188d465f,I Remember Everything,Zach Bryan featuring Kacey Musgraves,billboard_year_end,usable,en,Country|Pop,343,130,0.379009,0.953
+2024-009-S_910dde69188d465f,2024,9,S_910dde69188d465f,I Remember Everything,Zach Bryan featuring Kacey Musgraves,billboard_year_end,usable,en,Country|Pop,330,120,0.363636,0.9484
 2024-010-S_ca2cb36d24f2cdb7,2024,10,S_ca2cb36d24f2cdb7,Too Sweet,Hozier,billboard_year_end,usable,en,Soul|Rock|Pop|Funk,348,131,0.376437,0.9985
 2024-011-S_e553da5f28c03e60,2024,11,S_e553da5f28c03e60,Stick Season,Noah Kahan,billboard_year_end,usable,en,Folk,420,152,0.361905,0.9924
-2024-012-S_e08f56931365e5cf,2024,12,S_e08f56931365e5cf,Cruel Summer,Taylor Swift,billboard_year_end,usable,en,Pop,460,149,0.323913,-0.9278
+2024-012-S_e08f56931365e5cf,2024,12,S_e08f56931365e5cf,Cruel Summer,Taylor Swift,billboard_year_end,usable,en,Pop,447,140,0.313199,-0.9203
 2024-013-S_3d7cb4275290549c,2024,13,S_3d7cb4275290549c,Greedy,Tate McRae,billboard_year_end,usable,en,Dance/Electronic|Pop|R&B,288,105,0.364583,0.5436
 2024-014-S_80a8a0c4dbae5526,2024,14,S_80a8a0c4dbae5526,Like That,"Future , Metro Boomin and Kendrick Lamar",billboard_year_end,usable,en,Hip Hop/Rap,1018,281,0.276031,0.9926
 2024-015-S_30c7d44cb47d6a2e,2024,15,S_30c7d44cb47d6a2e,Birds of a Feather,Billie Eilish,billboard_year_end,usable,en,Pop|Dance/Electronic,297,113,0.380471,-0.3636
@@ -6519,18 +6519,18 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2024-017-S_e9a43b1756d08674,2024,17,S_e9a43b1756d08674,Agora Hills,Doja Cat,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,705,215,0.304965,0.9962
 2024-018-S_0261307a82f23dc2,2024,18,S_0261307a82f23dc2,"Good Luck, Babe!",Chappell Roan,billboard_year_end,usable,en,Dance/Electronic|Pop,455,114,0.250549,0.9997
 2024-019-S_deec73d25feb24c5,2024,19,S_deec73d25feb24c5,Saturn,SZA,billboard_year_end,usable,en,R&B,261,111,0.425287,-0.9375
-2024-020-S_3da1e89844c995e8,2024,20,S_3da1e89844c995e8,Snooze,SZA,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,450,136,0.302222,0.9557
-2024-021-S_4a7833f8954149f9,2024,21,S_4a7833f8954149f9,Paint the Town Red,Doja Cat,billboard_year_end,usable,en,Pop,639,183,0.286385,-0.9975
+2024-020-S_3da1e89844c995e8,2024,20,S_3da1e89844c995e8,Snooze,SZA,billboard_year_end,usable,en,Hip Hop/Rap|Pop|R&B,438,129,0.294521,0.953
+2024-021-S_4a7833f8954149f9,2024,21,S_4a7833f8954149f9,Paint the Town Red,Doja Cat,billboard_year_end,usable,en,Pop,626,174,0.277955,-0.9975
 2024-022-S_e96cbcb81b737552,2024,22,S_e96cbcb81b737552,Fortnight,Taylor Swift featuring Post Malone,billboard_year_end,usable,en,Dance/Electronic|Pop,289,109,0.377163,0.9109
-2024-023-S_22c197cea08185b9,2024,23,S_22c197cea08185b9,Fast Car,Luke Combs,billboard_year_end,usable,en,Country,521,194,0.372361,0.9767
+2024-023-S_22c197cea08185b9,2024,23,S_22c197cea08185b9,Fast Car,Luke Combs,billboard_year_end,usable,en,Country,508,186,0.366142,0.9756
 2024-024-S_e5ac08177838e8c9,2024,24,S_e5ac08177838e8c9,Water,Tyla,billboard_year_end,unverified,,R&B|Pop,,,,
 2024-025-S_aaa73d2f1e3c83a4,2024,25,S_aaa73d2f1e3c83a4,Feather,Sabrina Carpenter,billboard_year_end,usable,en,Dance/Electronic|Pop,456,102,0.223684,0.9801
 2024-026-S_6bc99cad4da8f8ee,2024,26,S_6bc99cad4da8f8ee,We Can't Be Friends (Wait for Your Love),Ariana Grande,billboard_year_end,usable,en,Pop|Dance/Electronic,276,90,0.326087,0.9992
 2024-027-S_9347b67ab2b323cf,2024,27,S_9347b67ab2b323cf,Austin,Dasha,billboard_year_end,usable,en,Country|Pop,325,138,0.424615,-0.9951
-2024-028-S_df3cddb4f552cd94,2024,28,S_df3cddb4f552cd94,Last Night,Morgan Wallen,billboard_year_end,usable,en,Country,383,121,0.315927,0.9616
+2024-028-S_df3cddb4f552cd94,2024,28,S_df3cddb4f552cd94,Last Night,Morgan Wallen,billboard_year_end,usable,en,Country,370,111,0.3,0.9582
 2024-029-S_502cbbf4a3a4058a,2024,29,S_502cbbf4a3a4058a,Cowgirls,Morgan Wallen featuring Ernest,billboard_year_end,usable,en,Country|Pop,331,128,0.386707,0.9979
 2024-030-S_aa2724e9578e90ae,2024,30,S_aa2724e9578e90ae,Pink Skies,Zach Bryan,billboard_year_end,usable,en,Country,237,102,0.43038,0.9711
-2024-031-S_c4179475f5f06499,2024,31,S_c4179475f5f06499,Thinkin' Bout Me,Morgan Wallen,billboard_year_end,usable,en,Country,452,119,0.263274,-0.7257
+2024-031-S_c4179475f5f06499,2024,31,S_c4179475f5f06499,Thinkin' Bout Me,Morgan Wallen,billboard_year_end,usable,en,Country,439,110,0.250569,-0.7707
 2024-032-S_612b75748bbd215d,2024,32,S_612b75748bbd215d,Texas Hold 'Em,Beyoncé,billboard_year_end,usable,en,Country|Pop|Soul,537,131,0.243948,0.9522
 2024-033-S_12e0da2351a854de,2024,33,S_12e0da2351a854de,Is It Over Now?,Taylor Swift,billboard_year_end,usable,en,Dance/Electronic|Pop,371,139,0.374663,-0.6715
 2024-034-S_dc5e8a9c59dd57d0,2024,34,S_dc5e8a9c59dd57d0,Miles on It,Marshmello and Kane Brown,billboard_year_end,usable,en,Country|Pop,424,110,0.259434,0.9755
@@ -6545,7 +6545,7 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2024-043-S_f8a8bb52a12609f5,2024,43,S_f8a8bb52a12609f5,Houdini,Dua Lipa,billboard_year_end,usable,en,Dance/Electronic|Pop,360,93,0.258333,0.9612
 2024-044-S_5221cc566275d708,2024,44,S_5221cc566275d708,Yeah Glo!,GloRilla,billboard_year_end,missing,,Hip Hop/Rap,,,,
 2024-045-S_0e21f2add0ccd6ad,2024,45,S_0e21f2add0ccd6ad,Rich Baby Daddy,Drake featuring Sexyy Red and SZA,billboard_year_end,usable,en,Hip Hop/Rap,836,229,0.273923,-0.9993
-2024-046-S_4144441ec7655c61,2024,46,S_4144441ec7655c61,What Was I Made For?,Billie Eilish,billboard_year_end,usable,en,Pop,169,64,0.378698,0.9584
+2024-046-S_4144441ec7655c61,2024,46,S_4144441ec7655c61,What Was I Made For?,Billie Eilish,billboard_year_end,usable,en,Pop,164,61,0.371951,0.9409
 2024-047-S_55974fb6b60574c5,2024,47,S_55974fb6b60574c5,End of Beginning,Djo,billboard_year_end,usable,en,Dance/Electronic|Pop|Rock,192,70,0.364583,0.5058
 2024-048-S_e6fee48012c51627,2024,48,S_e6fee48012c51627,Lunch,Billie Eilish,billboard_year_end,usable,en,Dance/Electronic|Rock|Pop,314,125,0.398089,0.9877
 2024-049-S_c6858bf45fdf045a,2024,49,S_c6858bf45fdf045a,Never Lose Me,Flo Milli,billboard_year_end,usable,en,Hip Hop/Rap,424,113,0.266509,-0.9367
@@ -6553,27 +6553,27 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2024-051-S_8efdd93bcf64b216,2024,51,S_8efdd93bcf64b216,Type Shit,"Future , Metro Boomin , Travis Scott , and Playboi Carti",billboard_year_end,usable,en,Hip Hop/Rap,728,254,0.348901,-0.9998
 2024-052-S_a3547273d2336b16,2024,52,S_a3547273d2336b16,Gata Only,FloyyMenor and Cris MJ,billboard_year_end,missing,,Latin,,,,
 2024-053-S_ebae01fd89167405,2024,53,S_ebae01fd89167405,Hot to Go!,Chappell Roan,billboard_year_end,usable,en,Dance/Electronic|Pop,470,115,0.244681,-0.9298
-2024-054-S_8134f5e6f4ad38e0,2024,54,S_8134f5e6f4ad38e0,All I Want for Christmas Is You,Mariah Carey,billboard_year_end,usable,en,Pop|Soul|R&B,393,115,0.292621,0.9831
+2024-054-S_8134f5e6f4ad38e0,2024,54,S_8134f5e6f4ad38e0,All I Want for Christmas Is You,Mariah Carey,billboard_year_end,usable,en,Pop|Soul|R&B,388,111,0.286082,0.9805
 2024-055-S_3d5dca05f5d0730c,2024,55,S_3d5dca05f5d0730c,Get It Sexyy,Sexyy Red,billboard_year_end,unverified,,Hip Hop/Rap,,,,
 2024-056-S_0b8a54019f773eac,2024,56,S_0b8a54019f773eac,Made for Me,Muni Long,billboard_year_end,unverified,,R&B,,,,
-2024-057-S_ec7d4be116dcb5e6,2024,57,S_ec7d4be116dcb5e6,Vampire,Olivia Rodrigo,billboard_year_end,usable,en,Pop,406,159,0.391626,-0.9864
+2024-057-S_ec7d4be116dcb5e6,2024,57,S_ec7d4be116dcb5e6,Vampire,Olivia Rodrigo,billboard_year_end,usable,en,Pop,393,151,0.384224,-0.9871
 2024-058-S_4e4666fe5f7feb02,2024,58,S_4e4666fe5f7feb02,Whatever She Wants,Bryson Tiller,billboard_year_end,usable,en,Hip Hop/Rap|R&B,504,163,0.323413,-0.969
-2024-059-S_d3b0d7f8d1d4d1e4,2024,59,S_d3b0d7f8d1d4d1e4,Rockin' Around the Christmas Tree,Brenda Lee,billboard_year_end,usable,en,Rock,125,63,0.504,0.9877
+2024-059-S_d3b0d7f8d1d4d1e4,2024,59,S_d3b0d7f8d1d4d1e4,Rockin' Around the Christmas Tree,Brenda Lee,billboard_year_end,usable,en,Rock,120,59,0.491667,0.9861
 2024-060-S_f2864dee5e4746b4,2024,60,S_f2864dee5e4746b4,Pretty Little Poison,Warren Zeiders,billboard_year_end,usable,en,Country,255,102,0.4,0.9535
 2024-061-S_1bfd410bf7862bc2,2024,61,S_1bfd410bf7862bc2,First Person Shooter,Drake featuring J. Cole,billboard_year_end,usable,en,Hip Hop/Rap,819,328,0.400488,-0.9685
 2024-062-S_28796117dab9a23d,2024,62,S_28796117dab9a23d,Die with a Smile,Lady Gaga and Bruno Mars,billboard_year_end,usable,en,Pop|Soul|Rock,295,84,0.284746,0.9847
 2024-063-S_efcc3e06b12bbb2f,2024,63,S_efcc3e06b12bbb2f,I Like the Way You Kiss Me,Artemas,billboard_year_end,usable,en,Pop,393,76,0.193384,0.9983
-2024-064-S_7e886324b9041094,2024,64,S_7e886324b9041094,Need a Favor,Jelly Roll,billboard_year_end,usable,en,Hip Hop/Rap|Country,362,107,0.29558,0.9946
+2024-064-S_7e886324b9041094,2024,64,S_7e886324b9041094,Need a Favor,Jelly Roll,billboard_year_end,usable,en,Hip Hop/Rap|Country,350,97,0.277143,0.9944
 2024-065-S_a290027942bd11e3,2024,65,S_a290027942bd11e3,Save Me,Jelly Roll featuring Lainey Wilson,billboard_year_end,usable,en,Country,265,92,0.34717,-0.9066
 2024-066-S_2c76cf81a2de4a7b,2024,66,S_2c76cf81a2de4a7b,Euphoria,Kendrick Lamar,billboard_year_end,usable,en,Hip Hop/Rap,1441,534,0.370576,-0.9981
 2024-067-S_1e3f5c3b229b871d,2024,67,S_1e3f5c3b229b871d,Truck Bed,Hardy,billboard_year_end,usable,en,Country|Rock|Pop,410,114,0.278049,-0.9942
-2024-068-S_73c6e1326a9f4033,2024,68,S_73c6e1326a9f4033,Jingle Bell Rock,Bobby Helms,billboard_year_end,usable,en,Jazz/Swing,196,56,0.285714,0.8555
-2024-069-S_77b3cbb5b4dc38e3,2024,69,S_77b3cbb5b4dc38e3,Flowers,Miley Cyrus,billboard_year_end,usable,en,Pop,338,85,0.251479,0.9998
+2024-068-S_73c6e1326a9f4033,2024,68,S_73c6e1326a9f4033,Jingle Bell Rock,Bobby Helms,billboard_year_end,usable,en,Jazz/Swing,191,51,0.267016,0.7845
+2024-069-S_77b3cbb5b4dc38e3,2024,69,S_77b3cbb5b4dc38e3,Flowers,Miley Cyrus,billboard_year_end,usable,en,Pop,333,81,0.243243,0.9998
 2024-070-S_1f587909ec1a4e98,2024,70,S_1f587909ec1a4e98,Where the Wild Things Are,Luke Combs,billboard_year_end,usable,en,Country,303,153,0.50495,0.9444
 2024-071-S_11cce36904eaeec6,2024,71,S_11cce36904eaeec6,Everybody,Nicki Minaj featuring Lil Uzi Vert,billboard_year_end,usable,en,Dance/Electronic|Hip Hop/Rap,777,181,0.232947,-0.7991
 2024-072-S_3d0dd7535ae29f3b,2024,72,S_3d0dd7535ae29f3b,La Diabla,Xavi,billboard_year_end,unverified,,Latin,,,,
 2024-073-S_a024b206684e581c,2024,73,S_a024b206684e581c,Stargazing,Myles Smith,billboard_year_end,usable,en,Pop|Folk,213,75,0.352113,-0.7868
-2024-074-S_ada74d559d01dd80,2024,74,S_ada74d559d01dd80,Last Christmas,Wham!,billboard_year_end,usable,en,Pop|Rock,551,118,0.214156,0.9995
+2024-074-S_ada74d559d01dd80,2024,74,S_ada74d559d01dd80,Last Christmas,Wham!,billboard_year_end,usable,en,Pop|Rock,546,114,0.208791,0.9995
 2024-075-S_53a58c994bb0df70,2024,75,S_53a58c994bb0df70,I Am Not Okay,Jelly Roll,billboard_year_end,usable,en,Country,252,88,0.349206,0.9506
 2024-076-S_ee8582dbfe8943a2,2024,76,S_ee8582dbfe8943a2,Pour Me a Drink,Post Malone featuring Blake Shelton,billboard_year_end,missing,,Country|Pop,,,,
 2024-077-S_f485dae693fe6a14,2024,77,S_f485dae693fe6a14,White Horse,Chris Stapleton,billboard_year_end,usable,en,Country|Rock|Blues,226,66,0.292035,0.982
@@ -6584,7 +6584,7 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2024-082-S_42ef35ee1ff7d6de,2024,82,S_42ef35ee1ff7d6de,Monaco,Bad Bunny,billboard_year_end,usable,es,Hip Hop/Rap|Latin,,,,
 2024-083-S_9c0a7de307a000f2,2024,83,S_9c0a7de307a000f2,IDGAF,Drake featuring Yeat,billboard_year_end,usable,en,Hip Hop/Rap,695,232,0.333813,0.9911
 2024-084-S_a9cd756b673c7a9c,2024,84,S_a9cd756b673c7a9c,Burn It Down,Parker McCollum,billboard_year_end,usable,en,Country,219,77,0.351598,0.848
-2024-085-S_f36e6242c300185f,2024,85,S_f36e6242c300185f,FukUMean,Gunna,billboard_year_end,usable,en,Hip Hop/Rap,329,165,0.50152,-0.9071
+2024-085-S_f36e6242c300185f,2024,85,S_f36e6242c300185f,FukUMean,Gunna,billboard_year_end,usable,en,Hip Hop/Rap,317,158,0.498423,-0.8897
 2024-086-S_2fec90c17344a63f,2024,86,S_2fec90c17344a63f,Taste,Sabrina Carpenter,billboard_year_end,usable,en,Pop|Country|Rock,299,115,0.384615,0.9836
 2024-087-S_9616918424ed7820,2024,87,S_9616918424ed7820,Where It Ends,Bailey Zimmerman,billboard_year_end,usable,en,Country|Rock,343,108,0.314869,0.9433
 2024-088-S_f0a524c42068491d,2024,88,S_f0a524c42068491d,FTCU,Nicki Minaj,billboard_year_end,usable,en,Hip Hop/Rap,410,146,0.356098,0.9838
@@ -6593,13 +6593,13 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2024-091-S_3e358c6963e697b5,2024,91,S_3e358c6963e697b5,On My Mama,Victoria Monét,billboard_year_end,usable,en,R&B|Dance/Electronic,419,117,0.279236,0.9988
 2024-092-S_edbf8d28023b8d5f,2024,92,S_edbf8d28023b8d5f,"Yes, And?",Ariana Grande,billboard_year_end,missing,,Dance/Electronic|Pop,,,,
 2024-093-S_2e9ec4628544e542,2024,93,S_2e9ec4628544e542,Exes,Tate McRae,billboard_year_end,usable,en,Pop|R&B|Hip Hop/Rap,515,124,0.240777,0.9983
-2024-094-S_5665f90fc9602fad,2024,94,S_5665f90fc9602fad,A Holly Jolly Christmas,Burl Ives,billboard_year_end,usable,en,Folk,206,62,0.300971,0.9969
+2024-094-S_5665f90fc9602fad,2024,94,S_5665f90fc9602fad,A Holly Jolly Christmas,Burl Ives,billboard_year_end,usable,en,Folk,202,58,0.287129,0.9966
 2024-095-S_4063a1bd21bd61b6,2024,95,S_4063a1bd21bd61b6,Wind Up Missin' You,Tucker Wetmore,billboard_year_end,usable,en,Country,343,115,0.335277,0.9923
 2024-096-S_2091d2686f1e0614,2024,96,S_2091d2686f1e0614,Bulletproof,Nate Smith,billboard_year_end,usable,en,Country|Rock,313,107,0.341853,-0.8319
 2024-097-S_e121b4528e64c900,2024,97,S_e121b4528e64c900,Fe!n,Travis Scott featuring Playboi Carti,billboard_year_end,usable,en,Hip Hop/Rap,585,176,0.300855,-0.7897
 2024-098-S_30a4c24d58ec0ddd,2024,98,S_30a4c24d58ec0ddd,The Painter,Cody Johnson,billboard_year_end,usable,en,Country,263,101,0.38403,0.9915
 2024-099-S_70fc0ba70daf6cd2,2024,99,S_70fc0ba70daf6cd2,Down Bad,Taylor Swift,billboard_year_end,usable,en,Dance/Electronic|Pop,430,130,0.302326,-0.9962
-2024-100-S_0bf6721f2e3fbf40,2024,100,S_0bf6721f2e3fbf40,Dance the Night,Dua Lipa,billboard_year_end,usable,en,Pop,419,119,0.28401,0.9974
+2024-100-S_0bf6721f2e3fbf40,2024,100,S_0bf6721f2e3fbf40,Dance the Night,Dua Lipa,billboard_year_end,usable,en,Pop,406,109,0.268473,0.9974
 2025-001-S_28796117dab9a23d,2025,1,S_28796117dab9a23d,Die with a Smile,Lady Gaga and Bruno Mars,billboard_year_end,usable,en,Pop|Soul|Rock,295,84,0.284746,0.9847
 2025-002-S_cd065018d3f8ff11,2025,2,S_cd065018d3f8ff11,Luther,Kendrick Lamar and SZA,billboard_year_end,usable,en,R&B|Hip Hop/Rap,415,143,0.344578,0.9555
 2025-003-S_e29e5002c691b3f5,2025,3,S_e29e5002c691b3f5,A Bar Song (Tipsy),Shaboozey,billboard_year_end,usable,en,Country|Pop|Hip Hop/Rap,356,118,0.331461,0.8327
@@ -6658,15 +6658,15 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2025-056-S_08e65d2dfc11bf5c,2025,56,S_08e65d2dfc11bf5c,Abracadabra,Lady Gaga,billboard_year_end,usable,en,Dance/Electronic|Pop,297,102,0.343434,0.3883
 2025-057-S_3be4e84afd5f675e,2025,57,S_3be4e84afd5f675e,Who,Jimin,billboard_year_end,usable,en,Dance/Electronic|Pop|R&B|Hip Hop/Rap,339,74,0.218289,0.9982
 2025-058-S_d53db44e2d521c8a,2025,58,S_d53db44e2d521c8a,Burning Blue,Mariah the Scientist,billboard_year_end,usable,en,R&B,284,97,0.341549,-0.9765
-2025-059-S_8134f5e6f4ad38e0,2025,59,S_8134f5e6f4ad38e0,All I Want for Christmas Is You,Mariah Carey,billboard_year_end,usable,en,Pop|Soul|R&B,393,115,0.292621,0.9831
+2025-059-S_8134f5e6f4ad38e0,2025,59,S_8134f5e6f4ad38e0,All I Want for Christmas Is You,Mariah Carey,billboard_year_end,usable,en,Pop|Soul|R&B,388,111,0.286082,0.9805
 2025-060-S_b4542339310300e6,2025,60,S_b4542339310300e6,Daisies,Justin Bieber,billboard_year_end,usable,en,Pop,343,104,0.303207,0.9627
 2025-061-S_0e448c7fa480c41f,2025,61,S_0e448c7fa480c41f,Soda Pop,"Saja Boys : Andrew Choi , Neckwav, Danny Chung, Kevin Woo and Samuil Lee",billboard_year_end,usable,ko,Pop,,,,
 2025-062-S_9b3e0405b2f424c9,2025,62,S_9b3e0405b2f424c9,Like Him,"Tyler, the Creator featuring Lola Young",billboard_year_end,missing,,Soul,,,,
 2025-063-S_2e67f915ac7ba73e,2025,63,S_2e67f915ac7ba73e,Residuals,Chris Brown,billboard_year_end,usable,en,R&B,364,116,0.318681,0.9911
 2025-064-S_c85e6d24c8fabc8d,2025,64,S_c85e6d24c8fabc8d,Smile,Morgan Wallen,billboard_year_end,usable,en,Country,235,113,0.480851,0.9953
-2025-065-S_ada74d559d01dd80,2025,65,S_ada74d559d01dd80,Last Christmas,Wham!,billboard_year_end,usable,en,Pop|Rock,551,118,0.214156,0.9995
+2025-065-S_ada74d559d01dd80,2025,65,S_ada74d559d01dd80,Last Christmas,Wham!,billboard_year_end,usable,en,Pop|Rock,546,114,0.208791,0.9995
 2025-066-S_0d60a7aa1a60653e,2025,66,S_0d60a7aa1a60653e,Am I Okay?,Megan Moroney,billboard_year_end,usable,en,Country,348,116,0.333333,0.9991
-2025-067-S_d3b0d7f8d1d4d1e4,2025,67,S_d3b0d7f8d1d4d1e4,Rockin' Around the Christmas Tree,Brenda Lee,billboard_year_end,usable,en,Rock,125,63,0.504,0.9877
+2025-067-S_d3b0d7f8d1d4d1e4,2025,67,S_d3b0d7f8d1d4d1e4,Rockin' Around the Christmas Tree,Brenda Lee,billboard_year_end,usable,en,Rock,120,59,0.491667,0.9861
 2025-068-S_23ffac9b728a7aee,2025,68,S_23ffac9b728a7aee,How It's Done,"Huntrix : Ejae , Audrey Nuna and Rei Ami",billboard_year_end,missing,,Pop|Dance/Electronic|Hip Hop/Rap,,,,
 2025-069-S_8f20d52fde3287a7,2025,69,S_8f20d52fde3287a7,Happen to Me,Russell Dickerson,billboard_year_end,usable,en,Country|Pop,355,101,0.284507,0.826
 2025-070-S_fa0d1208423850dd,2025,70,S_fa0d1208423850dd,Baile Inolvidable,Bad Bunny,billboard_year_end,unverified,,Latin,,,,
@@ -6680,7 +6680,7 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2025-078-S_564e2bfcaa8b9e01,2025,78,S_564e2bfcaa8b9e01,I'm Gonna Love You,Cody Johnson and Carrie Underwood,billboard_year_end,usable,en,Country,186,95,0.510753,0.9789
 2025-079-S_53a58c994bb0df70,2025,79,S_53a58c994bb0df70,I Am Not Okay,Jelly Roll,billboard_year_end,usable,en,Country,252,88,0.349206,0.9506
 2025-080-S_df9d34823cbe6835,2025,80,S_df9d34823cbe6835,Backup Plan,Bailey Zimmerman and Luke Combs,billboard_year_end,usable,en,Country,356,107,0.300562,0.6154
-2025-081-S_73c6e1326a9f4033,2025,81,S_73c6e1326a9f4033,Jingle Bell Rock,Bobby Helms,billboard_year_end,usable,en,Jazz/Swing,196,56,0.285714,0.8555
+2025-081-S_73c6e1326a9f4033,2025,81,S_73c6e1326a9f4033,Jingle Bell Rock,Bobby Helms,billboard_year_end,usable,en,Jazz/Swing,191,51,0.267016,0.7845
 2025-082-S_195bc5d4be45ade9,2025,82,S_195bc5d4be45ade9,Revolving Door,Tate McRae,billboard_year_end,unverified,,Pop|Dance/Electronic,,,,
 2025-083-S_3cb8a795ca9a94fe,2025,83,S_3cb8a795ca9a94fe,What It Sounds Like,"Huntrix : Ejae , Audrey Nuna and Rei Ami",billboard_year_end,missing,,Pop,,,,
 2025-084-S_a9c49aeeb75594ae,2025,84,S_a9c49aeeb75594ae,Hard Fought Hallelujah,Brandon Lake and Jelly Roll,billboard_year_end,usable,en,Country,355,123,0.346479,0.9998
@@ -6717,7 +6717,7 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2026-015-S_01dec4bf79e5b7e8,2026,15,S_01dec4bf79e5b7e8,Stateside,PinkPantheress With Zara Larsson,weekly_rank_points_ytd,missing,,Pop,,,,
 2026-016-S_2a7e486f2b229021,2026,16,S_2a7e486f2b229021,Hate That I Made You Love Me,Ariana Grande,weekly_rank_points_ytd,usable,en,Pop|R&B|Dance/Electronic,333,112,0.336336,0.9868
 2026-017-S_9ef7468cb55ffb21,2026,17,S_9ef7468cb55ffb21,I Can't Love You Anymore,Ella Langley & Morgan Wallen,weekly_rank_points_ytd,usable,en,Country|Pop,395,97,0.24557,-0.9912
-2026-018-S_aaf84b66c7c24884,2026,18,S_aaf84b66c7c24884,Janice STFU,Drake,weekly_rank_points_ytd,usable,en,Hip Hop/Rap|R&B,633,274,0.432859,0.9845
+2026-018-S_aaf84b66c7c24884,2026,18,S_aaf84b66c7c24884,Janice STFU,Drake,weekly_rank_points_ytd,usable,en,Hip Hop/Rap|R&B,616,265,0.430195,0.9809
 2026-019-S_cb7761818208b99f,2026,19,S_cb7761818208b99f,Folded,Kehlani,weekly_rank_points_ytd,usable,en,R&B,414,119,0.28744,0.9919
 2026-020-S_58539c876d4566ec,2026,20,S_58539c876d4566ec,Stupid Song,Olivia Rodrigo,weekly_rank_points_ytd,usable,en,Rock|Pop,498,146,0.293173,0.9607
 2026-021-S_042c131942b349e9,2026,21,S_042c131942b349e9,Sleepless In A Hotel Room,Luke Combs,weekly_rank_points_ytd,usable,en,Country,173,72,0.416185,-0.296
@@ -6737,7 +6737,7 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2026-035-S_3cc8e3dbe3e29742,2026,35,S_3cc8e3dbe3e29742,Yukon,Justin Bieber,weekly_rank_points_ytd,unverified,,R&B,,,,
 2026-036-S_c5c26f223c1af4ff,2026,36,S_c5c26f223c1af4ff,Where Is My Husband!,RAYE,weekly_rank_points_ytd,usable,en,R&B|Soul|Pop|Gospel,624,164,0.262821,0.9975
 2026-037-S_5648805a69c8fa37,2026,37,S_5648805a69c8fa37,Iloveitiloveitiloveit,Bella Kay,weekly_rank_points_ytd,usable,en,Pop,379,106,0.279683,0.9984
-2026-038-S_59c2d3a2032bf4ff,2026,38,S_59c2d3a2032bf4ff,Shabang,Drake,weekly_rank_points_ytd,usable,en,Hip Hop/Rap,405,194,0.479012,0.9727
+2026-038-S_59c2d3a2032bf4ff,2026,38,S_59c2d3a2032bf4ff,Shabang,Drake,weekly_rank_points_ytd,usable,en,Hip Hop/Rap,387,182,0.470284,0.9666
 2026-039-S_1e36cc679e3c59e6,2026,39,S_1e36cc679e3c59e6,The Great Divide,Noah Kahan,weekly_rank_points_ytd,usable,en,Rock|Folk,425,177,0.416471,-0.9863
 2026-040-S_bcbe4d41af7b08ac,2026,40,S_bcbe4d41af7b08ac,What You Need,Tems,weekly_rank_points_ytd,usable,en,Afrobeats,351,78,0.222222,-0.9818
 2026-041-S_22cc5bbeb6e8fa8d,2026,41,S_22cc5bbeb6e8fa8d,Pop Dat Thang,DaBaby,weekly_rank_points_ytd,usable,en,Hip Hop/Rap,755,147,0.194702,-0.9989
@@ -6759,7 +6759,7 @@ entry_id,year,rank,song_id,title,artist_credit,chart_kind,lyrics_status,estimate
 2026-057-S_58cc9ca8d910b221,2026,57,S_58cc9ca8d910b221,Animal,KATSEYE,weekly_rank_points_ytd,usable,en,Pop,370,114,0.308108,0.9952
 2026-058-S_fdfce0515ddd3bde,2026,58,S_fdfce0515ddd3bde,Jaded,Koe Wetzel & Ella Langley,weekly_rank_points_ytd,usable,en,Country|Rock,335,78,0.232836,-0.9984
 2026-059-S_5ede4dcc489ce404,2026,59,S_5ede4dcc489ce404,McArthur,"HARDY, Eric Church, Morgan Wallen & Tim McGraw",weekly_rank_points_ytd,usable,en,Country,268,119,0.44403,-0.7519
-2026-060-S_446a0dc0d3836400,2026,60,S_446a0dc0d3836400,Loser,Tame Impala,weekly_rank_points_ytd,usable,en,Pop|Funk,215,117,0.544186,-0.9883
+2026-060-S_446a0dc0d3836400,2026,60,S_446a0dc0d3836400,Loser,Tame Impala,weekly_rank_points_ytd,usable,en,Pop|Funk,187,97,0.518717,-0.9885
 2026-061-S_aa72d3eb0f9a8f6e,2026,61,S_aa72d3eb0f9a8f6e,Something To Lose,Stella Lefty Featuring Vincent Mason,weekly_rank_points_ytd,usable,en,Country,285,89,0.312281,-0.9072
 2026-062-S_c85524e990eb4307,2026,62,S_c85524e990eb4307,Dai Dai (FIFA World Cup Official Song 2026),Shakira X Burna Boy,weekly_rank_points_ytd,missing,,Pop,,,,
 2026-063-S_73a97288abbcb206,2026,63,S_73a97288abbcb206,My Body Isn't Ready,sombr,weekly_rank_points_ytd,usable,en,Rock|Pop,238,80,0.336134,0.8979

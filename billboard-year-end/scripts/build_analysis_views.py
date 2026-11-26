@@ -5,7 +5,7 @@ from collections import Counter, defaultdict
 from decimal import Decimal
 from statistics import mean
 
-from measure_lyrics import BRACKETED, DATA, ROOT, lyric_tokens, read, stop_words, term_metrics, write
+from measure_lyrics import DATA, ROOT, clean_lyric_text, lyric_tokens, read, stop_words, term_metrics, write
 
 EMOTIONS = ("joy", "love", "sadness", "anger", "outside_four_classes", "insufficient_evidence")
 SHARE_FIELDS = tuple(f"{name}_pct" for name in EMOTIONS) + ("sarcasm_lyric_pct",)
@@ -35,7 +35,7 @@ def lexical_data():
         song_id = row["song_id"]
         if row["status"] != "usable" or song_id not in english:
             continue
-        tokens = lyric_tokens(BRACKETED.sub(" ", row["lyrics"]))
+        tokens = lyric_tokens(clean_lyric_text(row["lyrics"]))
         if not tokens:
             continue
         counts = Counter(tokens)
