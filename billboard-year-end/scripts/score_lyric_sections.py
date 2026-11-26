@@ -84,8 +84,12 @@ def score(text, token):
                       headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"})
     with urlopen(request, timeout=60) as response:
         rows = json.load(response)
-    if not isinstance(rows, list) or any(not isinstance(row, dict) for row in rows):
-        raise ValueError("Expected one flat list of label-score objects from HF Inference")
+    if isinstance(rows, list) and len(rows) == 1 and isinstance(rows[0], list):
+        rows = rows[0]
+    if not isinstance(rows, list) or any(
+        not isinstance(row, dict) or not {"label", "score"} <= row.keys() for row in rows
+    ):
+        raise ValueError("HF Inference returned an unexpected format for a single text")
     scores = {row["label"]: row["score"] for row in rows}
     if set(scores) != set(EMOTIONS) or len(rows) != len(EMOTIONS):
         raise ValueError("HF Inference did not return exactly the 11 expected emotion labels")
