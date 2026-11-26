@@ -10,6 +10,8 @@ The [Hit Atlas data dictionary](billboard-year-end/data/README.md) documents the
 
 The derived lyric data include [word counts, vocabulary diversity, and keyword rankings](billboard-year-end/data/README.md#lyric-features-and-keywords-19592026) and [53,950 segment-level emotion annotations](billboard-year-end/data/emotion/README.md). The emotion tables support song timelines, a five-year comparison of annual top-ten songs, and inspection of model disagreements.
 
+[Download the full segment-level emotion CSV](https://raw.githubusercontent.com/skyexry/hit-atlas/main/billboard-year-end/data/emotion/segment_emotions.csv).
+
 ## Interactive views
 
 | Task | Views | Data used |
