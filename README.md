@@ -20,22 +20,22 @@ Hit Atlas is an interactive D3.js story about how America’s biggest hits chang
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://skyexry.github.io/hit-atlas/atlas/#heart"><img src="assets/track-01-heart.jpg" alt="The 1979 crate: 100 records colored by lyric feeling, beside the year's feeling bar and genre pie chart"></a>
-      <p><b>01 · The heart of the chart</b><br>Love led every chart from 1959 to 2002. Joy led the next 15. Open any year’s crate of 100 records.</p>
+      <a href="https://skyexry.github.io/hit-atlas/atlas/?year=1979#chart-crate"><img src="assets/track-01-heart.jpg" alt="The 1979 crate: 100 records colored by lyric feeling, beside the year's feeling bar and genre pie chart"></a>
+      <p><b><a href="https://skyexry.github.io/hit-atlas/atlas/?year=1979#chart-crate">01 · The heart of the chart</a></b><br>Love led every chart from 1959 to 2002. Joy led the next 15. Open any year’s crate of 100 records.</p>
     </td>
     <td width="50%" valign="top">
-      <a href="https://skyexry.github.io/hit-atlas/atlas/#words"><img src="assets/track-02-words.jpg" alt="Word bubbles for 1979, with love as the largest bubble at the far right, beside its trend over time"></a>
-      <p><b>02 · The words</b><br>“Love” topped 59 of 67 charts, yet fell from 13.4 to 5.1 uses per 1,000 words. Search any word.</p>
+      <a href="https://skyexry.github.io/hit-atlas/atlas/?year=1979#word-explorer"><img src="assets/track-02-words.jpg" alt="Word bubbles for 1979, with love as the largest bubble at the far right, beside its trend over time"></a>
+      <p><b><a href="https://skyexry.github.io/hit-atlas/atlas/?year=1979#word-explorer">02 · The words</a></b><br>“Love” topped 59 of 67 charts, yet fell from 13.4 to 5.1 uses per 1,000 words. Search any word.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://skyexry.github.io/hit-atlas/atlas/#origins"><img src="assets/track-03-origins.jpg" alt="World map for 1983 with one record per origin: 40 U.S. artists and 28 British artists"></a>
-      <p><b>03 · Who sang them</b><br>In 1983, half the chart’s artists came from outside the U.S., most of them British.</p>
+      <a href="https://skyexry.github.io/hit-atlas/atlas/?year=1983#artist-map"><img src="assets/track-03-origins.jpg" alt="World map for 1983 with one record per origin: 40 U.S. artists and 28 British artists"></a>
+      <p><b><a href="https://skyexry.github.io/hit-atlas/atlas/?year=1983#artist-map">03 · Who sang them</a></b><br>In 1983, half the chart’s artists came from outside the U.S., most of them British.</p>
     </td>
     <td width="50%" valign="top">
-      <a href="https://skyexry.github.io/hit-atlas/atlas/#sound"><img src="assets/track-04-sound.jpg" alt="Beeswarm of song valence by main lyric feeling, with stat tiles above"></a>
-      <p><b>04 · Sad words, happy sound</b><br>41% of 2021–2026 hits with mostly sad or angry lyrics still sound bright. Listen to the exceptions.</p>
+      <a href="https://skyexry.github.io/hit-atlas/atlas/#sound-tiles"><img src="assets/track-04-sound.jpg" alt="Beeswarm of song valence by main lyric feeling, with stat tiles above"></a>
+      <p><b><a href="https://skyexry.github.io/hit-atlas/atlas/#sound-tiles">04 · Sad words, happy sound</a></b><br>41% of 2021–2026 hits with mostly sad or angry lyrics still sound bright. Listen to the exceptions.</p>
     </td>
   </tr>
 </table>
